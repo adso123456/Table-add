@@ -51,22 +51,32 @@ def refresh_safe_candidate():
         reader = csv.reader(f)
         rows = list(reader)
 
+    table_comment_val = '遥感反演结果表（合并版）'
+    changed_table_comment = 0
+
     for i, row in enumerate(rows):
         # 格式: table_name, column_name, data_type, column_comment, table_comment, ...
-        if len(row) >= 4:
+        if len(row) >= 5:
             table, col = row[0].strip(), row[1].strip()
-            if table == 'wm_raster_inversion' and col == 'record_id':
-                if row[3] == old:
+            if table == 'wm_raster_inversion':
+                # a) 刷新 record_id 字段注释
+                if col == 'record_id' and row[3] == old:
                     row[3] = new
                     changed += 1
                     print(f"  [safe_candidate] 行 {i+1} record_id 注释已刷新")
+                # b) 补齐 table_comment
+                if row[4] != table_comment_val:
+                    old_tc = row[4]
+                    row[4] = table_comment_val
+                    changed_table_comment += 1
+                    print(f"  [safe_candidate] 行 {i+1} table_comment: '{old_tc}' -> '{table_comment_val}'")
 
     with open(path, 'w', encoding='utf-8', newline='') as f:
         writer = csv.writer(f, lineterminator='\n')
         writer.writerows(rows)
 
-    print(f"  [safe_candidate] 共修改 {changed} 行")
-    return changed
+    print(f"  [safe_candidate] 字段注释刷新 {changed} 行, table_comment 刷新 {changed_table_comment} 行")
+    return changed + changed_table_comment
 
 
 # ---- 文件 3: batch_001_review_template.csv ----
@@ -74,8 +84,10 @@ def refresh_batch_001():
     path = os.path.join(BASE, "review", "vanna_training_readiness", "manual_review", "batches", "batch_001_review_template.csv")
     old_comment = '遥感反演结果表（合并版）'
     new_comment = '遥感反演结果记录ID'
+    table_comment_val = '遥感反演结果表（合并版）'
     changed_comment = 0
     changed_suspicion = 0
+    changed_table_comment = 0
 
     with open(path, 'r', encoding='utf-8', newline='') as f:
         reader = csv.reader(f)
@@ -95,7 +107,14 @@ def refresh_batch_001():
                 changed_comment += 1
                 print(f"  [batch_001_review] 行 {i+1} record_id 注释已刷新")
 
-            # b) 移除 suspicion_categories 中的 missing_table_comment
+            # b) 补齐 table_comment
+            if len(row) >= 6 and row[5] != table_comment_val:
+                old_tc = row[5]
+                row[5] = table_comment_val
+                changed_table_comment += 1
+                print(f"  [batch_001_review] 行 {i+1} table_comment: '{old_tc}' -> '{table_comment_val}'")
+
+            # c) 移除 suspicion_categories 中的 missing_table_comment
             cats = row[8]
             if 'missing_table_comment' in cats:
                 parts = [p.strip() for p in cats.split('|')]
@@ -108,8 +127,8 @@ def refresh_batch_001():
         writer = csv.writer(f, lineterminator='\n')
         writer.writerows(rows)
 
-    print(f"  [batch_001_review] 注释刷新 {changed_comment} 行, suspicion 刷新 {changed_suspicion} 行")
-    return changed_comment, changed_suspicion
+    print(f"  [batch_001_review] 注释刷新 {changed_comment} 行, table_comment 刷新 {changed_table_comment} 行, suspicion 刷新 {changed_suspicion} 行")
+    return changed_comment + changed_table_comment + changed_suspicion, changed_table_comment
 
 
 # ---- 主流程 ----
@@ -118,11 +137,10 @@ if __name__ == "__main__":
 
     c1 = refresh_columns_with_comments()
     c2 = refresh_safe_candidate()
-    c3_comment, c3_suspicion = refresh_batch_001()
+    c3_total, c3_tc = refresh_batch_001()
 
-    total = c1 + c2 + c3_comment + c3_suspicion
+    total = c1 + c2 + c3_total
     print(f"\n=== 刷新完成，共修改 {total} 处 ===")
-    print(f"  columns_with_comments: {c1}")
-    print(f"  safe_candidate_only:   {c2}")
-    print(f"  batch_001 comment:     {c3_comment}")
-    print(f"  batch_001 suspicion:   {c3_suspicion}")
+    print(f"  columns_with_comments:  {c1}")
+    print(f"  safe_candidate_only:    {c2}")
+    print(f"  batch_001_review:       {c3_total} (含 table_comment {c3_tc} 行)")

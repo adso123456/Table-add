@@ -1080,16 +1080,16 @@ wm_raster_info,content_type,character varying,文件内容类型,,candidate_safe
 wm_raster_info,data_location,character varying,数据位置,,candidate_safe,low,字段已有注释，无同名字段冲突，可安全纳入训练候选。
 wm_raster_info,image_datetime,timestamp without time zone,影像获取时间（年_月_日_时_分）,,candidate_safe,low,字段已有注释，无同名字段冲突，可安全纳入训练候选。
 wm_raster_info,inversion_flag,character varying,是否反演,,candidate_safe,low,字段已有注释，无同名字段冲突，可安全纳入训练候选。
-wm_raster_inversion,record_id,bigint,遥感反演结果记录ID,,candidate_safe,low,字段已有注释，无同名字段冲突，可安全纳入训练候选。
-wm_raster_inversion,inversion_type,character varying,反演类型：water_environment-水环境，algalbloom-水生态，landuse-土地利用,,candidate_safe,low,字段已有注释，无同名字段冲突，可安全纳入训练候选。
-wm_raster_inversion,l1_area,double precision,I类/浮叶挺水植被/背景面积,,candidate_safe,low,字段已有注释，无同名字段冲突，可安全纳入训练候选。
-wm_raster_inversion,l2_area,double precision,II类/沉水植被/耕地面积,,candidate_safe,low,字段已有注释，无同名字段冲突，可安全纳入训练候选。
-wm_raster_inversion,l3_area,double precision,III类/水华/园地面积,,candidate_safe,low,字段已有注释，无同名字段冲突，可安全纳入训练候选。
-wm_raster_inversion,l4_area,double precision,IV类/水体/林地面积,,candidate_safe,low,字段已有注释，无同名字段冲突，可安全纳入训练候选。
-wm_raster_inversion,l5_area,double precision,V类/水体面积,,candidate_safe,low,字段已有注释，无同名字段冲突，可安全纳入训练候选。
-wm_raster_inversion,l6_area,double precision,劣V类/建设用地面积,,candidate_safe,low,字段已有注释，无同名字段冲突，可安全纳入训练候选。
-wm_raster_inversion,service_url,text,服务地址,,candidate_safe,low,字段已有注释，无同名字段冲突，可安全纳入训练候选。
-wm_raster_inversion,data_time,timestamp without time zone,数据日期,,candidate_safe,low,字段已有注释，无同名字段冲突，可安全纳入训练候选。
+wm_raster_inversion,record_id,bigint,遥感反演结果记录ID,遥感反演结果表（合并版）,candidate_safe,low,字段已有注释，无同名字段冲突，可安全纳入训练候选。
+wm_raster_inversion,inversion_type,character varying,反演类型：water_environment-水环境，algalbloom-水生态，landuse-土地利用,遥感反演结果表（合并版）,candidate_safe,low,字段已有注释，无同名字段冲突，可安全纳入训练候选。
+wm_raster_inversion,l1_area,double precision,I类/浮叶挺水植被/背景面积,遥感反演结果表（合并版）,candidate_safe,low,字段已有注释，无同名字段冲突，可安全纳入训练候选。
+wm_raster_inversion,l2_area,double precision,II类/沉水植被/耕地面积,遥感反演结果表（合并版）,candidate_safe,low,字段已有注释，无同名字段冲突，可安全纳入训练候选。
+wm_raster_inversion,l3_area,double precision,III类/水华/园地面积,遥感反演结果表（合并版）,candidate_safe,low,字段已有注释，无同名字段冲突，可安全纳入训练候选。
+wm_raster_inversion,l4_area,double precision,IV类/水体/林地面积,遥感反演结果表（合并版）,candidate_safe,low,字段已有注释，无同名字段冲突，可安全纳入训练候选。
+wm_raster_inversion,l5_area,double precision,V类/水体面积,遥感反演结果表（合并版）,candidate_safe,low,字段已有注释，无同名字段冲突，可安全纳入训练候选。
+wm_raster_inversion,l6_area,double precision,劣V类/建设用地面积,遥感反演结果表（合并版）,candidate_safe,low,字段已有注释，无同名字段冲突，可安全纳入训练候选。
+wm_raster_inversion,service_url,text,服务地址,遥感反演结果表（合并版）,candidate_safe,low,字段已有注释，无同名字段冲突，可安全纳入训练候选。
+wm_raster_inversion,data_time,timestamp without time zone,数据日期,遥感反演结果表（合并版）,candidate_safe,low,字段已有注释，无同名字段冲突，可安全纳入训练候选。
 wm_section_info,region_id,bigint,所属区域id,断面基本信息表,candidate_safe,low,字段已有注释，无同名字段冲突，可安全纳入训练候选。
 wm_section_info,section_code,character varying,断面编码,断面基本信息表,candidate_safe,low,字段已有注释，无同名字段冲突，可安全纳入训练候选。
 wm_section_info,trans_regional,character varying,跨界类型,断面基本信息表,candidate_safe,low,字段已有注释，无同名字段冲突，可安全纳入训练候选。

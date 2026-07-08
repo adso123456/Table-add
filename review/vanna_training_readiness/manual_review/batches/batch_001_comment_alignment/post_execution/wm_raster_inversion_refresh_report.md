@@ -10,10 +10,10 @@
 | # | 文件 | 刷新内容 | 修改行数 |
 |---|------|----------|----------|
 | 1 | `columns_with_comments.csv` | record_id 注释：旧→新 | 1 |
-| 2 | `vanna_training_safe_candidate_only.csv` | record_id 注释：旧→新 | 1 |
-| 3 | `batch_001_review_template.csv` | record_id 注释 + 移除 missing_table_comment | 1 + 10 |
+| 2 | `vanna_training_safe_candidate_only.csv` | record_id 注释 + table_comment 补齐 | 1 + 10 |
+| 3 | `batch_001_review_template.csv` | record_id 注释 + 移除 missing_table_comment + table_comment 补齐 | 1 + 10 + 10 |
 
-**共修改 13 处。**
+**共修改 33 处。**（分两次执行：第一次 13 处，第二次 table_comment 补齐 20 处）
 
 ---
 
@@ -38,6 +38,15 @@
 | 4-9 | l1_area ~ l6_area | `missing_table_comment` | (空) |
 | 10 | service_url | `missing_table_comment \| very_short_comment` | `very_short_comment` |
 | 11 | data_time | `missing_table_comment \| time_like_field \| very_short_comment` | `time_like_field \| very_short_comment` |
+
+### 2.3 table_comment 补齐（20 处，第二次执行）
+
+两个目标 CSV 中所有 `table_name = wm_raster_inversion` 的行 `table_comment` 从空 → `遥感反演结果表（合并版）`：
+
+| 文件 | 行范围 | 修改行数 |
+|------|--------|----------|
+| `vanna_training_safe_candidate_only.csv` | 1083–1092 | 10 |
+| `batch_001_review_template.csv` | 2–11 | 10 |
 
 ---
 
@@ -65,6 +74,7 @@
 | 只改 wm_raster_inversion 相关行 | ✅ |
 | record_id 旧注释已消失 | ✅ 在 3 个目标文件中已全部刷新 |
 | 表级 missing_table_comment 已移除 | ✅ 10 行全部移除 |
+| table_comment 已补齐（safe_candidate + batch_001） | ✅ 20 行全部为 `遥感反演结果表（合并版）` |
 | 未改其他字段注释 | ✅ 抽查 indicator_code, inversion_type, l1_area 均未变 |
 | 未 trim / strip / normalize | ✅ 精准匹配替换 |
 | 未训练 Vanna | ✅ |
