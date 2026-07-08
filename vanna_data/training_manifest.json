@@ -23,5 +23,14 @@
   },
   "level2_sql_examples": "not_started",
   "level3_business_questions": "not_started",
-  "level4_visualization": "not_started"
+  "level4_visualization": "not_started",
+  "level1_trained": true,
+  "level1_trained_at": "2026-07-08 16:36:29",
+  "level1_training_results": {
+    "ddl_trained": 115,
+    "ddl_failed": 0,
+    "doc_trained": 115,
+    "doc_failed": 0,
+    "chroma_path": "E:\\3\\code\\metadata_audit\\vanna_data\\chroma"
+  }
 }

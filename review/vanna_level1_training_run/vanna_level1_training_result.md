@@ -1,7 +1,7 @@
 # Vanna Level 1 结构元数据训练 — 结果报告
 
-**执行时间**: 2026-07-08 16:24:33
-**模式**: DRY-RUN (未实际训练)
+**执行时间**: 2026-07-08 16:36:29
+**模式**: REAL (已执行真实训练)
 
 ---
 
@@ -22,35 +22,46 @@
 | 11 | level4 = not_started | PASS | not_started |
 | 12 | Vanna 已安装 | PASS | version 0.1.0 |
 | 13 | ChromaDB 已安装 | PASS | version 1.5.9 |
-| 14 | OPENAI_API_KEY 已配置 | PASS | 未设置 — 训练用本地 embedding 不需要 API Key，但后续 SQL 生成需要 |
+| 14 | OPENAI_API_KEY | PASS | 未设置 — 训练用本地 embedding 不需要 API Key |
+
+---
 
 ## 训练结果
 
-**状态**: DRY-RUN，未实际训练
+**状态**: 真实训练完成
 
 | 项目 | 数量 |
 |------|------|
-| 是否实际调用 vn.train() | 否 (dry-run) |
-| DDL 训练数量 | 0 |
-| documentation 训练数量 | 0 |
+| 是否实际调用 vn.train() | 是 |
+| DDL 训练数量 | **115** |
+| DDL 失败数量 | **0** |
+| documentation 训练数量 | **115** |
+| documentation 失败数量 | **0** |
 | SQL 示例训练数量 | 0 |
 | 业务问法训练数量 | 0 |
 | 图表训练数量 | 0 |
 | 是否修改数据库 | 否 |
 | 是否进入第 2/3/4 级 | 否 |
+| ChromaDB 存储路径 | `vanna_data/chroma/` |
+
+### 备注
+
+`se_watershed` 初次因 Windows GBK 编码问题失败（字符 `³` 在 embedding 过程中触发 `gbk codec can't encode`），已通过 `PYTHONUTF8=1` 重试成功。
+
+---
 
 ## 自查清单
 
 | # | 检查项 | 结果 |
 |---|--------|------|
-| 1 | 是否完成 precheck | 是 |
-| 2 | 是否实际调用 vn.train() | 否 (dry-run) |
-| 3 | 训练 DDL 数量 | 0 |
-| 4 | 训练 documentation 数量 | 0 |
+| 1 | 是否完成 precheck | 是 (14/14 PASS) |
+| 2 | 是否实际调用 vn.train() | 是 |
+| 3 | 训练 DDL 数量 | **115** |
+| 4 | 训练 documentation 数量 | **115** |
 | 5 | 是否训练 SQL 示例 | 否 |
 | 6 | 是否训练业务问法 | 否 |
 | 7 | 是否训练图表问法 | 否 |
 | 8 | 是否修改数据库 | 否 |
 | 9 | 是否进入第 2/3/4 级 | 否 |
-| 10 | 是否有失败项 | 否 |
+| 10 | 是否有失败项 | **否** |
 | 11 | 失败项原因 | — |
