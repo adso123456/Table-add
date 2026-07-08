@@ -1,0 +1,10 @@
+check,result,detail
+C1: 可训练表数量 = 115,PASS,实际 115
+C2: 可训练字段数量 = 2572,PASS,实际 2572
+C3: 排除对象数量 = 920,PASS,实际 920
+C4: 无注释字段混入 = 0,PASS,0 条
+C5: include_in_training 全部 yes,PASS,全部 yes
+C6: 排除对象覆盖全部无注释字段,PASS,全部覆盖
+C7: 禁止表 (stg/bak/spatial_ref_sys) 混入,PASS,0 表
+C8: remaining_missing 71 字段混入,PASS,0 条
+C9: 与 V3 快照交叉校验,PASS,一致
