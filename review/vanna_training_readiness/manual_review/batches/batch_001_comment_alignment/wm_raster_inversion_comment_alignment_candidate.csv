@@ -1,0 +1,3 @@
+object_type,table_name,column_name,current_comment,candidate_comment,evidence,risk_level,recommendation,human_decision,human_note
+table,wm_raster_inversion,,,遥感反演结果表（合并版）,record_id 当前字段注释为'遥感反演结果表（合并版）'，语义上更像是对整张表的描述而非对 record_id 字段的描述。推测 DBA 补注释时误将表级描述填入了第一个字段。batch_001 人工审核已确认表级注释缺失是高风险项。,low,human_confirm_required,,
+column,wm_raster_inversion,record_id,遥感反演结果表（合并版）,遥感反演结果记录ID,record_id 数据类型为 bigint，字段名包含 'id'，符合记录标识字段特征。当前注释'遥感反演结果表（合并版）'疑似整表描述误填。如果表级注释确认采用'遥感反演结果表（合并版）'，则 record_id 应修正为记录标识类字段注释。,medium,human_confirm_required,,
