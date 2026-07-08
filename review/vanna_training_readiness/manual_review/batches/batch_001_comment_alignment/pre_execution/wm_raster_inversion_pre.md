@@ -40,7 +40,31 @@
 | # | 检查项 | 验证方法 | 状态 |
 |---|--------|----------|------|
 | 1 | 目标数据库可连接 | `psql -h <host> -U <user> -d <db> -c "SELECT 1;"` | ⬜ 待验证 |
-| 2 | 当前用户有 COMMENT 权限 | `SELECT has_schema_privilege('public', 'usage');` | ⬜ 待验证 |
+| 2 | 当前用户有 COMMENT 权限（表 owner 或 superuser） | 见下方验证 SQL | ⬜ 待验证 |
+
+**权限验证说明：**
+
+COMMENT ON TABLE / COLUMN 执行用户应为表 owner 或 superuser。`has_schema_privilege('public','usage')` 只能验证 schema usage，不能证明有 COMMENT 权限。请执行以下查询确认：
+
+```sql
+-- 查询表 owner
+SELECT c.relname, r.rolname AS table_owner
+FROM pg_class c
+JOIN pg_namespace n ON n.oid = c.relnamespace
+JOIN pg_roles r ON r.oid = c.relowner
+WHERE n.nspname = 'public'
+  AND c.relname = 'wm_raster_inversion';
+
+-- 查询当前用户
+SELECT current_user;
+
+-- 查询是否 superuser
+SELECT rolsuper
+FROM pg_roles
+WHERE rolname = current_user;
+```
+
+> 如果 `current_user` 等于 `table_owner` 或 `rolsuper = true`，则有 COMMENT 权限。
 
 ### 3.2 Schema 和对象存在性
 
@@ -79,6 +103,7 @@ WHERE attrelid = 'public.wm_raster_inversion'::regclass
 |----------|------|
 | **数据修改** | 无。COMMENT ON 仅修改元数据，不影响表数据 |
 | **元数据写入** | COMMENT ON 只修改注释元数据，不修改业务数据；但仍属于数据库元数据写入，执行前需要确认权限和对象存在。 |
+| **锁** | COMMENT ON 会对被注释对象获取 SHARE UPDATE EXCLUSIVE 锁；本次只修改注释元数据，不修改业务数据，但仍应在低峰期或确认无敏感操作窗口后执行。 |
 | **回滚** | 可简单回滚：`COMMENT ON ... IS NULL;` 或 `COMMENT ON ... IS '原注释';` |
 | **幂等性** | 是。重复执行不会报错，始终覆盖为相同值 |
 | **对其他对象影响** | 无。不影响索引、约束、视图、触发器 |
