@@ -1,3 +1,217 @@
--- Table: public.rs_outlet
--- Comment: 排污口信息表
--- DDL not available for rs_outlet
+-- Table: public."rs_outlet"
+-- Table comment: 排污口信息表
+CREATE TABLE public."rs_outlet" (
+  "id" bigint NOT NULL,
+  "area_code" character varying(19),
+  "area_name" character varying(100),
+  "county_name" character varying(100),
+  "outlet_code" character varying(100),
+  "outlet_name" character varying(200),
+  "river_basin" character varying(60),
+  "outlet_address" character varying(150),
+  "outlet_lon" double precision,
+  "outlet_lat" double precision,
+  "catalog_level_1" character varying(30),
+  "catalog_level_2" character varying(50),
+  "catalog_level_3" character varying(60),
+  "river_system" character varying(150),
+  "outlet_owner_river" character varying(100),
+  "is_flow_lake" character(2),
+  "lake_name" character varying(100),
+  "is_key_river" character(1),
+  "key_river_name" character varying(100),
+  "is_water_function" character(10),
+  "water_function_level1" character varying(100),
+  "water_quality_target1" character varying(20),
+  "water_function_level2" character varying(100),
+  "water_quality_target2" character varying(20),
+  "is_water_environment" character(1),
+  "water_enviroment_function" character varying(100),
+  "water_enviroment_target" character varying(10),
+  "country_section_name" character varying(100),
+  "province_section_name" character varying(100),
+  "city_section_name" character varying(100),
+  "river_info" character varying(100),
+  "outlet_shape" character varying(20),
+  "drain_feature" character varying(16),
+  "is_drain_abnormal" character(2),
+  "drain_abnormal_desc" character varying(100),
+  "is_monitor_sample" character(1),
+  "primary_obligor" character varying(100),
+  "primary_obligor_address" character varying(200),
+  "other_obligor" character varying(300),
+  "primary_obligor_lon" double precision,
+  "primary_obligor_lat" double precision,
+  "primary_obligor_contact" character varying(100),
+  "primary_obligor_phone" character varying(100),
+  "is_drain_toxic" character(1),
+  "sewage_type" character varying(100),
+  "is_large" character varying(10),
+  "handle_type" character varying(100),
+  "is_finish_standard" character(1),
+  "standard_content" character varying(300),
+  "repair_judge_criteria" character varying(500),
+  "exist_problem" character varying(300),
+  "other_problem" character varying(300),
+  "specific_requirement" character varying(500),
+  "handle_method" character varying(255),
+  "finish_date" timestamp without time zone,
+  "handle_stage" character varying(100),
+  "handle_result" character varying(300),
+  "approve_advice" character varying(100),
+  "approve_node" character varying(100),
+  "create_by" character varying(18),
+  "create_time" timestamp without time zone,
+  "update_by" character varying(18),
+  "update_time" timestamp without time zone,
+  "del_flag" character(1) DEFAULT 0,
+  "is_quick_detect" character varying(10),
+  "other_sewage_type" character varying(255),
+  "drain_standard" character varying(300),
+  "approve_status" character varying(100),
+  "quick_detect_ph" character varying(60),
+  "quick_detect_cod" character varying(50),
+  "quick_detect_ad" character varying(50),
+  "quick_detect_zl" character varying(50),
+  "quick_detect_sl" character varying(50),
+  "quick_detect_desc" character varying(255),
+  "monitor_sample_date" character varying(100),
+  "monitor_sample_sl" character varying(100),
+  "monitor_sample_sw" character varying(50),
+  "monitor_sample_bod" character varying(50),
+  "monitor_sample_hff" character varying(50),
+  "monitor_sample_ph" character varying(50),
+  "monitor_sample_cod" character varying(100),
+  "monitor_sample_ad" character varying(50),
+  "monitor_sample_zl" character varying(50),
+  "monitor_sample_zd" character varying(50),
+  "photo_close_path" character varying(1024),
+  "photo_distant_path" character varying(1024),
+  "photo_main_path" character varying(1024),
+  "photo_handle_finish_path" character varying(1024),
+  "outlet_code_province" character varying(32),
+  "waterbody_manager_level" character varying(10),
+  "waterbody_name_in" character varying(32),
+  "key_river_name_province" character varying(50),
+  "drain_abnormal_other" character varying(100),
+  "primary_obligor_code" character varying(50),
+  "unified_credit_code" character varying(50),
+  "pollutant_name" character varying(200),
+  "pollutant_density" character varying(100),
+  "sewage_emission" character varying(100),
+  "pollutant_emission" character varying(100),
+  "handle_result_condition" character(1),
+  "monitor_sample_type" character varying(100),
+  "monitor_sample_mark" character varying(255),
+  "has_sample_condition" character(1),
+  "primary_table_id" character varying(100),
+  "sfzdjg" character varying(50),
+  "geom" geometry(Point,4326)
+);
+
+-- Column comments:
+--   id: 主键id
+--   area_code: 行政区代码
+--   area_name: 行政区名称：乡镇（街道）
+--   county_name: 县(区)名称
+--   outlet_code: 排污口编码：国家级
+--   outlet_name: 排污口名称
+--   river_basin: 流域名称
+--   outlet_address: 排污口地址
+--   outlet_lon: 排污口经度
+--   outlet_lat: 排污口纬度
+--   catalog_level_1: 排污口分类-一级分类
+--   catalog_level_2: 排污口分类-二级分类
+--   catalog_level_3: 排污口分类-三级分类
+--   river_system: 所属水系
+--   outlet_owner_river: 排出口归属水系
+--   is_flow_lake: 是否入湖河流
+--   lake_name: 湖泊名称
+--   is_key_river: 是否为重点河湖
+--   key_river_name: 重点河名称
+--   is_water_function: 是否位于水功能区
+--   water_function_level1: 一级水功能区名称
+--   water_quality_target1: 水功能区水质目标
+--   water_function_level2: 二级水功能区名称
+--   water_quality_target2: 二级水功能区水质目标
+--   is_water_environment: 是否位于水环境功能区
+--   water_enviroment_function: 水环境功能区名称
+--   water_enviroment_target: 水环境功能区目标
+--   country_section_name: 国控断面名称
+--   province_section_name: 省控断面名称
+--   city_section_name: 市控断面名称
+--   river_info: 河长信息
+--   outlet_shape: 口门形态（明渠、管道、泵站、涵闸、闸泵联用、箱涵、潜没、其他，单选）
+--   drain_feature: 排水特征（排水、无水、有死水、闸断、不确定，单选）
+--   is_drain_abnormal: 有无异常状况（有、无）
+--   drain_abnormal_desc: 异常状况说明
+--   is_monitor_sample: 是否监测采样
+--   primary_obligor: 主要责任主体名称
+--   primary_obligor_address: 主要责任体详细地址
+--   other_obligor: 其他责任主体名称（多个用英文逗号拼接）
+--   primary_obligor_lon: 主要责任体经度
+--   primary_obligor_lat: 主要责任体纬度
+--   primary_obligor_contact: 主要责任主体联系人
+--   primary_obligor_phone: 主要责任主体联系方式
+--   is_drain_toxic: 是否排放有毒有害污染物
+--   sewage_type: 污水类型
+--   is_large: 是否为规模以上排口
+--   handle_type: 整治类型（依法取缔、清理合并、规范整治、无需整治，单选）
+--   is_finish_standard: 是否完成规范化建设：是、否
+--   standard_content: 规范化建设内容
+--   repair_judge_criteria: 完成整治判定条件
+--   exist_problem: 排污口存在的问题
+--   other_problem: 其他问题描述
+--   specific_requirement: 具体情形和技术要求
+--   handle_method: 整治措施（多选用英文逗号分隔）
+--   finish_date: 完成时限
+--   handle_stage: 整治阶段（选项为：未整治、整治中、完成整治）
+--   handle_result: 整治成效
+--   approve_advice: 审批意见
+--   approve_node: 审批标记
+--   create_by: 创建人
+--   create_time: 创建时间
+--   update_by: 更新人
+--   update_time: 更新时间
+--   del_flag: 删除标记（0-正常，1-删除）
+--   is_quick_detect: 水质快速检测-是否具备采样条件
+--   other_sewage_type: 其他污水类型
+--   drain_standard: 排放标准（国家或地方发布的行业标准）
+--   approve_status: 审批登记情况（已审批、已登记、未审批、未登记）
+--   quick_detect_ph: 水质快速检测-pH值
+--   quick_detect_cod: 水质快速检测-COD（mg/L）
+--   quick_detect_ad: 水质快速检测-氨氮（mg/L）
+--   quick_detect_zl: 水质快速检测-总磷（mg/L）
+--   quick_detect_sl: 水质快速检测-流量(m^3/D)
+--   monitor_sample_date: 采样时间（yyyy-MM-dd）
+--   monitor_sample_sl: 实验室监测-流量(m^3/D)
+--   monitor_sample_sw: 实验室监测-水温（℃）
+--   monitor_sample_bod: 实验室监测-BOD
+--   monitor_sample_hff: 实验室监测-挥发酚
+--   monitor_sample_ph: 实验室监测-pH值
+--   monitor_sample_cod: 实验室监测-COD值
+--   monitor_sample_ad: 实验室监测-氨氮（mg/L）
+--   monitor_sample_zl: 实验室监测-总磷（mg/L）
+--   monitor_sample_zd: 实验室监测-总氮(mg/L)
+--   photo_close_path: 排污口近景照片
+--   photo_distant_path: 排污口远景照片
+--   photo_main_path: 责任主体照片
+--   photo_handle_finish_path: 整治完成后的照片
+--   outlet_code_province: 排污口编码：省级
+--   waterbody_manager_level: 水体管理级别
+--   waterbody_name_in: 受纳水体名称
+--   key_river_name_province: 省级重点河湖名称
+--   drain_abnormal_other: 其他状况
+--   primary_obligor_code: 主要责任主体排污许可证号或排污登记号
+--   unified_credit_code: 统一信用代码
+--   pollutant_name: 污染物（多个用英文逗号拼接）
+--   pollutant_density: 污染物浓度（污染物对应浓度，多个用英文逗号拼接）
+--   sewage_emission: 年污水排放量(t)（污染物对应排放量，多个用英文逗号拼接）
+--   pollutant_emission: 年污染物排放总量(t)（污染物对应排放量，多个用英文逗号拼接）
+--   handle_result_condition: 是否已满足整治总则中完成整治的判定条件
+--   monitor_sample_type: 采样类型
+--   monitor_sample_mark: 采样备注
+--   has_sample_condition: 是否具备采样条件（默认无）
+--   primary_table_id: 主表ID
+--   sfzdjg: 是否重点监管排污口
+--   geom: 几何信息

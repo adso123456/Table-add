@@ -1,3 +1,14 @@
--- Table: public.layer_industrial_ghysgw
--- Comment: 工业园区-规划雨水管网
--- DDL not available for layer_industrial_ghysgw
+-- Table: public."layer_industrial_ghysgw"
+-- Table comment: 工业园区-规划雨水管网
+CREATE TABLE public."layer_industrial_ghysgw" (
+  "id" integer NOT NULL,
+  "geom" geometry(MultiLineString,4326),
+  "name" character varying(10),
+  "code" character varying(50)
+);
+
+-- Column comments:
+--   id: 主键ID
+--   geom: 空间几何数据
+--   name: 名称
+--   code: 编码

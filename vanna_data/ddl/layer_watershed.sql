@@ -1,3 +1,14 @@
--- Table: public.layer_watershed
--- Comment: 工业园区-汇水区
--- DDL not available for layer_watershed
+-- Table: public."layer_watershed"
+-- Table comment: 工业园区-汇水区
+CREATE TABLE public."layer_watershed" (
+  "id" integer NOT NULL DEFAULT nextval('"汇水区_id_seq"'::regclass),
+  "name" character varying,
+  "code" character varying,
+  "geom" geometry(MultiLineString,4326)
+);
+
+-- Column comments:
+--   id: 主键ID
+--   name: 名称
+--   code: 编码
+--   geom: 空间几何数据

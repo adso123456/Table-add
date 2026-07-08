@@ -1,3 +1,120 @@
--- Table: public.rs_wastewater_hour_records
--- Comment: 污染源-小时监测数据表
--- DDL not available for rs_wastewater_hour_records
+-- Table: public."rs_wastewater_hour_records"
+-- Table comment: 污染源-小时监测数据表
+CREATE TABLE public."rs_wastewater_hour_records" (
+  "id" bigint NOT NULL,
+  "timestamp" timestamp without time zone,
+  "type" character varying(10),
+  "pollutant_id" bigint,
+  "status" character varying(10),
+  "record_type" character varying(10),
+  "ll" double precision,
+  "pfl" double precision,
+  "m1_value" double precision,
+  "m1_status" character varying(10),
+  "m2_value" double precision,
+  "m2_status" character varying(10),
+  "m3_value" double precision,
+  "m3_status" character varying(10),
+  "m4_value" double precision,
+  "m4_status" character varying(10),
+  "m5_value" double precision,
+  "m5_status" character varying(10),
+  "m6_value" double precision,
+  "m6_status" character varying(10),
+  "m7_value" double precision,
+  "m7_status" character varying(10),
+  "m8_value" double precision,
+  "m8_status" character varying(10),
+  "m9_value" double precision,
+  "m9_status" character varying(10),
+  "m10_value" double precision,
+  "m10_status" character varying(10),
+  "m11_value" double precision,
+  "m11_status" character varying(10),
+  "m12_value" double precision,
+  "m12_status" character varying(10),
+  "m13_value" double precision,
+  "m13_status" character varying(10),
+  "m14_value" double precision,
+  "m14_status" character varying(10),
+  "m15_value" double precision,
+  "m15_status" character varying(10),
+  "m16_value" double precision,
+  "m16_status" character varying(10),
+  "m17_value" double precision,
+  "m17_status" character varying(10),
+  "m18_value" double precision,
+  "m18_status" character varying(10),
+  "m19_value" double precision,
+  "m19_status" character varying(10),
+  "m20_value" double precision,
+  "m20_status" character varying(10),
+  "m21_value" double precision,
+  "m21_status" character varying(10),
+  "m22_value" double precision,
+  "m22_status" character varying(10),
+  "create_by" bigint,
+  "create_time" timestamp without time zone,
+  "update_by" bigint,
+  "update_time" timestamp without time zone,
+  "del_flag" character varying(10) DEFAULT '0'::character varying
+);
+
+-- Column comments:
+--   id: 主键id
+--   timestamp: 数据时间
+--   type: 类型：PS-排水口、PQ-排气口
+--   pollutant_id: 污染源id
+--   status: 监测结果：0正常、1偏高、2偏低
+--   record_type: 记录类型：0自动、1手工
+--   ll: 流量
+--   pfl: 排放量
+--   m1_value: m1_value
+--   m1_status: m1_status
+--   m2_value: m2_value
+--   m2_status: m2_status
+--   m3_value: m3_value
+--   m3_status: m3_status
+--   m4_value: m4_value
+--   m4_status: m4_status
+--   m5_value: m5_value
+--   m5_status: m5_status
+--   m6_value: m6_value
+--   m6_status: m6_status
+--   m7_value: m7_value
+--   m7_status: m7_status
+--   m8_value: m8_value
+--   m8_status: m8_status
+--   m9_value: m9_value
+--   m9_status: m9_status
+--   m10_value: m10_value
+--   m10_status: m10_status
+--   m11_value: m11_value
+--   m11_status: m11_status
+--   m12_value: m12_value
+--   m12_status: m12_status
+--   m13_value: m13_value
+--   m13_status: m13_status
+--   m14_value: m14_value
+--   m14_status: m14_status
+--   m15_value: m15_value
+--   m15_status: m15_status
+--   m16_value: m16_value
+--   m16_status: m16_status
+--   m17_value: m17_value
+--   m17_status: m17_status
+--   m18_value: m18_value
+--   m18_status: m18_status
+--   m19_value: m19_value
+--   m19_status: m19_status
+--   m20_value: m20_value
+--   m20_status: m20_status
+--   m21_value: m21_value
+--   m21_status: m21_status
+--   m22_value: m22_value
+--   m22_status: m22_status
+--   create_by: 创建人
+--   create_time: 创建时间
+--   update_by: 更新人
+--   update_time: 更新时间
+--   del_flag: 删除标记：0未删除、1已删除

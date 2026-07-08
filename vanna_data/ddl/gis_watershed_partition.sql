@@ -1,3 +1,32 @@
--- Table: public.gis_watershed_partition
--- Comment: 空间-流域分区数据
--- DDL not available for gis_watershed_partition
+-- Table: public."gis_watershed_partition"
+-- Table comment: 空间-流域分区数据
+CREATE TABLE public."gis_watershed_partition" (
+  "id" bigint NOT NULL,
+  "name" character varying(100),
+  "name_alias" character varying(100),
+  "area" double precision DEFAULT 0,
+  "remark" character varying(255),
+  "code" character varying(100),
+  "create_by" bigint DEFAULT 1,
+  "create_time" timestamp without time zone DEFAULT CURRENT_TIMESTAMP,
+  "update_by" bigint DEFAULT 1,
+  "update_time" timestamp without time zone DEFAULT CURRENT_TIMESTAMP,
+  "del_flag" character(1) DEFAULT '0'::bpchar,
+  "geom" geometry(MultiPolygon,4326),
+  "version" smallint DEFAULT 0
+);
+
+-- Column comments:
+--   id: 主键ID
+--   name: 名称
+--   name_alias: 别名
+--   area: 面积：平方千米
+--   remark: 备注
+--   code: 编码
+--   create_by: 创建人
+--   create_time: 创建时间
+--   update_by: 更新人
+--   update_time: 更新时间
+--   del_flag: 删除标记: 0-未删除、1-已删除
+--   geom: 图形
+--   version: 当前版本：从0开始递增
