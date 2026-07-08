@@ -1,263 +1,263 @@
 schema_name,table_name,column_name,data_type,candidate_comment,suggested_decision,human_decision,review_note
-public,_stg_yichang_river_import,Nextdown,"numeric(18,0)",下游河流ID,suggest_approve,,导入表字段名英文含义明确（如 RiverID/Shape_Leng 等），注释合理
-public,_stg_yichang_river_import,MAINRIVID,"numeric(18,0)",干流ID,suggest_approve,,导入表字段名英文含义明确（如 RiverID/Shape_Leng 等），注释合理
-public,_stg_yichang_river_import,Hydrocount,"numeric(18,0)",水文计数,suggest_approve,,导入表字段名英文含义明确（如 RiverID/Shape_Leng 等），注释合理
-public,_stg_yichang_river_import,Rclass,"numeric(18,0)",河流类别编码,suggest_approve,,导入表字段名英文含义明确（如 RiverID/Shape_Leng 等），注释合理
-public,_stg_yichang_river_import,Rlenth,"numeric(23,15)",河流长度,suggest_approve,,导入表字段名英文含义明确（如 RiverID/Shape_Leng 等），注释合理
-public,_stg_yichang_river_import,Hydrolenth,"numeric(23,15)",水文计算长度,suggest_approve,,导入表字段名英文含义明确（如 RiverID/Shape_Leng 等），注释合理
-public,_stg_yichang_river_import,Rcatch,"numeric(23,15)",汇水面积,suggest_approve,,导入表字段名英文含义明确（如 RiverID/Shape_Leng 等），注释合理
-public,_stg_yichang_river_import,TCatch,"numeric(23,15)",总汇水面积,suggest_approve,,导入表字段名英文含义明确（如 RiverID/Shape_Leng 等），注释合理
-public,_stg_yichang_river_import,Rname,character varying(80),河流名称,suggest_approve,,导入表字段名英文含义明确（如 RiverID/Shape_Leng 等），注释合理
-public,_stg_yichang_river_import,Shape_Leng,"numeric(23,15)",要素长度,suggest_approve,,导入表字段名英文含义明确（如 RiverID/Shape_Leng 等），注释合理
-public,_stg_yichang_river_import,RiverID,"numeric(18,0)",河流ID,suggest_approve,,导入表字段名英文含义明确（如 RiverID/Shape_Leng 等），注释合理
+public,_stg_yichang_river_import,Nextdown,"numeric(18,0)",下游河流ID,suggest_approve,approve,导入表字段名英文含义明确（如 RiverID/Shape_Leng 等），注释合理
+public,_stg_yichang_river_import,MAINRIVID,"numeric(18,0)",干流ID,suggest_approve,approve,导入表字段名英文含义明确（如 RiverID/Shape_Leng 等），注释合理
+public,_stg_yichang_river_import,Hydrocount,"numeric(18,0)",水文计数,suggest_approve,approve,导入表字段名英文含义明确（如 RiverID/Shape_Leng 等），注释合理
+public,_stg_yichang_river_import,Rclass,"numeric(18,0)",河流类别编码,suggest_approve,approve,导入表字段名英文含义明确（如 RiverID/Shape_Leng 等），注释合理
+public,_stg_yichang_river_import,Rlenth,"numeric(23,15)",河流长度,suggest_approve,approve,导入表字段名英文含义明确（如 RiverID/Shape_Leng 等），注释合理
+public,_stg_yichang_river_import,Hydrolenth,"numeric(23,15)",水文计算长度,suggest_approve,approve,导入表字段名英文含义明确（如 RiverID/Shape_Leng 等），注释合理
+public,_stg_yichang_river_import,Rcatch,"numeric(23,15)",汇水面积,suggest_approve,approve,导入表字段名英文含义明确（如 RiverID/Shape_Leng 等），注释合理
+public,_stg_yichang_river_import,TCatch,"numeric(23,15)",总汇水面积,suggest_approve,approve,导入表字段名英文含义明确（如 RiverID/Shape_Leng 等），注释合理
+public,_stg_yichang_river_import,Rname,character varying(80),河流名称,suggest_approve,approve,导入表字段名英文含义明确（如 RiverID/Shape_Leng 等），注释合理
+public,_stg_yichang_river_import,Shape_Leng,"numeric(23,15)",要素长度,suggest_approve,approve,导入表字段名英文含义明确（如 RiverID/Shape_Leng 等），注释合理
+public,_stg_yichang_river_import,RiverID,"numeric(18,0)",河流ID,suggest_approve,approve,导入表字段名英文含义明确（如 RiverID/Shape_Leng 等），注释合理
 public,_stg_yichang_river_import,RclassDISP,"numeric(18,0)",河流类别显示编码,suggest_hold,,导入表缩写字段，需确认语义
 public,_stg_yichang_river_import,OSMratio,"numeric(23,15)",OSM匹配比例,suggest_hold,,导入表缩写字段，需确认语义
 public,_stg_yichang_river_import,GRITratio,"numeric(23,15)",GRIT匹配比例,suggest_hold,,导入表缩写字段，需确认语义
 public,_stg_yichang_river_import,Hydroratio,"numeric(23,15)",水文匹配比例,suggest_hold,,导入表缩写字段，需确认语义
-public,_stg_yichang_river_import,NameList,character varying(80),河流名称列表,suggest_approve,,导入表字段名英文含义明确（如 RiverID/Shape_Leng 等），注释合理
+public,_stg_yichang_river_import,NameList,character varying(80),河流名称列表,suggest_approve,approve,导入表字段名英文含义明确（如 RiverID/Shape_Leng 等），注释合理
 public,_stg_yichang_river_import,OrignCNT,character varying(80),原始数据来源,suggest_hold,,导入表缩写字段，需确认语义
-public,_stg_yichang_river_import,SEG_ID,"numeric(18,0)",分段ID,suggest_approve,,导入表字段名英文含义明确（如 RiverID/Shape_Leng 等），注释合理
-public,_stg_yichang_river_import,LEN,"numeric(23,15)",分段长度,suggest_approve,,导入表字段名英文含义明确（如 RiverID/Shape_Leng 等），注释合理
+public,_stg_yichang_river_import,SEG_ID,"numeric(18,0)",分段ID,suggest_approve,approve,导入表字段名英文含义明确（如 RiverID/Shape_Leng 等），注释合理
+public,_stg_yichang_river_import,LEN,"numeric(23,15)",分段长度,suggest_approve,approve,导入表字段名英文含义明确（如 RiverID/Shape_Leng 等），注释合理
 public,_stg_yichang_river_import,FLIPPED,"numeric(18,0)",流向是否翻转,suggest_hold,,导入表缩写字段，需确认语义
-public,_stg_yichang_river_import,FROM_Z,"numeric(23,15)",起点高程,suggest_approve,,导入表字段名英文含义明确（如 RiverID/Shape_Leng 等），注释合理
-public,_stg_yichang_river_import,TO_Z,"numeric(23,15)",终点高程,suggest_approve,,导入表字段名英文含义明确（如 RiverID/Shape_Leng 等），注释合理
-public,_stg_yichang_river_import,STR_ORD,"numeric(18,0)",Strahler河流分级,suggest_approve,,导入表字段名英文含义明确（如 RiverID/Shape_Leng 等），注释合理
-public,_stg_yichang_river_import,SHR_ORD,"numeric(18,0)",Shreve河流分级,suggest_approve,,导入表字段名英文含义明确（如 RiverID/Shape_Leng 等），注释合理
-public,_stg_yichang_river_std,next_down,bigint,下游河流ID,suggest_approve,,标准化河流表字段，与 wst_layer_river 语义一致
-public,_stg_yichang_river_std,river_class,text,河流类别,suggest_approve,,标准化河流表字段，与 wst_layer_river 语义一致
-public,_stg_yichang_river_std,length_km,numeric,河流长度（公里）,suggest_approve,,标准化河流表字段，与 wst_layer_river 语义一致
-public,_stg_yichang_river_std,from_z,numeric,起点高程,suggest_approve,,标准化河流表字段，与 wst_layer_river 语义一致
-public,_stg_yichang_river_std,to_z,numeric,终点高程,suggest_approve,,标准化河流表字段，与 wst_layer_river 语义一致
+public,_stg_yichang_river_import,FROM_Z,"numeric(23,15)",起点高程,suggest_approve,approve,导入表字段名英文含义明确（如 RiverID/Shape_Leng 等），注释合理
+public,_stg_yichang_river_import,TO_Z,"numeric(23,15)",终点高程,suggest_approve,approve,导入表字段名英文含义明确（如 RiverID/Shape_Leng 等），注释合理
+public,_stg_yichang_river_import,STR_ORD,"numeric(18,0)",Strahler河流分级,suggest_approve,approve,导入表字段名英文含义明确（如 RiverID/Shape_Leng 等），注释合理
+public,_stg_yichang_river_import,SHR_ORD,"numeric(18,0)",Shreve河流分级,suggest_approve,approve,导入表字段名英文含义明确（如 RiverID/Shape_Leng 等），注释合理
+public,_stg_yichang_river_std,next_down,bigint,下游河流ID,suggest_approve,approve,标准化河流表字段，与 wst_layer_river 语义一致
+public,_stg_yichang_river_std,river_class,text,河流类别,suggest_approve,approve,标准化河流表字段，与 wst_layer_river 语义一致
+public,_stg_yichang_river_std,length_km,numeric,河流长度（公里）,suggest_approve,approve,标准化河流表字段，与 wst_layer_river 语义一致
+public,_stg_yichang_river_std,from_z,numeric,起点高程,suggest_approve,approve,标准化河流表字段，与 wst_layer_river 语义一致
+public,_stg_yichang_river_std,to_z,numeric,终点高程,suggest_approve,approve,标准化河流表字段，与 wst_layer_river 语义一致
 public,_stg_yichang_river_std,metadata_json,jsonb,元数据JSON,suggest_hold,,标准化表字段，需确认
 public,day_quality_setting,span_value,double precision,水质变化幅值,suggest_hold,,水质质量设置参数，需业务确认
-public,gis_ecologicalregion,service_target,character varying(255),生态服务目标,suggest_approve,,生态红线区域标准字段，英文含义明确
+public,gis_ecologicalregion,service_target,character varying(255),生态服务目标,suggest_approve,approve,生态红线区域标准字段，英文含义明确
 public,gis_ecologicalregion,area,double precision,面积,suggest_hold,,中置信度通用字段，建议抽查后批量确认
-public,gis_ecologicalregion,ecosystem_vegetation,character varying(255),生态系统植被概况,suggest_approve,,生态红线区域标准字段，英文含义明确
-public,gis_ecologicalregion,human_activities,character varying(255),人类活动影响描述,suggest_approve,,生态红线区域标准字段，英文含义明确
-public,gis_ecologicalregion,environment_problems,character varying(255),生态环境问题描述,suggest_approve,,生态红线区域标准字段，英文含义明确
-public,gis_ecologicalregion,control_measures,character varying(255),管控措施描述,suggest_approve,,生态红线区域标准字段，英文含义明确
-public,gis_headwaters,water_intake_quantity,double precision,年取水量,suggest_approve,,水源地字段，英文含义明确
-public,gis_headwaters,water_supply_population,bigint,供水人口数,suggest_approve,,水源地字段，英文含义明确
-public,gis_headwaters,is_protect_region,character(1),是否在保护区范围内,suggest_approve,,水源地字段，英文含义明确
-public,gis_naturereserve,department,character varying(100),主管部门,suggest_approve,,自然保护区标准字段，英文→中文映射明确（如 first_protect_animals=国家一级保护动物）
-public,gis_naturereserve,protect_target,character varying(255),主要保护对象,suggest_approve,,自然保护区标准字段，英文→中文映射明确（如 first_protect_animals=国家一级保护动物）
+public,gis_ecologicalregion,ecosystem_vegetation,character varying(255),生态系统植被概况,suggest_approve,approve,生态红线区域标准字段，英文含义明确
+public,gis_ecologicalregion,human_activities,character varying(255),人类活动影响描述,suggest_approve,approve,生态红线区域标准字段，英文含义明确
+public,gis_ecologicalregion,environment_problems,character varying(255),生态环境问题描述,suggest_approve,approve,生态红线区域标准字段，英文含义明确
+public,gis_ecologicalregion,control_measures,character varying(255),管控措施描述,suggest_approve,approve,生态红线区域标准字段，英文含义明确
+public,gis_headwaters,water_intake_quantity,double precision,年取水量,suggest_approve,approve,水源地字段，英文含义明确
+public,gis_headwaters,water_supply_population,bigint,供水人口数,suggest_approve,approve,水源地字段，英文含义明确
+public,gis_headwaters,is_protect_region,character(1),是否在保护区范围内,suggest_approve,approve,水源地字段，英文含义明确
+public,gis_naturereserve,department,character varying(100),主管部门,suggest_approve,approve,自然保护区标准字段，英文→中文映射明确（如 first_protect_animals=国家一级保护动物）
+public,gis_naturereserve,protect_target,character varying(255),主要保护对象,suggest_approve,approve,自然保护区标准字段，英文→中文映射明确（如 first_protect_animals=国家一级保护动物）
 public,gis_naturereserve,total_area,double precision,总面积,suggest_hold,,中置信度通用字段，建议抽查后批量确认
 public,gis_naturereserve,core_area,double precision,核心区面积,suggest_hold,,中置信度通用字段，建议抽查后批量确认
 public,gis_naturereserve,buffer_area,double precision,缓冲区面积,suggest_hold,,中置信度通用字段，建议抽查后批量确认
-public,gis_naturereserve,manage_org_name,character varying(100),管理机构名称,suggest_approve,,自然保护区标准字段，英文→中文映射明确（如 first_protect_animals=国家一级保护动物）
-public,gis_naturereserve,manage_org_type,character varying(8),管理机构类型,suggest_approve,,自然保护区标准字段，英文→中文映射明确（如 first_protect_animals=国家一级保护动物）
-public,gis_naturereserve,manage_org_level,character varying(8),管理机构级别,suggest_approve,,自然保护区标准字段，英文→中文映射明确（如 first_protect_animals=国家一级保护动物）
-public,gis_naturereserve,first_protect_animals,character varying(255),国家一级保护动物,suggest_approve,,自然保护区标准字段，英文→中文映射明确（如 first_protect_animals=国家一级保护动物）
-public,gis_naturereserve,second_protect_animals,character varying(255),国家二级保护动物,suggest_approve,,自然保护区标准字段，英文→中文映射明确（如 first_protect_animals=国家一级保护动物）
-public,gis_naturereserve,first_protect_plants,character varying(255),国家一级保护植物,suggest_approve,,自然保护区标准字段，英文→中文映射明确（如 first_protect_animals=国家一级保护动物）
-public,gis_naturereserve,second_protect_plants,character varying(255),国家二级保护植物,suggest_approve,,自然保护区标准字段，英文→中文映射明确（如 first_protect_animals=国家一级保护动物）
-public,gis_region,region_level,character varying(4),区划级别,suggest_approve,,行政区划标准字段
-public,gis_region,parent_code,character varying(60),父级区划编码,suggest_approve,,行政区划标准字段
-public,gis_region_population,city_population,double precision,城镇人口,suggest_approve,,人口统计标准字段（城镇/农村人口、面积、数量）
-public,gis_region_population,city_area,double precision,城镇面积,suggest_approve,,人口统计标准字段（城镇/农村人口、面积、数量）
-public,gis_region_population,city_quantity,double precision,城镇数量,suggest_approve,,人口统计标准字段（城镇/农村人口、面积、数量）
-public,gis_region_population,rural_population,double precision,农村人口,suggest_approve,,人口统计标准字段（城镇/农村人口、面积、数量）
-public,gis_region_population,rural_area,double precision,农村面积,suggest_approve,,人口统计标准字段（城镇/农村人口、面积、数量）
-public,gis_region_population,rural_quantity,double precision,农村数量,suggest_approve,,人口统计标准字段（城镇/农村人口、面积、数量）
-public,gis_watershed_partition_4,poly_area,double precision,多边形面积,suggest_approve,,"GIS标准缩写字段（如cc=行政区划编码, gb=国标编码等），跨表一致"
-public,layer_reservoir_provincial,cc,character varying(8),行政区划编码,suggest_approve,,"GIS标准缩写字段（如cc=行政区划编码, gb=国标编码等），跨表一致"
-public,layer_reservoir_provincial,gb,character varying(16),国标编码,suggest_approve,,"GIS标准缩写字段（如cc=行政区划编码, gb=国标编码等），跨表一致"
-public,layer_reservoir_provincial,bas,character varying(16),流域编码,suggest_approve,,"GIS标准缩写字段（如cc=行政区划编码, gb=国标编码等），跨表一致"
-public,layer_reservoir_provincial,period,character varying(16),时期/阶段,suggest_approve,,"GIS标准缩写字段（如cc=行政区划编码, gb=国标编码等），跨表一致"
-public,layer_reservoir_provincial,wq,character varying(8),水质类别,suggest_approve,,"GIS标准缩写字段（如cc=行政区划编码, gb=国标编码等），跨表一致"
-public,layer_reservoir_provincial,aheight,double precision,坝高,suggest_approve,,"GIS标准缩写字段（如cc=行政区划编码, gb=国标编码等），跨表一致"
-public,layer_reservoir_provincial,parea,double precision,永久占地面积,suggest_approve,,"GIS标准缩写字段（如cc=行政区划编码, gb=国标编码等），跨表一致"
-public,layer_reservoir_provincial,ec,character varying(16),生态分区编码,suggest_approve,,"GIS标准缩写字段（如cc=行政区划编码, gb=国标编码等），跨表一致"
-public,layer_reservoir_provincial,grade,character varying(8),等级/级别,suggest_approve,,"GIS标准缩写字段（如cc=行政区划编码, gb=国标编码等），跨表一致"
-public,layer_reservoir_provincial,mheight,double precision,最大坝高,suggest_approve,,"GIS标准缩写字段（如cc=行政区划编码, gb=国标编码等），跨表一致"
-public,layer_reservoir_provincial,sdtf,character varying(4),水系特征码,suggest_approve,,"GIS标准缩写字段（如cc=行政区划编码, gb=国标编码等），跨表一致"
-public,layer_reservoir_provincial,shrc,character varying(64),所属河湖编码,suggest_approve,,"GIS标准缩写字段（如cc=行政区划编码, gb=国标编码等），跨表一致"
-public,layer_reservoir_provincial,vol,double precision,库容,suggest_approve,,"GIS标准缩写字段（如cc=行政区划编码, gb=国标编码等），跨表一致"
-public,layer_reservoir_provincial,featid,character varying(16),要素唯一标识,suggest_approve,,"GIS标准缩写字段（如cc=行政区划编码, gb=国标编码等），跨表一致"
+public,gis_naturereserve,manage_org_name,character varying(100),管理机构名称,suggest_approve,approve,自然保护区标准字段，英文→中文映射明确（如 first_protect_animals=国家一级保护动物）
+public,gis_naturereserve,manage_org_type,character varying(8),管理机构类型,suggest_approve,approve,自然保护区标准字段，英文→中文映射明确（如 first_protect_animals=国家一级保护动物）
+public,gis_naturereserve,manage_org_level,character varying(8),管理机构级别,suggest_approve,approve,自然保护区标准字段，英文→中文映射明确（如 first_protect_animals=国家一级保护动物）
+public,gis_naturereserve,first_protect_animals,character varying(255),国家一级保护动物,suggest_approve,approve,自然保护区标准字段，英文→中文映射明确（如 first_protect_animals=国家一级保护动物）
+public,gis_naturereserve,second_protect_animals,character varying(255),国家二级保护动物,suggest_approve,approve,自然保护区标准字段，英文→中文映射明确（如 first_protect_animals=国家一级保护动物）
+public,gis_naturereserve,first_protect_plants,character varying(255),国家一级保护植物,suggest_approve,approve,自然保护区标准字段，英文→中文映射明确（如 first_protect_animals=国家一级保护动物）
+public,gis_naturereserve,second_protect_plants,character varying(255),国家二级保护植物,suggest_approve,approve,自然保护区标准字段，英文→中文映射明确（如 first_protect_animals=国家一级保护动物）
+public,gis_region,region_level,character varying(4),区划级别,suggest_approve,approve,行政区划标准字段
+public,gis_region,parent_code,character varying(60),父级区划编码,suggest_approve,approve,行政区划标准字段
+public,gis_region_population,city_population,double precision,城镇人口,suggest_approve,approve,人口统计标准字段（城镇/农村人口、面积、数量）
+public,gis_region_population,city_area,double precision,城镇面积,suggest_approve,approve,人口统计标准字段（城镇/农村人口、面积、数量）
+public,gis_region_population,city_quantity,double precision,城镇数量,suggest_approve,approve,人口统计标准字段（城镇/农村人口、面积、数量）
+public,gis_region_population,rural_population,double precision,农村人口,suggest_approve,approve,人口统计标准字段（城镇/农村人口、面积、数量）
+public,gis_region_population,rural_area,double precision,农村面积,suggest_approve,approve,人口统计标准字段（城镇/农村人口、面积、数量）
+public,gis_region_population,rural_quantity,double precision,农村数量,suggest_approve,approve,人口统计标准字段（城镇/农村人口、面积、数量）
+public,gis_watershed_partition_4,poly_area,double precision,多边形面积,suggest_approve,approve,"GIS标准缩写字段（如cc=行政区划编码, gb=国标编码等），跨表一致"
+public,layer_reservoir_provincial,cc,character varying(8),行政区划编码,suggest_approve,approve,"GIS标准缩写字段（如cc=行政区划编码, gb=国标编码等），跨表一致"
+public,layer_reservoir_provincial,gb,character varying(16),国标编码,suggest_approve,approve,"GIS标准缩写字段（如cc=行政区划编码, gb=国标编码等），跨表一致"
+public,layer_reservoir_provincial,bas,character varying(16),流域编码,suggest_approve,approve,"GIS标准缩写字段（如cc=行政区划编码, gb=国标编码等），跨表一致"
+public,layer_reservoir_provincial,period,character varying(16),时期/阶段,suggest_approve,approve,"GIS标准缩写字段（如cc=行政区划编码, gb=国标编码等），跨表一致"
+public,layer_reservoir_provincial,wq,character varying(8),水质类别,suggest_approve,approve,"GIS标准缩写字段（如cc=行政区划编码, gb=国标编码等），跨表一致"
+public,layer_reservoir_provincial,aheight,double precision,坝高,suggest_approve,approve,"GIS标准缩写字段（如cc=行政区划编码, gb=国标编码等），跨表一致"
+public,layer_reservoir_provincial,parea,double precision,永久占地面积,suggest_approve,approve,"GIS标准缩写字段（如cc=行政区划编码, gb=国标编码等），跨表一致"
+public,layer_reservoir_provincial,ec,character varying(16),生态分区编码,suggest_approve,approve,"GIS标准缩写字段（如cc=行政区划编码, gb=国标编码等），跨表一致"
+public,layer_reservoir_provincial,grade,character varying(8),等级/级别,suggest_approve,approve,"GIS标准缩写字段（如cc=行政区划编码, gb=国标编码等），跨表一致"
+public,layer_reservoir_provincial,mheight,double precision,最大坝高,suggest_approve,approve,"GIS标准缩写字段（如cc=行政区划编码, gb=国标编码等），跨表一致"
+public,layer_reservoir_provincial,sdtf,character varying(4),水系特征码,suggest_approve,approve,"GIS标准缩写字段（如cc=行政区划编码, gb=国标编码等），跨表一致"
+public,layer_reservoir_provincial,shrc,character varying(64),所属河湖编码,suggest_approve,approve,"GIS标准缩写字段（如cc=行政区划编码, gb=国标编码等），跨表一致"
+public,layer_reservoir_provincial,vol,double precision,库容,suggest_approve,approve,"GIS标准缩写字段（如cc=行政区划编码, gb=国标编码等），跨表一致"
+public,layer_reservoir_provincial,featid,character varying(16),要素唯一标识,suggest_approve,approve,"GIS标准缩写字段（如cc=行政区划编码, gb=国标编码等），跨表一致"
 public,layer_reservoir_provincial,elemstime,character varying(8),要素起始时间,suggest_hold,,字段缩写含义不够明确（elemstime），需业务确认
 public,layer_reservoir_provincial,elemetime,character varying(8),要素终止时间,suggest_hold,,字段缩写含义不够明确（elemetime），需业务确认
 public,layer_reservoir_provincial,ecrm,integer,生态红线管理编号,suggest_hold,,字段缩写含义不够明确（ecrm），需业务确认
 public,layer_reservoir_provincial,wrid,character varying(16),水资区划ID,suggest_hold,,字段缩写含义不够明确（wrid），需业务确认
 public,layer_reservoir_provincial,wrgr,integer,水资区划分组,suggest_hold,,字段缩写含义不够明确（wrgr），需业务确认
-public,layer_reservoir_provincial,areacode,bigint,行政区划代码,suggest_approve,,"GIS标准缩写字段（如cc=行政区划编码, gb=国标编码等），跨表一致"
-public,layer_reservoir_provincial,changetype,integer,变更类型,suggest_approve,,"GIS标准缩写字段（如cc=行政区划编码, gb=国标编码等），跨表一致"
+public,layer_reservoir_provincial,areacode,bigint,行政区划代码,suggest_approve,approve,"GIS标准缩写字段（如cc=行政区划编码, gb=国标编码等），跨表一致"
+public,layer_reservoir_provincial,changetype,integer,变更类型,suggest_approve,approve,"GIS标准缩写字段（如cc=行政区划编码, gb=国标编码等），跨表一致"
 public,layer_reservoir_provincial,changeatt,character varying(64),变更属性,suggest_hold,,中置信度通用字段，建议抽查后批量确认
-public,layer_reservoir_provincial,shape_leng,double precision,要素长度,suggest_approve,,"GIS标准缩写字段（如cc=行政区划编码, gb=国标编码等），跨表一致"
-public,layer_reservoir_provincial,shape_area,double precision,要素面积,suggest_approve,,"GIS标准缩写字段（如cc=行政区划编码, gb=国标编码等），跨表一致"
-public,layer_reservoir_provincial_label,cc,character varying(8),行政区划编码,suggest_approve,,"GIS标准缩写字段（如cc=行政区划编码, gb=国标编码等），跨表一致"
-public,layer_reservoir_provincial_label,gb,character varying(16),国标编码,suggest_approve,,"GIS标准缩写字段（如cc=行政区划编码, gb=国标编码等），跨表一致"
-public,layer_reservoir_provincial_label,bas,character varying(16),流域编码,suggest_approve,,"GIS标准缩写字段（如cc=行政区划编码, gb=国标编码等），跨表一致"
-public,layer_reservoir_provincial_label,period,character varying(16),时期/阶段,suggest_approve,,"GIS标准缩写字段（如cc=行政区划编码, gb=国标编码等），跨表一致"
-public,layer_reservoir_provincial_label,wq,character varying(8),水质类别,suggest_approve,,"GIS标准缩写字段（如cc=行政区划编码, gb=国标编码等），跨表一致"
-public,layer_reservoir_provincial_label,aheight,double precision,坝高,suggest_approve,,"GIS标准缩写字段（如cc=行政区划编码, gb=国标编码等），跨表一致"
-public,layer_reservoir_provincial_label,parea,double precision,永久占地面积,suggest_approve,,"GIS标准缩写字段（如cc=行政区划编码, gb=国标编码等），跨表一致"
-public,layer_reservoir_provincial_label,ec,character varying(16),生态分区编码,suggest_approve,,"GIS标准缩写字段（如cc=行政区划编码, gb=国标编码等），跨表一致"
-public,layer_reservoir_provincial_label,grade,character varying(8),等级/级别,suggest_approve,,"GIS标准缩写字段（如cc=行政区划编码, gb=国标编码等），跨表一致"
-public,layer_reservoir_provincial_label,mheight,double precision,最大坝高,suggest_approve,,"GIS标准缩写字段（如cc=行政区划编码, gb=国标编码等），跨表一致"
-public,layer_reservoir_provincial_label,sdtf,character varying(4),水系特征码,suggest_approve,,"GIS标准缩写字段（如cc=行政区划编码, gb=国标编码等），跨表一致"
-public,layer_reservoir_provincial_label,shrc,character varying(64),所属河湖编码,suggest_approve,,"GIS标准缩写字段（如cc=行政区划编码, gb=国标编码等），跨表一致"
-public,layer_reservoir_provincial_label,vol,double precision,库容,suggest_approve,,"GIS标准缩写字段（如cc=行政区划编码, gb=国标编码等），跨表一致"
-public,layer_reservoir_provincial_label,featid,character varying(16),要素唯一标识,suggest_approve,,"GIS标准缩写字段（如cc=行政区划编码, gb=国标编码等），跨表一致"
+public,layer_reservoir_provincial,shape_leng,double precision,要素长度,suggest_approve,approve,"GIS标准缩写字段（如cc=行政区划编码, gb=国标编码等），跨表一致"
+public,layer_reservoir_provincial,shape_area,double precision,要素面积,suggest_approve,approve,"GIS标准缩写字段（如cc=行政区划编码, gb=国标编码等），跨表一致"
+public,layer_reservoir_provincial_label,cc,character varying(8),行政区划编码,suggest_approve,approve,"GIS标准缩写字段（如cc=行政区划编码, gb=国标编码等），跨表一致"
+public,layer_reservoir_provincial_label,gb,character varying(16),国标编码,suggest_approve,approve,"GIS标准缩写字段（如cc=行政区划编码, gb=国标编码等），跨表一致"
+public,layer_reservoir_provincial_label,bas,character varying(16),流域编码,suggest_approve,approve,"GIS标准缩写字段（如cc=行政区划编码, gb=国标编码等），跨表一致"
+public,layer_reservoir_provincial_label,period,character varying(16),时期/阶段,suggest_approve,approve,"GIS标准缩写字段（如cc=行政区划编码, gb=国标编码等），跨表一致"
+public,layer_reservoir_provincial_label,wq,character varying(8),水质类别,suggest_approve,approve,"GIS标准缩写字段（如cc=行政区划编码, gb=国标编码等），跨表一致"
+public,layer_reservoir_provincial_label,aheight,double precision,坝高,suggest_approve,approve,"GIS标准缩写字段（如cc=行政区划编码, gb=国标编码等），跨表一致"
+public,layer_reservoir_provincial_label,parea,double precision,永久占地面积,suggest_approve,approve,"GIS标准缩写字段（如cc=行政区划编码, gb=国标编码等），跨表一致"
+public,layer_reservoir_provincial_label,ec,character varying(16),生态分区编码,suggest_approve,approve,"GIS标准缩写字段（如cc=行政区划编码, gb=国标编码等），跨表一致"
+public,layer_reservoir_provincial_label,grade,character varying(8),等级/级别,suggest_approve,approve,"GIS标准缩写字段（如cc=行政区划编码, gb=国标编码等），跨表一致"
+public,layer_reservoir_provincial_label,mheight,double precision,最大坝高,suggest_approve,approve,"GIS标准缩写字段（如cc=行政区划编码, gb=国标编码等），跨表一致"
+public,layer_reservoir_provincial_label,sdtf,character varying(4),水系特征码,suggest_approve,approve,"GIS标准缩写字段（如cc=行政区划编码, gb=国标编码等），跨表一致"
+public,layer_reservoir_provincial_label,shrc,character varying(64),所属河湖编码,suggest_approve,approve,"GIS标准缩写字段（如cc=行政区划编码, gb=国标编码等），跨表一致"
+public,layer_reservoir_provincial_label,vol,double precision,库容,suggest_approve,approve,"GIS标准缩写字段（如cc=行政区划编码, gb=国标编码等），跨表一致"
+public,layer_reservoir_provincial_label,featid,character varying(16),要素唯一标识,suggest_approve,approve,"GIS标准缩写字段（如cc=行政区划编码, gb=国标编码等），跨表一致"
 public,layer_reservoir_provincial_label,elemstime,character varying(8),要素起始时间,suggest_hold,,字段缩写含义不够明确（elemstime），需业务确认
 public,layer_reservoir_provincial_label,elemetime,character varying(8),要素终止时间,suggest_hold,,字段缩写含义不够明确（elemetime），需业务确认
 public,layer_reservoir_provincial_label,ecrm,integer,生态红线管理编号,suggest_hold,,字段缩写含义不够明确（ecrm），需业务确认
 public,layer_reservoir_provincial_label,wrid,character varying(16),水资区划ID,suggest_hold,,字段缩写含义不够明确（wrid），需业务确认
 public,layer_reservoir_provincial_label,wrgr,integer,水资区划分组,suggest_hold,,字段缩写含义不够明确（wrgr），需业务确认
-public,layer_reservoir_provincial_label,areacode,bigint,行政区划代码,suggest_approve,,"GIS标准缩写字段（如cc=行政区划编码, gb=国标编码等），跨表一致"
-public,layer_reservoir_provincial_label,changetype,integer,变更类型,suggest_approve,,"GIS标准缩写字段（如cc=行政区划编码, gb=国标编码等），跨表一致"
+public,layer_reservoir_provincial_label,areacode,bigint,行政区划代码,suggest_approve,approve,"GIS标准缩写字段（如cc=行政区划编码, gb=国标编码等），跨表一致"
+public,layer_reservoir_provincial_label,changetype,integer,变更类型,suggest_approve,approve,"GIS标准缩写字段（如cc=行政区划编码, gb=国标编码等），跨表一致"
 public,layer_reservoir_provincial_label,changeatt,character varying(64),变更属性,suggest_hold,,中置信度通用字段，建议抽查后批量确认
-public,layer_reservoir_provincial_合并,cc,character varying(8),行政区划编码,suggest_approve,,"GIS标准缩写字段（如cc=行政区划编码, gb=国标编码等），跨表一致"
-public,layer_reservoir_provincial_合并,gb,character varying(16),国标编码,suggest_approve,,"GIS标准缩写字段（如cc=行政区划编码, gb=国标编码等），跨表一致"
-public,layer_reservoir_provincial_合并,bas,character varying(16),流域编码,suggest_approve,,"GIS标准缩写字段（如cc=行政区划编码, gb=国标编码等），跨表一致"
-public,layer_reservoir_provincial_合并,period,character varying(16),时期/阶段,suggest_approve,,"GIS标准缩写字段（如cc=行政区划编码, gb=国标编码等），跨表一致"
-public,layer_reservoir_provincial_合并,wq,character varying(8),水质类别,suggest_approve,,"GIS标准缩写字段（如cc=行政区划编码, gb=国标编码等），跨表一致"
-public,layer_reservoir_provincial_合并,aheight,double precision,坝高,suggest_approve,,"GIS标准缩写字段（如cc=行政区划编码, gb=国标编码等），跨表一致"
-public,layer_reservoir_provincial_合并,parea,double precision,永久占地面积,suggest_approve,,"GIS标准缩写字段（如cc=行政区划编码, gb=国标编码等），跨表一致"
-public,layer_reservoir_provincial_合并,ec,character varying(16),生态分区编码,suggest_approve,,"GIS标准缩写字段（如cc=行政区划编码, gb=国标编码等），跨表一致"
-public,layer_reservoir_provincial_合并,grade,character varying(8),等级/级别,suggest_approve,,"GIS标准缩写字段（如cc=行政区划编码, gb=国标编码等），跨表一致"
-public,layer_reservoir_provincial_合并,mheight,double precision,最大坝高,suggest_approve,,"GIS标准缩写字段（如cc=行政区划编码, gb=国标编码等），跨表一致"
-public,layer_reservoir_provincial_合并,sdtf,character varying(4),水系特征码,suggest_approve,,"GIS标准缩写字段（如cc=行政区划编码, gb=国标编码等），跨表一致"
-public,layer_reservoir_provincial_合并,shrc,character varying(64),所属河湖编码,suggest_approve,,"GIS标准缩写字段（如cc=行政区划编码, gb=国标编码等），跨表一致"
-public,layer_reservoir_provincial_合并,vol,double precision,库容,suggest_approve,,"GIS标准缩写字段（如cc=行政区划编码, gb=国标编码等），跨表一致"
-public,layer_reservoir_provincial_合并,featid,character varying(16),要素唯一标识,suggest_approve,,"GIS标准缩写字段（如cc=行政区划编码, gb=国标编码等），跨表一致"
+public,layer_reservoir_provincial_合并,cc,character varying(8),行政区划编码,suggest_approve,approve,"GIS标准缩写字段（如cc=行政区划编码, gb=国标编码等），跨表一致"
+public,layer_reservoir_provincial_合并,gb,character varying(16),国标编码,suggest_approve,approve,"GIS标准缩写字段（如cc=行政区划编码, gb=国标编码等），跨表一致"
+public,layer_reservoir_provincial_合并,bas,character varying(16),流域编码,suggest_approve,approve,"GIS标准缩写字段（如cc=行政区划编码, gb=国标编码等），跨表一致"
+public,layer_reservoir_provincial_合并,period,character varying(16),时期/阶段,suggest_approve,approve,"GIS标准缩写字段（如cc=行政区划编码, gb=国标编码等），跨表一致"
+public,layer_reservoir_provincial_合并,wq,character varying(8),水质类别,suggest_approve,approve,"GIS标准缩写字段（如cc=行政区划编码, gb=国标编码等），跨表一致"
+public,layer_reservoir_provincial_合并,aheight,double precision,坝高,suggest_approve,approve,"GIS标准缩写字段（如cc=行政区划编码, gb=国标编码等），跨表一致"
+public,layer_reservoir_provincial_合并,parea,double precision,永久占地面积,suggest_approve,approve,"GIS标准缩写字段（如cc=行政区划编码, gb=国标编码等），跨表一致"
+public,layer_reservoir_provincial_合并,ec,character varying(16),生态分区编码,suggest_approve,approve,"GIS标准缩写字段（如cc=行政区划编码, gb=国标编码等），跨表一致"
+public,layer_reservoir_provincial_合并,grade,character varying(8),等级/级别,suggest_approve,approve,"GIS标准缩写字段（如cc=行政区划编码, gb=国标编码等），跨表一致"
+public,layer_reservoir_provincial_合并,mheight,double precision,最大坝高,suggest_approve,approve,"GIS标准缩写字段（如cc=行政区划编码, gb=国标编码等），跨表一致"
+public,layer_reservoir_provincial_合并,sdtf,character varying(4),水系特征码,suggest_approve,approve,"GIS标准缩写字段（如cc=行政区划编码, gb=国标编码等），跨表一致"
+public,layer_reservoir_provincial_合并,shrc,character varying(64),所属河湖编码,suggest_approve,approve,"GIS标准缩写字段（如cc=行政区划编码, gb=国标编码等），跨表一致"
+public,layer_reservoir_provincial_合并,vol,double precision,库容,suggest_approve,approve,"GIS标准缩写字段（如cc=行政区划编码, gb=国标编码等），跨表一致"
+public,layer_reservoir_provincial_合并,featid,character varying(16),要素唯一标识,suggest_approve,approve,"GIS标准缩写字段（如cc=行政区划编码, gb=国标编码等），跨表一致"
 public,layer_reservoir_provincial_合并,elemstime,character varying(8),要素起始时间,suggest_hold,,字段缩写含义不够明确（elemstime），需业务确认
 public,layer_reservoir_provincial_合并,elemetime,character varying(8),要素终止时间,suggest_hold,,字段缩写含义不够明确（elemetime），需业务确认
 public,layer_reservoir_provincial_合并,ecrm,integer,生态红线管理编号,suggest_hold,,字段缩写含义不够明确（ecrm），需业务确认
 public,layer_reservoir_provincial_合并,wrid,character varying(16),水资区划ID,suggest_hold,,字段缩写含义不够明确（wrid），需业务确认
 public,layer_reservoir_provincial_合并,wrgr,integer,水资区划分组,suggest_hold,,字段缩写含义不够明确（wrgr），需业务确认
-public,layer_reservoir_provincial_合并,areacode,bigint,行政区划代码,suggest_approve,,"GIS标准缩写字段（如cc=行政区划编码, gb=国标编码等），跨表一致"
-public,layer_reservoir_provincial_合并,changetype,integer,变更类型,suggest_approve,,"GIS标准缩写字段（如cc=行政区划编码, gb=国标编码等），跨表一致"
+public,layer_reservoir_provincial_合并,areacode,bigint,行政区划代码,suggest_approve,approve,"GIS标准缩写字段（如cc=行政区划编码, gb=国标编码等），跨表一致"
+public,layer_reservoir_provincial_合并,changetype,integer,变更类型,suggest_approve,approve,"GIS标准缩写字段（如cc=行政区划编码, gb=国标编码等），跨表一致"
 public,layer_reservoir_provincial_合并,changeatt,character varying(64),变更属性,suggest_hold,,中置信度通用字段，建议抽查后批量确认
-public,layer_river_provincial,cc,character varying(8),行政区划编码,suggest_approve,,"GIS标准缩写字段（如cc=行政区划编码, gb=国标编码等），跨表一致"
-public,layer_river_provincial,gb,character varying(16),国标编码,suggest_approve,,"GIS标准缩写字段（如cc=行政区划编码, gb=国标编码等），跨表一致"
-public,layer_river_provincial,bas,character varying(16),流域编码,suggest_approve,,"GIS标准缩写字段（如cc=行政区划编码, gb=国标编码等），跨表一致"
-public,layer_river_provincial,ec,character varying(16),生态分区编码,suggest_approve,,"GIS标准缩写字段（如cc=行政区划编码, gb=国标编码等），跨表一致"
-public,layer_river_provincial,grade,character varying(8),等级/级别,suggest_approve,,"GIS标准缩写字段（如cc=行政区划编码, gb=国标编码等），跨表一致"
-public,layer_river_provincial,period,character varying(16),时期/阶段,suggest_approve,,"GIS标准缩写字段（如cc=行政区划编码, gb=国标编码等），跨表一致"
-public,layer_river_provincial,shrc,character varying(64),所属河湖编码,suggest_approve,,"GIS标准缩写字段（如cc=行政区划编码, gb=国标编码等），跨表一致"
-public,layer_river_provincial,sdtf,character varying(4),水系特征码,suggest_approve,,"GIS标准缩写字段（如cc=行政区划编码, gb=国标编码等），跨表一致"
-public,layer_river_provincial,featid,character varying(16),要素唯一标识,suggest_approve,,"GIS标准缩写字段（如cc=行政区划编码, gb=国标编码等），跨表一致"
+public,layer_river_provincial,cc,character varying(8),行政区划编码,suggest_approve,approve,"GIS标准缩写字段（如cc=行政区划编码, gb=国标编码等），跨表一致"
+public,layer_river_provincial,gb,character varying(16),国标编码,suggest_approve,approve,"GIS标准缩写字段（如cc=行政区划编码, gb=国标编码等），跨表一致"
+public,layer_river_provincial,bas,character varying(16),流域编码,suggest_approve,approve,"GIS标准缩写字段（如cc=行政区划编码, gb=国标编码等），跨表一致"
+public,layer_river_provincial,ec,character varying(16),生态分区编码,suggest_approve,approve,"GIS标准缩写字段（如cc=行政区划编码, gb=国标编码等），跨表一致"
+public,layer_river_provincial,grade,character varying(8),等级/级别,suggest_approve,approve,"GIS标准缩写字段（如cc=行政区划编码, gb=国标编码等），跨表一致"
+public,layer_river_provincial,period,character varying(16),时期/阶段,suggest_approve,approve,"GIS标准缩写字段（如cc=行政区划编码, gb=国标编码等），跨表一致"
+public,layer_river_provincial,shrc,character varying(64),所属河湖编码,suggest_approve,approve,"GIS标准缩写字段（如cc=行政区划编码, gb=国标编码等），跨表一致"
+public,layer_river_provincial,sdtf,character varying(4),水系特征码,suggest_approve,approve,"GIS标准缩写字段（如cc=行政区划编码, gb=国标编码等），跨表一致"
+public,layer_river_provincial,featid,character varying(16),要素唯一标识,suggest_approve,approve,"GIS标准缩写字段（如cc=行政区划编码, gb=国标编码等），跨表一致"
 public,layer_river_provincial,elemstime,character varying(8),要素起始时间,suggest_hold,,字段缩写含义不够明确（elemstime），需业务确认
 public,layer_river_provincial,elemetime,character varying(8),要素终止时间,suggest_hold,,字段缩写含义不够明确（elemetime），需业务确认
 public,layer_river_provincial,ecrm,integer,生态红线管理编号,suggest_hold,,字段缩写含义不够明确（ecrm），需业务确认
 public,layer_river_provincial,wrid,character varying(16),水资区划ID,suggest_hold,,字段缩写含义不够明确（wrid），需业务确认
 public,layer_river_provincial,wrgr,integer,水资区划分组,suggest_hold,,字段缩写含义不够明确（wrgr），需业务确认
-public,layer_river_provincial,areacode,bigint,行政区划代码,suggest_approve,,"GIS标准缩写字段（如cc=行政区划编码, gb=国标编码等），跨表一致"
-public,layer_river_provincial,changetype,integer,变更类型,suggest_approve,,"GIS标准缩写字段（如cc=行政区划编码, gb=国标编码等），跨表一致"
+public,layer_river_provincial,areacode,bigint,行政区划代码,suggest_approve,approve,"GIS标准缩写字段（如cc=行政区划编码, gb=国标编码等），跨表一致"
+public,layer_river_provincial,changetype,integer,变更类型,suggest_approve,approve,"GIS标准缩写字段（如cc=行政区划编码, gb=国标编码等），跨表一致"
 public,layer_river_provincial,changeatt,character varying(64),变更属性,suggest_hold,,中置信度通用字段，建议抽查后批量确认
-public,layer_river_provincial_bak0617,cc,character varying(8),行政区划编码,suggest_approve,,"GIS标准缩写字段（如cc=行政区划编码, gb=国标编码等），跨表一致"
-public,layer_river_provincial_bak0617,gb,character varying(16),国标编码,suggest_approve,,"GIS标准缩写字段（如cc=行政区划编码, gb=国标编码等），跨表一致"
-public,layer_river_provincial_bak0617,bas,character varying(16),流域编码,suggest_approve,,"GIS标准缩写字段（如cc=行政区划编码, gb=国标编码等），跨表一致"
-public,layer_river_provincial_bak0617,ec,character varying(16),生态分区编码,suggest_approve,,"GIS标准缩写字段（如cc=行政区划编码, gb=国标编码等），跨表一致"
-public,layer_river_provincial_bak0617,grade,character varying(8),等级/级别,suggest_approve,,"GIS标准缩写字段（如cc=行政区划编码, gb=国标编码等），跨表一致"
-public,layer_river_provincial_bak0617,period,character varying(16),时期/阶段,suggest_approve,,"GIS标准缩写字段（如cc=行政区划编码, gb=国标编码等），跨表一致"
-public,layer_river_provincial_bak0617,shrc,character varying(64),所属河湖编码,suggest_approve,,"GIS标准缩写字段（如cc=行政区划编码, gb=国标编码等），跨表一致"
-public,layer_river_provincial_bak0617,sdtf,character varying(4),水系特征码,suggest_approve,,"GIS标准缩写字段（如cc=行政区划编码, gb=国标编码等），跨表一致"
-public,layer_river_provincial_bak0617,featid,character varying(16),要素唯一标识,suggest_approve,,"GIS标准缩写字段（如cc=行政区划编码, gb=国标编码等），跨表一致"
+public,layer_river_provincial_bak0617,cc,character varying(8),行政区划编码,suggest_approve,approve,"GIS标准缩写字段（如cc=行政区划编码, gb=国标编码等），跨表一致"
+public,layer_river_provincial_bak0617,gb,character varying(16),国标编码,suggest_approve,approve,"GIS标准缩写字段（如cc=行政区划编码, gb=国标编码等），跨表一致"
+public,layer_river_provincial_bak0617,bas,character varying(16),流域编码,suggest_approve,approve,"GIS标准缩写字段（如cc=行政区划编码, gb=国标编码等），跨表一致"
+public,layer_river_provincial_bak0617,ec,character varying(16),生态分区编码,suggest_approve,approve,"GIS标准缩写字段（如cc=行政区划编码, gb=国标编码等），跨表一致"
+public,layer_river_provincial_bak0617,grade,character varying(8),等级/级别,suggest_approve,approve,"GIS标准缩写字段（如cc=行政区划编码, gb=国标编码等），跨表一致"
+public,layer_river_provincial_bak0617,period,character varying(16),时期/阶段,suggest_approve,approve,"GIS标准缩写字段（如cc=行政区划编码, gb=国标编码等），跨表一致"
+public,layer_river_provincial_bak0617,shrc,character varying(64),所属河湖编码,suggest_approve,approve,"GIS标准缩写字段（如cc=行政区划编码, gb=国标编码等），跨表一致"
+public,layer_river_provincial_bak0617,sdtf,character varying(4),水系特征码,suggest_approve,approve,"GIS标准缩写字段（如cc=行政区划编码, gb=国标编码等），跨表一致"
+public,layer_river_provincial_bak0617,featid,character varying(16),要素唯一标识,suggest_approve,approve,"GIS标准缩写字段（如cc=行政区划编码, gb=国标编码等），跨表一致"
 public,layer_river_provincial_bak0617,elemstime,character varying(8),要素起始时间,suggest_hold,,字段缩写含义不够明确（elemstime），需业务确认
 public,layer_river_provincial_bak0617,elemetime,character varying(8),要素终止时间,suggest_hold,,字段缩写含义不够明确（elemetime），需业务确认
 public,layer_river_provincial_bak0617,ecrm,integer,生态红线管理编号,suggest_hold,,字段缩写含义不够明确（ecrm），需业务确认
 public,layer_river_provincial_bak0617,wrid,character varying(16),水资区划ID,suggest_hold,,字段缩写含义不够明确（wrid），需业务确认
 public,layer_river_provincial_bak0617,wrgr,integer,水资区划分组,suggest_hold,,字段缩写含义不够明确（wrgr），需业务确认
-public,layer_river_provincial_bak0617,areacode,bigint,行政区划代码,suggest_approve,,"GIS标准缩写字段（如cc=行政区划编码, gb=国标编码等），跨表一致"
-public,layer_river_provincial_bak0617,changetype,integer,变更类型,suggest_approve,,"GIS标准缩写字段（如cc=行政区划编码, gb=国标编码等），跨表一致"
+public,layer_river_provincial_bak0617,areacode,bigint,行政区划代码,suggest_approve,approve,"GIS标准缩写字段（如cc=行政区划编码, gb=国标编码等），跨表一致"
+public,layer_river_provincial_bak0617,changetype,integer,变更类型,suggest_approve,approve,"GIS标准缩写字段（如cc=行政区划编码, gb=国标编码等），跨表一致"
 public,layer_river_provincial_bak0617,changeatt,character varying(64),变更属性,suggest_hold,,中置信度通用字段，建议抽查后批量确认
-public,metadata_view,aliasname,character varying(255),别名,suggest_approve,,元数据视图标准字段，含义明确
-public,metadata_view,LayerName,character varying(255),图层名称,suggest_approve,,元数据视图标准字段，含义明确
-public,metadata_view,LayerType,character varying(255),图层类型,suggest_approve,,元数据视图标准字段，含义明确
+public,metadata_view,aliasname,character varying(255),别名,suggest_approve,approve,元数据视图标准字段，含义明确
+public,metadata_view,LayerName,character varying(255),图层名称,suggest_approve,approve,元数据视图标准字段，含义明确
+public,metadata_view,LayerType,character varying(255),图层类型,suggest_approve,approve,元数据视图标准字段，含义明确
 public,rs_outlet,quick_detect_desc,character varying(255),快速检测描述,suggest_hold,,需确认快速检测描述字段含义
 public,stg_ycsjtysj_sxhyzssj_base_ship_df,mmsi,character varying(500),"('海上移动通信业务标识（MMSI）', 'B_review')",suggest_reject,,候选注释为Python元组格式，疑似生成bug，需重新生成
-public,wh_meteorological_predict_day_records,winddirect_10m_24h,double precision,10米风向（24小时平均）,suggest_approve,,气象预测物理量字段，字段名精确映射到标准气象变量，注释质量高
-public,wh_meteorological_predict_day_records,winddirect8_10m_24h,character varying(16),10米8方位风向（24小时）,suggest_approve,,气象预测物理量字段，字段名精确映射到标准气象变量，注释质量高
-public,wh_meteorological_predict_day_records,winddirect16_10m_24h,character varying(16),10米16方位风向（24小时）,suggest_approve,,气象预测物理量字段，字段名精确映射到标准气象变量，注释质量高
-public,wh_meteorological_predict_day_records,hum_2m_24h,double precision,2米湿度（24小时平均）,suggest_approve,,气象预测物理量字段，字段名精确映射到标准气象变量，注释质量高
-public,wh_meteorological_predict_day_records,hum_2m_24h_min,double precision,2米湿度最小值（24小时）,suggest_approve,,气象预测物理量字段，字段名精确映射到标准气象变量，注释质量高
-public,wh_meteorological_predict_day_records,hum_2m_24h_max,double precision,2米湿度最大值（24小时）,suggest_approve,,气象预测物理量字段，字段名精确映射到标准气象变量，注释质量高
-public,wh_meteorological_predict_day_records,stapress_24h,double precision,地面气压（24小时平均）,suggest_approve,,气象预测物理量字段，字段名精确映射到标准气象变量，注释质量高
-public,wh_meteorological_predict_day_records,pressure_24h,double precision,海平面气压（24小时平均）,suggest_approve,,气象预测物理量字段，字段名精确映射到标准气象变量，注释质量高
-public,wh_meteorological_predict_day_records,p850inver_24h,double precision,850hPa逆温层高度（24小时）,suggest_approve,,气象预测物理量字段，字段名精确映射到标准气象变量，注释质量高
-public,wh_meteorological_predict_day_records,p925inver_24h,double precision,925hPa逆温层高度（24小时）,suggest_approve,,气象预测物理量字段，字段名精确映射到标准气象变量，注释质量高
-public,wh_meteorological_predict_day_records,swdown_24h,double precision,短波辐射通量（24小时平均）,suggest_approve,,气象预测物理量字段，字段名精确映射到标准气象变量，注释质量高
-public,wh_meteorological_predict_day_records,glw_24h,double precision,长波辐射通量（24小时平均）,suggest_approve,,气象预测物理量字段，字段名精确映射到标准气象变量，注释质量高
-public,wh_meteorological_predict_day_records,height_24h,double precision,边界层高度（24小时）,suggest_approve,,气象预测物理量字段，字段名精确映射到标准气象变量，注释质量高
-public,wh_meteorological_predict_day_records,rain_24h_total,double precision,24小时总降雨量,suggest_approve,,气象预测物理量字段，字段名精确映射到标准气象变量，注释质量高
-public,wh_meteorological_predict_day_records,dewpoint_24h,double precision,露点温度（24小时）,suggest_approve,,气象预测物理量字段，字段名精确映射到标准气象变量，注释质量高
-public,wh_meteorological_predict_day_records,lowcloud_24h,double precision,低云量（24小时）,suggest_approve,,气象预测物理量字段，字段名精确映射到标准气象变量，注释质量高
-public,wh_meteorological_predict_day_records,midcloud_24h,double precision,中云量（24小时）,suggest_approve,,气象预测物理量字段，字段名精确映射到标准气象变量，注释质量高
-public,wh_meteorological_predict_day_records,highcloud_24h,double precision,高云量（24小时）,suggest_approve,,气象预测物理量字段，字段名精确映射到标准气象变量，注释质量高
-public,wh_meteorological_predict_day_records,totalcloud_24h,double precision,总云量（24小时）,suggest_approve,,气象预测物理量字段，字段名精确映射到标准气象变量，注释质量高
-public,wh_meteorological_predict_day_records,tem_2m_24h,double precision,2米温度（24小时平均）,suggest_approve,,气象预测物理量字段，字段名精确映射到标准气象变量，注释质量高
-public,wh_meteorological_predict_day_records,tem_2m_24h_min,double precision,2米温度最小值（24小时）,suggest_approve,,气象预测物理量字段，字段名精确映射到标准气象变量，注释质量高
-public,wh_meteorological_predict_day_records,tem_2m_24h_max,double precision,2米温度最大值（24小时）,suggest_approve,,气象预测物理量字段，字段名精确映射到标准气象变量，注释质量高
-public,wh_meteorological_predict_day_records,visib_24h,double precision,能见度（24小时）,suggest_approve,,气象预测物理量字段，字段名精确映射到标准气象变量，注释质量高
-public,wh_meteorological_predict_day_records,pbl_24h,double precision,行星边界层高度（24小时平均）,suggest_approve,,气象预测物理量字段，字段名精确映射到标准气象变量，注释质量高
-public,wh_meteorological_predict_day_records,pbl_24h_min,double precision,行星边界层高度最小值（24小时）,suggest_approve,,气象预测物理量字段，字段名精确映射到标准气象变量，注释质量高
-public,wh_meteorological_predict_day_records,pbl_24h_max,double precision,行星边界层高度最大值（24小时）,suggest_approve,,气象预测物理量字段，字段名精确映射到标准气象变量，注释质量高
-public,wh_meteorological_predict_day_records,windspeed_10m_24h,double precision,10米风速（24小时平均）,suggest_approve,,气象预测物理量字段，字段名精确映射到标准气象变量，注释质量高
-public,wh_meteorological_predict_day_records,windspeed_10m_24h_min,double precision,10米风速最小值（24小时）,suggest_approve,,气象预测物理量字段，字段名精确映射到标准气象变量，注释质量高
-public,wh_meteorological_predict_day_records,windspeed_10m_24h_max,double precision,10米风速最大值（24小时）,suggest_approve,,气象预测物理量字段，字段名精确映射到标准气象变量，注释质量高
-public,wh_meteorological_predict_hour_records,winddirect_10m_1h,double precision,10米风向（小时）,suggest_approve,,气象预测物理量字段，字段名精确映射到标准气象变量，注释质量高
-public,wh_meteorological_predict_hour_records,winddirect8_10m_1h,character varying(16),10米8方位风向（小时）,suggest_approve,,气象预测物理量字段，字段名精确映射到标准气象变量，注释质量高
-public,wh_meteorological_predict_hour_records,winddirect16_10m_1h,character varying(16),10米16方位风向（小时）,suggest_approve,,气象预测物理量字段，字段名精确映射到标准气象变量，注释质量高
-public,wh_meteorological_predict_hour_records,windspeed_10m_1h,double precision,10米风速（小时）,suggest_approve,,气象预测物理量字段，字段名精确映射到标准气象变量，注释质量高
-public,wh_meteorological_predict_hour_records,tem_2m_1h,double precision,2米温度（小时）,suggest_approve,,气象预测物理量字段，字段名精确映射到标准气象变量，注释质量高
-public,wh_meteorological_predict_hour_records,hum_2m_1h,double precision,2米湿度（小时）,suggest_approve,,气象预测物理量字段，字段名精确映射到标准气象变量，注释质量高
-public,wh_meteorological_predict_hour_records,dewpoint_1h,double precision,露点温度（小时）,suggest_approve,,气象预测物理量字段，字段名精确映射到标准气象变量，注释质量高
-public,wh_meteorological_predict_hour_records,dtem_2m_1h,double precision,2米温度1小时变化,suggest_approve,,气象预测物理量字段，字段名精确映射到标准气象变量，注释质量高
-public,wh_meteorological_predict_hour_records,dtem_2m_3h,double precision,2米温度3小时变化,suggest_approve,,气象预测物理量字段，字段名精确映射到标准气象变量，注释质量高
-public,wh_meteorological_predict_hour_records,dtem_2m_6h,double precision,2米温度6小时变化,suggest_approve,,气象预测物理量字段，字段名精确映射到标准气象变量，注释质量高
-public,wh_meteorological_predict_hour_records,dtem_2m_12h,double precision,2米温度12小时变化,suggest_approve,,气象预测物理量字段，字段名精确映射到标准气象变量，注释质量高
-public,wh_meteorological_predict_hour_records,dtem_2m_24h,double precision,2米温度24小时变化,suggest_approve,,气象预测物理量字段，字段名精确映射到标准气象变量，注释质量高
-public,wh_meteorological_predict_hour_records,rain_1h,double precision,小时降雨量,suggest_approve,,气象预测物理量字段，字段名精确映射到标准气象变量，注释质量高
-public,wh_meteorological_predict_hour_records,rain_3h,double precision,3小时累计降雨量,suggest_approve,,气象预测物理量字段，字段名精确映射到标准气象变量，注释质量高
-public,wh_meteorological_predict_hour_records,rain_6h,double precision,6小时累计降雨量,suggest_approve,,气象预测物理量字段，字段名精确映射到标准气象变量，注释质量高
-public,wh_meteorological_predict_hour_records,rain_12h,double precision,12小时累计降雨量,suggest_approve,,气象预测物理量字段，字段名精确映射到标准气象变量，注释质量高
-public,wh_meteorological_predict_hour_records,rain_24h,double precision,24小时累计降雨量,suggest_approve,,气象预测物理量字段，字段名精确映射到标准气象变量，注释质量高
-public,wh_meteorological_predict_hour_records,lowcloud_1h,double precision,低云量（小时）,suggest_approve,,气象预测物理量字段，字段名精确映射到标准气象变量，注释质量高
-public,wh_meteorological_predict_hour_records,midcloud_1h,double precision,中云量（小时）,suggest_approve,,气象预测物理量字段，字段名精确映射到标准气象变量，注释质量高
-public,wh_meteorological_predict_hour_records,highcloud_1h,double precision,高云量（小时）,suggest_approve,,气象预测物理量字段，字段名精确映射到标准气象变量，注释质量高
-public,wh_meteorological_predict_hour_records,totalcloud_1h,double precision,总云量（小时）,suggest_approve,,气象预测物理量字段，字段名精确映射到标准气象变量，注释质量高
-public,wh_meteorological_predict_hour_records,pbl_1h,double precision,行星边界层高度（小时）,suggest_approve,,气象预测物理量字段，字段名精确映射到标准气象变量，注释质量高
-public,wh_meteorological_predict_hour_records,height_1h,double precision,边界层高度（小时）,suggest_approve,,气象预测物理量字段，字段名精确映射到标准气象变量，注释质量高
-public,wh_meteorological_predict_hour_records,pressure_1h,double precision,海平面气压（小时）,suggest_approve,,气象预测物理量字段，字段名精确映射到标准气象变量，注释质量高
-public,wh_meteorological_predict_hour_records,stapress_1h,double precision,地面气压（小时）,suggest_approve,,气象预测物理量字段，字段名精确映射到标准气象变量，注释质量高
-public,wh_meteorological_predict_hour_records,glw_1h,double precision,长波辐射通量（小时）,suggest_approve,,气象预测物理量字段，字段名精确映射到标准气象变量，注释质量高
-public,wh_meteorological_predict_hour_records,swdown_1h,double precision,短波辐射通量（小时）,suggest_approve,,气象预测物理量字段，字段名精确映射到标准气象变量，注释质量高
-public,wh_meteorological_predict_hour_records,p850inver_1h,double precision,850hPa逆温层高度（小时）,suggest_approve,,气象预测物理量字段，字段名精确映射到标准气象变量，注释质量高
-public,wh_meteorological_predict_hour_records,p925inver_1h,double precision,925hPa逆温层高度（小时）,suggest_approve,,气象预测物理量字段，字段名精确映射到标准气象变量，注释质量高
-public,wh_meteorological_predict_hour_records,visib_1h,double precision,能见度（小时）,suggest_approve,,气象预测物理量字段，字段名精确映射到标准气象变量，注释质量高
-public,wm_hydrological_info,last_maintenance_time,date,最近维护时间,suggest_approve,,测站信息标准字段（last_maintenance_time=最近维护时间）
-public,wm_meteorological_info,last_maintenance_time,date,最近维护时间,suggest_approve,,测站信息标准字段（last_maintenance_time=最近维护时间）
-public,wm_raster_inversion_config,type_code,bigint,反演类型编码,suggest_approve,,配置表类型编码
+public,wh_meteorological_predict_day_records,winddirect_10m_24h,double precision,10米风向（24小时平均）,suggest_approve,approve,气象预测物理量字段，字段名精确映射到标准气象变量，注释质量高
+public,wh_meteorological_predict_day_records,winddirect8_10m_24h,character varying(16),10米8方位风向（24小时）,suggest_approve,approve,气象预测物理量字段，字段名精确映射到标准气象变量，注释质量高
+public,wh_meteorological_predict_day_records,winddirect16_10m_24h,character varying(16),10米16方位风向（24小时）,suggest_approve,approve,气象预测物理量字段，字段名精确映射到标准气象变量，注释质量高
+public,wh_meteorological_predict_day_records,hum_2m_24h,double precision,2米湿度（24小时平均）,suggest_approve,approve,气象预测物理量字段，字段名精确映射到标准气象变量，注释质量高
+public,wh_meteorological_predict_day_records,hum_2m_24h_min,double precision,2米湿度最小值（24小时）,suggest_approve,approve,气象预测物理量字段，字段名精确映射到标准气象变量，注释质量高
+public,wh_meteorological_predict_day_records,hum_2m_24h_max,double precision,2米湿度最大值（24小时）,suggest_approve,approve,气象预测物理量字段，字段名精确映射到标准气象变量，注释质量高
+public,wh_meteorological_predict_day_records,stapress_24h,double precision,地面气压（24小时平均）,suggest_approve,approve,气象预测物理量字段，字段名精确映射到标准气象变量，注释质量高
+public,wh_meteorological_predict_day_records,pressure_24h,double precision,海平面气压（24小时平均）,suggest_approve,approve,气象预测物理量字段，字段名精确映射到标准气象变量，注释质量高
+public,wh_meteorological_predict_day_records,p850inver_24h,double precision,850hPa逆温层高度（24小时）,suggest_approve,approve,气象预测物理量字段，字段名精确映射到标准气象变量，注释质量高
+public,wh_meteorological_predict_day_records,p925inver_24h,double precision,925hPa逆温层高度（24小时）,suggest_approve,approve,气象预测物理量字段，字段名精确映射到标准气象变量，注释质量高
+public,wh_meteorological_predict_day_records,swdown_24h,double precision,短波辐射通量（24小时平均）,suggest_approve,approve,气象预测物理量字段，字段名精确映射到标准气象变量，注释质量高
+public,wh_meteorological_predict_day_records,glw_24h,double precision,长波辐射通量（24小时平均）,suggest_approve,approve,气象预测物理量字段，字段名精确映射到标准气象变量，注释质量高
+public,wh_meteorological_predict_day_records,height_24h,double precision,边界层高度（24小时）,suggest_approve,approve,气象预测物理量字段，字段名精确映射到标准气象变量，注释质量高
+public,wh_meteorological_predict_day_records,rain_24h_total,double precision,24小时总降雨量,suggest_approve,approve,气象预测物理量字段，字段名精确映射到标准气象变量，注释质量高
+public,wh_meteorological_predict_day_records,dewpoint_24h,double precision,露点温度（24小时）,suggest_approve,approve,气象预测物理量字段，字段名精确映射到标准气象变量，注释质量高
+public,wh_meteorological_predict_day_records,lowcloud_24h,double precision,低云量（24小时）,suggest_approve,approve,气象预测物理量字段，字段名精确映射到标准气象变量，注释质量高
+public,wh_meteorological_predict_day_records,midcloud_24h,double precision,中云量（24小时）,suggest_approve,approve,气象预测物理量字段，字段名精确映射到标准气象变量，注释质量高
+public,wh_meteorological_predict_day_records,highcloud_24h,double precision,高云量（24小时）,suggest_approve,approve,气象预测物理量字段，字段名精确映射到标准气象变量，注释质量高
+public,wh_meteorological_predict_day_records,totalcloud_24h,double precision,总云量（24小时）,suggest_approve,approve,气象预测物理量字段，字段名精确映射到标准气象变量，注释质量高
+public,wh_meteorological_predict_day_records,tem_2m_24h,double precision,2米温度（24小时平均）,suggest_approve,approve,气象预测物理量字段，字段名精确映射到标准气象变量，注释质量高
+public,wh_meteorological_predict_day_records,tem_2m_24h_min,double precision,2米温度最小值（24小时）,suggest_approve,approve,气象预测物理量字段，字段名精确映射到标准气象变量，注释质量高
+public,wh_meteorological_predict_day_records,tem_2m_24h_max,double precision,2米温度最大值（24小时）,suggest_approve,approve,气象预测物理量字段，字段名精确映射到标准气象变量，注释质量高
+public,wh_meteorological_predict_day_records,visib_24h,double precision,能见度（24小时）,suggest_approve,approve,气象预测物理量字段，字段名精确映射到标准气象变量，注释质量高
+public,wh_meteorological_predict_day_records,pbl_24h,double precision,行星边界层高度（24小时平均）,suggest_approve,approve,气象预测物理量字段，字段名精确映射到标准气象变量，注释质量高
+public,wh_meteorological_predict_day_records,pbl_24h_min,double precision,行星边界层高度最小值（24小时）,suggest_approve,approve,气象预测物理量字段，字段名精确映射到标准气象变量，注释质量高
+public,wh_meteorological_predict_day_records,pbl_24h_max,double precision,行星边界层高度最大值（24小时）,suggest_approve,approve,气象预测物理量字段，字段名精确映射到标准气象变量，注释质量高
+public,wh_meteorological_predict_day_records,windspeed_10m_24h,double precision,10米风速（24小时平均）,suggest_approve,approve,气象预测物理量字段，字段名精确映射到标准气象变量，注释质量高
+public,wh_meteorological_predict_day_records,windspeed_10m_24h_min,double precision,10米风速最小值（24小时）,suggest_approve,approve,气象预测物理量字段，字段名精确映射到标准气象变量，注释质量高
+public,wh_meteorological_predict_day_records,windspeed_10m_24h_max,double precision,10米风速最大值（24小时）,suggest_approve,approve,气象预测物理量字段，字段名精确映射到标准气象变量，注释质量高
+public,wh_meteorological_predict_hour_records,winddirect_10m_1h,double precision,10米风向（小时）,suggest_approve,approve,气象预测物理量字段，字段名精确映射到标准气象变量，注释质量高
+public,wh_meteorological_predict_hour_records,winddirect8_10m_1h,character varying(16),10米8方位风向（小时）,suggest_approve,approve,气象预测物理量字段，字段名精确映射到标准气象变量，注释质量高
+public,wh_meteorological_predict_hour_records,winddirect16_10m_1h,character varying(16),10米16方位风向（小时）,suggest_approve,approve,气象预测物理量字段，字段名精确映射到标准气象变量，注释质量高
+public,wh_meteorological_predict_hour_records,windspeed_10m_1h,double precision,10米风速（小时）,suggest_approve,approve,气象预测物理量字段，字段名精确映射到标准气象变量，注释质量高
+public,wh_meteorological_predict_hour_records,tem_2m_1h,double precision,2米温度（小时）,suggest_approve,approve,气象预测物理量字段，字段名精确映射到标准气象变量，注释质量高
+public,wh_meteorological_predict_hour_records,hum_2m_1h,double precision,2米湿度（小时）,suggest_approve,approve,气象预测物理量字段，字段名精确映射到标准气象变量，注释质量高
+public,wh_meteorological_predict_hour_records,dewpoint_1h,double precision,露点温度（小时）,suggest_approve,approve,气象预测物理量字段，字段名精确映射到标准气象变量，注释质量高
+public,wh_meteorological_predict_hour_records,dtem_2m_1h,double precision,2米温度1小时变化,suggest_approve,approve,气象预测物理量字段，字段名精确映射到标准气象变量，注释质量高
+public,wh_meteorological_predict_hour_records,dtem_2m_3h,double precision,2米温度3小时变化,suggest_approve,approve,气象预测物理量字段，字段名精确映射到标准气象变量，注释质量高
+public,wh_meteorological_predict_hour_records,dtem_2m_6h,double precision,2米温度6小时变化,suggest_approve,approve,气象预测物理量字段，字段名精确映射到标准气象变量，注释质量高
+public,wh_meteorological_predict_hour_records,dtem_2m_12h,double precision,2米温度12小时变化,suggest_approve,approve,气象预测物理量字段，字段名精确映射到标准气象变量，注释质量高
+public,wh_meteorological_predict_hour_records,dtem_2m_24h,double precision,2米温度24小时变化,suggest_approve,approve,气象预测物理量字段，字段名精确映射到标准气象变量，注释质量高
+public,wh_meteorological_predict_hour_records,rain_1h,double precision,小时降雨量,suggest_approve,approve,气象预测物理量字段，字段名精确映射到标准气象变量，注释质量高
+public,wh_meteorological_predict_hour_records,rain_3h,double precision,3小时累计降雨量,suggest_approve,approve,气象预测物理量字段，字段名精确映射到标准气象变量，注释质量高
+public,wh_meteorological_predict_hour_records,rain_6h,double precision,6小时累计降雨量,suggest_approve,approve,气象预测物理量字段，字段名精确映射到标准气象变量，注释质量高
+public,wh_meteorological_predict_hour_records,rain_12h,double precision,12小时累计降雨量,suggest_approve,approve,气象预测物理量字段，字段名精确映射到标准气象变量，注释质量高
+public,wh_meteorological_predict_hour_records,rain_24h,double precision,24小时累计降雨量,suggest_approve,approve,气象预测物理量字段，字段名精确映射到标准气象变量，注释质量高
+public,wh_meteorological_predict_hour_records,lowcloud_1h,double precision,低云量（小时）,suggest_approve,approve,气象预测物理量字段，字段名精确映射到标准气象变量，注释质量高
+public,wh_meteorological_predict_hour_records,midcloud_1h,double precision,中云量（小时）,suggest_approve,approve,气象预测物理量字段，字段名精确映射到标准气象变量，注释质量高
+public,wh_meteorological_predict_hour_records,highcloud_1h,double precision,高云量（小时）,suggest_approve,approve,气象预测物理量字段，字段名精确映射到标准气象变量，注释质量高
+public,wh_meteorological_predict_hour_records,totalcloud_1h,double precision,总云量（小时）,suggest_approve,approve,气象预测物理量字段，字段名精确映射到标准气象变量，注释质量高
+public,wh_meteorological_predict_hour_records,pbl_1h,double precision,行星边界层高度（小时）,suggest_approve,approve,气象预测物理量字段，字段名精确映射到标准气象变量，注释质量高
+public,wh_meteorological_predict_hour_records,height_1h,double precision,边界层高度（小时）,suggest_approve,approve,气象预测物理量字段，字段名精确映射到标准气象变量，注释质量高
+public,wh_meteorological_predict_hour_records,pressure_1h,double precision,海平面气压（小时）,suggest_approve,approve,气象预测物理量字段，字段名精确映射到标准气象变量，注释质量高
+public,wh_meteorological_predict_hour_records,stapress_1h,double precision,地面气压（小时）,suggest_approve,approve,气象预测物理量字段，字段名精确映射到标准气象变量，注释质量高
+public,wh_meteorological_predict_hour_records,glw_1h,double precision,长波辐射通量（小时）,suggest_approve,approve,气象预测物理量字段，字段名精确映射到标准气象变量，注释质量高
+public,wh_meteorological_predict_hour_records,swdown_1h,double precision,短波辐射通量（小时）,suggest_approve,approve,气象预测物理量字段，字段名精确映射到标准气象变量，注释质量高
+public,wh_meteorological_predict_hour_records,p850inver_1h,double precision,850hPa逆温层高度（小时）,suggest_approve,approve,气象预测物理量字段，字段名精确映射到标准气象变量，注释质量高
+public,wh_meteorological_predict_hour_records,p925inver_1h,double precision,925hPa逆温层高度（小时）,suggest_approve,approve,气象预测物理量字段，字段名精确映射到标准气象变量，注释质量高
+public,wh_meteorological_predict_hour_records,visib_1h,double precision,能见度（小时）,suggest_approve,approve,气象预测物理量字段，字段名精确映射到标准气象变量，注释质量高
+public,wm_hydrological_info,last_maintenance_time,date,最近维护时间,suggest_approve,approve,测站信息标准字段（last_maintenance_time=最近维护时间）
+public,wm_meteorological_info,last_maintenance_time,date,最近维护时间,suggest_approve,approve,测站信息标准字段（last_maintenance_time=最近维护时间）
+public,wm_raster_inversion_config,type_code,bigint,反演类型编码,suggest_approve,approve,配置表类型编码
 public,wm_raster_inversion_config,boundaries_json,text,分类边界值JSON,suggest_hold,,JSON配置字段，需确认存储内容（boundaries/labels/colors）
 public,wm_raster_inversion_config,labels_json,text,分类标签JSON,suggest_hold,,JSON配置字段，需确认存储内容（boundaries/labels/colors）
 public,wm_raster_inversion_config,colors_json,text,分类颜色JSON,suggest_hold,,JSON配置字段，需确认存储内容（boundaries/labels/colors）
-public,wm_station_info,last_maintenance_time,date,最近维护时间,suggest_approve,,测站信息标准字段（last_maintenance_time=最近维护时间）
-public,wm_waterbody_info,water_body_function,character varying(255),水体功能类别,suggest_approve,,水体信息字段，英文含义明确
-public,wm_waterbody_info,basin,character varying(255),所在流域,suggest_approve,,水体信息字段，英文含义明确
+public,wm_station_info,last_maintenance_time,date,最近维护时间,suggest_approve,approve,测站信息标准字段（last_maintenance_time=最近维护时间）
+public,wm_waterbody_info,water_body_function,character varying(255),水体功能类别,suggest_approve,approve,水体信息字段，英文含义明确
+public,wm_waterbody_info,basin,character varying(255),所在流域,suggest_approve,approve,水体信息字段，英文含义明确
 public,wm_waterbody_info,country,character varying(255),国家,suggest_hold,,中置信度通用字段，建议抽查后批量确认
-public,wm_waterbody_info,start_village,character varying(255),起点村/社区,suggest_approve,,水体信息字段，英文含义明确
-public,wm_waterbody_info,end_village,character varying(255),终点村/社区,suggest_approve,,水体信息字段，英文含义明确
-public,wm_waterbody_info,up_stream,character varying(255),上游水体,suggest_approve,,水体信息字段，英文含义明确
-public,wm_waterbody_info,down_stream,character varying(255),下游水体,suggest_approve,,水体信息字段，英文含义明确
+public,wm_waterbody_info,start_village,character varying(255),起点村/社区,suggest_approve,approve,水体信息字段，英文含义明确
+public,wm_waterbody_info,end_village,character varying(255),终点村/社区,suggest_approve,approve,水体信息字段，英文含义明确
+public,wm_waterbody_info,up_stream,character varying(255),上游水体,suggest_approve,approve,水体信息字段，英文含义明确
+public,wm_waterbody_info,down_stream,character varying(255),下游水体,suggest_approve,approve,水体信息字段，英文含义明确
 public,wm_waterquality_day_records,record_type,character(1),记录类型,suggest_hold,,水质记录状态/类型枚举，需确认枚举值含义
-public,wst_asset_trace_snap,snap_distance_m,"numeric(18,3)",吸附距离（米）,suggest_approve,,溯源吸附结果字段
-public,wst_asset_type_dict,asset_group,character varying(100),资产分组编码,suggest_approve,,资产类型字典标准字段
-public,wst_asset_type_dict,asset_group_name,character varying(100),资产分组名称,suggest_approve,,资产类型字典标准字段
-public,wst_asset_type_dict,group_sort,integer,分组排序号,suggest_approve,,资产类型字典标准字段
-public,wst_asset_type_dict,group_description,text,分组描述,suggest_approve,,资产类型字典标准字段
-public,wst_layer_river,next_down,bigint,下游河流ID,suggest_approve,,溯源图层河流标准字段
-public,wst_layer_river,river_class,character varying(64),河流类别,suggest_approve,,溯源图层河流标准字段
-public,wst_layer_river,length_km,numeric,河流长度（公里）,suggest_approve,,溯源图层河流标准字段
-public,wst_layer_river,from_z,numeric,起点高程,suggest_approve,,溯源图层河流标准字段
-public,wst_layer_river,to_z,numeric,终点高程,suggest_approve,,溯源图层河流标准字段
+public,wst_asset_trace_snap,snap_distance_m,"numeric(18,3)",吸附距离（米）,suggest_approve,approve,溯源吸附结果字段
+public,wst_asset_type_dict,asset_group,character varying(100),资产分组编码,suggest_approve,approve,资产类型字典标准字段
+public,wst_asset_type_dict,asset_group_name,character varying(100),资产分组名称,suggest_approve,approve,资产类型字典标准字段
+public,wst_asset_type_dict,group_sort,integer,分组排序号,suggest_approve,approve,资产类型字典标准字段
+public,wst_asset_type_dict,group_description,text,分组描述,suggest_approve,approve,资产类型字典标准字段
+public,wst_layer_river,next_down,bigint,下游河流ID,suggest_approve,approve,溯源图层河流标准字段
+public,wst_layer_river,river_class,character varying(64),河流类别,suggest_approve,approve,溯源图层河流标准字段
+public,wst_layer_river,length_km,numeric,河流长度（公里）,suggest_approve,approve,溯源图层河流标准字段
+public,wst_layer_river,from_z,numeric,起点高程,suggest_approve,approve,溯源图层河流标准字段
+public,wst_layer_river,to_z,numeric,终点高程,suggest_approve,approve,溯源图层河流标准字段
 public,wst_layer_river,metadata_json,jsonb,元数据JSON,suggest_hold,,需确认
-public,wst_trace_edge,direction_status,character varying(64),流向状态,suggest_approve,,溯源边拓扑字段（direction_status=流向状态）
-public,wst_trace_topology_issue,issue_type,character varying(64),问题类型,suggest_approve,,溯源拓扑问题字段，英文命名清晰（issue_type/issue_name等）
-public,wst_trace_topology_issue,issue_name,character varying(128),问题名称,suggest_approve,,溯源拓扑问题字段，英文命名清晰（issue_type/issue_name等）
-public,wst_trace_topology_issue,issue_level,character varying(32),问题级别,suggest_approve,,溯源拓扑问题字段，英文命名清晰（issue_type/issue_name等）
-public,wst_trace_topology_issue,object_type,character varying(64),关联对象类型,suggest_approve,,溯源拓扑问题字段，英文命名清晰（issue_type/issue_name等）
-public,wst_trace_topology_issue,object_id,bigint,关联对象ID,suggest_approve,,溯源拓扑问题字段，英文命名清晰（issue_type/issue_name等）
-public,wst_trace_topology_issue,object_name,character varying(255),关联对象名称,suggest_approve,,溯源拓扑问题字段，英文命名清晰（issue_type/issue_name等）
-public,wst_trace_topology_issue,issue_desc,text,问题详细描述,suggest_approve,,溯源拓扑问题字段，英文命名清晰（issue_type/issue_name等）
-public,wst_trace_topology_issue,metadata_json,jsonb,元数据JSON,suggest_approve,,溯源拓扑问题字段，英文命名清晰（issue_type/issue_name等）
+public,wst_trace_edge,direction_status,character varying(64),流向状态,suggest_approve,approve,溯源边拓扑字段（direction_status=流向状态）
+public,wst_trace_topology_issue,issue_type,character varying(64),问题类型,suggest_approve,approve,溯源拓扑问题字段，英文命名清晰（issue_type/issue_name等）
+public,wst_trace_topology_issue,issue_name,character varying(128),问题名称,suggest_approve,approve,溯源拓扑问题字段，英文命名清晰（issue_type/issue_name等）
+public,wst_trace_topology_issue,issue_level,character varying(32),问题级别,suggest_approve,approve,溯源拓扑问题字段，英文命名清晰（issue_type/issue_name等）
+public,wst_trace_topology_issue,object_type,character varying(64),关联对象类型,suggest_approve,approve,溯源拓扑问题字段，英文命名清晰（issue_type/issue_name等）
+public,wst_trace_topology_issue,object_id,bigint,关联对象ID,suggest_approve,approve,溯源拓扑问题字段，英文命名清晰（issue_type/issue_name等）
+public,wst_trace_topology_issue,object_name,character varying(255),关联对象名称,suggest_approve,approve,溯源拓扑问题字段，英文命名清晰（issue_type/issue_name等）
+public,wst_trace_topology_issue,issue_desc,text,问题详细描述,suggest_approve,approve,溯源拓扑问题字段，英文命名清晰（issue_type/issue_name等）
+public,wst_trace_topology_issue,metadata_json,jsonb,元数据JSON,suggest_approve,approve,溯源拓扑问题字段，英文命名清晰（issue_type/issue_name等）
