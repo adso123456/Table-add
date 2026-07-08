@@ -1,0 +1,2 @@
+index,table_name,column_name,proposed_comment,human_decision,human_note,final_check_status,final_note
+1,wst_trace_topology_issue,object_code,监控对象编码,approve,人工确认：object_code 表示监控对象编码；样本 rs_outlet_*/FA-*/HBYC* 符合业务预期,ready_for_manual_execution,安全检查通过，manifest 对齐

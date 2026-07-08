@@ -1,0 +1,6 @@
+﻿table_schema,table_name,table_type,relkind,relkind_desc,reason
+public,geography_columns,VIEW,v,view,PostGIS 元数据视图
+public,geometry_columns,VIEW,v,view,PostGIS 元数据视图
+public,v_wst_trace_edge_downstream,VIEW,v,view,视图（v_ 前缀命名规约）
+public,v_wst_trace_edge_upstream_conservative,VIEW,v,view,视图（v_ 前缀命名规约）
+public,v_wst_trace_edge_upstream_strict,VIEW,v,view,视图（v_ 前缀命名规约）

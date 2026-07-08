@@ -1,0 +1,23 @@
+﻿table_name,column_name,sample_value,sample_count_or_note
+stg_ycssthjj_wryzxjkpt_t_zxjc_s_w_1_df,cjsj,2022-04-14 11:38:46,"distinct_samples=1, non_null_est=1"
+stg_ycssthjj_wryzxjkpt_t_zxjc_s_w_1_df,xgsj,2022-04-14 11:38:46,"distinct_samples=1, non_null_est=1"
+wm_waterbody_info,water_body_name,官庄水库,non_null_est=45
+wm_waterbody_info,water_body_name,香溪河,
+wm_waterbody_info,water_body_name,良斗河,
+wm_waterbody_info,water_body_name,运河,
+wm_waterbody_info,water_body_name,漳河,
+wm_waterbody_info,water_body_name,天池河,
+wm_waterbody_info,water_body_name,胡家畈水库,
+wm_waterbody_info,water_body_name,九畹溪,
+wm_waterbody_info,water_body_name,沮漳河,
+wm_waterbody_info,water_body_name,付家河水库,
+wm_waterbody_info,water_body_name,吒溪河,
+wm_waterbody_info,water_body_name,清江,
+wm_waterbody_info,water_body_name,火山口水库,
+wm_waterbody_info,water_body_name,下牢溪,
+wm_waterbody_info,water_body_name,青干河,
+wm_waterbody_info,water_body_name,善溪冲水库,
+wm_waterbody_info,water_body_name,黄柏河,
+wm_waterbody_info,water_body_name,桥边河,
+wm_waterbody_info,water_body_name,巩河,
+wm_waterbody_info,water_body_name,黄家河,"distinct_samples=0, non_null_est=0"

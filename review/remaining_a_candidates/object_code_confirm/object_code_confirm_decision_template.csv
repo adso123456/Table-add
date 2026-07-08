@@ -1,0 +1,4 @@
+# human_decision 允许值: approve / reject / keep_manual
+# human_note: 人工确认备注
+table_name,column_name,proposed_comment,human_decision,human_note
+wst_trace_topology_issue,object_code,监控对象编码,approve,人工确认：object_code 表示监控对象编码；样本 rs_outlet_*/FA-*/HBYC* 符合业务预期

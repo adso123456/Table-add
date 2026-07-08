@@ -1,0 +1,13 @@
+metric_name,before_value,after_value,change_value,note
+total_tables,162,162,0,统计口径：public schema ordinary base tables
+total_columns,3445,3445,0,仅统计 ordinary base table 字段
+columns_with_comments,2846,2863,17,3 批次 17 条全部受控执行
+missing_column_comments,599,582,-17,4 条 A 档剩余（3 keep_manual + 1 reject）
+column_comment_coverage_pct,82.6,83.1,0.5,覆盖率提升 0.5 个百分点
+comments_added_total,0,17,17,13 approved + 3 manual + 1 object_code
+remaining_a_candidates,8,4,-4,已补 1 条(object_code)，3 条降为 keep_manual，1 条 reject
+remaining_b_conflicts,268,219,-49,批次执行中部分 B 档因 A 档补注释而消除
+remaining_c_unsafe,310,310,0,C 档无法自动补
+excluded_objects,5,5,0,2 PostGIS + 3 v_ 视图
+execution_errors,0,0,0,3 批次 17 条全部零 ERROR
+execution_warnings,0,0,0,3 批次 17 条全部零 WARNING

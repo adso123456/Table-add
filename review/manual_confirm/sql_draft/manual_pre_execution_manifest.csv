@@ -1,0 +1,4 @@
+index,table_name,column_name,proposed_comment,human_decision,human_note,final_check_status,final_note
+1,stg_ycssthjj_wryzxjkpt_t_zxjc_s_w_1_df,cjsj,创建时间,approve,人工确认：cjsj 表示创建时间,ready_for_manual_execution,安全检查通过，manifest 对齐
+2,stg_ycssthjj_wryzxjkpt_t_zxjc_s_w_1_df,xgsj,修改时间,approve,人工确认：xgsj 表示修改时间,ready_for_manual_execution,安全检查通过，manifest 对齐
+3,wm_waterbody_info,water_body_name,水体名称,approve,人工确认：water_body_name 表示水体名称,ready_for_manual_execution,安全检查通过，manifest 对齐

@@ -1,0 +1,7 @@
+﻿table_schema,table_name,column_name,proposed_comment,evidence_count,evidence_tables,risk_level,reason,manual_check_question
+public,gis_region_population,region_id,所属区域id,1,wm_section_info,medium,evidence_count=1 + 跨业务域(gis_region vs wm_section) + region_id 在不同业务上下文中可能指向不同区域体系,gis_region_population 的 region_id 是否与 wm_section_info 的 '所属区域id' 指向同一区域编码体系？
+public,gis_region_population,year,年份,2,"rs_livestock_info_yc, wm_section_wq_info",medium,跨业务域(gis_region vs rs_livestock/wm_section) + year 字段在不同表中可能代表统计年份/数据年份/建设年份等不同语义,gis_region_population 的 year 字段代表什么年份(统计年份?数据年份?)?
+public,stg_ycssthjj_wryzxjkpt_t_zxjc_s_w_1_df,cjsj,创建时间,1,stg_ycssthjj_ltwsjgpt_t_sjzx_wry_jbxx_df,low,evidence_count=1 + 拼音缩写 cjsj(创建时间) + 虽同属 stg_ycssthjj 模块但证据量不足以自动批准,cjsj 在该 staging 表中是否确实代表'创建时间'？
+public,stg_ycssthjj_wryzxjkpt_t_zxjc_s_w_1_df,xgsj,修改时间,1,stg_ycssthjj_ltwsjgpt_t_sjzx_wry_jbxx_df,low,evidence_count=1 + 拼音缩写 xgsj(修改时间) + 虽同属 stg_ycssthjj 模块但证据量不足以自动批准,xgsj 在该 staging 表中是否确实代表'修改时间'？
+public,wm_waterbody_info,water_body_name,水体名称,1,wm_station_info_v2,low,evidence_count=1 + 非同一表族(waterbody_info vs station_info_v2) + 虽同属 wm 但子模块不同,wm_waterbody_info 的 water_body_name 是否确实代表'水体名称'？(语义自明，确认即可)
+public,wst_trace_node,asset_id,资产ID，关联 wst_asset.id,1,wst_asset_trace_snap,medium,evidence_count=1 + asset_id 非通用审计字段 + 虽同属 wst 且语义合理(trace_node 引用 wst_asset)，但按规则单证据不可直接批准,wst_trace_node.asset_id 是否关联 wst_asset.id？

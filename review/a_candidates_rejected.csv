@@ -1,0 +1,3 @@
+﻿table_schema,table_name,column_name,proposed_comment,reason
+public,wm_raster_inversion_config,type_code,关系大类编码，例如 ownership、discharge、monitoring,跨业务域严重不匹配 - 目标表为 wm_raster(栅格反演配置)，证据表为 wst_relation_type_dict(关系大类字典) + type_code 在栅格配置上下文中不可能表示 '关系大类编码' + 字段语义完全不匹配
+public,wst_trace_topology_issue,object_code,监控对象编码,跨业务域严重不匹配 - 目标表为 wst_trace(水安全追溯模块)，证据表为 stg_sslhhpj(第三方项目 staging 表) + object_code 在拓扑问题表中极可能表示拓扑错误对象编码而非监控对象编码

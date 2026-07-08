@@ -1,0 +1,7 @@
+﻿table_name,column_name,proposed_comment,data_type,table_comment,evidence_tables,same_name_comment_summary,conflict_found,explicit_fk_found,fk_reference,sample_support_level,evidence_strength,risk_level,recommendation,reason
+gis_region_population,region_id,所属区域id,bigint,,wm_section_info,所属区域id,False,False,未发现显式外键,none,moderate,medium,keep_manual,证据表数量不足; 需人工确认后决定
+gis_region_population,year,年份,bigint,,"rs_livestock_info_yc, wm_section_wq_info",年份,False,False,未发现显式外键,none,moderate,medium,keep_manual,需人工确认后决定
+stg_ycssthjj_wryzxjkpt_t_zxjc_s_w_1_df,cjsj,创建时间,timestamp without time zone,监控数据_日数据_污染物_,stg_ycssthjj_ltwsjgpt_t_sjzx_wry_jbxx_df,创建时间,False,False,未发现显式外键,low,moderate,low,likely_approve_after_human_confirm,同名字段有一致注释(1种); 人工确认后可批准
+stg_ycssthjj_wryzxjkpt_t_zxjc_s_w_1_df,xgsj,修改时间,timestamp without time zone,监控数据_日数据_污染物_,stg_ycssthjj_ltwsjgpt_t_sjzx_wry_jbxx_df,修改时间,False,False,未发现显式外键,low,moderate,low,likely_approve_after_human_confirm,同名字段有一致注释(1种); 人工确认后可批准
+wm_waterbody_info,water_body_name,水体名称,character varying,水体信息实体类,wm_station_info_v2,水体名称,False,False,未发现显式外键,high,strong,low,likely_approve_after_human_confirm,样本值支持(20 distinct values); 同名字段有一致注释(1种); 人工确认后可批准
+wst_trace_node,asset_id,资产ID，关联 wst_asset.id,bigint,水安全溯源模块-溯源拓扑节点表，用于存储河网、管网、园区排污河流、排口挂接点、断面挂接点、园区出口等 pgRouting 节点,wst_asset_trace_snap,资产ID，关联 wst_asset.id,False,False,未发现显式外键,none,moderate,medium,keep_manual,证据表数量不足; 需人工确认后决定

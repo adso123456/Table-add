@@ -1,0 +1,5 @@
+﻿table_schema,table_name,column_name,proposed_comment,evidence_count,evidence_tables,evidence_comments,confidence,reason,action
+public,gis_region_population,region_id,所属区域id,1,wm_section_info,所属区域id,high,同名字段在 1 张表中有一致注释,candidate_only
+public,gis_region_population,year,年份,2,"rs_livestock_info_yc, wm_section_wq_info",年份,high,同名字段在 2 张表中有一致注释,candidate_only
+public,wm_raster_inversion_config,type_code,关系大类编码，例如 ownership、discharge、monitoring,1,wst_relation_type_dict,关系大类编码，例如 ownership、discharge、monitoring,high,同名字段在 1 张表中有一致注释,candidate_only
+public,wst_trace_node,asset_id,资产ID，关联 wst_asset.id,1,wst_asset_trace_snap,资产ID，关联 wst_asset.id,high,同名字段在 1 张表中有一致注释,candidate_only

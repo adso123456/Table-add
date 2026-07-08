@@ -1,0 +1,6 @@
+table_name,column_name,proposed_comment,recommendation,manual_question,evidence_summary,if_confirmed_next_action,if_not_confirmed_next_action
+gis_region_population,region_id,所属区域id,keep_manual,（空表，无法自动确认）gis_region_population 表的 region_id 实际指向哪个表的主键？,证据表 wm_section_info 同字段名同类型(bigint)注释为"所属区域id"。但目标表为空，无样本，无显式外键。,不适用。等待 DBA 确认字段含义后手工补注释。,不适用。保持 keep_manual。
+gis_region_population,year,年份,keep_manual,（空表，无法自动确认）gis_region_population 表的 year 字段具体含义是什么？是统计年份还是其他？,两个证据表同字段名一致注释"年份"。但目标表为空，无样本，无显式外键。,不适用。等待 DBA 确认字段含义后手工补注释。,不适用。保持 keep_manual。
+wm_raster_inversion_config,type_code,关系大类编码...,reject_candidate,（已拒绝，无需确认）,证据表 type_code 是 varchar 含文本示例值，目标字段是 bigint——类型不匹配。业务域不相关（栅格配置 vs 关系类型字典）。,（不适用）,无需操作。该字段需 DBA 确认实际含义后手工补注释。
+wst_trace_node,asset_id,资产ID，关联 wst_asset.id,keep_manual,（空表，无法自动确认）wst_trace_node 表的 asset_id 是否确实关联 wst_asset 表的主键 id？,同业务域证据表 wst_asset_trace_snap 同类型(bigint)注释明确引用 wst_asset.id。但目标表为空，无样本，无显式外键。,不适用。等待 DBA 确认引用关系后手工补注释。,不适用。保持 keep_manual。
+wst_trace_topology_issue,object_code,监控对象编码,likely_approve_after_human_confirm,wst_trace_topology_issue 表的 object_code 是否表示监控对象编码？样本值（rs_outlet_*/FA-*/HBYC*）是否符合预期？,证据表同字段名同类型(varchar)注释"监控对象编码"。样本值包含排口编码(rs_outlet_*)、设施编码(FA-*)、项目编码(HBYC*)——均符合监控对象编码语义。,生成 COMMENT ON COLUMN SQL 进入人工确认执行阶段,保持 keep_manual，等待确认后手动补注释

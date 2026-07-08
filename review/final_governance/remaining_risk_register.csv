@@ -1,0 +1,14 @@
+risk_category,table_name,column_name,current_status,reason,suggested_owner,next_action
+keep_manual_A_candidate,gis_region_population,region_id,keep_manual,表为空(sample_support_level=none)；无显式外键；仅基于同名字段推断,DBA/业务方,人工确认 region_id 实际含义后手工补注释
+keep_manual_A_candidate,gis_region_population,year,keep_manual,表为空(sample_support_level=none)；无显式外键；虽有2个证据表但不满足自动升级条件,DBA/业务方,人工确认 year 实际含义后手工补注释
+keep_manual_A_candidate,wst_trace_node,asset_id,keep_manual,表为空(sample_support_level=none)；无显式外键；同域证据质量高但缺乏样本和外键支持,DBA/业务方,人工确认 asset_id 引用关系后手工补注释
+keep_manual_A_candidate,wm_raster_inversion_config,type_code,reject_candidate,类型不匹配(bigint vs varchar证据)；业务域不相关；证据注释含文本示例值无法存入bigint,DBA,该字段实际含义需DBA确认后手工补注释
+B_tier_conflict_risk,,,219 fields with conflicting comments,219个字段名在不同表中存在不同注释，无法安全推断目标表应使用哪个,DBA/业务方,逐表人工确认每个冲突字段的实际含义后分别补注释
+C_tier_unsafe_risk,,,310 fields with no evidence,310个字段在库内无任何同名字段有注释可参考，无法安全推断,DBA/业务方,需业务方逐字段确认含义后手工补注释
+empty_table_sample_risk,gis_region_population,,表为空(0 rows),无法通过样本值验证任何字段注释的准确性，所有字段注释纯靠推断,DBA,待表有数据后再补注释
+empty_table_sample_risk,wm_raster_inversion_config,,表为空(0 rows),无法通过样本值验证字段注释；当前所有9个字段均无注释,DBA,待表有数据后再补注释
+empty_table_sample_risk,wst_trace_node,,表为空(0 rows),无法通过样本值验证字段注释；仅asset_id缺注释(24/25已补)，但空表无法验证外键,DBA,待表有数据后再补注释
+no_explicit_fk_risk,gis_region_population,region_id,无显式外键,region_id可能引用gis_region系列表主键，但未在pg_constraint中验证,DBA,确认外键关系后再补注释
+no_explicit_fk_risk,wst_trace_node,asset_id,无显式外键,注释推断引用wst_asset.id，但未在pg_constraint中验证,DBA,确认外键关系后再补注释
+training_pollution_risk,,,582 missing fields,B档219+C档310=529个字段若被误纳入训练将产生错误注释建议,Vanna训练管理,训练前必须建立白名单排除清单
+training_pollution_risk,,,4 remaining A candidates,3条keep_manual+1条reject若被自动纳入训练将产生低质量注释,Vanna训练管理,训练前必须排除所有keep_manual和reject字段

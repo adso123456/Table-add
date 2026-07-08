@@ -1,0 +1,7 @@
+﻿table_name,column_name,proposed_comment,manual_question,evidence_summary,recommended_human_answer,if_confirmed_next_action,if_not_confirmed_next_action
+gis_region_population,region_id,所属区域id,gis_region_population 的 region_id 是否与 wm_section_info 的 '所属区域id' 指向同一区域编码体系？,同名字段: 所属区域id; 冲突: False; FK: 未发现显式外键; 样本: none (0 distinct),需业务方给出准确注释,仍建议由业务方确认后手动补注释；如确认可参照 approved 流程,保持 needs_manual，等待业务方提供准确注释
+gis_region_population,year,年份,gis_region_population 的 year 字段代表什么年份(统计年份?数据年份?)?,同名字段: 年份; 冲突: False; FK: 未发现显式外键; 样本: none (0 distinct),需业务方给出准确注释,仍建议由业务方确认后手动补注释；如确认可参照 approved 流程,保持 needs_manual，等待业务方提供准确注释
+stg_ycssthjj_wryzxjkpt_t_zxjc_s_w_1_df,cjsj,创建时间,cjsj 在该 staging 表中是否确实代表'创建时间'？,同名字段: 创建时间; 冲突: False; FK: 未发现显式外键; 样本: low (1 distinct),是（确认 proposed_comment 正确）,可升级为 approved，参照 A 档流程生成 COMMENT ON SQL,保持 needs_manual，由业务方定义注释
+stg_ycssthjj_wryzxjkpt_t_zxjc_s_w_1_df,xgsj,修改时间,xgsj 在该 staging 表中是否确实代表'修改时间'？,同名字段: 修改时间; 冲突: False; FK: 未发现显式外键; 样本: low (1 distinct),是（确认 proposed_comment 正确）,可升级为 approved，参照 A 档流程生成 COMMENT ON SQL,保持 needs_manual，由业务方定义注释
+wm_waterbody_info,water_body_name,水体名称,wm_waterbody_info 的 water_body_name 是否确实代表'水体名称'？(语义自明，确认即可),同名字段: 水体名称; 冲突: False; FK: 未发现显式外键; 样本: high (20 distinct),是（确认 proposed_comment 正确）,可升级为 approved，参照 A 档流程生成 COMMENT ON SQL,保持 needs_manual，由业务方定义注释
+wst_trace_node,asset_id,资产ID，关联 wst_asset.id,wst_trace_node.asset_id 是否关联 wst_asset.id？,同名字段: 资产ID，关联 wst_asset.id; 冲突: False; FK: 未发现显式外键; 样本: none (0 distinct),需业务方给出准确注释,仍建议由业务方确认后手动补注释；如确认可参照 approved 流程,保持 needs_manual，等待业务方提供准确注释

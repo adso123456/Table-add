@@ -1,0 +1,583 @@
+﻿table_schema,table_name,column_name,data_type,udt_name,table_comment,table_prefix
+public,_stg_yichang_river_counts,layer_inserted,integer,int4,,_stg
+public,_stg_yichang_river_counts,layer_updated,integer,int4,,_stg
+public,_stg_yichang_river_counts,asset_inserted,integer,int4,,_stg
+public,_stg_yichang_river_counts,asset_updated,integer,int4,,_stg
+public,_stg_yichang_river_counts,skipped,integer,int4,,_stg
+public,_stg_yichang_river_import,gid,integer,int4,,_stg
+public,_stg_yichang_river_import,OBJECTID,numeric,numeric,,_stg
+public,_stg_yichang_river_import,Nextdown,numeric,numeric,,_stg
+public,_stg_yichang_river_import,MAINRIVID,numeric,numeric,,_stg
+public,_stg_yichang_river_import,Hydrocount,numeric,numeric,,_stg
+public,_stg_yichang_river_import,Rclass,numeric,numeric,,_stg
+public,_stg_yichang_river_import,Rlenth,numeric,numeric,,_stg
+public,_stg_yichang_river_import,Hydrolenth,numeric,numeric,,_stg
+public,_stg_yichang_river_import,Rcatch,numeric,numeric,,_stg
+public,_stg_yichang_river_import,TCatch,numeric,numeric,,_stg
+public,_stg_yichang_river_import,Rname,character varying,varchar,,_stg
+public,_stg_yichang_river_import,Shape_Leng,numeric,numeric,,_stg
+public,_stg_yichang_river_import,RiverID,numeric,numeric,,_stg
+public,_stg_yichang_river_import,RclassDISP,numeric,numeric,,_stg
+public,_stg_yichang_river_import,OSMratio,numeric,numeric,,_stg
+public,_stg_yichang_river_import,GRITratio,numeric,numeric,,_stg
+public,_stg_yichang_river_import,Hydroratio,numeric,numeric,,_stg
+public,_stg_yichang_river_import,NameList,character varying,varchar,,_stg
+public,_stg_yichang_river_import,OrignCNT,character varying,varchar,,_stg
+public,_stg_yichang_river_import,SEG_ID,numeric,numeric,,_stg
+public,_stg_yichang_river_import,LEN,numeric,numeric,,_stg
+public,_stg_yichang_river_import,FLIPPED,numeric,numeric,,_stg
+public,_stg_yichang_river_import,FROM_Z,numeric,numeric,,_stg
+public,_stg_yichang_river_import,TO_Z,numeric,numeric,,_stg
+public,_stg_yichang_river_import,STR_ORD,numeric,numeric,,_stg
+public,_stg_yichang_river_import,SHR_ORD,numeric,numeric,,_stg
+public,_stg_yichang_river_import,geom,USER-DEFINED,geometry,,_stg
+public,_stg_yichang_river_std,gid,integer,int4,,_stg
+public,_stg_yichang_river_std,river_code,text,text,,_stg
+public,_stg_yichang_river_std,river_name,text,text,,_stg
+public,_stg_yichang_river_std,next_down,bigint,int8,,_stg
+public,_stg_yichang_river_std,river_class,text,text,,_stg
+public,_stg_yichang_river_std,length_km,numeric,numeric,,_stg
+public,_stg_yichang_river_std,from_z,numeric,numeric,,_stg
+public,_stg_yichang_river_std,to_z,numeric,numeric,,_stg
+public,_stg_yichang_river_std,geom,USER-DEFINED,geometry,,_stg
+public,_stg_yichang_river_std,metadata_json,jsonb,jsonb,,_stg
+public,ad_dict,create_time,timestamp without time zone,timestamp,数据字典,ad_dict
+public,ad_dict,update_time,timestamp without time zone,timestamp,数据字典,ad_dict
+public,ad_dict,del_flag,character,bpchar,数据字典,ad_dict
+public,ad_dict,create_by,bigint,int8,数据字典,ad_dict
+public,ad_dict,update_by,bigint,int8,数据字典,ad_dict
+public,day_quality_setting,span_value,double precision,float8,日质控设置,day_quality
+public,day_quality_setting,zero_standard_value,double precision,float8,日质控设置,day_quality
+public,day_quality_setting,span_standard_value,double precision,float8,日质控设置,day_quality
+public,gis_ecologicalregion,id,bigint,int8,,gis_ecologicalregion
+public,gis_ecologicalregion,ecological_region_name,character varying,varchar,,gis_ecologicalregion
+public,gis_ecologicalregion,ecological_region_code,character varying,varchar,,gis_ecologicalregion
+public,gis_ecologicalregion,address,character varying,varchar,,gis_ecologicalregion
+public,gis_ecologicalregion,geom,USER-DEFINED,geometry,,gis_ecologicalregion
+public,gis_ecologicalregion,population,bigint,int8,,gis_ecologicalregion
+public,gis_ecologicalregion,type,character,bpchar,,gis_ecologicalregion
+public,gis_ecologicalregion,service_target,character varying,varchar,,gis_ecologicalregion
+public,gis_ecologicalregion,area,double precision,float8,,gis_ecologicalregion
+public,gis_ecologicalregion,ecosystem_vegetation,character varying,varchar,,gis_ecologicalregion
+public,gis_ecologicalregion,human_activities,character varying,varchar,,gis_ecologicalregion
+public,gis_ecologicalregion,environment_problems,character varying,varchar,,gis_ecologicalregion
+public,gis_ecologicalregion,control_measures,character varying,varchar,,gis_ecologicalregion
+public,gis_ecologicalregion,remark,character varying,varchar,,gis_ecologicalregion
+public,gis_ecologicalregion,create_by,bigint,int8,,gis_ecologicalregion
+public,gis_ecologicalregion,create_time,timestamp without time zone,timestamp,,gis_ecologicalregion
+public,gis_ecologicalregion,update_by,bigint,int8,,gis_ecologicalregion
+public,gis_ecologicalregion,update_time,timestamp without time zone,timestamp,,gis_ecologicalregion
+public,gis_ecologicalregion,del_flag,character,bpchar,,gis_ecologicalregion
+public,gis_headwaters,id,bigint,int8,,gis_headwaters
+public,gis_headwaters,headwaters_name,character varying,varchar,,gis_headwaters
+public,gis_headwaters,headwaters_code,character varying,varchar,,gis_headwaters
+public,gis_headwaters,address,character varying,varchar,,gis_headwaters
+public,gis_headwaters,geom,USER-DEFINED,geometry,,gis_headwaters
+public,gis_headwaters,level,character varying,varchar,,gis_headwaters
+public,gis_headwaters,type,character,bpchar,,gis_headwaters
+public,gis_headwaters,water_intake_quantity,double precision,float8,,gis_headwaters
+public,gis_headwaters,water_supply_population,bigint,int8,,gis_headwaters
+public,gis_headwaters,is_protect_region,character,bpchar,,gis_headwaters
+public,gis_headwaters,remark,character varying,varchar,,gis_headwaters
+public,gis_headwaters,create_by,bigint,int8,,gis_headwaters
+public,gis_headwaters,create_time,timestamp without time zone,timestamp,,gis_headwaters
+public,gis_headwaters,update_by,bigint,int8,,gis_headwaters
+public,gis_headwaters,update_time,timestamp without time zone,timestamp,,gis_headwaters
+public,gis_headwaters,del_flag,character,bpchar,,gis_headwaters
+public,gis_naturereserve,id,bigint,int8,,gis_naturereserve
+public,gis_naturereserve,nature_reserve_name,character varying,varchar,,gis_naturereserve
+public,gis_naturereserve,nature_reserve_code,character varying,varchar,,gis_naturereserve
+public,gis_naturereserve,address,character varying,varchar,,gis_naturereserve
+public,gis_naturereserve,geom,USER-DEFINED,geometry,,gis_naturereserve
+public,gis_naturereserve,department,character varying,varchar,,gis_naturereserve
+public,gis_naturereserve,type,character,bpchar,,gis_naturereserve
+public,gis_naturereserve,level,character varying,varchar,,gis_naturereserve
+public,gis_naturereserve,protect_target,character varying,varchar,,gis_naturereserve
+public,gis_naturereserve,total_area,double precision,float8,,gis_naturereserve
+public,gis_naturereserve,core_area,double precision,float8,,gis_naturereserve
+public,gis_naturereserve,buffer_area,double precision,float8,,gis_naturereserve
+public,gis_naturereserve,manage_org_name,character varying,varchar,,gis_naturereserve
+public,gis_naturereserve,manage_org_type,character varying,varchar,,gis_naturereserve
+public,gis_naturereserve,manage_org_level,character varying,varchar,,gis_naturereserve
+public,gis_naturereserve,population,bigint,int8,,gis_naturereserve
+public,gis_naturereserve,first_protect_animals,character varying,varchar,,gis_naturereserve
+public,gis_naturereserve,second_protect_animals,character varying,varchar,,gis_naturereserve
+public,gis_naturereserve,first_protect_plants,character varying,varchar,,gis_naturereserve
+public,gis_naturereserve,second_protect_plants,character varying,varchar,,gis_naturereserve
+public,gis_naturereserve,create_by,bigint,int8,,gis_naturereserve
+public,gis_naturereserve,create_time,timestamp without time zone,timestamp,,gis_naturereserve
+public,gis_naturereserve,update_by,bigint,int8,,gis_naturereserve
+public,gis_naturereserve,update_time,timestamp without time zone,timestamp,,gis_naturereserve
+public,gis_naturereserve,del_flag,character,bpchar,,gis_naturereserve
+public,gis_poi,create_time,timestamp without time zone,timestamp,主键id,gis_poi
+public,gis_poi,update_time,timestamp without time zone,timestamp,主键id,gis_poi
+public,gis_poi,del_flag,character,bpchar,主键id,gis_poi
+public,gis_poi,create_by,bigint,int8,主键id,gis_poi
+public,gis_poi,update_by,bigint,int8,主键id,gis_poi
+public,gis_region,region_code,character varying,varchar,区县数据表,gis_region
+public,gis_region,region_name,character varying,varchar,区县数据表,gis_region
+public,gis_region,control_unit_id,bigint,int8,区县数据表,gis_region
+public,gis_region,region_level,character varying,varchar,区县数据表,gis_region
+public,gis_region,parent_code,character varying,varchar,区县数据表,gis_region
+public,gis_region,code,character varying,varchar,区县数据表,gis_region
+public,gis_region,address,character varying,varchar,区县数据表,gis_region
+public,gis_region,remark,character varying,varchar,区县数据表,gis_region
+public,gis_region_city,id,integer,int4,,gis_region
+public,gis_region_city,geom,USER-DEFINED,geometry,,gis_region
+public,gis_region_county,id,integer,int4,行政区-区县,gis_region
+public,gis_region_county,geom,USER-DEFINED,geometry,行政区-区县,gis_region
+public,gis_region_population,id,bigint,int8,,gis_region
+public,gis_region_population,region_id,bigint,int8,,gis_region
+public,gis_region_population,city_population,double precision,float8,,gis_region
+public,gis_region_population,city_area,double precision,float8,,gis_region
+public,gis_region_population,city_quantity,double precision,float8,,gis_region
+public,gis_region_population,rural_population,double precision,float8,,gis_region
+public,gis_region_population,rural_area,double precision,float8,,gis_region
+public,gis_region_population,rural_quantity,double precision,float8,,gis_region
+public,gis_region_population,year,bigint,int8,,gis_region
+public,gis_region_population,create_by,bigint,int8,,gis_region
+public,gis_region_population,create_time,timestamp without time zone,timestamp,,gis_region
+public,gis_region_population,update_by,bigint,int8,,gis_region
+public,gis_region_population,update_time,timestamp without time zone,timestamp,,gis_region
+public,gis_region_population,del_flag,character,bpchar,,gis_region
+public,gis_region_township,id,integer,int4,行政区划-乡镇,gis_region
+public,gis_region_township,geom,USER-DEFINED,geometry,行政区划-乡镇,gis_region
+public,gis_watershed_partition,id,bigint,int8,空间-流域分区数据,gis_watershed
+public,gis_watershed_partition_3,id,integer,int4,,gis_watershed
+public,gis_watershed_partition_3,geom,USER-DEFINED,geometry,,gis_watershed
+public,gis_watershed_partition_4,id,integer,int4,,gis_watershed
+public,gis_watershed_partition_4,geom,USER-DEFINED,geometry,,gis_watershed
+public,gis_watershed_partition_4,poly_area,double precision,float8,,gis_watershed
+public,gis_watershed_partition_4,2021,character varying,varchar,,gis_watershed
+public,gis_watershed_partition_4,2025,character varying,varchar,,gis_watershed
+public,gis_watershed_partition_4,2035,character varying,varchar,,gis_watershed
+public,layer_boundary_enterprise,id,integer,int4,工业园区-企业边界,layer_boundary
+public,layer_boundary_enterprise,name,character varying,varchar,工业园区-企业边界,layer_boundary
+public,layer_boundary_enterprise,code,character varying,varchar,工业园区-企业边界,layer_boundary
+public,layer_boundary_enterprise,geom,USER-DEFINED,geometry,工业园区-企业边界,layer_boundary
+public,layer_boundary_park,id,integer,int4,工业园区-园区边界,layer_boundary
+public,layer_boundary_park,geom,USER-DEFINED,geometry,工业园区-园区边界,layer_boundary
+public,layer_boundary_park,name,character varying,varchar,工业园区-园区边界,layer_boundary
+public,layer_boundary_park,code,character varying,varchar,工业园区-园区边界,layer_boundary
+public,layer_industrial_ghysgw,id,integer,int4,工业园区-规划雨水管网,layer_industrial
+public,layer_industrial_ghysgw,geom,USER-DEFINED,geometry,工业园区-规划雨水管网,layer_industrial
+public,layer_industrial_ghysgw,name,character varying,varchar,工业园区-规划雨水管网,layer_industrial
+public,layer_industrial_ghysgw,code,character varying,varchar,工业园区-规划雨水管网,layer_industrial
+public,layer_industrial_lsf,id,integer,int4,工业园区-园区临时闸阀,layer_industrial
+public,layer_industrial_lsf,geom,USER-DEFINED,geometry,工业园区-园区临时闸阀,layer_industrial
+public,layer_industrial_lsf,name,character varying,varchar,工业园区-园区临时闸阀,layer_industrial
+public,layer_industrial_lsf,code,character varying,varchar,工业园区-园区临时闸阀,layer_industrial
+public,layer_industrial_xzysgw,id,integer,int4,工业园区-现状雨水管网,layer_industrial
+public,layer_industrial_xzysgw,geom,USER-DEFINED,geometry,工业园区-现状雨水管网,layer_industrial
+public,layer_industrial_xzysgw,name,character varying,varchar,工业园区-现状雨水管网,layer_industrial
+public,layer_industrial_xzysgw,code,character varying,varchar,工业园区-现状雨水管网,layer_industrial
+public,layer_industrial_yjf,id,integer,int4,工业园区-园区永久闸阀,layer_industrial
+public,layer_industrial_yjf,geom,USER-DEFINED,geometry,工业园区-园区永久闸阀,layer_industrial
+public,layer_industrial_yjf,name,character varying,varchar,工业园区-园区永久闸阀,layer_industrial
+public,layer_industrial_yjf,code,character varying,varchar,工业园区-园区永久闸阀,layer_industrial
+public,layer_industrial_yjsgc,id,integer,int4,工业园区-应急事故池,layer_industrial
+public,layer_industrial_yjsgc,geom,USER-DEFINED,geometry,工业园区-应急事故池,layer_industrial
+public,layer_industrial_yjsgc,x,double precision,float8,工业园区-应急事故池,layer_industrial
+public,layer_industrial_yjsgc,y,double precision,float8,工业园区-应急事故池,layer_industrial
+public,layer_industrial_yjsgc,name,character varying,varchar,工业园区-应急事故池,layer_industrial
+public,layer_industrial_yjsgc,code,character varying,varchar,工业园区-应急事故池,layer_industrial
+public,layer_industrial_ysc,id,integer,int4,工业园区-雨水池,layer_industrial
+public,layer_industrial_ysc,geom,USER-DEFINED,geometry,工业园区-雨水池,layer_industrial
+public,layer_industrial_ysc,x,double precision,float8,工业园区-雨水池,layer_industrial
+public,layer_industrial_ysc,y,double precision,float8,工业园区-雨水池,layer_industrial
+public,layer_industrial_ysc,name,character varying,varchar,工业园区-雨水池,layer_industrial
+public,layer_industrial_ysc,code,character varying,varchar,工业园区-雨水池,layer_industrial
+public,layer_outlet_sewage,id,integer,int4,工业园区-污水排放口,layer_outlet
+public,layer_outlet_sewage,x,double precision,float8,工业园区-污水排放口,layer_outlet
+public,layer_outlet_sewage,y,double precision,float8,工业园区-污水排放口,layer_outlet
+public,layer_outlet_sewage,name,character varying,varchar,工业园区-污水排放口,layer_outlet
+public,layer_outlet_sewage,code,character varying,varchar,工业园区-污水排放口,layer_outlet
+public,layer_outlet_sewage,geom,USER-DEFINED,geometry,工业园区-污水排放口,layer_outlet
+public,layer_partition_2,id,integer,int4,二级分区,layer_partition
+public,layer_partition_2,geom,USER-DEFINED,geometry,二级分区,layer_partition
+public,layer_partition_3,id,integer,int4,三级分区,layer_partition
+public,layer_partition_3,geom,USER-DEFINED,geometry,三级分区,layer_partition
+public,layer_reservoir_provincial,id,integer,int4,省控水库,layer_reservoir
+public,layer_reservoir_provincial,geom,USER-DEFINED,geometry,省控水库,layer_reservoir
+public,layer_reservoir_provincial,objectid,bigint,int8,省控水库,layer_reservoir
+public,layer_reservoir_provincial,cc,character varying,varchar,省控水库,layer_reservoir
+public,layer_reservoir_provincial,gb,character varying,varchar,省控水库,layer_reservoir
+public,layer_reservoir_provincial,bas,character varying,varchar,省控水库,layer_reservoir
+public,layer_reservoir_provincial,name,character varying,varchar,省控水库,layer_reservoir
+public,layer_reservoir_provincial,period,character varying,varchar,省控水库,layer_reservoir
+public,layer_reservoir_provincial,type,character varying,varchar,省控水库,layer_reservoir
+public,layer_reservoir_provincial,wq,character varying,varchar,省控水库,layer_reservoir
+public,layer_reservoir_provincial,aheight,double precision,float8,省控水库,layer_reservoir
+public,layer_reservoir_provincial,parea,double precision,float8,省控水库,layer_reservoir
+public,layer_reservoir_provincial,ec,character varying,varchar,省控水库,layer_reservoir
+public,layer_reservoir_provincial,grade,character varying,varchar,省控水库,layer_reservoir
+public,layer_reservoir_provincial,length,double precision,float8,省控水库,layer_reservoir
+public,layer_reservoir_provincial,mheight,double precision,float8,省控水库,layer_reservoir
+public,layer_reservoir_provincial,sdtf,character varying,varchar,省控水库,layer_reservoir
+public,layer_reservoir_provincial,shrc,character varying,varchar,省控水库,layer_reservoir
+public,layer_reservoir_provincial,vol,double precision,float8,省控水库,layer_reservoir
+public,layer_reservoir_provincial,featid,character varying,varchar,省控水库,layer_reservoir
+public,layer_reservoir_provincial,elemstime,character varying,varchar,省控水库,layer_reservoir
+public,layer_reservoir_provincial,elemetime,character varying,varchar,省控水库,layer_reservoir
+public,layer_reservoir_provincial,ecrm,integer,int4,省控水库,layer_reservoir
+public,layer_reservoir_provincial,wrid,character varying,varchar,省控水库,layer_reservoir
+public,layer_reservoir_provincial,wrgr,integer,int4,省控水库,layer_reservoir
+public,layer_reservoir_provincial,areacode,bigint,int8,省控水库,layer_reservoir
+public,layer_reservoir_provincial,changetype,integer,int4,省控水库,layer_reservoir
+public,layer_reservoir_provincial,changeatt,character varying,varchar,省控水库,layer_reservoir
+public,layer_reservoir_provincial,shape_leng,double precision,float8,省控水库,layer_reservoir
+public,layer_reservoir_provincial,shape_area,double precision,float8,省控水库,layer_reservoir
+public,layer_reservoir_provincial_label,geom,USER-DEFINED,geometry,省控水库注记,layer_reservoir
+public,layer_reservoir_provincial_label,cc,character varying,varchar,省控水库注记,layer_reservoir
+public,layer_reservoir_provincial_label,gb,character varying,varchar,省控水库注记,layer_reservoir
+public,layer_reservoir_provincial_label,bas,character varying,varchar,省控水库注记,layer_reservoir
+public,layer_reservoir_provincial_label,name,character varying,varchar,省控水库注记,layer_reservoir
+public,layer_reservoir_provincial_label,period,character varying,varchar,省控水库注记,layer_reservoir
+public,layer_reservoir_provincial_label,type,character varying,varchar,省控水库注记,layer_reservoir
+public,layer_reservoir_provincial_label,wq,character varying,varchar,省控水库注记,layer_reservoir
+public,layer_reservoir_provincial_label,aheight,double precision,float8,省控水库注记,layer_reservoir
+public,layer_reservoir_provincial_label,parea,double precision,float8,省控水库注记,layer_reservoir
+public,layer_reservoir_provincial_label,ec,character varying,varchar,省控水库注记,layer_reservoir
+public,layer_reservoir_provincial_label,grade,character varying,varchar,省控水库注记,layer_reservoir
+public,layer_reservoir_provincial_label,length,double precision,float8,省控水库注记,layer_reservoir
+public,layer_reservoir_provincial_label,mheight,double precision,float8,省控水库注记,layer_reservoir
+public,layer_reservoir_provincial_label,sdtf,character varying,varchar,省控水库注记,layer_reservoir
+public,layer_reservoir_provincial_label,shrc,character varying,varchar,省控水库注记,layer_reservoir
+public,layer_reservoir_provincial_label,vol,double precision,float8,省控水库注记,layer_reservoir
+public,layer_reservoir_provincial_label,featid,character varying,varchar,省控水库注记,layer_reservoir
+public,layer_reservoir_provincial_label,elemstime,character varying,varchar,省控水库注记,layer_reservoir
+public,layer_reservoir_provincial_label,elemetime,character varying,varchar,省控水库注记,layer_reservoir
+public,layer_reservoir_provincial_label,ecrm,integer,int4,省控水库注记,layer_reservoir
+public,layer_reservoir_provincial_label,wrid,character varying,varchar,省控水库注记,layer_reservoir
+public,layer_reservoir_provincial_label,wrgr,integer,int4,省控水库注记,layer_reservoir
+public,layer_reservoir_provincial_label,areacode,bigint,int8,省控水库注记,layer_reservoir
+public,layer_reservoir_provincial_label,changetype,integer,int4,省控水库注记,layer_reservoir
+public,layer_reservoir_provincial_label,changeatt,character varying,varchar,省控水库注记,layer_reservoir
+public,layer_reservoir_provincial_label,id,integer,int4,省控水库注记,layer_reservoir
+public,layer_reservoir_provincial_合并,geom,USER-DEFINED,geometry,省控水库,layer_reservoir
+public,layer_reservoir_provincial_合并,cc,character varying,varchar,省控水库,layer_reservoir
+public,layer_reservoir_provincial_合并,gb,character varying,varchar,省控水库,layer_reservoir
+public,layer_reservoir_provincial_合并,bas,character varying,varchar,省控水库,layer_reservoir
+public,layer_reservoir_provincial_合并,name,character varying,varchar,省控水库,layer_reservoir
+public,layer_reservoir_provincial_合并,period,character varying,varchar,省控水库,layer_reservoir
+public,layer_reservoir_provincial_合并,type,character varying,varchar,省控水库,layer_reservoir
+public,layer_reservoir_provincial_合并,wq,character varying,varchar,省控水库,layer_reservoir
+public,layer_reservoir_provincial_合并,aheight,double precision,float8,省控水库,layer_reservoir
+public,layer_reservoir_provincial_合并,parea,double precision,float8,省控水库,layer_reservoir
+public,layer_reservoir_provincial_合并,ec,character varying,varchar,省控水库,layer_reservoir
+public,layer_reservoir_provincial_合并,grade,character varying,varchar,省控水库,layer_reservoir
+public,layer_reservoir_provincial_合并,length,double precision,float8,省控水库,layer_reservoir
+public,layer_reservoir_provincial_合并,mheight,double precision,float8,省控水库,layer_reservoir
+public,layer_reservoir_provincial_合并,sdtf,character varying,varchar,省控水库,layer_reservoir
+public,layer_reservoir_provincial_合并,shrc,character varying,varchar,省控水库,layer_reservoir
+public,layer_reservoir_provincial_合并,vol,double precision,float8,省控水库,layer_reservoir
+public,layer_reservoir_provincial_合并,featid,character varying,varchar,省控水库,layer_reservoir
+public,layer_reservoir_provincial_合并,elemstime,character varying,varchar,省控水库,layer_reservoir
+public,layer_reservoir_provincial_合并,elemetime,character varying,varchar,省控水库,layer_reservoir
+public,layer_reservoir_provincial_合并,ecrm,integer,int4,省控水库,layer_reservoir
+public,layer_reservoir_provincial_合并,wrid,character varying,varchar,省控水库,layer_reservoir
+public,layer_reservoir_provincial_合并,wrgr,integer,int4,省控水库,layer_reservoir
+public,layer_reservoir_provincial_合并,areacode,bigint,int8,省控水库,layer_reservoir
+public,layer_reservoir_provincial_合并,changetype,integer,int4,省控水库,layer_reservoir
+public,layer_reservoir_provincial_合并,changeatt,character varying,varchar,省控水库,layer_reservoir
+public,layer_reservoir_provincial_合并,id,integer,int4,省控水库,layer_reservoir
+public,layer_river_provincial,geom,USER-DEFINED,geometry,,layer_river
+public,layer_river_provincial,cc,character varying,varchar,,layer_river
+public,layer_river_provincial,gb,character varying,varchar,,layer_river
+public,layer_river_provincial,bas,character varying,varchar,,layer_river
+public,layer_river_provincial,type,character varying,varchar,,layer_river
+public,layer_river_provincial,ec,character varying,varchar,,layer_river
+public,layer_river_provincial,grade,character varying,varchar,,layer_river
+public,layer_river_provincial,length,double precision,float8,,layer_river
+public,layer_river_provincial,period,character varying,varchar,,layer_river
+public,layer_river_provincial,shrc,character varying,varchar,,layer_river
+public,layer_river_provincial,sdtf,character varying,varchar,,layer_river
+public,layer_river_provincial,width,double precision,float8,,layer_river
+public,layer_river_provincial,featid,character varying,varchar,,layer_river
+public,layer_river_provincial,elemstime,character varying,varchar,,layer_river
+public,layer_river_provincial,elemetime,character varying,varchar,,layer_river
+public,layer_river_provincial,ecrm,integer,int4,,layer_river
+public,layer_river_provincial,wrid,character varying,varchar,,layer_river
+public,layer_river_provincial,wrgr,integer,int4,,layer_river
+public,layer_river_provincial,areacode,bigint,int8,,layer_river
+public,layer_river_provincial,name,character varying,varchar,,layer_river
+public,layer_river_provincial,changetype,integer,int4,,layer_river
+public,layer_river_provincial,changeatt,character varying,varchar,,layer_river
+public,layer_river_provincial,id,integer,int4,,layer_river
+public,layer_river_provincial_bak0617,id,integer,int4,省控河流,layer_river
+public,layer_river_provincial_bak0617,geom,USER-DEFINED,geometry,省控河流,layer_river
+public,layer_river_provincial_bak0617,cc,character varying,varchar,省控河流,layer_river
+public,layer_river_provincial_bak0617,gb,character varying,varchar,省控河流,layer_river
+public,layer_river_provincial_bak0617,bas,character varying,varchar,省控河流,layer_river
+public,layer_river_provincial_bak0617,type,character varying,varchar,省控河流,layer_river
+public,layer_river_provincial_bak0617,ec,character varying,varchar,省控河流,layer_river
+public,layer_river_provincial_bak0617,grade,character varying,varchar,省控河流,layer_river
+public,layer_river_provincial_bak0617,length,double precision,float8,省控河流,layer_river
+public,layer_river_provincial_bak0617,period,character varying,varchar,省控河流,layer_river
+public,layer_river_provincial_bak0617,shrc,character varying,varchar,省控河流,layer_river
+public,layer_river_provincial_bak0617,sdtf,character varying,varchar,省控河流,layer_river
+public,layer_river_provincial_bak0617,width,double precision,float8,省控河流,layer_river
+public,layer_river_provincial_bak0617,featid,character varying,varchar,省控河流,layer_river
+public,layer_river_provincial_bak0617,elemstime,character varying,varchar,省控河流,layer_river
+public,layer_river_provincial_bak0617,elemetime,character varying,varchar,省控河流,layer_river
+public,layer_river_provincial_bak0617,ecrm,integer,int4,省控河流,layer_river
+public,layer_river_provincial_bak0617,wrid,character varying,varchar,省控河流,layer_river
+public,layer_river_provincial_bak0617,wrgr,integer,int4,省控河流,layer_river
+public,layer_river_provincial_bak0617,areacode,bigint,int8,省控河流,layer_river
+public,layer_river_provincial_bak0617,name,character varying,varchar,省控河流,layer_river
+public,layer_river_provincial_bak0617,changetype,integer,int4,省控河流,layer_river
+public,layer_river_provincial_bak0617,changeatt,character varying,varchar,省控河流,layer_river
+public,layer_section,id,integer,int4,工业园区-监测断面,layer_section
+public,layer_section,x,double precision,float8,工业园区-监测断面,layer_section
+public,layer_section,y,double precision,float8,工业园区-监测断面,layer_section
+public,layer_section,name,character varying,varchar,工业园区-监测断面,layer_section
+public,layer_section,code,character varying,varchar,工业园区-监测断面,layer_section
+public,layer_section,geom,USER-DEFINED,geometry,工业园区-监测断面,layer_section
+public,layer_watershed,id,integer,int4,工业园区-汇水区,layer_watershed
+public,layer_watershed,name,character varying,varchar,工业园区-汇水区,layer_watershed
+public,layer_watershed,code,character varying,varchar,工业园区-汇水区,layer_watershed
+public,layer_watershed,geom,USER-DEFINED,geometry,工业园区-汇水区,layer_watershed
+public,metadata_view,code,character varying,varchar,元数据-视图,metadata_view
+public,metadata_view,parent_id,character varying,varchar,元数据-视图,metadata_view
+public,metadata_view,aliasname,character varying,varchar,元数据-视图,metadata_view
+public,metadata_view,type,character varying,varchar,元数据-视图,metadata_view
+public,metadata_view,LayerName,character varying,varchar,元数据-视图,metadata_view
+public,metadata_view,LayerType,character varying,varchar,元数据-视图,metadata_view
+public,rs_industrial_info_yc,create_by,bigint,int8,工业园区环境监测数据表,rs_industrial
+public,rs_industrial_info_yc,create_time,timestamp without time zone,timestamp,工业园区环境监测数据表,rs_industrial
+public,rs_industrial_info_yc,update_by,bigint,int8,工业园区环境监测数据表,rs_industrial
+public,rs_industrial_info_yc,update_time,timestamp without time zone,timestamp,工业园区环境监测数据表,rs_industrial
+public,rs_industrial_info_yc,del_flag,character,bpchar,工业园区环境监测数据表,rs_industrial
+public,rs_industrial_info_yc_bak0305,id,bigint,int8,,rs_industrial
+public,rs_industrial_info_yc_bak0305,create_by,bigint,int8,,rs_industrial
+public,rs_industrial_info_yc_bak0305,create_time,timestamp without time zone,timestamp,,rs_industrial
+public,rs_industrial_info_yc_bak0305,update_by,bigint,int8,,rs_industrial
+public,rs_industrial_info_yc_bak0305,update_time,timestamp without time zone,timestamp,,rs_industrial
+public,rs_industrial_info_yc_bak0305,del_flag,character,bpchar,,rs_industrial
+public,rs_outlet,quick_detect_desc,character varying,varchar,排污口信息表,rs_outlet
+public,rs_outlet_info_v2,id,bigint,int8,排污口管理,rs_outlet
+public,rs_outlet_info_v2,create_by,bigint,int8,排污口管理,rs_outlet
+public,rs_outlet_info_v2,create_time,timestamp without time zone,timestamp,排污口管理,rs_outlet
+public,rs_outlet_info_v2,update_by,bigint,int8,排污口管理,rs_outlet
+public,rs_outlet_info_v2,update_time,timestamp without time zone,timestamp,排污口管理,rs_outlet
+public,rs_outlet_info_v2,del_flag,character varying,varchar,排污口管理,rs_outlet
+public,rs_outlet_live_v2,id,bigint,int8,排污口实况,rs_outlet
+public,rs_outlet_live_v2,create_by,bigint,int8,排污口实况,rs_outlet
+public,rs_outlet_live_v2,create_time,timestamp without time zone,timestamp,排污口实况,rs_outlet
+public,rs_outlet_live_v2,update_by,bigint,int8,排污口实况,rs_outlet
+public,rs_outlet_live_v2,update_time,timestamp without time zone,timestamp,排污口实况,rs_outlet
+public,rs_outlet_live_v2,del_flag,character varying,varchar,排污口实况,rs_outlet
+public,rs_outlet_monitor_v2,id,bigint,int8,排污口监测,rs_outlet
+public,rs_outlet_monitor_v2,create_by,bigint,int8,排污口监测,rs_outlet
+public,rs_outlet_monitor_v2,create_time,timestamp without time zone,timestamp,排污口监测,rs_outlet
+public,rs_outlet_monitor_v2,update_by,bigint,int8,排污口监测,rs_outlet
+public,rs_outlet_monitor_v2,update_time,timestamp without time zone,timestamp,排污口监测,rs_outlet
+public,rs_outlet_monitor_v2,del_flag,character varying,varchar,排污口监测,rs_outlet
+public,rs_outlet_remediation_v2,id,bigint,int8,排污口整治,rs_outlet
+public,rs_outlet_remediation_v2,create_by,bigint,int8,排污口整治,rs_outlet
+public,rs_outlet_remediation_v2,create_time,timestamp without time zone,timestamp,排污口整治,rs_outlet
+public,rs_outlet_remediation_v2,update_by,bigint,int8,排污口整治,rs_outlet
+public,rs_outlet_remediation_v2,update_time,timestamp without time zone,timestamp,排污口整治,rs_outlet
+public,rs_outlet_remediation_v2,del_flag,character varying,varchar,排污口整治,rs_outlet
+public,rs_outlet_trace_v2,id,bigint,int8,排污口溯源,rs_outlet
+public,rs_outlet_trace_v2,create_by,bigint,int8,排污口溯源,rs_outlet
+public,rs_outlet_trace_v2,create_time,timestamp without time zone,timestamp,排污口溯源,rs_outlet
+public,rs_outlet_trace_v2,update_by,bigint,int8,排污口溯源,rs_outlet
+public,rs_outlet_trace_v2,update_time,timestamp without time zone,timestamp,排污口溯源,rs_outlet
+public,rs_outlet_trace_v2,del_flag,character varying,varchar,排污口溯源,rs_outlet
+public,rs_sewage_info_v2,id,bigint,int8,污水处理厂档案管理及监测,rs_sewage
+public,rs_sewage_info_v2,create_by,bigint,int8,污水处理厂档案管理及监测,rs_sewage
+public,rs_sewage_info_v2,create_time,timestamp without time zone,timestamp,污水处理厂档案管理及监测,rs_sewage
+public,rs_sewage_info_v2,update_by,bigint,int8,污水处理厂档案管理及监测,rs_sewage
+public,rs_sewage_info_v2,update_time,timestamp without time zone,timestamp,污水处理厂档案管理及监测,rs_sewage
+public,rs_sewage_info_v2,del_flag,character varying,varchar,污水处理厂档案管理及监测,rs_sewage
+public,rs_sewage_park_info,create_by,bigint,int8,污水处理厂-园区配套信息表,rs_sewage
+public,rs_sewage_park_info,create_time,timestamp without time zone,timestamp,污水处理厂-园区配套信息表,rs_sewage
+public,rs_sewage_park_info,update_by,bigint,int8,污水处理厂-园区配套信息表,rs_sewage
+public,rs_sewage_park_info,update_time,timestamp without time zone,timestamp,污水处理厂-园区配套信息表,rs_sewage
+public,rs_sewage_park_info,del_flag,character varying,varchar,污水处理厂-园区配套信息表,rs_sewage
+public,se_watershed,id,bigint,int8,流域产值信息：年统计值,se_watershed
+public,spatial_ref_sys,srid,integer,int4,,spatial_ref
+public,spatial_ref_sys,auth_name,character varying,varchar,,spatial_ref
+public,spatial_ref_sys,auth_srid,integer,int4,,spatial_ref
+public,spatial_ref_sys,srtext,character varying,varchar,,spatial_ref
+public,spatial_ref_sys,proj4text,character varying,varchar,,spatial_ref
+public,stg_sjtysj_cbwrwxtzlxxxt_b_anchorage_info_df,create_by,character varying,varchar,锚地信息表,stg_sjtysj
+public,stg_sjtysj_cbwrwxtzlxxxt_b_anchorage_info_df,create_date,timestamp without time zone,timestamp,锚地信息表,stg_sjtysj
+public,stg_sjtysj_cbwrwxtzlxxxt_b_anchorage_info_df,update_by,character varying,varchar,锚地信息表,stg_sjtysj
+public,stg_sjtysj_cbwrwxtzlxxxt_b_anchorage_info_df,update_date,timestamp without time zone,timestamp,锚地信息表,stg_sjtysj
+public,stg_sjtysj_cbwrwxtzlxxxt_b_receive_ship_assessment_df,id,bigint,int8,接受船舶评估,stg_sjtysj
+public,stg_sjtysj_cbwrwxtzlxxxt_b_wharf_info_df,id,bigint,int8,船舶污染物接收码头信息表,stg_sjtysj
+public,stg_sjtysj_cbwrwxtzlxxxt_b_wharf_info_df,geom,USER-DEFINED,geometry,船舶污染物接收码头信息表,stg_sjtysj
+public,stg_sjtysj_cbwrwxtzlxxxt_p_ashore_apply_df,shlj_text,character varying,varchar,污染物接收表,stg_sjtysj
+public,stg_sjtysj_cbwrwxtzlxxxt_p_ashore_apply_df,fy_time,character varying,varchar,污染物接收表,stg_sjtysj
+public,stg_sjtysj_cbwrwxtzlxxxt_p_ashore_apply_df,hyws_time,character varying,varchar,污染物接收表,stg_sjtysj
+public,stg_sjtysj_cbwrwxtzlxxxt_p_ashore_apply_df,shws_time,character varying,varchar,污染物接收表,stg_sjtysj
+public,stg_sjtysj_cbwrwxtzlxxxt_p_ashore_apply_df,from_port_province,character varying,varchar,污染物接收表,stg_sjtysj
+public,stg_sjtysj_cbwrwxtzlxxxt_p_ashore_apply_df,from_port_city,character varying,varchar,污染物接收表,stg_sjtysj
+public,stg_sjtysj_cbwrwxtzlxxxt_p_ashore_apply_df,to_port_province,character varying,varchar,污染物接收表,stg_sjtysj
+public,stg_sjtysj_cbwrwxtzlxxxt_p_ashore_apply_df,to_port_city,character varying,varchar,污染物接收表,stg_sjtysj
+public,stg_sjtysj_cbwrwxtzlxxxt_p_handover_trans_detail_df,trans_no,character varying,varchar,污染物转运B流程明细单,stg_sjtysj
+public,stg_sjtysj_cbwrwxtzlxxxt_p_handover_trans_detail_df,js_apply_no,character varying,varchar,污染物转运B流程明细单,stg_sjtysj
+public,stg_sjtysj_cbwrwxtzlxxxt_p_handover_trans_detail_df,js_detail_id,bigint,int8,污染物转运B流程明细单,stg_sjtysj
+public,stg_sjtysj_cbwrwxtzlxxxt_p_handover_trans_detail_df,create_time,character varying,varchar,污染物转运B流程明细单,stg_sjtysj
+public,stg_ycsjtysj_sxhyzssj_base_ship_df,mmsi,character varying,varchar,图层管理（船舶）KPI,stg_ycsjtysj
+public,stg_ycsjtysj_sxhyzssj_base_ship_df,create_time,timestamp without time zone,timestamp,图层管理（船舶）KPI,stg_ycsjtysj
+public,stg_ycsjtysj_sxhyzssj_base_ship_df,update_time,timestamp without time zone,timestamp,图层管理（船舶）KPI,stg_ycsjtysj
+public,wh_meteorological_predict_day_records,winddirect_10m_24h,double precision,float8,气象预报日记录表,wh_meteorological
+public,wh_meteorological_predict_day_records,winddirect8_10m_24h,character varying,varchar,气象预报日记录表,wh_meteorological
+public,wh_meteorological_predict_day_records,winddirect16_10m_24h,character varying,varchar,气象预报日记录表,wh_meteorological
+public,wh_meteorological_predict_day_records,hum_2m_24h,double precision,float8,气象预报日记录表,wh_meteorological
+public,wh_meteorological_predict_day_records,hum_2m_24h_min,double precision,float8,气象预报日记录表,wh_meteorological
+public,wh_meteorological_predict_day_records,hum_2m_24h_max,double precision,float8,气象预报日记录表,wh_meteorological
+public,wh_meteorological_predict_day_records,stapress_24h,double precision,float8,气象预报日记录表,wh_meteorological
+public,wh_meteorological_predict_day_records,pressure_24h,double precision,float8,气象预报日记录表,wh_meteorological
+public,wh_meteorological_predict_day_records,p850inver_24h,double precision,float8,气象预报日记录表,wh_meteorological
+public,wh_meteorological_predict_day_records,p925inver_24h,double precision,float8,气象预报日记录表,wh_meteorological
+public,wh_meteorological_predict_day_records,swdown_24h,double precision,float8,气象预报日记录表,wh_meteorological
+public,wh_meteorological_predict_day_records,glw_24h,double precision,float8,气象预报日记录表,wh_meteorological
+public,wh_meteorological_predict_day_records,height_24h,double precision,float8,气象预报日记录表,wh_meteorological
+public,wh_meteorological_predict_day_records,rain_24h_total,double precision,float8,气象预报日记录表,wh_meteorological
+public,wh_meteorological_predict_day_records,dewpoint_24h,double precision,float8,气象预报日记录表,wh_meteorological
+public,wh_meteorological_predict_day_records,lowcloud_24h,double precision,float8,气象预报日记录表,wh_meteorological
+public,wh_meteorological_predict_day_records,midcloud_24h,double precision,float8,气象预报日记录表,wh_meteorological
+public,wh_meteorological_predict_day_records,highcloud_24h,double precision,float8,气象预报日记录表,wh_meteorological
+public,wh_meteorological_predict_day_records,totalcloud_24h,double precision,float8,气象预报日记录表,wh_meteorological
+public,wh_meteorological_predict_day_records,tem_2m_24h,double precision,float8,气象预报日记录表,wh_meteorological
+public,wh_meteorological_predict_day_records,tem_2m_24h_min,double precision,float8,气象预报日记录表,wh_meteorological
+public,wh_meteorological_predict_day_records,tem_2m_24h_max,double precision,float8,气象预报日记录表,wh_meteorological
+public,wh_meteorological_predict_day_records,visib_24h,double precision,float8,气象预报日记录表,wh_meteorological
+public,wh_meteorological_predict_day_records,pbl_24h,double precision,float8,气象预报日记录表,wh_meteorological
+public,wh_meteorological_predict_day_records,pbl_24h_min,double precision,float8,气象预报日记录表,wh_meteorological
+public,wh_meteorological_predict_day_records,pbl_24h_max,double precision,float8,气象预报日记录表,wh_meteorological
+public,wh_meteorological_predict_day_records,windspeed_10m_24h,double precision,float8,气象预报日记录表,wh_meteorological
+public,wh_meteorological_predict_day_records,windspeed_10m_24h_min,double precision,float8,气象预报日记录表,wh_meteorological
+public,wh_meteorological_predict_day_records,windspeed_10m_24h_max,double precision,float8,气象预报日记录表,wh_meteorological
+public,wh_meteorological_predict_day_records,predictiontime,timestamp without time zone,timestamp,气象预报日记录表,wh_meteorological
+public,wh_meteorological_predict_day_records,predictioninterval,bigint,int8,气象预报日记录表,wh_meteorological
+public,wh_meteorological_predict_day_records,datadate,timestamp without time zone,timestamp,气象预报日记录表,wh_meteorological
+public,wh_meteorological_predict_hour_records,winddirect_10m_1h,double precision,float8,气象预报小时记录表,wh_meteorological
+public,wh_meteorological_predict_hour_records,winddirect8_10m_1h,character varying,varchar,气象预报小时记录表,wh_meteorological
+public,wh_meteorological_predict_hour_records,winddirect16_10m_1h,character varying,varchar,气象预报小时记录表,wh_meteorological
+public,wh_meteorological_predict_hour_records,windspeed_10m_1h,double precision,float8,气象预报小时记录表,wh_meteorological
+public,wh_meteorological_predict_hour_records,tem_2m_1h,double precision,float8,气象预报小时记录表,wh_meteorological
+public,wh_meteorological_predict_hour_records,hum_2m_1h,double precision,float8,气象预报小时记录表,wh_meteorological
+public,wh_meteorological_predict_hour_records,dewpoint_1h,double precision,float8,气象预报小时记录表,wh_meteorological
+public,wh_meteorological_predict_hour_records,dtem_2m_1h,double precision,float8,气象预报小时记录表,wh_meteorological
+public,wh_meteorological_predict_hour_records,dtem_2m_3h,double precision,float8,气象预报小时记录表,wh_meteorological
+public,wh_meteorological_predict_hour_records,dtem_2m_6h,double precision,float8,气象预报小时记录表,wh_meteorological
+public,wh_meteorological_predict_hour_records,dtem_2m_12h,double precision,float8,气象预报小时记录表,wh_meteorological
+public,wh_meteorological_predict_hour_records,dtem_2m_24h,double precision,float8,气象预报小时记录表,wh_meteorological
+public,wh_meteorological_predict_hour_records,rain_1h,double precision,float8,气象预报小时记录表,wh_meteorological
+public,wh_meteorological_predict_hour_records,rain_3h,double precision,float8,气象预报小时记录表,wh_meteorological
+public,wh_meteorological_predict_hour_records,rain_6h,double precision,float8,气象预报小时记录表,wh_meteorological
+public,wh_meteorological_predict_hour_records,rain_12h,double precision,float8,气象预报小时记录表,wh_meteorological
+public,wh_meteorological_predict_hour_records,rain_24h,double precision,float8,气象预报小时记录表,wh_meteorological
+public,wh_meteorological_predict_hour_records,lowcloud_1h,double precision,float8,气象预报小时记录表,wh_meteorological
+public,wh_meteorological_predict_hour_records,midcloud_1h,double precision,float8,气象预报小时记录表,wh_meteorological
+public,wh_meteorological_predict_hour_records,highcloud_1h,double precision,float8,气象预报小时记录表,wh_meteorological
+public,wh_meteorological_predict_hour_records,totalcloud_1h,double precision,float8,气象预报小时记录表,wh_meteorological
+public,wh_meteorological_predict_hour_records,pbl_1h,double precision,float8,气象预报小时记录表,wh_meteorological
+public,wh_meteorological_predict_hour_records,height_1h,double precision,float8,气象预报小时记录表,wh_meteorological
+public,wh_meteorological_predict_hour_records,pressure_1h,double precision,float8,气象预报小时记录表,wh_meteorological
+public,wh_meteorological_predict_hour_records,stapress_1h,double precision,float8,气象预报小时记录表,wh_meteorological
+public,wh_meteorological_predict_hour_records,glw_1h,double precision,float8,气象预报小时记录表,wh_meteorological
+public,wh_meteorological_predict_hour_records,swdown_1h,double precision,float8,气象预报小时记录表,wh_meteorological
+public,wh_meteorological_predict_hour_records,p850inver_1h,double precision,float8,气象预报小时记录表,wh_meteorological
+public,wh_meteorological_predict_hour_records,p925inver_1h,double precision,float8,气象预报小时记录表,wh_meteorological
+public,wh_meteorological_predict_hour_records,visib_1h,double precision,float8,气象预报小时记录表,wh_meteorological
+public,wh_meteorological_predict_hour_records,predictiontime,timestamp without time zone,timestamp,气象预报小时记录表,wh_meteorological
+public,wh_meteorological_predict_hour_records,predictioninterval,bigint,int8,气象预报小时记录表,wh_meteorological
+public,wh_meteorological_predict_hour_records,datadate,timestamp without time zone,timestamp,气象预报小时记录表,wh_meteorological
+public,wm_camera_platform,id,bigint,int8,视频平台设备信息表,wm_camera
+public,wm_hydrological_info,region_code,character varying,varchar,水位站基本信息表,wm_hydrological
+public,wm_hydrological_info,geom,USER-DEFINED,geometry,水位站基本信息表,wm_hydrological
+public,wm_hydrological_info,last_maintenance_time,date,date,水位站基本信息表,wm_hydrological
+public,wm_image_info,id,bigint,int8,档案图片信息表：用于保存各种站点、断面、污染源的图片信息,wm_image
+public,wm_meteorological_info,region_code,character varying,varchar,气象自动监测站基本信息表,wm_meteorological
+public,wm_meteorological_info,geom,USER-DEFINED,geometry,气象自动监测站基本信息表,wm_meteorological
+public,wm_meteorological_info,last_maintenance_time,date,date,气象自动监测站基本信息表,wm_meteorological
+public,wm_raster_info,id,bigint,int8,,wm_raster
+public,wm_raster_inversion,id,bigint,int8,,wm_raster
+public,wm_raster_inversion_config,id,bigint,int8,,wm_raster
+public,wm_raster_inversion_config,type_code,bigint,int8,,wm_raster
+public,wm_raster_inversion_config,name,character varying,varchar,,wm_raster
+public,wm_raster_inversion_config,boundaries_json,text,text,,wm_raster
+public,wm_raster_inversion_config,labels_json,text,text,,wm_raster
+public,wm_raster_inversion_config,colors_json,text,text,,wm_raster
+public,wm_raster_inversion_config,create_time,timestamp without time zone,timestamp,,wm_raster
+public,wm_raster_inversion_config,update_time,timestamp without time zone,timestamp,,wm_raster
+public,wm_raster_inversion_config,del_flag,character,bpchar,,wm_raster
+public,wm_station_info,region_code,character varying,varchar,水质自动监测站基本信息表,wm_station
+public,wm_station_info,geom,USER-DEFINED,geometry,水质自动监测站基本信息表,wm_station
+public,wm_station_info,last_maintenance_time,date,date,水质自动监测站基本信息表,wm_station
+public,wm_station_info_v2,create_by,bigint,int8,自动站管理,wm_station
+public,wm_station_info_v2,create_time,timestamp without time zone,timestamp,自动站管理,wm_station
+public,wm_station_info_v2,update_by,bigint,int8,自动站管理,wm_station
+public,wm_station_info_v2,update_time,timestamp without time zone,timestamp,自动站管理,wm_station
+public,wm_uav_info,id,bigint,int8,大疆无人机基础信息,wm_uav
+public,wm_water_intake,id,bigint,int8,水源地-取水口,wm_water
+public,wm_water_intake,geom,USER-DEFINED,geometry,水源地-取水口,wm_water
+public,wm_water_source,id,bigint,int8,水源地信息：通过code码关联,wm_water
+public,wm_water_source,geom,USER-DEFINED,geometry,水源地信息：通过code码关联,wm_water
+public,wm_water_source_bak0421,id,bigint,int8,水源地信息：通过code码关联,wm_water
+public,wm_water_source_intake_v2,id,bigint,int8,饮用水水源地管理及监测-取水口,wm_water
+public,wm_water_source_intake_v2,create_by,bigint,int8,饮用水水源地管理及监测-取水口,wm_water
+public,wm_water_source_intake_v2,create_time,timestamp without time zone,timestamp,饮用水水源地管理及监测-取水口,wm_water
+public,wm_water_source_intake_v2,update_by,bigint,int8,饮用水水源地管理及监测-取水口,wm_water
+public,wm_water_source_intake_v2,update_time,timestamp without time zone,timestamp,饮用水水源地管理及监测-取水口,wm_water
+public,wm_water_source_intake_v2,del_flag,character varying,varchar,饮用水水源地管理及监测-取水口,wm_water
+public,wm_water_source_zone_v2,id,bigint,int8,饮用水水源地管理及监测-保护区,wm_water
+public,wm_water_source_zone_v2,create_by,bigint,int8,饮用水水源地管理及监测-保护区,wm_water
+public,wm_water_source_zone_v2,create_time,timestamp without time zone,timestamp,饮用水水源地管理及监测-保护区,wm_water
+public,wm_water_source_zone_v2,update_by,bigint,int8,饮用水水源地管理及监测-保护区,wm_water
+public,wm_water_source_zone_v2,update_time,timestamp without time zone,timestamp,饮用水水源地管理及监测-保护区,wm_water
+public,wm_water_source_zone_v2,del_flag,character varying,varchar,饮用水水源地管理及监测-保护区,wm_water
+public,wm_water_source_zone_v2,geom,USER-DEFINED,geometry,饮用水水源地管理及监测-保护区,wm_water
+public,wm_waterbody_info,water_body_code,character varying,varchar,水体信息实体类,wm_waterbody
+public,wm_waterbody_info,water_body_function,character varying,varchar,水体信息实体类,wm_waterbody
+public,wm_waterbody_info,basin,character varying,varchar,水体信息实体类,wm_waterbody
+public,wm_waterbody_info,country,character varying,varchar,水体信息实体类,wm_waterbody
+public,wm_waterbody_info,start_village,character varying,varchar,水体信息实体类,wm_waterbody
+public,wm_waterbody_info,end_village,character varying,varchar,水体信息实体类,wm_waterbody
+public,wm_waterbody_info,up_stream,character varying,varchar,水体信息实体类,wm_waterbody
+public,wm_waterbody_info,down_stream,character varying,varchar,水体信息实体类,wm_waterbody
+public,wm_waterbody_info,remark,character varying,varchar,水体信息实体类,wm_waterbody
+public,wm_waterquality_day_records,status,character,bpchar,水质监测日记录表,wm_waterquality
+public,wm_waterquality_day_records,record_type,character,bpchar,水质监测日记录表,wm_waterquality
+public,wst_asset_trace_snap,snap_node_id,bigint,int8,水安全溯源模块-资产拓扑挂接表，用于维护业务资产与溯源拓扑节点之间的挂接关系，是资产进入 pgRouting 网络计算的桥梁,wst_asset
+public,wst_asset_trace_snap,snap_edge_id,bigint,int8,水安全溯源模块-资产拓扑挂接表，用于维护业务资产与溯源拓扑节点之间的挂接关系，是资产进入 pgRouting 网络计算的桥梁,wst_asset
+public,wst_asset_trace_snap,snap_distance_m,numeric,numeric,水安全溯源模块-资产拓扑挂接表，用于维护业务资产与溯源拓扑节点之间的挂接关系，是资产进入 pgRouting 网络计算的桥梁,wst_asset
+public,wst_asset_trace_snap,status,character varying,varchar,水安全溯源模块-资产拓扑挂接表，用于维护业务资产与溯源拓扑节点之间的挂接关系，是资产进入 pgRouting 网络计算的桥梁,wst_asset
+public,wst_asset_type_dict,asset_group,character varying,varchar,水安全溯源模块-资产类型字典表，用于统一管理资产类型、图层、图标、几何类型和前端展示规则,wst_asset
+public,wst_asset_type_dict,asset_group_name,character varying,varchar,水安全溯源模块-资产类型字典表，用于统一管理资产类型、图层、图标、几何类型和前端展示规则,wst_asset
+public,wst_asset_type_dict,group_sort,integer,int4,水安全溯源模块-资产类型字典表，用于统一管理资产类型、图层、图标、几何类型和前端展示规则,wst_asset
+public,wst_asset_type_dict,group_description,text,text,水安全溯源模块-资产类型字典表，用于统一管理资产类型、图层、图标、几何类型和前端展示规则,wst_asset
+public,wst_layer_river,id,bigint,int8,,wst_layer
+public,wst_layer_river,river_code,character varying,varchar,,wst_layer
+public,wst_layer_river,river_name,character varying,varchar,,wst_layer
+public,wst_layer_river,next_down,bigint,int8,,wst_layer
+public,wst_layer_river,river_class,character varying,varchar,,wst_layer
+public,wst_layer_river,length_km,numeric,numeric,,wst_layer
+public,wst_layer_river,from_z,numeric,numeric,,wst_layer
+public,wst_layer_river,to_z,numeric,numeric,,wst_layer
+public,wst_layer_river,geom,USER-DEFINED,geometry,,wst_layer
+public,wst_layer_river,metadata_json,jsonb,jsonb,,wst_layer
+public,wst_trace_edge,source_asset_id,bigint,int8,水安全溯源模块-溯源拓扑边表，用于存储河网、管网、排水路径、园区内外衔接路径，是 pgRouting 上下游分析的核心边表,wst_trace
+public,wst_trace_edge,from_node_id,bigint,int8,水安全溯源模块-溯源拓扑边表，用于存储河网、管网、排水路径、园区内外衔接路径，是 pgRouting 上下游分析的核心边表,wst_trace
+public,wst_trace_edge,to_node_id,bigint,int8,水安全溯源模块-溯源拓扑边表，用于存储河网、管网、排水路径、园区内外衔接路径，是 pgRouting 上下游分析的核心边表,wst_trace
+public,wst_trace_edge,direction_status,character varying,varchar,水安全溯源模块-溯源拓扑边表，用于存储河网、管网、排水路径、园区内外衔接路径，是 pgRouting 上下游分析的核心边表,wst_trace
+public,wst_trace_node,asset_id,bigint,int8,水安全溯源模块-溯源拓扑节点表，用于存储河网、管网、园区排污河流、排口挂接点、断面挂接点、园区出口等 pgRouting 节点,wst_trace
+public,wst_trace_topology_issue,id,bigint,int8,,wst_trace
+public,wst_trace_topology_issue,issue_type,character varying,varchar,,wst_trace
+public,wst_trace_topology_issue,issue_name,character varying,varchar,,wst_trace
+public,wst_trace_topology_issue,issue_level,character varying,varchar,,wst_trace
+public,wst_trace_topology_issue,object_type,character varying,varchar,,wst_trace
+public,wst_trace_topology_issue,object_id,bigint,int8,,wst_trace
+public,wst_trace_topology_issue,object_name,character varying,varchar,,wst_trace
+public,wst_trace_topology_issue,status,character varying,varchar,,wst_trace
+public,wst_trace_topology_issue,geom,USER-DEFINED,geometry,,wst_trace
+public,wst_trace_topology_issue,issue_desc,text,text,,wst_trace
+public,wst_trace_topology_issue,metadata_json,jsonb,jsonb,,wst_trace
+public,wst_trace_topology_issue,remark,text,text,,wst_trace
+public,wst_trace_topology_issue,del_flag,smallint,int2,,wst_trace

@@ -1,0 +1,4 @@
+﻿table_schema,table_name,column_name,proposed_comment,human_decision,human_note,current_comment,sql_generated,status,reason
+public,stg_ycssthjj_wryzxjkpt_t_zxjc_s_w_1_df,cjsj,创建时间,approve,人工确认：cjsj 表示创建时间,,True,generated,
+public,stg_ycssthjj_wryzxjkpt_t_zxjc_s_w_1_df,xgsj,修改时间,approve,人工确认：xgsj 表示修改时间,,True,generated,
+public,wm_waterbody_info,water_body_name,水体名称,approve,人工确认：water_body_name 表示水体名称,,True,generated,
