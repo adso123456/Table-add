@@ -1,3 +1,3 @@
 object_type,table_name,column_name,current_comment,candidate_comment,human_decision,human_note
-table,wm_raster_inversion,,,遥感反演结果表（合并版）,,
-column,wm_raster_inversion,record_id,遥感反演结果表（合并版）,遥感反演结果记录ID,,
+table,wm_raster_inversion,,,遥感反演结果表（合并版）,approve,人工确认：wm_raster_inversion 表示遥感反演结果表（合并版）
+column,wm_raster_inversion,record_id,遥感反演结果表（合并版）,遥感反演结果记录ID,approve,人工确认：record_id 表示遥感反演结果记录ID；原注释疑似表级描述误填到字段注释
