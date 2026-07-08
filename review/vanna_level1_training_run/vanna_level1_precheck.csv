@@ -1,0 +1,15 @@
+check,passed,detail
+DDL 文件数量 = 115,True,115
+CREATE TABLE 文件数量 = 115,True,115
+DDL not available = 0,True,0
+DDL 字段总数 = 2572,True,2572
+documentation 文件数 = 115,True,115
+agent index 条目 = 2572,True,2572
+manifest columns_in_ddl = 2572,True,2572
+manifest tables = 115,True,115
+level2 = not_started,True,not_started
+level3 = not_started,True,not_started
+level4 = not_started,True,not_started
+Vanna 已安装,True,version 0.1.0
+ChromaDB 已安装,True,version 1.5.9
+OPENAI_API_KEY 已配置,True,未设置 — 训练用本地 embedding 不需要 API Key，但后续 SQL 生成需要
