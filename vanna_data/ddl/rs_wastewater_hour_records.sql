@@ -1,7 +1,7 @@
 -- Table: public."rs_wastewater_hour_records"
 -- Table comment: 污染源-小时监测数据表
 CREATE TABLE public."rs_wastewater_hour_records" (
-  "id" bigint NOT NULL,
+  "id" bigint,
   "timestamp" timestamp without time zone,
   "type" character varying(10),
   "pollutant_id" bigint,
@@ -57,7 +57,7 @@ CREATE TABLE public."rs_wastewater_hour_records" (
   "create_time" timestamp without time zone,
   "update_by" bigint,
   "update_time" timestamp without time zone,
-  "del_flag" character varying(10) DEFAULT '0'::character varying
+  "del_flag" character varying(10)
 );
 
 -- Column comments:

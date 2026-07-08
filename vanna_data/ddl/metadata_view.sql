@@ -9,7 +9,7 @@ CREATE TABLE public."metadata_view" (
   "LayerName" character varying(255),
   "LayerType" character varying(255),
   "create_date" timestamp without time zone,
-  "table_name" character varying(21) NOT NULL DEFAULT ''::character varying
+  "table_name" character varying(21)
 );
 
 -- Column comments:

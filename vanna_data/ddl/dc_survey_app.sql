@@ -1,17 +1,17 @@
 -- Table: public."dc_survey_app"
 -- Table comment: APP安装包版本管理表
 CREATE TABLE public."dc_survey_app" (
-  "id" bigint NOT NULL DEFAULT nextval('dc_survey_app_id_seq'::regclass),
-  "version_code" character varying(50) NOT NULL,
-  "version_name" character varying(100) NOT NULL,
-  "update_type" smallint DEFAULT 2,
-  "download_url" character varying(500) NOT NULL,
-  "file_size" bigint NOT NULL,
-  "file_md5" character varying(32) NOT NULL,
+  "id" bigint,
+  "version_code" character varying(50),
+  "version_name" character varying(100),
+  "update_type" smallint,
+  "download_url" character varying(500),
+  "file_size" bigint,
+  "file_md5" character varying(32),
   "update_log" text,
-  "platform_type" smallint DEFAULT 1,
+  "platform_type" smallint,
   "create_by" bigint,
-  "create_time" timestamp without time zone DEFAULT CURRENT_TIMESTAMP
+  "create_time" timestamp without time zone
 );
 
 -- Column comments:

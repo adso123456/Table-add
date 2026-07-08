@@ -1,7 +1,7 @@
 -- Table: public."wm_panorama_layer"
 -- Table comment: 全景图层信息表
 CREATE TABLE public."wm_panorama_layer" (
-  "id" bigint NOT NULL DEFAULT nextval('wm_panorama_layer_id_seq'::regclass),
+  "id" bigint,
   "point_name" character varying(255),
   "topic" character varying(255),
   "directory_id" bigint,
@@ -9,9 +9,9 @@ CREATE TABLE public."wm_panorama_layer" (
   "latitude" numeric(20,10),
   "icon" character varying(500),
   "coverage_radius" numeric(10,2),
-  "create_time" timestamp without time zone DEFAULT CURRENT_TIMESTAMP,
-  "update_time" timestamp without time zone DEFAULT CURRENT_TIMESTAMP,
-  "is_deleted" boolean DEFAULT false
+  "create_time" timestamp without time zone,
+  "update_time" timestamp without time zone,
+  "is_deleted" boolean
 );
 
 -- Column comments:

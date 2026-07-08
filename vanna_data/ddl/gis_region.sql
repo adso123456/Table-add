@@ -1,7 +1,7 @@
 -- Table: public."gis_region"
 -- Table comment: 区县数据表
 CREATE TABLE public."gis_region" (
-  "id" bigint NOT NULL,
+  "id" bigint,
   "region_code" character varying(32),
   "region_name" character varying(100),
   "control_unit_id" bigint,
@@ -14,7 +14,7 @@ CREATE TABLE public."gis_region" (
   "create_time" timestamp without time zone,
   "update_by" bigint,
   "update_time" timestamp without time zone,
-  "del_flag" character(1) DEFAULT 0
+  "del_flag" character(1)
 );
 
 -- Column comments:

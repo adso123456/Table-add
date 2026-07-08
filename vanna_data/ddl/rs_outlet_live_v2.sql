@@ -1,8 +1,8 @@
 -- Table: public."rs_outlet_live_v2"
 -- Table comment: 排污口实况
 CREATE TABLE public."rs_outlet_live_v2" (
-  "id" bigint NOT NULL DEFAULT nextval('archive_outlet_live_id_seq'::regclass),
-  "outlet_id" bigint NOT NULL,
+  "id" bigint,
+  "outlet_id" bigint,
   "geom" geometry(Point,4326),
   "gate_morphology" character varying(100),
   "drainage_feature" character varying(100),
@@ -10,10 +10,10 @@ CREATE TABLE public."rs_outlet_live_v2" (
   "has_online_monitor" character varying(10),
   "has_sampling_condition" character varying(10),
   "create_by" bigint,
-  "create_time" timestamp without time zone DEFAULT CURRENT_TIMESTAMP,
+  "create_time" timestamp without time zone,
   "update_by" bigint,
   "update_time" timestamp without time zone,
-  "del_flag" character varying(1) DEFAULT '0'::character varying,
+  "del_flag" character varying(1),
   "outlet_name" character varying(200)
 );
 

@@ -1,7 +1,7 @@
 -- Table: public."rs_outlet"
 -- Table comment: 排污口信息表
 CREATE TABLE public."rs_outlet" (
-  "id" bigint NOT NULL,
+  "id" bigint,
   "area_code" character varying(19),
   "area_name" character varying(100),
   "county_name" character varying(100),
@@ -64,7 +64,7 @@ CREATE TABLE public."rs_outlet" (
   "create_time" timestamp without time zone,
   "update_by" character varying(18),
   "update_time" timestamp without time zone,
-  "del_flag" character(1) DEFAULT 0,
+  "del_flag" character(1),
   "is_quick_detect" character varying(10),
   "other_sewage_type" character varying(255),
   "drain_standard" character varying(300),
@@ -74,7 +74,6 @@ CREATE TABLE public."rs_outlet" (
   "quick_detect_ad" character varying(50),
   "quick_detect_zl" character varying(50),
   "quick_detect_sl" character varying(50),
-  "quick_detect_desc" character varying(255),
   "monitor_sample_date" character varying(100),
   "monitor_sample_sl" character varying(100),
   "monitor_sample_sw" character varying(50),

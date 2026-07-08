@@ -1,7 +1,7 @@
 -- Table: public."layer_outlet_sewage"
 -- Table comment: 工业园区-污水排放口
 CREATE TABLE public."layer_outlet_sewage" (
-  "id" integer NOT NULL DEFAULT nextval('"污水排放口_id_seq"'::regclass),
+  "id" integer,
   "x" double precision,
   "y" double precision,
   "name" character varying,

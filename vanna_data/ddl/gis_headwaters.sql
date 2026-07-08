@@ -1,7 +1,7 @@
 -- Table: public."gis_headwaters"
 -- Table comment: 水源地表
 CREATE TABLE public."gis_headwaters" (
-  "id" bigint NOT NULL,
+  "id" bigint,
   "headwaters_name" character varying(255),
   "headwaters_code" character varying(32),
   "address" character varying(255),
@@ -16,7 +16,7 @@ CREATE TABLE public."gis_headwaters" (
   "create_time" timestamp without time zone,
   "update_by" bigint,
   "update_time" timestamp without time zone,
-  "del_flag" character(1) DEFAULT 0
+  "del_flag" character(1)
 );
 
 -- Column comments:

@@ -1,8 +1,8 @@
 -- Table: public."rs_outlet_trace_v2"
 -- Table comment: 排污口溯源
 CREATE TABLE public."rs_outlet_trace_v2" (
-  "id" bigint NOT NULL DEFAULT nextval('archive_outlet_trace_id_seq'::regclass),
-  "outlet_id" bigint NOT NULL,
+  "id" bigint,
+  "outlet_id" bigint,
   "primary_entity_name" character varying(200),
   "other_entity_name" character varying(200),
   "address" character varying(500),
@@ -18,10 +18,10 @@ CREATE TABLE public."rs_outlet_trace_v2" (
   "approval_status" character varying(200),
   "pollutant_info" text,
   "create_by" bigint,
-  "create_time" timestamp without time zone DEFAULT CURRENT_TIMESTAMP,
+  "create_time" timestamp without time zone,
   "update_by" bigint,
   "update_time" timestamp without time zone,
-  "del_flag" character varying(1) DEFAULT '0'::character varying,
+  "del_flag" character varying(1),
   "geom" geometry(Point,4326),
   "outlet_name" character varying(200)
 );

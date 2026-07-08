@@ -1,16 +1,16 @@
 -- Table: public."wm_directory"
 -- Table comment: 目录树实体
 CREATE TABLE public."wm_directory" (
-  "id" bigint NOT NULL,
-  "name" character varying(255) NOT NULL,
+  "id" bigint,
+  "name" character varying(255),
   "parent_id" bigint,
   "path" character varying(1024),
   "description" character varying(512),
-  "sort" integer DEFAULT 0,
+  "sort" integer,
   "type" character varying(32),
-  "create_time" timestamp without time zone DEFAULT CURRENT_TIMESTAMP,
-  "update_time" timestamp without time zone DEFAULT CURRENT_TIMESTAMP,
-  "is_deleted" boolean DEFAULT false
+  "create_time" timestamp without time zone,
+  "update_time" timestamp without time zone,
+  "is_deleted" boolean
 );
 
 -- Column comments:

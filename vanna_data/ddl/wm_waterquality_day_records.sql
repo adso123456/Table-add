@@ -1,7 +1,7 @@
 -- Table: public."wm_waterquality_day_records"
 -- Table comment: 水质监测日记录表
 CREATE TABLE public."wm_waterquality_day_records" (
-  "id" bigint NOT NULL,
+  "id" bigint,
   "station_id" bigint,
   "m1_value" double precision,
   "m1_count" bigint,
@@ -68,12 +68,11 @@ CREATE TABLE public."wm_waterquality_day_records" (
   "monitor_time" timestamp without time zone,
   "status" character(1),
   "water_quality_level" character varying(20),
-  "record_type" character(1),
   "create_by" bigint,
   "create_time" timestamp without time zone,
   "update_by" bigint,
   "update_time" timestamp without time zone,
-  "del_flag" character(1) DEFAULT 0
+  "del_flag" character(1)
 );
 
 -- Column comments:

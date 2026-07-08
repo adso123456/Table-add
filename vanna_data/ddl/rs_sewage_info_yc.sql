@@ -1,7 +1,7 @@
 -- Table: public."rs_sewage_info_yc"
 -- Table comment: 污水处理厂信息表：宜昌水环境
 CREATE TABLE public."rs_sewage_info_yc" (
-  "id" bigint NOT NULL,
+  "id" bigint,
   "name" character varying(255),
   "monitor_name" character varying(255),
   "region_code" character varying(32),
@@ -15,9 +15,9 @@ CREATE TABLE public."rs_sewage_info_yc" (
   "create_time" timestamp without time zone,
   "update_by" bigint,
   "update_time" timestamp without time zone,
-  "del_flag" character(1) DEFAULT 0,
-  "town_flag" boolean DEFAULT false,
-  "industrial_flag" boolean DEFAULT false
+  "del_flag" character(1),
+  "town_flag" boolean,
+  "industrial_flag" boolean
 );
 
 -- Column comments:

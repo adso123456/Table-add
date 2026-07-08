@@ -14,16 +14,10 @@ CREATE TABLE public."layer_river_provincial" (
   "sdtf" character varying(4),
   "width" double precision,
   "featid" character varying(16),
-  "elemstime" character varying(8),
-  "elemetime" character varying(8),
-  "ecrm" integer,
-  "wrid" character varying(16),
-  "wrgr" integer,
   "areacode" bigint,
   "name" character varying(64),
   "changetype" integer,
-  "changeatt" character varying(64),
-  "id" integer NOT NULL DEFAULT nextval('layer_river_provincial_id_seq'::regclass)
+  "id" integer
 );
 
 -- Column comments:

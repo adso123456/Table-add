@@ -1,24 +1,24 @@
 -- Table: public."wst_trace_topology_issue"
 -- Table comment: 溯源拓扑问题记录表
 CREATE TABLE public."wst_trace_topology_issue" (
-  "id" bigint NOT NULL DEFAULT nextval('wst_trace_topology_issue_id_seq'::regclass),
-  "issue_type" character varying(64) NOT NULL,
+  "id" bigint,
+  "issue_type" character varying(64),
   "issue_name" character varying(128),
-  "issue_level" character varying(32) NOT NULL,
-  "object_type" character varying(64) NOT NULL,
-  "object_id" bigint NOT NULL,
+  "issue_level" character varying(32),
+  "object_type" character varying(64),
+  "object_id" bigint,
   "object_name" character varying(255),
   "object_code" character varying(128),
-  "status" character varying(32) NOT NULL DEFAULT 'pending'::character varying,
+  "status" character varying(32),
   "geom" geometry(Geometry,4326),
   "issue_desc" text,
-  "metadata_json" jsonb DEFAULT '{}'::jsonb,
+  "metadata_json" jsonb,
   "remark" text,
   "created_by" character varying(64),
-  "created_at" timestamp without time zone DEFAULT now(),
+  "created_at" timestamp without time zone,
   "updated_by" character varying(64),
-  "updated_at" timestamp without time zone DEFAULT now(),
-  "del_flag" smallint DEFAULT 0
+  "updated_at" timestamp without time zone,
+  "del_flag" smallint
 );
 
 -- Column comments:

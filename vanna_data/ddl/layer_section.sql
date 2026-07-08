@@ -1,7 +1,7 @@
 -- Table: public."layer_section"
 -- Table comment: 工业园区-监测断面
 CREATE TABLE public."layer_section" (
-  "id" integer NOT NULL DEFAULT nextval('"监测断面_id_seq"'::regclass),
+  "id" integer,
   "x" double precision,
   "y" double precision,
   "name" character varying,

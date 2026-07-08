@@ -1,27 +1,27 @@
 -- Table: public."wm_camera_platform"
 -- Table comment: 视频平台设备信息表
 CREATE TABLE public."wm_camera_platform" (
-  "id" bigint NOT NULL,
-  "device_code" character varying(20) NOT NULL,
+  "id" bigint,
+  "device_code" character varying(20),
   "name" character varying(100),
   "manufacturer" character varying(100),
   "model" character varying(100),
-  "transport" character varying(50) DEFAULT 'TCP'::character varying,
-  "stream_mode" character varying(50) DEFAULT 'TCP-PASSIVE'::character varying,
+  "transport" character varying(50),
+  "stream_mode" character varying(50),
   "ip_address" character varying(100),
   "port" integer,
-  "online" smallint DEFAULT 0,
-  "heart_beat_interval" integer DEFAULT 60,
-  "heart_beat_count" integer DEFAULT 3,
-  "charset" character varying(50) DEFAULT 'GB2312'::character varying,
+  "online" smallint,
+  "heart_beat_interval" integer,
+  "heart_beat_count" integer,
+  "charset" character varying(50),
   "lon" double precision,
   "lat" double precision,
   "remark" character varying(500),
   "create_by" bigint,
-  "create_time" timestamp without time zone DEFAULT CURRENT_TIMESTAMP,
+  "create_time" timestamp without time zone,
   "update_by" bigint,
-  "update_time" timestamp without time zone DEFAULT CURRENT_TIMESTAMP,
-  "del_flag" character varying(1) DEFAULT '0'::character varying
+  "update_time" timestamp without time zone,
+  "del_flag" character varying(1)
 );
 
 -- Column comments:

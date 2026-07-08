@@ -1,18 +1,18 @@
 -- Table: public."ad_dict"
 -- Table comment: 数据字典
 CREATE TABLE public."ad_dict" (
-  "row_id" bigint NOT NULL,
+  "row_id" bigint,
   "list_type" character varying(32),
   "list_type_desc" character varying(255),
   "item_code" character varying(32),
   "item_name" character varying(100),
-  "taxis_no" integer NOT NULL DEFAULT 0,
+  "taxis_no" integer,
   "origin_flag" character(1),
   "origin_app" character varying(32),
-  "modification_num" integer NOT NULL DEFAULT 0,
+  "modification_num" integer,
   "create_time" timestamp without time zone,
   "update_time" timestamp without time zone,
-  "del_flag" character(1) DEFAULT '0'::bpchar,
+  "del_flag" character(1),
   "create_by" bigint,
   "update_by" bigint
 );

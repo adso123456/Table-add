@@ -1,7 +1,7 @@
 -- Table: public."day_quality_records"
 -- Table comment: 日质控数据
 CREATE TABLE public."day_quality_records" (
-  "id" bigint NOT NULL,
+  "id" bigint,
   "station_id" bigint,
   "type" character(1),
   "span_value5" double precision,
@@ -25,7 +25,7 @@ CREATE TABLE public."day_quality_records" (
   "create_time" timestamp without time zone,
   "update_by" bigint,
   "update_time" timestamp without time zone,
-  "del_flag" character(1) DEFAULT 0
+  "del_flag" character(1)
 );
 
 -- Column comments:

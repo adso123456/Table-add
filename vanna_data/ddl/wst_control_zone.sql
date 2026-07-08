@@ -1,25 +1,25 @@
 -- Table: public."wst_control_zone"
 -- Table comment: 水安全溯源模块-三级分区表，用于管理国控断面控制单元、自动站分区、工业园区/分水岭分区
 CREATE TABLE public."wst_control_zone" (
-  "id" bigint NOT NULL DEFAULT nextval('wst_control_zone_id_seq'::regclass),
-  "zone_code" character varying(100) NOT NULL,
-  "zone_name" character varying(200) NOT NULL,
-  "zone_level" integer NOT NULL,
+  "id" bigint,
+  "zone_code" character varying(100),
+  "zone_name" character varying(200),
+  "zone_level" integer,
   "parent_id" bigint,
   "divide_basis" character varying(100),
   "zone_type" character varying(100),
   "basin_code" character varying(100),
   "river_system_code" character varying(100),
-  "sort_no" integer DEFAULT 0,
-  "status" character varying(50) DEFAULT 'active'::character varying,
+  "sort_no" integer,
+  "status" character varying(50),
   "geom" geometry(MultiPolygon,4326),
   "metadata_json" jsonb,
   "remark" text,
   "created_by" character varying(100),
-  "created_at" timestamp without time zone DEFAULT now(),
+  "created_at" timestamp without time zone,
   "updated_by" character varying(100),
-  "updated_at" timestamp without time zone DEFAULT now(),
-  "del_flag" smallint DEFAULT 0
+  "updated_at" timestamp without time zone,
+  "del_flag" smallint
 );
 
 -- Column comments:

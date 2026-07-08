@@ -1,7 +1,7 @@
 -- Table: public."layer_watershed"
 -- Table comment: 工业园区-汇水区
 CREATE TABLE public."layer_watershed" (
-  "id" integer NOT NULL DEFAULT nextval('"汇水区_id_seq"'::regclass),
+  "id" integer,
   "name" character varying,
   "code" character varying,
   "geom" geometry(MultiLineString,4326)

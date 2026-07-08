@@ -1,7 +1,7 @@
 -- Table: public."rs_wastewater_standard"
 -- Table comment: 废水/废气排放标准配置表
 CREATE TABLE public."rs_wastewater_standard" (
-  "id" bigint NOT NULL DEFAULT nextval('rs_wastewater_standard_1_id_seq'::regclass),
+  "id" bigint,
   "indicator_name" character varying(64),
   "apply_type" character(1),
   "l1_value" double precision,
@@ -12,7 +12,7 @@ CREATE TABLE public."rs_wastewater_standard" (
   "create_time" timestamp without time zone,
   "update_by" bigint,
   "update_time" timestamp without time zone,
-  "del_flag" character(1) DEFAULT '0'::bpchar,
+  "del_flag" character(1),
   "jcdbh" character varying(64),
   "indicator_code" character varying(20),
   "type" character varying(10)

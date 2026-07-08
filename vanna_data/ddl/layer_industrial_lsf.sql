@@ -1,7 +1,7 @@
 -- Table: public."layer_industrial_lsf"
 -- Table comment: 工业园区-园区临时闸阀
 CREATE TABLE public."layer_industrial_lsf" (
-  "id" integer NOT NULL,
+  "id" integer,
   "geom" geometry(Point,4326),
   "name" character varying(10),
   "code" character varying(50)

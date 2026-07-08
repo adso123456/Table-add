@@ -1,7 +1,7 @@
 -- Table: public."rs_industrial_info_yc"
 -- Table comment: 工业园区环境监测数据表
 CREATE TABLE public."rs_industrial_info_yc" (
-  "id" bigint NOT NULL DEFAULT nextval('rs_industrial_info_yc_id_seq'::regclass),
+  "id" bigint,
   "name" character varying(255),
   "name_part" character varying(255),
   "region_code" character varying(20),
@@ -66,7 +66,7 @@ CREATE TABLE public."rs_industrial_info_yc" (
   "create_time" timestamp without time zone,
   "update_by" bigint,
   "update_time" timestamp without time zone,
-  "del_flag" character(1) DEFAULT '0'::bpchar
+  "del_flag" character(1)
 );
 
 -- Column comments:

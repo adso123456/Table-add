@@ -1,17 +1,17 @@
 -- Table: public."wst_asset_relation"
 -- Table comment: 资产关系实例表，存储资产与资产之间的一度业务关系，不代表水流路径
 CREATE TABLE public."wst_asset_relation" (
-  "id" bigint NOT NULL DEFAULT nextval('wst_asset_relation_id_seq'::regclass),
-  "source_asset_id" bigint NOT NULL,
-  "target_asset_id" bigint NOT NULL,
-  "relation_type" character varying(100) NOT NULL,
-  "relation_subtype" character varying(100) NOT NULL,
+  "id" bigint,
+  "source_asset_id" bigint,
+  "target_asset_id" bigint,
+  "relation_type" character varying(100),
+  "relation_subtype" character varying(100),
   "source_type" character varying(50),
   "confidence" numeric(5,2),
-  "status" character varying(50) DEFAULT 'confirmed'::character varying,
+  "status" character varying(50),
   "metadata_json" jsonb,
-  "created_at" timestamp without time zone DEFAULT now(),
-  "updated_at" timestamp without time zone DEFAULT now()
+  "created_at" timestamp without time zone,
+  "updated_at" timestamp without time zone
 );
 
 -- Column comments:

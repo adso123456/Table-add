@@ -1,7 +1,7 @@
 -- Table: public."wh_meteorological_predict_hour_records"
 -- Table comment: 气象预报小时记录表
 CREATE TABLE public."wh_meteorological_predict_hour_records" (
-  "id" text NOT NULL,
+  "id" text,
   "station_id" bigint,
   "winddirect_10m_1h" double precision,
   "winddirect8_10m_1h" character varying(16),
@@ -41,7 +41,7 @@ CREATE TABLE public."wh_meteorological_predict_hour_records" (
   "create_time" timestamp without time zone,
   "update_by" bigint,
   "update_time" timestamp without time zone,
-  "del_flag" character(1) DEFAULT 0
+  "del_flag" character(1)
 );
 
 -- Column comments:

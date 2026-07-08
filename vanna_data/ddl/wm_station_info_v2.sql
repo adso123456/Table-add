@@ -1,7 +1,7 @@
 -- Table: public."wm_station_info_v2"
 -- Table comment: 自动站管理
 CREATE TABLE public."wm_station_info_v2" (
-  "id" bigint NOT NULL,
+  "id" bigint,
   "station_code" character varying(255),
   "station_name" character varying(255),
   "short_name" character varying(255),
@@ -24,10 +24,10 @@ CREATE TABLE public."wm_station_info_v2" (
   "contact_info" character varying(100),
   "geom" geometry(Point,4326),
   "create_by" bigint,
-  "create_time" timestamp without time zone DEFAULT CURRENT_TIMESTAMP,
+  "create_time" timestamp without time zone,
   "update_by" bigint,
   "update_time" timestamp without time zone,
-  "del_flag" character varying(1) DEFAULT '0'::character varying,
+  "del_flag" character varying(1),
   "remark" character varying(255),
   "section_name" character varying(100),
   "water_body_name" character varying(150),

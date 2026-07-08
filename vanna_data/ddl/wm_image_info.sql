@@ -1,16 +1,16 @@
 -- Table: public."wm_image_info"
 -- Table comment: 档案图片信息表：用于保存各种站点、断面、污染源的图片信息
 CREATE TABLE public."wm_image_info" (
-  "id" bigint NOT NULL,
-  "pid" bigint NOT NULL,
-  "image_url" character varying(255) NOT NULL,
+  "id" bigint,
+  "pid" bigint,
+  "image_url" character varying(255),
   "image_formats" character varying(15),
-  "image_type" smallint DEFAULT 0,
-  "create_by" bigint DEFAULT 1,
-  "create_time" timestamp without time zone DEFAULT CURRENT_TIMESTAMP,
-  "update_by" bigint DEFAULT 1,
-  "update_time" timestamp without time zone DEFAULT CURRENT_TIMESTAMP,
-  "del_flag" character(1) DEFAULT '0'::bpchar,
+  "image_type" smallint,
+  "create_by" bigint,
+  "create_time" timestamp without time zone,
+  "update_by" bigint,
+  "update_time" timestamp without time zone,
+  "del_flag" character(1),
   "image_name" character varying(255),
   "image_tag" character varying(100)
 );

@@ -1,7 +1,7 @@
 -- Table: public."gis_naturereserve"
 -- Table comment: 自然保护区表
 CREATE TABLE public."gis_naturereserve" (
-  "id" bigint NOT NULL,
+  "id" bigint,
   "nature_reserve_name" character varying(255),
   "nature_reserve_code" character varying(32),
   "address" character varying(255),
@@ -10,9 +10,6 @@ CREATE TABLE public."gis_naturereserve" (
   "type" character(1),
   "level" character varying(8),
   "protect_target" character varying(255),
-  "total_area" double precision,
-  "core_area" double precision,
-  "buffer_area" double precision,
   "manage_org_name" character varying(100),
   "manage_org_type" character varying(8),
   "manage_org_level" character varying(8),
@@ -25,7 +22,7 @@ CREATE TABLE public."gis_naturereserve" (
   "create_time" timestamp without time zone,
   "update_by" bigint,
   "update_time" timestamp without time zone,
-  "del_flag" character(1) DEFAULT 0
+  "del_flag" character(1)
 );
 
 -- Column comments:

@@ -1,7 +1,7 @@
 -- Table: public."wm_waterbody_info"
 -- Table comment: 水体信息实体类
 CREATE TABLE public."wm_waterbody_info" (
-  "id" bigint NOT NULL,
+  "id" bigint,
   "water_body_code" character varying(32),
   "water_body_name" character varying(255),
   "water_body_type" character(1),
@@ -17,7 +17,6 @@ CREATE TABLE public."wm_waterbody_info" (
   "area" double precision,
   "bend_coefficient" double precision,
   "storage" double precision,
-  "country" character varying(255),
   "start_village" character varying(255),
   "end_village" character varying(255),
   "up_stream" character varying(255),
@@ -27,7 +26,7 @@ CREATE TABLE public."wm_waterbody_info" (
   "create_time" timestamp without time zone,
   "update_by" bigint,
   "update_time" timestamp without time zone,
-  "del_flag" character(1) DEFAULT 0
+  "del_flag" character(1)
 );
 
 -- Column comments:

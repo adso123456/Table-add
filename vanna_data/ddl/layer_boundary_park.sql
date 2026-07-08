@@ -1,7 +1,7 @@
 -- Table: public."layer_boundary_park"
 -- Table comment: 工业园区-园区边界
 CREATE TABLE public."layer_boundary_park" (
-  "id" integer NOT NULL,
+  "id" integer,
   "geom" geometry(MultiPolygon,4326),
   "name" character varying(28),
   "code" character varying(50),

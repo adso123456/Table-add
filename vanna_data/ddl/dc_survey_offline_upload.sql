@@ -1,22 +1,22 @@
 -- Table: public."dc_survey_offline_upload"
 -- Table comment: 文件上传缓存表 - 支持断点续传和本地文件缓存
 CREATE TABLE public."dc_survey_offline_upload" (
-  "id" bigint NOT NULL DEFAULT nextval('dc_survey_offline_upload_id_seq'::regclass),
-  "cache_id" character varying(64) NOT NULL,
-  "file_md5" character varying(32) NOT NULL,
-  "file_type" character varying(20) NOT NULL,
-  "file_name" character varying(255) NOT NULL,
-  "file_size" bigint NOT NULL,
-  "uploaded_size" bigint DEFAULT 0,
-  "total_chunks" integer DEFAULT 0,
+  "id" bigint,
+  "cache_id" character varying(64),
+  "file_md5" character varying(32),
+  "file_type" character varying(20),
+  "file_name" character varying(255),
+  "file_size" bigint,
+  "uploaded_size" bigint,
+  "total_chunks" integer,
   "uploaded_chunks" text,
   "file_path" character varying(500),
-  "upload_status" smallint DEFAULT 0,
+  "upload_status" smallint,
   "message" text,
   "create_by" bigint,
-  "create_time" timestamp without time zone DEFAULT CURRENT_TIMESTAMP,
-  "update_time" timestamp without time zone DEFAULT CURRENT_TIMESTAMP,
-  "clean_flag" character(1) DEFAULT '0'::bpchar
+  "create_time" timestamp without time zone,
+  "update_time" timestamp without time zone,
+  "clean_flag" character(1)
 );
 
 -- Column comments:

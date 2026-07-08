@@ -1,7 +1,7 @@
 -- Table: public."rs_outlet_info_v2"
 -- Table comment: 排污口管理
 CREATE TABLE public."rs_outlet_info_v2" (
-  "id" bigint NOT NULL DEFAULT nextval('archive_outlet_id_seq'::regclass),
+  "id" bigint,
   "outlet_code_national" character varying(100),
   "outlet_code_local" character varying(100),
   "is_key_river_outlet" character varying(10),
@@ -26,10 +26,10 @@ CREATE TABLE public."rs_outlet_info_v2" (
   "municipal_section_name" character varying(200),
   "river_chief_info" character varying(500),
   "create_by" bigint,
-  "create_time" timestamp without time zone DEFAULT CURRENT_TIMESTAMP,
+  "create_time" timestamp without time zone,
   "update_by" bigint,
   "update_time" timestamp without time zone,
-  "del_flag" character varying(1) DEFAULT '0'::character varying,
+  "del_flag" character varying(1),
   "geom" geometry(Point,4326)
 );
 

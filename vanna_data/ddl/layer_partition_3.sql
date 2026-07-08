@@ -1,7 +1,7 @@
 -- Table: public."layer_partition_3"
 -- Table comment: 三级分区
 CREATE TABLE public."layer_partition_3" (
-  "id" integer NOT NULL DEFAULT nextval('layer_partition_3_id_seq'::regclass),
+  "id" integer,
   "geom" geometry(MultiPolygon,4326),
   "name" character varying(50),
   "name_2" character varying(50),

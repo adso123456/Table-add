@@ -1,7 +1,7 @@
 -- Table: public."rs_livestock_info_yc"
 -- Table comment: 规模化畜禽养殖场-宜昌水环境
 CREATE TABLE public."rs_livestock_info_yc" (
-  "id" bigint NOT NULL,
+  "id" bigint,
   "name" character varying(100),
   "name_old" character varying(100),
   "representative" character varying(100),
@@ -39,8 +39,8 @@ CREATE TABLE public."rs_livestock_info_yc" (
   "n_scale_8" double precision,
   "n_scale_9" double precision,
   "n_scale_10" double precision,
-  "f_store_flag1" smallint DEFAULT 0,
-  "f_store_flag2" smallint DEFAULT 0,
+  "f_store_flag1" smallint,
+  "f_store_flag2" smallint,
   "f_store_volume" double precision,
   "f_technique_1" character varying(50),
   "f_technique_2" character varying(50),
@@ -57,7 +57,7 @@ CREATE TABLE public."rs_livestock_info_yc" (
   "f_scale_10" double precision,
   "water_name" character varying(32),
   "water_code" character varying(32),
-  "glbh_flag" smallint DEFAULT 0,
+  "glbh_flag" smallint,
   "fzr" character varying(32),
   "tjr" character varying(32),
   "shr" character varying(32),
@@ -68,7 +68,7 @@ CREATE TABLE public."rs_livestock_info_yc" (
   "create_time" timestamp without time zone,
   "update_by" bigint,
   "update_time" timestamp without time zone,
-  "del_flag" character(1) DEFAULT 0
+  "del_flag" character(1)
 );
 
 -- Column comments:

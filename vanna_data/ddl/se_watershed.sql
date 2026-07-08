@@ -1,7 +1,7 @@
 -- Table: public."se_watershed"
 -- Table comment: 流域产值信息：年统计值
 CREATE TABLE public."se_watershed" (
-  "id" bigint NOT NULL,
+  "id" bigint,
   "region_code" character varying(100),
   "total_population" double precision,
   "total_product_value" double precision,
@@ -12,7 +12,7 @@ CREATE TABLE public."se_watershed" (
   "statistic_year" bigint,
   "update_by" bigint,
   "update_time" timestamp without time zone,
-  "del_flag" character(1) DEFAULT 0,
+  "del_flag" character(1),
   "name" character varying(100),
   "mark" character varying(255)
 );

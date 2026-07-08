@@ -19,15 +19,9 @@ CREATE TABLE public."layer_reservoir_provincial_合并" (
   "shrc" character varying(64),
   "vol" double precision,
   "featid" character varying(16),
-  "elemstime" character varying(8),
-  "elemetime" character varying(8),
-  "ecrm" integer,
-  "wrid" character varying(16),
-  "wrgr" integer,
   "areacode" bigint,
   "changetype" integer,
-  "changeatt" character varying(64),
-  "id" integer NOT NULL
+  "id" integer
 );
 
 -- Column comments:

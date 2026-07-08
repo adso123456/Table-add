@@ -1,7 +1,7 @@
 -- Table: public."rs_wastewater_month_records"
 -- Table comment: 污染源监测月记录表
 CREATE TABLE public."rs_wastewater_month_records" (
-  "id" bigint NOT NULL DEFAULT nextval('rs_wastewater_month_records_1_id_seq'::regclass),
+  "id" bigint,
   "timestamp" timestamp without time zone,
   "type" character varying(10),
   "pollutant_id" bigint,
@@ -62,7 +62,7 @@ CREATE TABLE public."rs_wastewater_month_records" (
   "create_time" timestamp without time zone,
   "update_by" bigint,
   "update_time" timestamp without time zone,
-  "del_flag" character varying(10) DEFAULT '0'::character varying
+  "del_flag" character varying(10)
 );
 
 -- Column comments:

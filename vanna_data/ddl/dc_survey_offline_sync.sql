@@ -1,20 +1,20 @@
 -- Table: public."dc_survey_offline_sync"
 -- Table comment: 离线同步任务表
 CREATE TABLE public."dc_survey_offline_sync" (
-  "id" bigint NOT NULL DEFAULT nextval('dc_survey_offline_sync_id_seq'::regclass),
-  "cache_id" character varying(64) NOT NULL,
-  "sync_status" integer DEFAULT 0,
-  "sync_progress" integer DEFAULT 0,
-  "total_steps" integer DEFAULT 0,
-  "current_step" integer DEFAULT 0,
+  "id" bigint,
+  "cache_id" character varying(64),
+  "sync_status" integer,
+  "sync_progress" integer,
+  "total_steps" integer,
+  "current_step" integer,
   "sync_start_time" timestamp without time zone,
   "sync_end_time" timestamp without time zone,
   "task_id" bigint,
   "sync_result" character varying(500),
   "error_message" text,
   "create_by" bigint,
-  "create_time" timestamp without time zone DEFAULT CURRENT_TIMESTAMP,
-  "del_flag" character varying(1) DEFAULT '0'::character varying
+  "create_time" timestamp without time zone,
+  "del_flag" character varying(1)
 );
 
 -- Column comments:

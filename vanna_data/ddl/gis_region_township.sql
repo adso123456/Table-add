@@ -1,7 +1,7 @@
 -- Table: public."gis_region_township"
 -- Table comment: 行政区划-乡镇
 CREATE TABLE public."gis_region_township" (
-  "id" integer NOT NULL DEFAULT nextval('gis_region_xz_id_seq'::regclass),
+  "id" integer,
   "geom" geometry(MultiPolygon,4326),
   "region_code" character varying(20),
   "county" character varying(60),

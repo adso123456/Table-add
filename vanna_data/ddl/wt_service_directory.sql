@@ -1,7 +1,7 @@
 -- Table: public."wt_service_directory"
 -- Table comment: 主键id
 CREATE TABLE public."wt_service_directory" (
-  "id" bigint NOT NULL,
+  "id" bigint,
   "node_type" character(1),
   "code" character varying(255),
   "pid" bigint,
@@ -25,7 +25,7 @@ CREATE TABLE public."wt_service_directory" (
   "create_time" timestamp without time zone,
   "update_by" bigint,
   "update_time" timestamp without time zone,
-  "del_flag" character(1) DEFAULT 0
+  "del_flag" character(1)
 );
 
 -- Column comments:

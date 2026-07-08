@@ -1,32 +1,32 @@
 -- Table: public."se_watershed_river"
 -- Table comment: 流域河流管理档案表
 CREATE TABLE public."se_watershed_river" (
-  "id" bigint NOT NULL DEFAULT nextval('se_watershed_river_id_seq'::regclass),
+  "id" bigint,
   "serial_no" integer,
-  "river_name" character varying(100) DEFAULT NULL::character varying,
-  "river_alias" character varying(500) DEFAULT NULL::character varying,
+  "river_name" character varying(100),
+  "river_alias" character varying(500),
   "river_level" integer,
-  "parent_river_name" character varying(100) DEFAULT NULL::character varying,
+  "parent_river_name" character varying(100),
   "river_length" double precision,
   "hubei_length" double precision,
   "yichang_length" double precision,
   "watershed_area" double precision,
   "hubei_area" double precision,
   "yichang_area" double precision,
-  "flow_districts" character varying(1000) DEFAULT NULL::character varying,
-  "source_province" character varying(50) DEFAULT NULL::character varying,
-  "source_county" character varying(100) DEFAULT NULL::character varying,
-  "source_town" character varying(100) DEFAULT NULL::character varying,
-  "source_village" character varying(300) DEFAULT NULL::character varying,
-  "mouth_province" character varying(50) DEFAULT NULL::character varying,
-  "mouth_county" character varying(100) DEFAULT NULL::character varying,
-  "mouth_town" character varying(100) DEFAULT NULL::character varying,
-  "mouth_village" character varying(300) DEFAULT NULL::character varying,
+  "flow_districts" character varying(1000),
+  "source_province" character varying(50),
+  "source_county" character varying(100),
+  "source_town" character varying(100),
+  "source_village" character varying(300),
+  "mouth_province" character varying(50),
+  "mouth_county" character varying(100),
+  "mouth_town" character varying(100),
+  "mouth_village" character varying(300),
   "create_by" bigint,
-  "create_time" timestamp without time zone DEFAULT CURRENT_TIMESTAMP,
+  "create_time" timestamp without time zone,
   "update_by" bigint,
-  "update_time" timestamp without time zone DEFAULT CURRENT_TIMESTAMP,
-  "del_flag" character(1) DEFAULT '0'::bpchar
+  "update_time" timestamp without time zone,
+  "del_flag" character(1)
 );
 
 -- Column comments:

@@ -1,8 +1,8 @@
 -- Table: public."dc_survey_info"
 -- Table comment: 巡回调查-调查后的核查信息
 CREATE TABLE public."dc_survey_info" (
-  "id" bigint NOT NULL DEFAULT nextval('dc_survey_info_id_seq'::regclass),
-  "watershed_partition_id" bigint NOT NULL,
+  "id" bigint,
+  "watershed_partition_id" bigint,
   "title" character varying(50),
   "upload_time" character varying(50),
   "name" character varying(50),
@@ -18,8 +18,8 @@ CREATE TABLE public."dc_survey_info" (
   "create_time" timestamp without time zone,
   "update_by" bigint,
   "update_time" timestamp without time zone,
-  "del_flag" character(1) DEFAULT '0'::bpchar,
-  "survey_type" smallint NOT NULL DEFAULT 0,
+  "del_flag" character(1),
+  "survey_type" smallint,
   "image_path_2" character varying(200),
   "image_path_3" character varying(200),
   "task_id" bigint,

@@ -1,7 +1,7 @@
 -- Table: public."layer_boundary_enterprise"
 -- Table comment: 工业园区-企业边界
 CREATE TABLE public."layer_boundary_enterprise" (
-  "id" integer NOT NULL DEFAULT nextval('"企业边界_id_seq"'::regclass),
+  "id" integer,
   "name" character varying,
   "code" character varying,
   "geom" geometry(MultiLineString,4326)

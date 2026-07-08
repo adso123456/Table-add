@@ -1,14 +1,14 @@
 -- Table: public."rs_enterprise_info_wade"
 -- Table comment: 污染源自动监管涉水企业：宜昌水环境
 CREATE TABLE public."rs_enterprise_info_wade" (
-  "id" bigint NOT NULL,
+  "id" bigint,
   "name" character varying(100),
   "address" character varying(255),
   "region_code" character varying(32),
   "region_name" character varying(32),
   "liaison" character varying(32),
   "liaison_tel" character varying(100),
-  "supervision_level" smallint DEFAULT 0,
+  "supervision_level" smallint,
   "industry_type" character varying(32),
   "lon" double precision,
   "lat" double precision,
@@ -16,7 +16,7 @@ CREATE TABLE public."rs_enterprise_info_wade" (
   "create_time" timestamp without time zone,
   "update_by" bigint,
   "update_time" timestamp without time zone,
-  "del_flag" character(1) DEFAULT 0
+  "del_flag" character(1)
 );
 
 -- Column comments:

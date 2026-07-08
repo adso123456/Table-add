@@ -1,8 +1,8 @@
 -- Table: public."rs_outlet_monitor_v2"
 -- Table comment: 排污口监测
 CREATE TABLE public."rs_outlet_monitor_v2" (
-  "id" bigint NOT NULL DEFAULT nextval('archive_outlet_monitor_id_seq'::regclass),
-  "outlet_id" bigint NOT NULL,
+  "id" bigint,
+  "outlet_id" bigint,
   "sampling_time" timestamp without time zone,
   "monitor_type" character varying(100),
   "flow" numeric(12,2),
@@ -15,10 +15,10 @@ CREATE TABLE public."rs_outlet_monitor_v2" (
   "total_nitrogen" numeric(12,4),
   "remark" character varying(500),
   "create_by" bigint,
-  "create_time" timestamp without time zone DEFAULT CURRENT_TIMESTAMP,
+  "create_time" timestamp without time zone,
   "update_by" bigint,
   "update_time" timestamp without time zone,
-  "del_flag" character varying(1) DEFAULT '0'::character varying,
+  "del_flag" character varying(1),
   "outlet_name" character varying(200)
 );
 

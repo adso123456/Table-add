@@ -1,25 +1,25 @@
 -- Table: public."wst_relation_subtype_dict"
 -- Table comment: 关系子类字典表，维护具体业务关系类型、标准方向和允许资产类型
 CREATE TABLE public."wst_relation_subtype_dict" (
-  "id" bigint NOT NULL DEFAULT nextval('wst_relation_subtype_dict_id_seq'::regclass),
-  "relation_type" character varying(100) NOT NULL,
-  "relation_subtype" character varying(100) NOT NULL,
-  "relation_name" character varying(100) NOT NULL,
-  "source_type_codes" character varying(500) NOT NULL,
-  "target_type_codes" character varying(500) NOT NULL,
+  "id" bigint,
+  "relation_type" character varying(100),
+  "relation_subtype" character varying(100),
+  "relation_name" character varying(100),
+  "source_type_codes" character varying(500),
+  "target_type_codes" character varying(500),
   "source_label" character varying(100),
   "target_label" character varying(100),
   "direction_desc" character varying(200),
-  "allow_manual" boolean DEFAULT true,
-  "allow_import" boolean DEFAULT true,
-  "allow_graph_edit" boolean DEFAULT true,
-  "allow_map_draw" boolean DEFAULT true,
-  "default_confidence" numeric(5,2) DEFAULT 1.00,
-  "sort_order" integer DEFAULT 0,
-  "status" character varying(50) DEFAULT 'active'::character varying,
+  "allow_manual" boolean,
+  "allow_import" boolean,
+  "allow_graph_edit" boolean,
+  "allow_map_draw" boolean,
+  "default_confidence" numeric(5,2),
+  "sort_order" integer,
+  "status" character varying(50),
   "description" character varying(500),
-  "created_at" timestamp without time zone DEFAULT now(),
-  "updated_at" timestamp without time zone DEFAULT now()
+  "created_at" timestamp without time zone,
+  "updated_at" timestamp without time zone
 );
 
 -- Column comments:

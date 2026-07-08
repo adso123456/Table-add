@@ -1,7 +1,7 @@
 -- Table: public."wm_section_info"
 -- Table comment: 断面基本信息表
 CREATE TABLE public."wm_section_info" (
-  "id" bigint NOT NULL DEFAULT nextval('wm_section_info_id_seq'::regclass),
+  "id" bigint,
   "water_body_id" bigint,
   "control_unit_id" bigint,
   "region_id" bigint,
@@ -26,7 +26,7 @@ CREATE TABLE public."wm_section_info" (
   "create_time" timestamp without time zone,
   "update_by" bigint,
   "update_time" timestamp without time zone,
-  "del_flag" character(1) DEFAULT 0
+  "del_flag" character(1)
 );
 
 -- Column comments:

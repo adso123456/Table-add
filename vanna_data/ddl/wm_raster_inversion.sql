@@ -1,7 +1,7 @@
 -- Table: public."wm_raster_inversion"
 -- Table comment: 遥感反演结果表（合并版）
 CREATE TABLE public."wm_raster_inversion" (
-  "id" bigint NOT NULL,
+  "id" bigint,
   "record_id" bigint,
   "indicator_code" bigint,
   "indicator_name" character varying(60),
@@ -18,7 +18,7 @@ CREATE TABLE public."wm_raster_inversion" (
   "data_time" timestamp without time zone,
   "create_time" timestamp without time zone,
   "update_time" timestamp without time zone,
-  "del_flag" character(1) DEFAULT 0
+  "del_flag" character(1)
 );
 
 -- Column comments:

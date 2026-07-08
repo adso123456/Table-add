@@ -1,7 +1,7 @@
 -- Table: public."layer_industrial_yjsgc"
 -- Table comment: 工业园区-应急事故池
 CREATE TABLE public."layer_industrial_yjsgc" (
-  "id" integer NOT NULL,
+  "id" integer,
   "geom" geometry(Point,4326),
   "x" double precision,
   "y" double precision,

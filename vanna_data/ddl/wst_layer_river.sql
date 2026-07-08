@@ -1,7 +1,7 @@
 -- Table: public."wst_layer_river"
 -- Table comment: 溯源图层河流表
 CREATE TABLE public."wst_layer_river" (
-  "id" bigint NOT NULL DEFAULT nextval('wst_layer_river_id_seq'::regclass),
+  "id" bigint,
   "river_code" character varying(128),
   "river_name" character varying(255),
   "next_down" bigint,
@@ -10,9 +10,8 @@ CREATE TABLE public."wst_layer_river" (
   "from_z" numeric,
   "to_z" numeric,
   "geom" geometry(MultiLineString,4326),
-  "metadata_json" jsonb DEFAULT '{}'::jsonb,
-  "created_at" timestamp without time zone DEFAULT now(),
-  "updated_at" timestamp without time zone DEFAULT now()
+  "created_at" timestamp without time zone,
+  "updated_at" timestamp without time zone
 );
 
 -- Column comments:

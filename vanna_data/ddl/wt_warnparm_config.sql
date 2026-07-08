@@ -1,7 +1,7 @@
 -- Table: public."wt_warnparm_config"
 -- Table comment: 监测预警参数配置表
 CREATE TABLE public."wt_warnparm_config" (
-  "id" bigint NOT NULL,
+  "id" bigint,
   "indicator_code" character varying(8),
   "l1_value" double precision,
   "l2_value" double precision,
@@ -21,7 +21,7 @@ CREATE TABLE public."wt_warnparm_config" (
   "create_time" timestamp without time zone,
   "update_by" bigint,
   "update_time" timestamp without time zone,
-  "del_flag" character(1) DEFAULT 0
+  "del_flag" character(1)
 );
 
 -- Column comments:

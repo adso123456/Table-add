@@ -1,7 +1,7 @@
 -- Table: public."gis_watershed_partition_3"
 -- Table comment: 三级流域分区表
 CREATE TABLE public."gis_watershed_partition_3" (
-  "id" integer NOT NULL DEFAULT nextval('gis_watershed_partition_3_id_seq'::regclass),
+  "id" integer,
   "geom" geometry(MultiPolygon,4326),
   "basin" character varying(50),
   "name" character varying(50),

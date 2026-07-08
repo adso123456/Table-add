@@ -1,7 +1,7 @@
 -- Table: public."wh_hydrological_records_1"
 -- Table comment: 水文数据表
 CREATE TABLE public."wh_hydrological_records_1" (
-  "id" bigint NOT NULL,
+  "id" bigint,
   "station_id" bigint,
   "indicator_code" character varying(100),
   "monitor_value" double precision,
@@ -11,7 +11,7 @@ CREATE TABLE public."wh_hydrological_records_1" (
   "create_time" timestamp without time zone,
   "update_by" bigint,
   "update_time" timestamp without time zone,
-  "del_flag" character(1) DEFAULT 0
+  "del_flag" character(1)
 );
 
 -- Column comments:

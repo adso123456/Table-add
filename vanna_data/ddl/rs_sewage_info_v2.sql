@@ -1,7 +1,7 @@
 -- Table: public."rs_sewage_info_v2"
 -- Table comment: 污水处理厂档案管理及监测
 CREATE TABLE public."rs_sewage_info_v2" (
-  "id" bigint NOT NULL DEFAULT nextval('archive_wwtp_id_seq'::regclass),
+  "id" bigint,
   "admin_division" character varying(200),
   "project_name" character varying(200),
   "run_status" character varying(50),
@@ -61,10 +61,10 @@ CREATE TABLE public."rs_sewage_info_v2" (
   "tail_water_destination" character varying(200),
   "outlet_photo" character varying(500),
   "create_by" bigint,
-  "create_time" timestamp without time zone DEFAULT CURRENT_TIMESTAMP,
+  "create_time" timestamp without time zone,
   "update_by" bigint,
   "update_time" timestamp without time zone,
-  "del_flag" character varying(1) DEFAULT '0'::character varying
+  "del_flag" character varying(1)
 );
 
 -- Column comments:

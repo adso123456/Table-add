@@ -1,7 +1,7 @@
 -- Table: public."wm_waterquality_month_records"
 -- Table comment: 水质监测月记录表
 CREATE TABLE public."wm_waterquality_month_records" (
-  "id" bigint NOT NULL,
+  "id" bigint,
   "station_id" bigint,
   "section_id" bigint,
   "m1_value" double precision,
@@ -69,7 +69,7 @@ CREATE TABLE public."wm_waterquality_month_records" (
   "monitor_time" timestamp without time zone,
   "monitor_year" bigint,
   "monitor_month" bigint,
-  "record_type" character(1) DEFAULT 1,
+  "record_type" character(1),
   "water_quality_level" character varying(16),
   "main_pollutant" character varying(255),
   "remark" character varying(255),
@@ -77,7 +77,7 @@ CREATE TABLE public."wm_waterquality_month_records" (
   "create_time" timestamp without time zone,
   "update_by" bigint,
   "update_time" timestamp without time zone,
-  "del_flag" character(1) DEFAULT 0
+  "del_flag" character(1)
 );
 
 -- Column comments:

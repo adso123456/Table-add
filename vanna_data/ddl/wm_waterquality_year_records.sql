@@ -1,7 +1,7 @@
 -- Table: public."wm_waterquality_year_records"
 -- Table comment: 水质监测年记录表
 CREATE TABLE public."wm_waterquality_year_records" (
-  "id" bigint NOT NULL,
+  "id" bigint,
   "station_id" bigint,
   "section_id" bigint,
   "m1_value" double precision,
@@ -71,7 +71,7 @@ CREATE TABLE public."wm_waterquality_year_records" (
   "create_time" timestamp without time zone,
   "update_by" bigint,
   "update_time" timestamp without time zone,
-  "del_flag" character(1) DEFAULT 0
+  "del_flag" character(1)
 );
 
 -- Column comments:

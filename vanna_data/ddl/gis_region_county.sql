@@ -1,7 +1,7 @@
 -- Table: public."gis_region_county"
 -- Table comment: 行政区-区县
 CREATE TABLE public."gis_region_county" (
-  "id" integer NOT NULL DEFAULT nextval('gis_region_qx_id_seq'::regclass),
+  "id" integer,
   "geom" geometry(MultiPolygon,4326),
   "region_name" character varying(60),
   "city" character varying(50),

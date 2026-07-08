@@ -1,15 +1,15 @@
 -- Table: public."wm_panorama_video"
 -- Table comment: 全景视频信息表
 CREATE TABLE public."wm_panorama_video" (
-  "id" integer NOT NULL DEFAULT nextval('wm_panorama_video_id_seq'::regclass),
+  "id" integer,
   "layer_id" integer,
   "name" character varying(255),
   "shoot_time" timestamp without time zone,
   "description" text,
   "url" character varying(500),
-  "create_time" timestamp without time zone DEFAULT CURRENT_TIMESTAMP,
-  "update_time" timestamp without time zone DEFAULT CURRENT_TIMESTAMP,
-  "is_deleted" boolean DEFAULT false
+  "create_time" timestamp without time zone,
+  "update_time" timestamp without time zone,
+  "is_deleted" boolean
 );
 
 -- Column comments:

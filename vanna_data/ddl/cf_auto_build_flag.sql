@@ -1,13 +1,13 @@
 -- Table: public."cf_auto_build_flag"
 -- Table comment: 主键id
 CREATE TABLE public."cf_auto_build_flag" (
-  "id" bigint NOT NULL,
-  "manual_auto" character(1) NOT NULL,
+  "id" bigint,
+  "manual_auto" character(1),
   "create_by" bigint,
   "create_time" timestamp without time zone,
   "update_by" bigint,
   "update_time" timestamp without time zone,
-  "del_flag" character(1) DEFAULT 0
+  "del_flag" character(1)
 );
 
 -- Column comments:

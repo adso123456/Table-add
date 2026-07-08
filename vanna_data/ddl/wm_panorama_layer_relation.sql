@@ -1,13 +1,13 @@
 -- Table: public."wm_panorama_layer_relation"
 -- Table comment: 全景图层关联关系表
 CREATE TABLE public."wm_panorama_layer_relation" (
-  "id" bigint NOT NULL DEFAULT nextval('wm_panorama_layer_relation_id_seq'::regclass),
+  "id" bigint,
   "panorama_id" bigint,
   "layer_id" character varying(255),
   "feature_id" character varying(255),
-  "create_time" timestamp without time zone DEFAULT CURRENT_TIMESTAMP,
-  "update_time" timestamp without time zone DEFAULT CURRENT_TIMESTAMP,
-  "is_deleted" boolean DEFAULT false
+  "create_time" timestamp without time zone,
+  "update_time" timestamp without time zone,
+  "is_deleted" boolean
 );
 
 -- Column comments:

@@ -1,7 +1,7 @@
 -- Table: public."wm_hydrological_info"
 -- Table comment: 水位站基本信息表
 CREATE TABLE public."wm_hydrological_info" (
-  "id" bigint NOT NULL,
+  "id" bigint,
   "station_code" character varying(255),
   "station_name" character varying(255),
   "short_name" character varying(255),
@@ -13,12 +13,12 @@ CREATE TABLE public."wm_hydrological_info" (
   "build_state" character varying(30),
   "water_type" character varying(20),
   "section_id" bigint,
-  "river_in" bigint DEFAULT 0,
+  "river_in" bigint,
   "pollutant_id" bigint,
   "in_outlet" character(1),
-  "river_out" bigint DEFAULT 0,
-  "efdc_in" character varying(255) DEFAULT 0,
-  "efdc_out" character varying(255) DEFAULT 0,
+  "river_out" bigint,
+  "efdc_in" character varying(255),
+  "efdc_out" character varying(255),
   "efdc_i" bigint,
   "efdc_j" bigint,
   "head_water" bigint,
@@ -40,7 +40,7 @@ CREATE TABLE public."wm_hydrological_info" (
   "create_time" timestamp without time zone,
   "update_by" bigint,
   "update_time" timestamp without time zone,
-  "del_flag" character(1) DEFAULT 0
+  "del_flag" character(1)
 );
 
 -- Column comments:

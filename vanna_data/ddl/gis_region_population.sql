@@ -1,7 +1,7 @@
 -- Table: public."gis_region_population"
 -- Table comment: 行政区人口统计表
 CREATE TABLE public."gis_region_population" (
-  "id" bigint NOT NULL,
+  "id" bigint,
   "region_id" bigint,
   "city_population" double precision,
   "city_area" double precision,
@@ -14,7 +14,7 @@ CREATE TABLE public."gis_region_population" (
   "create_time" timestamp without time zone,
   "update_by" bigint,
   "update_time" timestamp without time zone,
-  "del_flag" character(1) DEFAULT 0
+  "del_flag" character(1)
 );
 
 -- Column comments:

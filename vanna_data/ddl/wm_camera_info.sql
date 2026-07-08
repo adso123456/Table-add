@@ -1,7 +1,7 @@
 -- Table: public."wm_camera_info"
 -- Table comment: 摄像头基本信息表
 CREATE TABLE public."wm_camera_info" (
-  "id" bigint NOT NULL,
+  "id" bigint,
   "camera_name" character varying(100),
   "device_type" character varying(100),
   "device_code" character varying(100),
@@ -16,7 +16,7 @@ CREATE TABLE public."wm_camera_info" (
   "create_time" timestamp without time zone,
   "update_by" bigint,
   "update_time" timestamp without time zone,
-  "del_flag" character varying(1) DEFAULT '0'::character varying
+  "del_flag" character varying(1)
 );
 
 -- Column comments:

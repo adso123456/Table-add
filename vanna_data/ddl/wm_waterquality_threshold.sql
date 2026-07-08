@@ -1,7 +1,7 @@
 -- Table: public."wm_waterquality_threshold"
 -- Table comment: 站点水质指标阈值
 CREATE TABLE public."wm_waterquality_threshold" (
-  "id" text NOT NULL,
+  "id" text,
   "station_id" bigint,
   "m1_value" double precision,
   "m2_value" double precision,
@@ -38,7 +38,7 @@ CREATE TABLE public."wm_waterquality_threshold" (
   "create_time" timestamp without time zone,
   "update_by" bigint,
   "update_time" timestamp without time zone,
-  "del_flag" character(1) DEFAULT 0
+  "del_flag" character(1)
 );
 
 -- Column comments:

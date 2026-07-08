@@ -1,14 +1,14 @@
 -- Table: public."dc_survey_track"
 -- Table comment: 巡查轨迹记录表
 CREATE TABLE public."dc_survey_track" (
-  "id" bigint NOT NULL DEFAULT nextval('dc_survey_track_id_seq'::regclass),
-  "task_id" bigint NOT NULL,
-  "lat" double precision NOT NULL,
-  "lon" double precision NOT NULL,
-  "distance" numeric(20,3) DEFAULT 0.000,
+  "id" bigint,
+  "task_id" bigint,
+  "lat" double precision,
+  "lon" double precision,
+  "distance" numeric(20,3),
   "create_by" bigint,
-  "create_time" timestamp without time zone DEFAULT CURRENT_TIMESTAMP,
-  "num" integer NOT NULL,
+  "create_time" timestamp without time zone,
+  "num" integer,
   "task_instance_id" bigint
 );
 

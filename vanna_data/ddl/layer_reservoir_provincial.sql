@@ -1,7 +1,7 @@
 -- Table: public."layer_reservoir_provincial"
 -- Table comment: 省控水库
 CREATE TABLE public."layer_reservoir_provincial" (
-  "id" integer NOT NULL DEFAULT nextval('layer_reservoir_provincial_id_seq'::regclass),
+  "id" integer,
   "geom" geometry(MultiPolygon,4326),
   "objectid" bigint,
   "cc" character varying(8),
@@ -21,14 +21,8 @@ CREATE TABLE public."layer_reservoir_provincial" (
   "shrc" character varying(64),
   "vol" double precision,
   "featid" character varying(16),
-  "elemstime" character varying(8),
-  "elemetime" character varying(8),
-  "ecrm" integer,
-  "wrid" character varying(16),
-  "wrgr" integer,
   "areacode" bigint,
   "changetype" integer,
-  "changeatt" character varying(64),
   "shape_leng" double precision,
   "shape_area" double precision
 );

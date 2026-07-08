@@ -1,7 +1,7 @@
 -- Table: public."wm_water_source_zone_v2"
 -- Table comment: 饮用水水源地管理及监测-保护区
 CREATE TABLE public."wm_water_source_zone_v2" (
-  "id" bigint NOT NULL DEFAULT nextval('archive_water_source_zone_id_seq'::regclass),
+  "id" bigint,
   "name" character varying(255),
   "city" character varying(100),
   "district" character varying(100),
@@ -14,10 +14,10 @@ CREATE TABLE public."wm_water_source_zone_v2" (
   "source_code" character varying(100),
   "remark" text,
   "create_by" bigint,
-  "create_time" timestamp without time zone DEFAULT CURRENT_TIMESTAMP,
+  "create_time" timestamp without time zone,
   "update_by" bigint,
   "update_time" timestamp without time zone,
-  "del_flag" character varying(1) DEFAULT '0'::character varying,
+  "del_flag" character varying(1),
   "region_code" character varying(60),
   "geom" geometry(MultiPolygon,4326)
 );

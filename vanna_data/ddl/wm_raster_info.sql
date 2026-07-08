@@ -1,7 +1,7 @@
 -- Table: public."wm_raster_info"
 -- Table comment: 遥感影像栅格信息表
 CREATE TABLE public."wm_raster_info" (
-  "id" bigint NOT NULL,
+  "id" bigint,
   "scene_id" character varying(200),
   "satellite_info" character varying(100),
   "sensor_info" character varying(100),

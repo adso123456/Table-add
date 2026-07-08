@@ -1,7 +1,7 @@
 -- Table: public."wm_section_wq_info"
 -- Table comment: 断面水质目标信息表
 CREATE TABLE public."wm_section_wq_info" (
-  "id" bigint NOT NULL,
+  "id" bigint,
   "section_id" bigint,
   "year" bigint,
   "month" bigint,
@@ -10,7 +10,7 @@ CREATE TABLE public."wm_section_wq_info" (
   "create_time" timestamp without time zone,
   "update_by" bigint,
   "update_time" timestamp without time zone,
-  "del_flag" character(1) DEFAULT 0
+  "del_flag" character(1)
 );
 
 -- Column comments:

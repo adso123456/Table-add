@@ -1,7 +1,7 @@
 -- Table: public."rs_enterprise_info_lsg"
 -- Table comment: 湖北省磷石膏尾矿库企业信息表：宜昌水环境
 CREATE TABLE public."rs_enterprise_info_lsg" (
-  "id" bigint NOT NULL,
+  "id" bigint,
   "name" character varying(100),
   "mine_name" character varying(100),
   "enterprise" character varying(100),
@@ -21,7 +21,7 @@ CREATE TABLE public."rs_enterprise_info_lsg" (
   "create_time" timestamp without time zone,
   "update_by" bigint,
   "update_time" timestamp without time zone,
-  "del_flag" character(1) DEFAULT 0,
+  "del_flag" character(1),
   "product_capacity" double precision
 );
 

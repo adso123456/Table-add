@@ -1,7 +1,7 @@
 -- Table: public."wm_station_info"
 -- Table comment: 水质自动监测站基本信息表
 CREATE TABLE public."wm_station_info" (
-  "id" bigint NOT NULL,
+  "id" bigint,
   "station_code" character varying(255),
   "station_name" character varying(255),
   "short_name" character varying(255),
@@ -13,12 +13,12 @@ CREATE TABLE public."wm_station_info" (
   "water_type" character varying(20),
   "water_body_id" bigint,
   "section_id" bigint,
-  "river_in" bigint DEFAULT 0,
+  "river_in" bigint,
   "pollutant_id" bigint,
   "in_outlet" character(1),
-  "river_out" bigint DEFAULT 0,
-  "efdc_in" character varying(255) DEFAULT 0,
-  "efdc_out" character varying(255) DEFAULT 0,
+  "river_out" bigint,
+  "efdc_in" character varying(255),
+  "efdc_out" character varying(255),
   "efdc_i" bigint,
   "efdc_j" bigint,
   "head_water" bigint,
@@ -46,8 +46,8 @@ CREATE TABLE public."wm_station_info" (
   "create_time" timestamp without time zone,
   "update_by" bigint,
   "update_time" timestamp without time zone,
-  "del_flag" character(1) DEFAULT 0,
-  "station_level" character varying(10) DEFAULT 1
+  "del_flag" character(1),
+  "station_level" character varying(10)
 );
 
 -- Column comments:

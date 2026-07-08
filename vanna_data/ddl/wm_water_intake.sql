@@ -1,7 +1,7 @@
 -- Table: public."wm_water_intake"
 -- Table comment: 水源地-取水口
 CREATE TABLE public."wm_water_intake" (
-  "id" bigint NOT NULL DEFAULT nextval('wm_water_intake_id_seq'::regclass),
+  "id" bigint,
   "geom" geometry(Point,4490),
   "region_code" character varying(50),
   "region_name" character varying(100),
@@ -14,7 +14,7 @@ CREATE TABLE public."wm_water_intake" (
   "remark" character varying(254),
   "level" character varying(50),
   "code" character varying(100),
-  "static_flag" character varying(12) DEFAULT '否'::character varying
+  "static_flag" character varying(12)
 );
 
 -- Column comments:

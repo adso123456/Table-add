@@ -1,7 +1,7 @@
 -- Table: public."rs_sewage_park_info"
 -- Table comment: 污水处理厂-园区配套信息表
 CREATE TABLE public."rs_sewage_park_info" (
-  "id" bigint NOT NULL,
+  "id" bigint,
   "region_code" character varying(32),
   "region_name" character varying(32),
   "sewage_name" character varying(200),
@@ -14,11 +14,11 @@ CREATE TABLE public."rs_sewage_park_info" (
   "geom" geometry(Point,4326),
   "remark" character varying(500),
   "create_by" bigint,
-  "create_time" timestamp without time zone DEFAULT CURRENT_TIMESTAMP,
+  "create_time" timestamp without time zone,
   "update_by" bigint,
   "update_time" timestamp without time zone,
-  "del_flag" character varying(1) DEFAULT '0'::character varying,
-  "sewage_type" smallint NOT NULL DEFAULT 0
+  "del_flag" character varying(1),
+  "sewage_type" smallint
 );
 
 -- Column comments:

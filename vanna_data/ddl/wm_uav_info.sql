@@ -1,7 +1,7 @@
 -- Table: public."wm_uav_info"
 -- Table comment: 大疆无人机基础信息
 CREATE TABLE public."wm_uav_info" (
-  "id" bigint NOT NULL,
+  "id" bigint,
   "code" character varying(100),
   "name" character varying(100),
   "gateway_sn" character varying(100),
@@ -39,7 +39,7 @@ CREATE TABLE public."wm_uav_info" (
   "create_time" timestamp without time zone,
   "update_by" bigint,
   "update_time" timestamp without time zone,
-  "del_flag" character(1) DEFAULT '0'::bpchar
+  "del_flag" character(1)
 );
 
 -- Column comments:

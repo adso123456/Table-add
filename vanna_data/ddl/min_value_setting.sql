@@ -1,14 +1,14 @@
 -- Table: public."min_value_setting"
 -- Table comment: 最低检出限
 CREATE TABLE public."min_value_setting" (
-  "id" bigint NOT NULL,
+  "id" bigint,
   "indicator_code" character varying(100),
   "value" double precision,
   "create_by" bigint,
   "create_time" timestamp without time zone,
   "update_by" bigint,
   "update_time" timestamp without time zone,
-  "del_flag" character(1) DEFAULT 0
+  "del_flag" character(1)
 );
 
 -- Column comments:

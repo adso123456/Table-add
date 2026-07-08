@@ -1,10 +1,10 @@
 -- Table: public."wst_asset"
 -- Table comment: 水安全溯源模块-统一资产表，存储断面、站点、排口、企业、园区、闸坝、管线、摄像头、事故池等可上图、可查询、可关联对象
 CREATE TABLE public."wst_asset" (
-  "id" bigint NOT NULL DEFAULT nextval('wst_asset_id_seq'::regclass),
+  "id" bigint,
   "asset_code" character varying(100),
-  "asset_name" character varying(200) NOT NULL,
-  "asset_type" character varying(100) NOT NULL,
+  "asset_name" character varying(200),
+  "asset_type" character varying(100),
   "asset_subtype" character varying(100),
   "zone_id" bigint,
   "source_system" character varying(100),
@@ -18,15 +18,15 @@ CREATE TABLE public."wst_asset" (
   "longitude" numeric(12,8),
   "latitude" numeric(12,8),
   "elevation" numeric(12,3),
-  "status" character varying(50) DEFAULT 'active'::character varying,
+  "status" character varying(50),
   "geom" geometry(Geometry,4326),
   "metadata_json" jsonb,
   "remark" text,
   "created_by" character varying(100),
-  "created_at" timestamp without time zone DEFAULT now(),
+  "created_at" timestamp without time zone,
   "updated_by" character varying(100),
-  "updated_at" timestamp without time zone DEFAULT now(),
-  "del_flag" smallint DEFAULT 0
+  "updated_at" timestamp without time zone,
+  "del_flag" smallint
 );
 
 -- Column comments:

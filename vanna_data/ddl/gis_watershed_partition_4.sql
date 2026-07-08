@@ -1,17 +1,14 @@
 -- Table: public."gis_watershed_partition_4"
 -- Table comment: 四级流域分区表
 CREATE TABLE public."gis_watershed_partition_4" (
-  "id" integer NOT NULL DEFAULT nextval('gis_watershed_partition_4_id_seq'::regclass),
+  "id" integer,
   "geom" geometry(MultiPolygon,4326),
   "basin" character varying(50),
   "last_name" character varying(50),
   "poly_area" double precision,
   "name" character varying(50),
   "area" double precision,
-  "section_name" character varying(50),
-  "2021" character varying(50),
-  "2025" character varying(50),
-  "2035" character varying(50)
+  "section_name" character varying(50)
 );
 
 -- Column comments:

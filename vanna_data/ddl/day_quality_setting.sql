@@ -1,19 +1,16 @@
 -- Table: public."day_quality_setting"
 -- Table comment: 日质控设置
 CREATE TABLE public."day_quality_setting" (
-  "id" bigint NOT NULL,
+  "id" bigint,
   "station_id" bigint,
   "indicator_code" character varying(100),
-  "span_value" double precision,
-  "zero_standard_value" double precision,
-  "span_standard_value" double precision,
   "audit_by" bigint,
   "audit_time" timestamp without time zone,
   "create_by" bigint,
   "create_time" timestamp without time zone,
   "update_by" bigint,
   "update_time" timestamp without time zone,
-  "del_flag" character(1) DEFAULT 0
+  "del_flag" character(1)
 );
 
 -- Column comments:

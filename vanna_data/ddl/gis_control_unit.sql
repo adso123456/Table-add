@@ -1,16 +1,16 @@
 -- Table: public."gis_control_unit"
 -- Table comment: 水环境管控单元表
 CREATE TABLE public."gis_control_unit" (
-  "id" bigint NOT NULL DEFAULT nextval('gis_control_unit_id_seq1'::regclass),
+  "id" bigint,
   "geom" geometry(MultiPolygon,4326),
   "control_unit_name" character varying(254),
   "area" double precision,
   "control_unit_code" character varying(100),
   "basin" character varying(200),
   "remark" character varying(255),
-  "create_time" timestamp without time zone DEFAULT CURRENT_TIMESTAMP,
+  "create_time" timestamp without time zone,
   "update_time" timestamp without time zone,
-  "del_flag" character(1) DEFAULT '0'::bpchar,
+  "del_flag" character(1),
   "create_by" bigint,
   "update_by" bigint
 );

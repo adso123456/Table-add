@@ -1,7 +1,7 @@
 -- Table: public."wh_meteorological_hour_records"
 -- Table comment: 气象数据小时记录表
 CREATE TABLE public."wh_meteorological_hour_records" (
-  "id" bigint NOT NULL,
+  "id" bigint,
   "station_id" bigint,
   "m1_value" double precision,
   "m2_value" double precision,
@@ -24,7 +24,7 @@ CREATE TABLE public."wh_meteorological_hour_records" (
   "create_time" timestamp without time zone,
   "update_by" bigint,
   "update_time" timestamp without time zone,
-  "del_flag" character(1) DEFAULT 0
+  "del_flag" character(1)
 );
 
 -- Column comments:

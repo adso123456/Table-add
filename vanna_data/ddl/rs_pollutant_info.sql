@@ -1,13 +1,13 @@
 -- Table: public."rs_pollutant_info"
 -- Table comment: 企业污染源排口信息表：宜昌污染源在线平台
 CREATE TABLE public."rs_pollutant_info" (
-  "id" bigint NOT NULL,
+  "id" bigint,
   "xh" character varying(255),
   "jcdbh" character varying(50),
   "jcdmc" character varying(200),
-  "wrybh" character varying(50) NOT NULL,
+  "wrybh" character varying(50),
   "pwkwz" character varying(200),
-  "jgjb" character varying(10) DEFAULT 'YB'::character varying,
+  "jgjb" character varying(10),
   "sfjsk" character varying(50),
   "sfzs" character(1),
   "zsxs" character varying(50),
@@ -15,11 +15,11 @@ CREATE TABLE public."rs_pollutant_info" (
   "wd" double precision,
   "geom" geometry(Point,4326),
   "create_by" bigint,
-  "create_time" timestamp without time zone DEFAULT CURRENT_TIMESTAMP,
+  "create_time" timestamp without time zone,
   "update_by" bigint,
-  "update_time" timestamp without time zone DEFAULT CURRENT_TIMESTAMP,
-  "del_flag" character(1) DEFAULT '0'::bpchar,
-  "record_type" smallint DEFAULT 0,
+  "update_time" timestamp without time zone,
+  "del_flag" character(1),
+  "record_type" smallint,
   "wrlx" character varying(10),
   "outlet_id" bigint
 );

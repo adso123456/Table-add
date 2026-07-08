@@ -1,7 +1,7 @@
 -- Table: public."gis_ecologicalregion"
 -- Table comment: 生态保护红线区域表
 CREATE TABLE public."gis_ecologicalregion" (
-  "id" bigint NOT NULL,
+  "id" bigint,
   "ecological_region_name" character varying(255),
   "ecological_region_code" character varying(32),
   "address" character varying(255),
@@ -9,7 +9,6 @@ CREATE TABLE public."gis_ecologicalregion" (
   "population" bigint,
   "type" character(1),
   "service_target" character varying(255),
-  "area" double precision,
   "ecosystem_vegetation" character varying(255),
   "human_activities" character varying(255),
   "environment_problems" character varying(255),
@@ -19,7 +18,7 @@ CREATE TABLE public."gis_ecologicalregion" (
   "create_time" timestamp without time zone,
   "update_by" bigint,
   "update_time" timestamp without time zone,
-  "del_flag" character(1) DEFAULT 0
+  "del_flag" character(1)
 );
 
 -- Column comments:

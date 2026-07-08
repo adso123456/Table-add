@@ -1,13 +1,13 @@
 -- Table: public."wst_trace_node"
 -- Table comment: 水安全溯源模块-溯源拓扑节点表，用于存储河网、管网、园区排污河流、排口挂接点、断面挂接点、园区出口等 pgRouting 节点
 CREATE TABLE public."wst_trace_node" (
-  "id" bigint NOT NULL DEFAULT nextval('wst_trace_node_id_seq'::regclass),
+  "id" bigint,
   "node_code" character varying(100),
   "node_name" character varying(200),
-  "node_type" character varying(100) NOT NULL,
-  "network_type" character varying(100) NOT NULL,
+  "node_type" character varying(100),
+  "network_type" character varying(100),
   "zone_id" bigint,
-  "is_boundary_node" boolean DEFAULT false,
+  "is_boundary_node" boolean,
   "boundary_type" character varying(100),
   "boundary_name" character varying(200),
   "source_asset_id" bigint,
@@ -16,15 +16,15 @@ CREATE TABLE public."wst_trace_node" (
   "longitude" numeric(12,8),
   "latitude" numeric(12,8),
   "elevation" numeric(12,3),
-  "status" character varying(50) DEFAULT 'active'::character varying,
-  "geom" geometry(Point,4326) NOT NULL,
+  "status" character varying(50),
+  "geom" geometry(Point,4326),
   "metadata_json" jsonb,
   "remark" text,
   "created_by" character varying(100),
-  "created_at" timestamp without time zone DEFAULT now(),
+  "created_at" timestamp without time zone,
   "updated_by" character varying(100),
-  "updated_at" timestamp without time zone DEFAULT now(),
-  "del_flag" smallint DEFAULT 0,
+  "updated_at" timestamp without time zone,
+  "del_flag" smallint,
   "asset_id" bigint
 );
 

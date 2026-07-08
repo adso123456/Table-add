@@ -1,7 +1,7 @@
 -- Table: public."gis_poi"
 -- Table comment: 主键id
 CREATE TABLE public."gis_poi" (
-  "id" bigint NOT NULL,
+  "id" bigint,
   "code" bigint,
   "name" character varying(100),
   "address" character varying(255),
@@ -13,9 +13,9 @@ CREATE TABLE public."gis_poi" (
   "lat" double precision,
   "telephone" character varying(11),
   "remark" character varying(255),
-  "create_time" timestamp without time zone DEFAULT CURRENT_TIMESTAMP,
+  "create_time" timestamp without time zone,
   "update_time" timestamp without time zone,
-  "del_flag" character(1) DEFAULT 0,
+  "del_flag" character(1),
   "create_by" bigint,
   "update_by" bigint
 );

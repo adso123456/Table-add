@@ -1,19 +1,19 @@
 -- Table: public."gis_watershed_partition"
 -- Table comment: 空间-流域分区数据
 CREATE TABLE public."gis_watershed_partition" (
-  "id" bigint NOT NULL,
+  "id" bigint,
   "name" character varying(100),
   "name_alias" character varying(100),
-  "area" double precision DEFAULT 0,
+  "area" double precision,
   "remark" character varying(255),
   "code" character varying(100),
-  "create_by" bigint DEFAULT 1,
-  "create_time" timestamp without time zone DEFAULT CURRENT_TIMESTAMP,
-  "update_by" bigint DEFAULT 1,
-  "update_time" timestamp without time zone DEFAULT CURRENT_TIMESTAMP,
-  "del_flag" character(1) DEFAULT '0'::bpchar,
+  "create_by" bigint,
+  "create_time" timestamp without time zone,
+  "update_by" bigint,
+  "update_time" timestamp without time zone,
+  "del_flag" character(1),
   "geom" geometry(MultiPolygon,4326),
-  "version" smallint DEFAULT 0
+  "version" smallint
 );
 
 -- Column comments:

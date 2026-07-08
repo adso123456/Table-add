@@ -1,7 +1,7 @@
 -- Table: public."rs_warn_records"
 -- Table comment: 污染预警消息通知
 CREATE TABLE public."rs_warn_records" (
-  "id" bigint NOT NULL,
+  "id" bigint,
   "station_id" bigint,
   "pollutant_id" bigint,
   "key_point_id" bigint,
@@ -19,13 +19,13 @@ CREATE TABLE public."rs_warn_records" (
   "check_status" character(1),
   "check_time" timestamp without time zone,
   "manual_auto" character(1),
-  "release_status" character(1) DEFAULT 0,
+  "release_status" character(1),
   "release_time" timestamp without time zone,
   "create_by" bigint,
   "create_time" timestamp without time zone,
   "update_by" bigint,
   "update_time" timestamp without time zone,
-  "del_flag" character(1) DEFAULT 0
+  "del_flag" character(1)
 );
 
 -- Column comments:

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-08 15:50:44",
+  "generated_at": "2026-07-08 16:10:00",
   "level": 1,
   "level_name": "结构 DDL 训练",
   "source": "metadata_snapshot_v3 + vanna_training_input_v3",
@@ -14,7 +14,7 @@
     "columns_in_training": 2572,
     "ddl_files": 115,
     "doc_files": 115,
-    "columns_in_ddl": 2613
+    "columns_in_ddl": 2572
   },
   "quality_checks": {
     "create_table_count": 115,
