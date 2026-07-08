@@ -1,0 +1,21 @@
+batch_id,batch_name,review_priority,table_count,field_count,suspicious_count,status,reason
+batch_001,第1批：wm_raster_inversion 表（high priority）,high,1,10,10,ready_for_human_review,唯一 high priority 表: wm_raster_inversion，表级注释缺失，需优先审核
+batch_002,第2批：medium priority 表（4张）,medium,4,63,0,planned_not_generated,medium priority 表，人工审核辅助包尚未生成
+batch_003,第3批：medium priority 表（1张）,medium,1,54,0,planned_not_generated,medium priority 表，人工审核辅助包尚未生成
+batch_004,第4批：medium priority 表（1张）,medium,1,96,0,planned_not_generated,medium priority 表，人工审核辅助包尚未生成
+batch_005,第5批：medium priority 表（2张）,medium,2,95,0,planned_not_generated,medium priority 表，人工审核辅助包尚未生成
+batch_006,第6批：medium priority 表（3张）,medium,3,100,0,planned_not_generated,medium priority 表，人工审核辅助包尚未生成
+batch_007,第7批：medium priority 表（3张）,medium,3,59,0,planned_not_generated,medium priority 表，人工审核辅助包尚未生成
+batch_008,第8批：low priority 表（10张）,low,10,67,0,planned_not_generated,low priority 表，人工审核辅助包尚未生成
+batch_009,第9批：low priority 表（10张）,low,10,28,0,planned_not_generated,low priority 表，人工审核辅助包尚未生成
+batch_010,第10批：low priority 表（10张）,low,10,99,0,planned_not_generated,low priority 表，人工审核辅助包尚未生成
+batch_011,第11批：low priority 表（10张）,low,10,74,0,planned_not_generated,low priority 表，人工审核辅助包尚未生成
+batch_012,第12批：low priority 表（10张）,low,10,85,0,planned_not_generated,low priority 表，人工审核辅助包尚未生成
+batch_013,第13批：low priority 表（10张）,low,10,82,0,planned_not_generated,low priority 表，人工审核辅助包尚未生成
+batch_014,第14批：low priority 表（8张）,low,8,96,0,planned_not_generated,low priority 表，人工审核辅助包尚未生成
+batch_015,第15批：low priority 表（10张）,low,10,71,0,planned_not_generated,low priority 表，人工审核辅助包尚未生成
+batch_016,第16批：low priority 表（10张）,low,10,71,0,planned_not_generated,low priority 表，人工审核辅助包尚未生成
+batch_017,第17批：low priority 表（6张）,low,6,84,0,planned_not_generated,low priority 表，人工审核辅助包尚未生成
+batch_018,第18批：low priority 表（8张）,low,8,92,0,planned_not_generated,low priority 表，人工审核辅助包尚未生成
+batch_019,第19批：low priority 表（8张）,low,8,92,0,planned_not_generated,low priority 表，人工审核辅助包尚未生成
+batch_020,第20批：low priority 表（3张）,low,3,33,0,planned_not_generated,low priority 表，人工审核辅助包尚未生成

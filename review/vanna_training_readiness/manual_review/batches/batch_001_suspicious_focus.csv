@@ -1,0 +1,16 @@
+batch_id,table_name,column_name,data_type,column_comment,table_comment,suspicion_category,reason,recommended_review_action
+batch_001,wm_raster_inversion,record_id,bigint,遥感反演结果表（合并版）,,missing_table_comment,表 wm_raster_inversion 无表级注释，字段 record_id 的训练语义可能不完整,优先补齐表级注释后再训练该表字段
+batch_001,wm_raster_inversion,record_id,bigint,遥感反演结果表（合并版）,,id_like_field,ID 类字段，注释可能过于通用: 字段名 'record_id' 注释为 '遥感反演结果表（合并版）',人工确认注释是否准确描述该字段业务含义
+batch_001,wm_raster_inversion,inversion_type,character varying,反演类型：water_environment-水环境，algalbloom-水生态，landuse-土地利用,,missing_table_comment,表 wm_raster_inversion 无表级注释，字段 inversion_type 的训练语义可能不完整,优先补齐表级注释后再训练该表字段
+batch_001,wm_raster_inversion,inversion_type,character varying,反演类型：water_environment-水环境，algalbloom-水生态，landuse-土地利用,,code_like_field,类型类字段，注释可能过于通用: 字段名 'inversion_type' 注释为 '反演类型：water_environment-水环境，algalbloom-水生态，landuse-土地利用',人工确认注释是否准确描述该字段业务含义
+batch_001,wm_raster_inversion,l1_area,double precision,I类/浮叶挺水植被/背景面积,,missing_table_comment,表 wm_raster_inversion 无表级注释，字段 l1_area 的训练语义可能不完整,优先补齐表级注释后再训练该表字段
+batch_001,wm_raster_inversion,l2_area,double precision,II类/沉水植被/耕地面积,,missing_table_comment,表 wm_raster_inversion 无表级注释，字段 l2_area 的训练语义可能不完整,优先补齐表级注释后再训练该表字段
+batch_001,wm_raster_inversion,l3_area,double precision,III类/水华/园地面积,,missing_table_comment,表 wm_raster_inversion 无表级注释，字段 l3_area 的训练语义可能不完整,优先补齐表级注释后再训练该表字段
+batch_001,wm_raster_inversion,l4_area,double precision,IV类/水体/林地面积,,missing_table_comment,表 wm_raster_inversion 无表级注释，字段 l4_area 的训练语义可能不完整,优先补齐表级注释后再训练该表字段
+batch_001,wm_raster_inversion,l5_area,double precision,V类/水体面积,,missing_table_comment,表 wm_raster_inversion 无表级注释，字段 l5_area 的训练语义可能不完整,优先补齐表级注释后再训练该表字段
+batch_001,wm_raster_inversion,l6_area,double precision,劣V类/建设用地面积,,missing_table_comment,表 wm_raster_inversion 无表级注释，字段 l6_area 的训练语义可能不完整,优先补齐表级注释后再训练该表字段
+batch_001,wm_raster_inversion,service_url,text,服务地址,,missing_table_comment,表 wm_raster_inversion 无表级注释，字段 service_url 的训练语义可能不完整,优先补齐表级注释后再训练该表字段
+batch_001,wm_raster_inversion,service_url,text,服务地址,,very_short_comment,注释极短 (4字): '服务地址',确认该注释是否足以让模型理解字段含义
+batch_001,wm_raster_inversion,data_time,timestamp without time zone,数据日期,,missing_table_comment,表 wm_raster_inversion 无表级注释，字段 data_time 的训练语义可能不完整,优先补齐表级注释后再训练该表字段
+batch_001,wm_raster_inversion,data_time,timestamp without time zone,数据日期,,time_like_field,时间类字段，注释可能过于通用: 字段名 'data_time' 注释为 '数据日期',人工确认注释是否准确描述该字段业务含义
+batch_001,wm_raster_inversion,data_time,timestamp without time zone,数据日期,,very_short_comment,注释极短 (4字): '数据日期',确认该注释是否足以让模型理解字段含义
