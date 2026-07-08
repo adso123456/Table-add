@@ -1,0 +1,45 @@
+table_name,ddl_rank,ddl_top1_table,ddl_top1,ddl_top3,ddl_top5,ddl_top15,doc_rank,doc_top1_table,doc_top1,doc_top3,doc_top5,doc_top15,interference,interference_tables,risk_level
+ad_dict,2,wst_asset_type_dict,no,yes,yes,yes,1,ad_dict,yes,yes,yes,yes,yes,DDL:wst_asset_type_dict,medium
+day_quality_records,1,day_quality_records,yes,yes,yes,yes,2,day_quality_setting,no,yes,yes,yes,yes,DOC:day_quality_setting,medium
+day_quality_setting,2,day_quality_records,no,yes,yes,yes,1,day_quality_setting,yes,yes,yes,yes,yes,DDL:day_quality_records,medium
+dc_survey_app,6,dc_survey_task_instance,no,no,no,yes,3,dc_survey_task_instance,no,yes,yes,yes,yes,DDL:dc_survey_task_instance | DOC:dc_survey_task_instance,high
+dc_survey_info,1,dc_survey_info,yes,yes,yes,yes,6,dc_survey_task_instance,no,no,no,yes,yes,DOC:dc_survey_task_instance,high
+dc_survey_task,4,dc_survey_task_instance,no,no,yes,yes,3,dc_survey_task_instance,no,yes,yes,yes,yes,DDL:dc_survey_task_instance | DOC:dc_survey_task_instance,medium
+dc_survey_track,2,dc_survey_task_instance,no,yes,yes,yes,1,dc_survey_track,yes,yes,yes,yes,yes,DDL:dc_survey_task_instance,medium
+gis_region,7,gis_region_city,no,no,no,yes,6,gis_region_county,no,no,no,yes,yes,DDL:gis_region_city | DOC:gis_region_county,high
+gis_region_population,2,gis_region_county,no,yes,yes,yes,3,gis_region_county,no,yes,yes,yes,yes,DDL:gis_region_county | DOC:gis_region_county,medium
+gis_watershed_partition,3,gis_watershed_partition_3,no,yes,yes,yes,3,gis_watershed_partition_4,no,yes,yes,yes,yes,DDL:gis_watershed_partition_3 | DOC:gis_watershed_partition_4,medium
+gis_watershed_partition_4,2,gis_watershed_partition_3,no,yes,yes,yes,1,gis_watershed_partition_4,yes,yes,yes,yes,yes,DDL:gis_watershed_partition_3,medium
+layer_reservoir_provincial,1,layer_reservoir_provincial,yes,yes,yes,yes,2,layer_reservoir_provincial_合并,no,yes,yes,yes,yes,DOC:layer_reservoir_provincial_合并,medium
+rs_enterprise_info_wade,2,rs_enterprise_info_lsg,no,yes,yes,yes,1,rs_enterprise_info_wade,yes,yes,yes,yes,yes,DDL:rs_enterprise_info_lsg,medium
+rs_industrial_info_yc,1,rs_industrial_info_yc,yes,yes,yes,yes,3,layer_industrial_ysc,no,yes,yes,yes,yes,DOC:layer_industrial_ysc,medium
+rs_outlet,2,rs_outlet_monitor_v2,no,yes,yes,yes,6,rs_outlet_trace_v2,no,no,no,yes,yes,DDL:rs_outlet_monitor_v2 | DOC:rs_outlet_trace_v2,high
+rs_outlet_info_v2,7,rs_outlet_trace_v2,no,no,no,yes,2,rs_outlet_trace_v2,no,yes,yes,yes,yes,DDL:rs_outlet_trace_v2 | DOC:rs_outlet_trace_v2,high
+rs_pollutant_enterprise,9,rs_outlet_trace_v2,no,no,no,yes,1,rs_pollutant_enterprise,yes,yes,yes,yes,yes,DDL:rs_outlet_trace_v2,high
+rs_pollutant_info,7,rs_outlet_trace_v2,no,no,no,yes,1,rs_pollutant_info,yes,yes,yes,yes,yes,DDL:rs_outlet_trace_v2,high
+rs_sewage_info_v2,2,rs_outlet_trace_v2,no,yes,yes,yes,2,rs_sewage_info_yc,no,yes,yes,yes,yes,DDL:rs_outlet_trace_v2 | DOC:rs_sewage_info_yc,medium
+rs_sewage_info_yc,2,rs_sewage_info_v2,no,yes,yes,yes,1,rs_sewage_info_yc,yes,yes,yes,yes,yes,DDL:rs_sewage_info_v2,medium
+rs_wastewater_standard,5,rs_sewage_info_v2,no,no,yes,yes,1,rs_wastewater_standard,yes,yes,yes,yes,yes,DDL:rs_sewage_info_v2,medium
+se_watershed,6,gis_watershed_partition_3,no,no,no,yes,4,layer_watershed,no,no,yes,yes,yes,DDL:gis_watershed_partition_3 | DOC:layer_watershed,high
+se_watershed_river,1,se_watershed_river,yes,yes,yes,yes,3,layer_watershed,no,yes,yes,yes,yes,DOC:layer_watershed,medium
+wh_hydrological_hour_records,3,wh_hydrological_day_records,no,yes,yes,yes,1,wh_hydrological_hour_records,yes,yes,yes,yes,yes,DDL:wh_hydrological_day_records,medium
+wh_hydrological_records_1,5,wh_hydrological_day_records,no,no,yes,yes,2,wh_hydrological_day_records,no,yes,yes,yes,yes,DDL:wh_hydrological_day_records | DOC:wh_hydrological_day_records,medium
+wh_meteorological_hour_records,1,wh_meteorological_hour_records,yes,yes,yes,yes,4,wh_meteorological_predict_hour_records,no,no,yes,yes,yes,DOC:wh_meteorological_predict_hour_records,medium
+wh_meteorological_records_1,5,wh_meteorological_hour_records,no,no,yes,yes,3,wh_meteorological_day_records,no,yes,yes,yes,yes,DDL:wh_meteorological_hour_records | DOC:wh_meteorological_day_records,medium
+wm_camera_platform,2,wm_camera_info,no,yes,yes,yes,1,wm_camera_platform,yes,yes,yes,yes,yes,DDL:wm_camera_info,medium
+wm_meteorological_info,1,wm_meteorological_info,yes,yes,yes,yes,2,wh_meteorological_day_records,no,yes,yes,yes,yes,DOC:wh_meteorological_day_records,medium
+wm_panorama_layer,2,wm_panorama_layer_relation,no,yes,yes,yes,1,wm_panorama_layer,yes,yes,yes,yes,yes,DDL:wm_panorama_layer_relation,medium
+wm_raster_info,2,wm_raster_inversion_config,no,yes,yes,yes,1,wm_raster_info,yes,yes,yes,yes,yes,DDL:wm_raster_inversion_config,medium
+wm_raster_inversion,2,wm_raster_inversion_config,no,yes,yes,yes,2,wm_raster_inversion_config,no,yes,yes,yes,yes,DDL:wm_raster_inversion_config | DOC:wm_raster_inversion_config,medium
+wm_section_info,1,wm_section_info,yes,yes,yes,yes,2,layer_section,no,yes,yes,yes,yes,DOC:layer_section,medium
+wm_section_wq_info,5,wm_section_info,no,no,yes,yes,3,wm_section_info,no,yes,yes,yes,yes,DDL:wm_section_info | DOC:wm_section_info,medium
+wm_station_info,2,wm_station_info_v2,no,yes,yes,yes,2,wm_station_info_v2,no,yes,yes,yes,yes,DDL:wm_station_info_v2 | DOC:wm_station_info_v2,medium
+wm_water_intake,10,wm_water_source_intake_v2,no,no,no,yes,2,wm_water_source_intake_v2,no,yes,yes,yes,yes,DDL:wm_water_source_intake_v2 | DOC:wm_water_source_intake_v2,high
+wm_water_source,3,wm_hydrological_info,no,yes,yes,yes,5,wm_water_source_intake_v2,no,no,yes,yes,yes,DDL:wm_hydrological_info | DOC:wm_water_source_intake_v2,medium
+wm_water_source_zone_v2,2,wst_control_zone,no,yes,yes,yes,1,wm_water_source_zone_v2,yes,yes,yes,yes,yes,DDL:wst_control_zone,medium
+wst_asset,1,wst_asset,yes,yes,yes,yes,3,wst_asset_relation,no,yes,yes,yes,yes,DOC:wst_asset_relation,medium
+wst_asset_relation,2,wst_asset,no,yes,yes,yes,1,wst_asset_relation,yes,yes,yes,yes,yes,DDL:wst_asset,medium
+wst_asset_type_dict,1,wst_asset_type_dict,yes,yes,yes,yes,2,wst_asset_relation,no,yes,yes,yes,yes,DOC:wst_asset_relation,medium
+wst_relation_type_dict,3,wst_relation_subtype_dict,no,yes,yes,yes,2,wst_relation_subtype_dict,no,yes,yes,yes,yes,DDL:wst_relation_subtype_dict | DOC:wst_relation_subtype_dict,medium
+wst_trace_edge,2,wst_trace_node,no,yes,yes,yes,1,wst_trace_edge,yes,yes,yes,yes,yes,DDL:wst_trace_node,medium
+wst_trace_topology_issue,2,wst_trace_node,no,yes,yes,yes,1,wst_trace_topology_issue,yes,yes,yes,yes,yes,DDL:wst_trace_node,medium

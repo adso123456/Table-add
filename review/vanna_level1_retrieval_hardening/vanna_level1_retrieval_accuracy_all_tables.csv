@@ -1,0 +1,116 @@
+table_name,ddl_rank,ddl_top1_table,ddl_top1,ddl_top3,ddl_top5,ddl_top15,doc_rank,doc_top1_table,doc_top1,doc_top3,doc_top5,doc_top15,interference,interference_tables,risk_level
+ad_dict,2,wst_asset_type_dict,no,yes,yes,yes,1,ad_dict,yes,yes,yes,yes,yes,DDL:wst_asset_type_dict,medium
+cf_auto_build_flag,1,cf_auto_build_flag,yes,yes,yes,yes,1,cf_auto_build_flag,yes,yes,yes,yes,no,,low
+day_quality_records,1,day_quality_records,yes,yes,yes,yes,2,day_quality_setting,no,yes,yes,yes,yes,DOC:day_quality_setting,medium
+day_quality_setting,2,day_quality_records,no,yes,yes,yes,1,day_quality_setting,yes,yes,yes,yes,yes,DDL:day_quality_records,medium
+dc_survey_app,6,dc_survey_task_instance,no,no,no,yes,3,dc_survey_task_instance,no,yes,yes,yes,yes,DDL:dc_survey_task_instance | DOC:dc_survey_task_instance,high
+dc_survey_info,1,dc_survey_info,yes,yes,yes,yes,6,dc_survey_task_instance,no,no,no,yes,yes,DOC:dc_survey_task_instance,high
+dc_survey_offline_sync,1,dc_survey_offline_sync,yes,yes,yes,yes,1,dc_survey_offline_sync,yes,yes,yes,yes,no,,low
+dc_survey_offline_upload,1,dc_survey_offline_upload,yes,yes,yes,yes,1,dc_survey_offline_upload,yes,yes,yes,yes,no,,low
+dc_survey_task,4,dc_survey_task_instance,no,no,yes,yes,3,dc_survey_task_instance,no,yes,yes,yes,yes,DDL:dc_survey_task_instance | DOC:dc_survey_task_instance,medium
+dc_survey_task_instance,1,dc_survey_task_instance,yes,yes,yes,yes,1,dc_survey_task_instance,yes,yes,yes,yes,no,,low
+dc_survey_track,2,dc_survey_task_instance,no,yes,yes,yes,1,dc_survey_track,yes,yes,yes,yes,yes,DDL:dc_survey_task_instance,medium
+gis_control_unit,1,gis_control_unit,yes,yes,yes,yes,1,gis_control_unit,yes,yes,yes,yes,no,,low
+gis_ecologicalregion,1,gis_ecologicalregion,yes,yes,yes,yes,1,gis_ecologicalregion,yes,yes,yes,yes,no,,low
+gis_headwaters,1,gis_headwaters,yes,yes,yes,yes,1,gis_headwaters,yes,yes,yes,yes,no,,low
+gis_naturereserve,1,gis_naturereserve,yes,yes,yes,yes,1,gis_naturereserve,yes,yes,yes,yes,no,,low
+gis_poi,1,gis_poi,yes,yes,yes,yes,1,gis_poi,yes,yes,yes,yes,no,,low
+gis_region,7,gis_region_city,no,no,no,yes,6,gis_region_county,no,no,no,yes,yes,DDL:gis_region_city | DOC:gis_region_county,high
+gis_region_city,1,gis_region_city,yes,yes,yes,yes,1,gis_region_city,yes,yes,yes,yes,no,,low
+gis_region_county,1,gis_region_county,yes,yes,yes,yes,1,gis_region_county,yes,yes,yes,yes,no,,low
+gis_region_population,2,gis_region_county,no,yes,yes,yes,3,gis_region_county,no,yes,yes,yes,yes,DDL:gis_region_county | DOC:gis_region_county,medium
+gis_region_township,1,gis_region_township,yes,yes,yes,yes,1,gis_region_township,yes,yes,yes,yes,no,,low
+gis_watershed_partition,3,gis_watershed_partition_3,no,yes,yes,yes,3,gis_watershed_partition_4,no,yes,yes,yes,yes,DDL:gis_watershed_partition_3 | DOC:gis_watershed_partition_4,medium
+gis_watershed_partition_3,1,gis_watershed_partition_3,yes,yes,yes,yes,1,gis_watershed_partition_3,yes,yes,yes,yes,no,,low
+gis_watershed_partition_4,2,gis_watershed_partition_3,no,yes,yes,yes,1,gis_watershed_partition_4,yes,yes,yes,yes,yes,DDL:gis_watershed_partition_3,medium
+layer_boundary_enterprise,1,layer_boundary_enterprise,yes,yes,yes,yes,1,layer_boundary_enterprise,yes,yes,yes,yes,no,,low
+layer_boundary_park,1,layer_boundary_park,yes,yes,yes,yes,1,layer_boundary_park,yes,yes,yes,yes,no,,low
+layer_entity_process,1,layer_entity_process,yes,yes,yes,yes,1,layer_entity_process,yes,yes,yes,yes,no,,low
+layer_entity_relation,1,layer_entity_relation,yes,yes,yes,yes,1,layer_entity_relation,yes,yes,yes,yes,no,,low
+layer_industrial_ghysgw,1,layer_industrial_ghysgw,yes,yes,yes,yes,1,layer_industrial_ghysgw,yes,yes,yes,yes,no,,low
+layer_industrial_lsf,1,layer_industrial_lsf,yes,yes,yes,yes,1,layer_industrial_lsf,yes,yes,yes,yes,no,,low
+layer_industrial_xzysgw,1,layer_industrial_xzysgw,yes,yes,yes,yes,1,layer_industrial_xzysgw,yes,yes,yes,yes,no,,low
+layer_industrial_yjf,1,layer_industrial_yjf,yes,yes,yes,yes,1,layer_industrial_yjf,yes,yes,yes,yes,no,,low
+layer_industrial_yjsgc,1,layer_industrial_yjsgc,yes,yes,yes,yes,1,layer_industrial_yjsgc,yes,yes,yes,yes,no,,low
+layer_industrial_ysc,1,layer_industrial_ysc,yes,yes,yes,yes,1,layer_industrial_ysc,yes,yes,yes,yes,no,,low
+layer_outlet_sewage,1,layer_outlet_sewage,yes,yes,yes,yes,1,layer_outlet_sewage,yes,yes,yes,yes,no,,low
+layer_partition_2,1,layer_partition_2,yes,yes,yes,yes,1,layer_partition_2,yes,yes,yes,yes,no,,low
+layer_partition_3,1,layer_partition_3,yes,yes,yes,yes,1,layer_partition_3,yes,yes,yes,yes,no,,low
+layer_reservoir_provincial,1,layer_reservoir_provincial,yes,yes,yes,yes,2,layer_reservoir_provincial_合并,no,yes,yes,yes,yes,DOC:layer_reservoir_provincial_合并,medium
+layer_reservoir_provincial_label,1,layer_reservoir_provincial_label,yes,yes,yes,yes,1,layer_reservoir_provincial_label,yes,yes,yes,yes,no,,low
+layer_reservoir_provincial_合并,1,layer_reservoir_provincial_合并,yes,yes,yes,yes,1,layer_reservoir_provincial_合并,yes,yes,yes,yes,no,,low
+layer_river_provincial,1,layer_river_provincial,yes,yes,yes,yes,1,layer_river_provincial,yes,yes,yes,yes,no,,low
+layer_section,1,layer_section,yes,yes,yes,yes,1,layer_section,yes,yes,yes,yes,no,,low
+layer_watershed,1,layer_watershed,yes,yes,yes,yes,1,layer_watershed,yes,yes,yes,yes,no,,low
+metadata_view,1,metadata_view,yes,yes,yes,yes,1,metadata_view,yes,yes,yes,yes,no,,low
+min_value_setting,1,min_value_setting,yes,yes,yes,yes,1,min_value_setting,yes,yes,yes,yes,no,,low
+rs_enterprise_info_lsg,1,rs_enterprise_info_lsg,yes,yes,yes,yes,1,rs_enterprise_info_lsg,yes,yes,yes,yes,no,,low
+rs_enterprise_info_wade,2,rs_enterprise_info_lsg,no,yes,yes,yes,1,rs_enterprise_info_wade,yes,yes,yes,yes,yes,DDL:rs_enterprise_info_lsg,medium
+rs_industrial_info_yc,1,rs_industrial_info_yc,yes,yes,yes,yes,3,layer_industrial_ysc,no,yes,yes,yes,yes,DOC:layer_industrial_ysc,medium
+rs_livestock_info_yc,1,rs_livestock_info_yc,yes,yes,yes,yes,1,rs_livestock_info_yc,yes,yes,yes,yes,no,,low
+rs_outlet,2,rs_outlet_monitor_v2,no,yes,yes,yes,6,rs_outlet_trace_v2,no,no,no,yes,yes,DDL:rs_outlet_monitor_v2 | DOC:rs_outlet_trace_v2,high
+rs_outlet_info_v2,7,rs_outlet_trace_v2,no,no,no,yes,2,rs_outlet_trace_v2,no,yes,yes,yes,yes,DDL:rs_outlet_trace_v2 | DOC:rs_outlet_trace_v2,high
+rs_outlet_live_v2,1,rs_outlet_live_v2,yes,yes,yes,yes,1,rs_outlet_live_v2,yes,yes,yes,yes,no,,low
+rs_outlet_monitor_v2,1,rs_outlet_monitor_v2,yes,yes,yes,yes,1,rs_outlet_monitor_v2,yes,yes,yes,yes,no,,low
+rs_outlet_remediation_v2,1,rs_outlet_remediation_v2,yes,yes,yes,yes,1,rs_outlet_remediation_v2,yes,yes,yes,yes,no,,low
+rs_outlet_trace_v2,1,rs_outlet_trace_v2,yes,yes,yes,yes,1,rs_outlet_trace_v2,yes,yes,yes,yes,no,,low
+rs_pollutant_enterprise,9,rs_outlet_trace_v2,no,no,no,yes,1,rs_pollutant_enterprise,yes,yes,yes,yes,yes,DDL:rs_outlet_trace_v2,high
+rs_pollutant_info,7,rs_outlet_trace_v2,no,no,no,yes,1,rs_pollutant_info,yes,yes,yes,yes,yes,DDL:rs_outlet_trace_v2,high
+rs_sewage_info_v2,2,rs_outlet_trace_v2,no,yes,yes,yes,2,rs_sewage_info_yc,no,yes,yes,yes,yes,DDL:rs_outlet_trace_v2 | DOC:rs_sewage_info_yc,medium
+rs_sewage_info_yc,2,rs_sewage_info_v2,no,yes,yes,yes,1,rs_sewage_info_yc,yes,yes,yes,yes,yes,DDL:rs_sewage_info_v2,medium
+rs_sewage_park_info,1,rs_sewage_park_info,yes,yes,yes,yes,1,rs_sewage_park_info,yes,yes,yes,yes,no,,low
+rs_warn_records,1,rs_warn_records,yes,yes,yes,yes,1,rs_warn_records,yes,yes,yes,yes,no,,low
+rs_wastewater_day_records,1,rs_wastewater_day_records,yes,yes,yes,yes,1,rs_wastewater_day_records,yes,yes,yes,yes,no,,low
+rs_wastewater_hour_records,1,rs_wastewater_hour_records,yes,yes,yes,yes,1,rs_wastewater_hour_records,yes,yes,yes,yes,no,,low
+rs_wastewater_month_records,1,rs_wastewater_month_records,yes,yes,yes,yes,1,rs_wastewater_month_records,yes,yes,yes,yes,no,,low
+rs_wastewater_standard,5,rs_sewage_info_v2,no,no,yes,yes,1,rs_wastewater_standard,yes,yes,yes,yes,yes,DDL:rs_sewage_info_v2,medium
+se_watershed,6,gis_watershed_partition_3,no,no,no,yes,4,layer_watershed,no,no,yes,yes,yes,DDL:gis_watershed_partition_3 | DOC:layer_watershed,high
+se_watershed_river,1,se_watershed_river,yes,yes,yes,yes,3,layer_watershed,no,yes,yes,yes,yes,DOC:layer_watershed,medium
+wh_hydrological_day_records,1,wh_hydrological_day_records,yes,yes,yes,yes,1,wh_hydrological_day_records,yes,yes,yes,yes,no,,low
+wh_hydrological_hour_records,3,wh_hydrological_day_records,no,yes,yes,yes,1,wh_hydrological_hour_records,yes,yes,yes,yes,yes,DDL:wh_hydrological_day_records,medium
+wh_hydrological_records_1,5,wh_hydrological_day_records,no,no,yes,yes,2,wh_hydrological_day_records,no,yes,yes,yes,yes,DDL:wh_hydrological_day_records | DOC:wh_hydrological_day_records,medium
+wh_meteorological_day_records,1,wh_meteorological_day_records,yes,yes,yes,yes,1,wh_meteorological_day_records,yes,yes,yes,yes,no,,low
+wh_meteorological_hour_records,1,wh_meteorological_hour_records,yes,yes,yes,yes,4,wh_meteorological_predict_hour_records,no,no,yes,yes,yes,DOC:wh_meteorological_predict_hour_records,medium
+wh_meteorological_predict_day_records,1,wh_meteorological_predict_day_records,yes,yes,yes,yes,1,wh_meteorological_predict_day_records,yes,yes,yes,yes,no,,low
+wh_meteorological_predict_hour_records,1,wh_meteorological_predict_hour_records,yes,yes,yes,yes,1,wh_meteorological_predict_hour_records,yes,yes,yes,yes,no,,low
+wh_meteorological_records_1,5,wh_meteorological_hour_records,no,no,yes,yes,3,wh_meteorological_day_records,no,yes,yes,yes,yes,DDL:wh_meteorological_hour_records | DOC:wh_meteorological_day_records,medium
+wm_camera_info,1,wm_camera_info,yes,yes,yes,yes,1,wm_camera_info,yes,yes,yes,yes,no,,low
+wm_camera_platform,2,wm_camera_info,no,yes,yes,yes,1,wm_camera_platform,yes,yes,yes,yes,yes,DDL:wm_camera_info,medium
+wm_directory,1,wm_directory,yes,yes,yes,yes,1,wm_directory,yes,yes,yes,yes,no,,low
+wm_hydrological_info,1,wm_hydrological_info,yes,yes,yes,yes,1,wm_hydrological_info,yes,yes,yes,yes,no,,low
+wm_image_info,1,wm_image_info,yes,yes,yes,yes,1,wm_image_info,yes,yes,yes,yes,no,,low
+wm_meteorological_info,1,wm_meteorological_info,yes,yes,yes,yes,2,wh_meteorological_day_records,no,yes,yes,yes,yes,DOC:wh_meteorological_day_records,medium
+wm_panorama_layer,2,wm_panorama_layer_relation,no,yes,yes,yes,1,wm_panorama_layer,yes,yes,yes,yes,yes,DDL:wm_panorama_layer_relation,medium
+wm_panorama_layer_relation,1,wm_panorama_layer_relation,yes,yes,yes,yes,1,wm_panorama_layer_relation,yes,yes,yes,yes,no,,low
+wm_panorama_video,1,wm_panorama_video,yes,yes,yes,yes,1,wm_panorama_video,yes,yes,yes,yes,no,,low
+wm_raster_info,2,wm_raster_inversion_config,no,yes,yes,yes,1,wm_raster_info,yes,yes,yes,yes,yes,DDL:wm_raster_inversion_config,medium
+wm_raster_inversion,2,wm_raster_inversion_config,no,yes,yes,yes,2,wm_raster_inversion_config,no,yes,yes,yes,yes,DDL:wm_raster_inversion_config | DOC:wm_raster_inversion_config,medium
+wm_raster_inversion_config,1,wm_raster_inversion_config,yes,yes,yes,yes,1,wm_raster_inversion_config,yes,yes,yes,yes,no,,low
+wm_section_info,1,wm_section_info,yes,yes,yes,yes,2,layer_section,no,yes,yes,yes,yes,DOC:layer_section,medium
+wm_section_wq_info,5,wm_section_info,no,no,yes,yes,3,wm_section_info,no,yes,yes,yes,yes,DDL:wm_section_info | DOC:wm_section_info,medium
+wm_station_info,2,wm_station_info_v2,no,yes,yes,yes,2,wm_station_info_v2,no,yes,yes,yes,yes,DDL:wm_station_info_v2 | DOC:wm_station_info_v2,medium
+wm_station_info_v2,1,wm_station_info_v2,yes,yes,yes,yes,1,wm_station_info_v2,yes,yes,yes,yes,no,,low
+wm_uav_info,1,wm_uav_info,yes,yes,yes,yes,1,wm_uav_info,yes,yes,yes,yes,no,,low
+wm_water_intake,10,wm_water_source_intake_v2,no,no,no,yes,2,wm_water_source_intake_v2,no,yes,yes,yes,yes,DDL:wm_water_source_intake_v2 | DOC:wm_water_source_intake_v2,high
+wm_water_source,3,wm_hydrological_info,no,yes,yes,yes,5,wm_water_source_intake_v2,no,no,yes,yes,yes,DDL:wm_hydrological_info | DOC:wm_water_source_intake_v2,medium
+wm_water_source_intake_v2,1,wm_water_source_intake_v2,yes,yes,yes,yes,1,wm_water_source_intake_v2,yes,yes,yes,yes,no,,low
+wm_water_source_zone_v2,2,wst_control_zone,no,yes,yes,yes,1,wm_water_source_zone_v2,yes,yes,yes,yes,yes,DDL:wst_control_zone,medium
+wm_waterbody_info,1,wm_waterbody_info,yes,yes,yes,yes,1,wm_waterbody_info,yes,yes,yes,yes,no,,low
+wm_waterquality_day_records,1,wm_waterquality_day_records,yes,yes,yes,yes,1,wm_waterquality_day_records,yes,yes,yes,yes,no,,low
+wm_waterquality_hour_records,1,wm_waterquality_hour_records,yes,yes,yes,yes,1,wm_waterquality_hour_records,yes,yes,yes,yes,no,,low
+wm_waterquality_month_records,1,wm_waterquality_month_records,yes,yes,yes,yes,1,wm_waterquality_month_records,yes,yes,yes,yes,no,,low
+wm_waterquality_threshold,1,wm_waterquality_threshold,yes,yes,yes,yes,1,wm_waterquality_threshold,yes,yes,yes,yes,no,,low
+wm_waterquality_year_records,1,wm_waterquality_year_records,yes,yes,yes,yes,1,wm_waterquality_year_records,yes,yes,yes,yes,no,,low
+wst_asset,1,wst_asset,yes,yes,yes,yes,3,wst_asset_relation,no,yes,yes,yes,yes,DOC:wst_asset_relation,medium
+wst_asset_relation,2,wst_asset,no,yes,yes,yes,1,wst_asset_relation,yes,yes,yes,yes,yes,DDL:wst_asset,medium
+wst_asset_trace_snap,1,wst_asset_trace_snap,yes,yes,yes,yes,1,wst_asset_trace_snap,yes,yes,yes,yes,no,,low
+wst_asset_type_dict,1,wst_asset_type_dict,yes,yes,yes,yes,2,wst_asset_relation,no,yes,yes,yes,yes,DOC:wst_asset_relation,medium
+wst_control_zone,1,wst_control_zone,yes,yes,yes,yes,1,wst_control_zone,yes,yes,yes,yes,no,,low
+wst_layer_river,1,wst_layer_river,yes,yes,yes,yes,1,wst_layer_river,yes,yes,yes,yes,no,,low
+wst_relation_subtype_dict,1,wst_relation_subtype_dict,yes,yes,yes,yes,1,wst_relation_subtype_dict,yes,yes,yes,yes,no,,low
+wst_relation_type_dict,3,wst_relation_subtype_dict,no,yes,yes,yes,2,wst_relation_subtype_dict,no,yes,yes,yes,yes,DDL:wst_relation_subtype_dict | DOC:wst_relation_subtype_dict,medium
+wst_trace_edge,2,wst_trace_node,no,yes,yes,yes,1,wst_trace_edge,yes,yes,yes,yes,yes,DDL:wst_trace_node,medium
+wst_trace_node,1,wst_trace_node,yes,yes,yes,yes,1,wst_trace_node,yes,yes,yes,yes,no,,low
+wst_trace_topology_issue,2,wst_trace_node,no,yes,yes,yes,1,wst_trace_topology_issue,yes,yes,yes,yes,yes,DDL:wst_trace_node,medium
+wt_service_directory,1,wt_service_directory,yes,yes,yes,yes,1,wt_service_directory,yes,yes,yes,yes,no,,low
+wt_warnparm_config,1,wt_warnparm_config,yes,yes,yes,yes,1,wt_warnparm_config,yes,yes,yes,yes,no,,low
