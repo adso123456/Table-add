@@ -1,7 +1,7 @@
 # 全库元数据快照 V3
 
-**快照时间**: 2026-07-08 14:58:03
-**状态**: 只读快照，未修改数据库
+**快照时间**: 2026-07-08 15:05:37
+**状态**: 只读快照，COPY CSV 可靠导出
 
 ---
 
@@ -32,20 +32,24 @@
 | 阶段 | 执行内容 | 成功 | 累计字段缺失 | 累计表缺失 |
 |------|----------|------|-------------|-----------|
 | 初始 | — | — | 582 | 18 |
-| V2 批处理 | A_auto_safe 312 COMMENT | 312 | 283 | 5 |
-| V2 批处理 | B_review approved 212 COMMENT | 212 | 71 | 5 |
+| A_auto_safe | 312 COMMENT | 312 | 283 | 5 |
+| B_review approved | 212 COMMENT | 212 | 71 | 5 |
 | **当前 V3** | **快照** | — | **71** | **5** |
 
 ---
 
-## 四、剩余缺注释文件
+## 四、导出文件
 
 | 文件 | 行数 |
 |------|------|
-| `remaining_missing_column_comments_v3.csv` | 82 |
+| `metadata_snapshot_v3_columns.csv` | 3445 |
+| `metadata_snapshot_v3_tables.csv` | 162 |
+| `remaining_missing_column_comments_v3.csv` | 71 |
 | `remaining_missing_table_comments_v3.csv` | 5 |
 
-### 剩余缺表注释
+---
+
+## 五、剩余缺表注释
 
 - `public._stg_yichang_river_counts`
 - `public._stg_yichang_river_import`
@@ -56,7 +60,7 @@
 
 ---
 
-## 五、边界声明
+## 六、边界声明
 
 > - ❌ 未执行 COMMENT ON
 > - ❌ 未修改数据库

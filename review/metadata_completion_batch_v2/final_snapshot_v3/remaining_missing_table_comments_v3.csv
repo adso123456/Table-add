@@ -1,4 +1,4 @@
-schema,table
+schema_name,table_name
 public,_stg_yichang_river_counts
 public,_stg_yichang_river_import
 public,_stg_yichang_river_std

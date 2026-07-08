@@ -1,4 +1,4 @@
-schema,table,column,type
+schema_name,table_name,column_name,data_type
 public,_stg_yichang_river_counts,layer_inserted,integer
 public,_stg_yichang_river_counts,layer_updated,integer
 public,_stg_yichang_river_counts,asset_inserted,integer
@@ -52,17 +52,6 @@ public,layer_river_provincial_bak0617,wrid,character varying(16)
 public,layer_river_provincial_bak0617,wrgr,integer
 public,layer_river_provincial_bak0617,changeatt,character varying(64)
 public,rs_outlet,quick_detect_desc,character varying(255)
-,,,
-,,,
-,,,
-,,,
-,,,
-,,,
-,,,
-,,,
-,,,
-,,,
-,,,
 public,stg_sjtysj_cbwrwxtzlxxxt_p_ashore_apply_df,shlj_text,character varying(500)
 public,stg_sjtysj_cbwrwxtzlxxxt_p_ashore_apply_df,fy_time,character varying(500)
 public,stg_sjtysj_cbwrwxtzlxxxt_p_ashore_apply_df,hyws_time,character varying(500)
