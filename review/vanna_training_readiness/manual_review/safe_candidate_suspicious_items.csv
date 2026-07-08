@@ -1,0 +1,1040 @@
+table_name,column_name,data_type,column_comment,table_comment,suspicion_category,reason,recommended_review_action
+ad_dict,row_id,bigint,ROW_ID,数据字典,id_like_field,ID 类字段，注释可能过于通用: 字段名 'row_id' 注释为 'ROW_ID',人工确认注释是否准确描述该字段业务含义
+ad_dict,list_type,character varying,列表类型,数据字典,code_like_field,类型类字段，注释可能过于通用: 字段名 'list_type' 注释为 '列表类型',人工确认注释是否准确描述该字段业务含义
+ad_dict,list_type,character varying,列表类型,数据字典,very_short_comment,注释极短 (4字): '列表类型',确认该注释是否足以让模型理解字段含义
+ad_dict,list_type_desc,character varying,列表描述,数据字典,very_short_comment,注释极短 (4字): '列表描述',确认该注释是否足以让模型理解字段含义
+ad_dict,item_code,character varying,列表项代码,数据字典,code_like_field,编码类字段，注释可能过于通用: 字段名 'item_code' 注释为 '列表项代码',人工确认注释是否准确描述该字段业务含义
+ad_dict,item_code,character varying,列表项代码,数据字典,very_short_comment,注释极短 (5字): '列表项代码',确认该注释是否足以让模型理解字段含义
+ad_dict,item_name,character varying,列表项名称,数据字典,name_like_field,名称类字段，注释可能过于通用: 字段名 'item_name' 注释为 '列表项名称',人工确认注释是否准确描述该字段业务含义
+ad_dict,item_name,character varying,列表项名称,数据字典,very_short_comment,注释极短 (5字): '列表项名称',确认该注释是否足以让模型理解字段含义
+ad_dict,taxis_no,integer,排序码,数据字典,very_short_comment,注释极短 (3字): '排序码',确认该注释是否足以让模型理解字段含义
+ad_dict,origin_flag,character,数据来源的标志：[]或[I]-(Input)系统录入;[O]-(Out)外部接口导入;[S]-(System)系统保留。本标志不能挪为它用。,数据字典,status_like_field,标记类字段，注释可能过于通用: 字段名 'origin_flag' 注释为 '数据来源的标志：[]或[I]-(Input)系统录入;[O]-(Out)外部接口导入;[S]-(System)系统保留。',人工确认注释是否准确描述该字段业务含义
+day_quality_setting,audit_by,bigint,审核人,日质控设置,very_short_comment,注释极短 (3字): '审核人',确认该注释是否足以让模型理解字段含义
+day_quality_setting,audit_time,timestamp without time zone,审核时间,日质控设置,time_like_field,时间类字段，注释可能过于通用: 字段名 'audit_time' 注释为 '审核时间',人工确认注释是否准确描述该字段业务含义
+day_quality_setting,audit_time,timestamp without time zone,审核时间,日质控设置,very_short_comment,注释极短 (4字): '审核时间',确认该注释是否足以让模型理解字段含义
+dc_survey_app,version_code,character varying,APP版本号：V1.0.0、1.0.0、100,APP安装包版本管理表,code_like_field,编码类字段，注释可能过于通用: 字段名 'version_code' 注释为 'APP版本号：V1.0.0、1.0.0、100',人工确认注释是否准确描述该字段业务含义
+dc_survey_app,version_name,character varying,APP版本名称: 如果有多个APP保证每一类名称一致,APP安装包版本管理表,name_like_field,名称类字段，注释可能过于通用: 字段名 'version_name' 注释为 'APP版本名称: 如果有多个APP保证每一类名称一致',人工确认注释是否准确描述该字段业务含义
+dc_survey_app,update_type,smallint,更新类型：1-强制更新，2-可选更新,APP安装包版本管理表,code_like_field,类型类字段，注释可能过于通用: 字段名 'update_type' 注释为 '更新类型：1-强制更新，2-可选更新',人工确认注释是否准确描述该字段业务含义
+dc_survey_app,update_log,text,更新日志,APP安装包版本管理表,very_short_comment,注释极短 (4字): '更新日志',确认该注释是否足以让模型理解字段含义
+dc_survey_app,platform_type,smallint,平台类型：1-Android，2-iOS,APP安装包版本管理表,code_like_field,类型类字段，注释可能过于通用: 字段名 'platform_type' 注释为 '平台类型：1-Android，2-iOS',人工确认注释是否准确描述该字段业务含义
+dc_survey_info,watershed_partition_id,bigint,流域分区ID,巡回调查-调查后的核查信息,id_like_field,ID 类字段，注释可能过于通用: 字段名 'watershed_partition_id' 注释为 '流域分区ID',人工确认注释是否准确描述该字段业务含义
+dc_survey_info,upload_time,character varying,上传时间：每次上传都记录时间  20251128,巡回调查-调查后的核查信息,time_like_field,时间类字段，注释可能过于通用: 字段名 'upload_time' 注释为 '上传时间：每次上传都记录时间  20251128',人工确认注释是否准确描述该字段业务含义
+dc_survey_info,lon,double precision,经度,巡回调查-调查后的核查信息,very_short_comment,注释极短 (2字): '经度',确认该注释是否足以让模型理解字段含义
+dc_survey_info,lat,double precision,纬度,巡回调查-调查后的核查信息,very_short_comment,注释极短 (2字): '纬度',确认该注释是否足以让模型理解字段含义
+dc_survey_info,survey_type,smallint,调查类型：0-excel调查信息、1-word小结,巡回调查-调查后的核查信息,code_like_field,类型类字段，注释可能过于通用: 字段名 'survey_type' 注释为 '调查类型：0-excel调查信息、1-word小结',人工确认注释是否准确描述该字段业务含义
+dc_survey_info,image_path_2,character varying,图片2,巡回调查-调查后的核查信息,very_short_comment,注释极短 (3字): '图片2',确认该注释是否足以让模型理解字段含义
+dc_survey_info,image_path_3,character varying,图片3,巡回调查-调查后的核查信息,very_short_comment,注释极短 (3字): '图片3',确认该注释是否足以让模型理解字段含义
+dc_survey_offline_sync,sync_status,integer,同步状态：0-待同步，1-同步中，2-同步成功，3-同步失败,离线同步任务表,status_like_field,状态类字段，注释可能过于通用: 字段名 'sync_status' 注释为 '同步状态：0-待同步，1-同步中，2-同步成功，3-同步失败',人工确认注释是否准确描述该字段业务含义
+dc_survey_offline_sync,total_steps,integer,总步骤数,离线同步任务表,very_short_comment,注释极短 (4字): '总步骤数',确认该注释是否足以让模型理解字段含义
+dc_survey_offline_sync,current_step,integer,当前步骤,离线同步任务表,very_short_comment,注释极短 (4字): '当前步骤',确认该注释是否足以让模型理解字段含义
+dc_survey_offline_sync,sync_start_time,timestamp without time zone,同步开始时间,离线同步任务表,time_like_field,时间类字段，注释可能过于通用: 字段名 'sync_start_time' 注释为 '同步开始时间',人工确认注释是否准确描述该字段业务含义
+dc_survey_offline_sync,sync_end_time,timestamp without time zone,同步结束时间,离线同步任务表,time_like_field,时间类字段，注释可能过于通用: 字段名 'sync_end_time' 注释为 '同步结束时间',人工确认注释是否准确描述该字段业务含义
+dc_survey_offline_sync,error_message,text,错误信息,离线同步任务表,very_short_comment,注释极短 (4字): '错误信息',确认该注释是否足以让模型理解字段含义
+dc_survey_offline_upload,file_type,character varying,文件类型：json-JSON数据文件，image-图片文件,文件上传缓存表 - 支持断点续传和本地文件缓存,code_like_field,类型类字段，注释可能过于通用: 字段名 'file_type' 注释为 '文件类型：json-JSON数据文件，image-图片文件',人工确认注释是否准确描述该字段业务含义
+dc_survey_offline_upload,file_name,character varying,文件名,文件上传缓存表 - 支持断点续传和本地文件缓存,name_like_field,名称类字段，注释可能过于通用: 字段名 'file_name' 注释为 '文件名',人工确认注释是否准确描述该字段业务含义
+dc_survey_offline_upload,file_name,character varying,文件名,文件上传缓存表 - 支持断点续传和本地文件缓存,very_short_comment,注释极短 (3字): '文件名',确认该注释是否足以让模型理解字段含义
+dc_survey_offline_upload,total_chunks,integer,总分块数,文件上传缓存表 - 支持断点续传和本地文件缓存,very_short_comment,注释极短 (4字): '总分块数',确认该注释是否足以让模型理解字段含义
+dc_survey_offline_upload,upload_status,smallint,上传状态：0-待上传，1-上传中，2-上传完成，3-合并失败,文件上传缓存表 - 支持断点续传和本地文件缓存,status_like_field,状态类字段，注释可能过于通用: 字段名 'upload_status' 注释为 '上传状态：0-待上传，1-上传中，2-上传完成，3-合并失败',人工确认注释是否准确描述该字段业务含义
+dc_survey_offline_upload,clean_flag,character,本地文件清理标记：0 未删除、1 已删除,文件上传缓存表 - 支持断点续传和本地文件缓存,status_like_field,标记类字段，注释可能过于通用: 字段名 'clean_flag' 注释为 '本地文件清理标记：0 未删除、1 已删除',人工确认注释是否准确描述该字段业务含义
+dc_survey_task,survey_time,character varying,巡查时间: yyyyMMdd,巡查任务表,time_like_field,时间类字段，注释可能过于通用: 字段名 'survey_time' 注释为 '巡查时间: yyyyMMdd',人工确认注释是否准确描述该字段业务含义
+dc_survey_task,watershed_partition_id,bigint,流域分区ID,巡查任务表,id_like_field,ID 类字段，注释可能过于通用: 字段名 'watershed_partition_id' 注释为 '流域分区ID',人工确认注释是否准确描述该字段业务含义
+dc_survey_task,point_count,integer,点位数量,巡查任务表,very_short_comment,注释极短 (4字): '点位数量',确认该注释是否足以让模型理解字段含义
+dc_survey_task,image_count,integer,照片数量,巡查任务表,very_short_comment,注释极短 (4字): '照片数量',确认该注释是否足以让模型理解字段含义
+dc_survey_task,update_name,character varying,更新人名称：当前巡查人员,巡查任务表,name_like_field,名称类字段，注释可能过于通用: 字段名 'update_name' 注释为 '更新人名称：当前巡查人员',人工确认注释是否准确描述该字段业务含义
+dc_survey_task_instance,start_time,timestamp without time zone,执行开始时间,任务实例：记录轨迹、点位的添加,time_like_field,时间类字段，注释可能过于通用: 字段名 'start_time' 注释为 '执行开始时间',人工确认注释是否准确描述该字段业务含义
+dc_survey_task_instance,end_time,timestamp without time zone,执行结束时间,任务实例：记录轨迹、点位的添加,time_like_field,时间类字段，注释可能过于通用: 字段名 'end_time' 注释为 '执行结束时间',人工确认注释是否准确描述该字段业务含义
+dc_survey_track,lat,double precision,纬度,巡查轨迹记录表,very_short_comment,注释极短 (2字): '纬度',确认该注释是否足以让模型理解字段含义
+dc_survey_track,lon,double precision,经度,巡查轨迹记录表,very_short_comment,注释极短 (2字): '经度',确认该注释是否足以让模型理解字段含义
+gis_control_unit,control_unit_name,character varying,控制单元名称,,missing_table_comment,表 gis_control_unit 无表级注释，字段 control_unit_name 的训练语义可能不完整,优先补齐表级注释后再训练该表字段
+gis_control_unit,control_unit_name,character varying,控制单元名称,,name_like_field,名称类字段，注释可能过于通用: 字段名 'control_unit_name' 注释为 '控制单元名称',人工确认注释是否准确描述该字段业务含义
+gis_control_unit,control_unit_code,character varying,控制单元编码,,missing_table_comment,表 gis_control_unit 无表级注释，字段 control_unit_code 的训练语义可能不完整,优先补齐表级注释后再训练该表字段
+gis_control_unit,control_unit_code,character varying,控制单元编码,,code_like_field,编码类字段，注释可能过于通用: 字段名 'control_unit_code' 注释为 '控制单元编码',人工确认注释是否准确描述该字段业务含义
+gis_poi,region_province,character varying,行政区省,主键id,very_short_comment,注释极短 (4字): '行政区省',确认该注释是否足以让模型理解字段含义
+gis_poi,region_city,character varying,行政区城市,主键id,very_short_comment,注释极短 (5字): '行政区城市',确认该注释是否足以让模型理解字段含义
+gis_poi,lon,double precision,经度,主键id,very_short_comment,注释极短 (2字): '经度',确认该注释是否足以让模型理解字段含义
+gis_poi,lat,double precision,纬度,主键id,very_short_comment,注释极短 (2字): '纬度',确认该注释是否足以让模型理解字段含义
+gis_watershed_partition,name_alias,character varying,别名,空间-流域分区数据,name_like_field,名称类字段，注释可能过于通用: 字段名 'name_alias' 注释为 '别名',人工确认注释是否准确描述该字段业务含义
+gis_watershed_partition,name_alias,character varying,别名,空间-流域分区数据,very_short_comment,注释极短 (2字): '别名',确认该注释是否足以让模型理解字段含义
+gis_watershed_partition_4,last_name,character varying,上一级流域名称,,missing_table_comment,表 gis_watershed_partition_4 无表级注释，字段 last_name 的训练语义可能不完整,优先补齐表级注释后再训练该表字段
+gis_watershed_partition_4,last_name,character varying,上一级流域名称,,name_like_field,名称类字段，注释可能过于通用: 字段名 'last_name' 注释为 '上一级流域名称',人工确认注释是否准确描述该字段业务含义
+layer_boundary_park,name_part,character varying,分园名称,工业园区-园区边界,name_like_field,名称类字段，注释可能过于通用: 字段名 'name_part' 注释为 '分园名称',人工确认注释是否准确描述该字段业务含义
+layer_boundary_park,name_part,character varying,分园名称,工业园区-园区边界,very_short_comment,注释极短 (4字): '分园名称',确认该注释是否足以让模型理解字段含义
+layer_entity_process,process_type,character varying,溯源查询类型：industrial-工业园区,溯源关系查询流程：使用到的图层信息,code_like_field,类型类字段，注释可能过于通用: 字段名 'process_type' 注释为 '溯源查询类型：industrial-工业园区',人工确认注释是否准确描述该字段业务含义
+layer_entity_process,layer_type,smallint,溯源查询类型：0-查询图层、1-静态图层...,溯源关系查询流程：使用到的图层信息,code_like_field,类型类字段，注释可能过于通用: 字段名 'layer_type' 注释为 '溯源查询类型：0-查询图层、1-静态图层...',人工确认注释是否准确描述该字段业务含义
+layer_entity_process,geom_type,character varying,图形类型：点、线、面,溯源关系查询流程：使用到的图层信息,code_like_field,类型类字段，注释可能过于通用: 字段名 'geom_type' 注释为 '图形类型：点、线、面',人工确认注释是否准确描述该字段业务含义
+layer_entity_relation,entity_code_1,character varying,要素编码1,图层-要素关联关系表,very_short_comment,注释极短 (5字): '要素编码1',确认该注释是否足以让模型理解字段含义
+layer_entity_relation,layer_name_1,character varying,图层名称1,图层-要素关联关系表,very_short_comment,注释极短 (5字): '图层名称1',确认该注释是否足以让模型理解字段含义
+layer_entity_relation,relation,character varying,关系名称,图层-要素关联关系表,very_short_comment,注释极短 (4字): '关系名称',确认该注释是否足以让模型理解字段含义
+layer_entity_relation,entity_code_2,character varying,要素编码2,图层-要素关联关系表,very_short_comment,注释极短 (5字): '要素编码2',确认该注释是否足以让模型理解字段含义
+layer_entity_relation,layer_name_2,character varying,图层名称2,图层-要素关联关系表,very_short_comment,注释极短 (5字): '图层名称2',确认该注释是否足以让模型理解字段含义
+layer_outlet_sewage,jcdbh,character varying,监测点编号,工业园区-污水排放口,very_short_comment,注释极短 (5字): '监测点编号',确认该注释是否足以让模型理解字段含义
+layer_partition_2,name_1,character varying,一级分区名称,二级分区,name_like_field,名称类字段，注释可能过于通用: 字段名 'name_1' 注释为 '一级分区名称',人工确认注释是否准确描述该字段业务含义
+layer_partition_3,name_2,character varying,二级分区名称,三级分区,name_like_field,名称类字段，注释可能过于通用: 字段名 'name_2' 注释为 '二级分区名称',人工确认注释是否准确描述该字段业务含义
+layer_partition_3,name_1,character varying,一级分区名称,三级分区,name_like_field,名称类字段，注释可能过于通用: 字段名 'name_1' 注释为 '一级分区名称',人工确认注释是否准确描述该字段业务含义
+metadata_view,table_name,character varying,表名,元数据-视图,name_like_field,名称类字段，注释可能过于通用: 字段名 'table_name' 注释为 '表名',人工确认注释是否准确描述该字段业务含义
+metadata_view,table_name,character varying,表名,元数据-视图,very_short_comment,注释极短 (2字): '表名',确认该注释是否足以让模型理解字段含义
+rs_enterprise_info_lsg,mine_name,character varying,矿山名称,湖北省磷石膏尾矿库企业信息表：宜昌水环境,name_like_field,名称类字段，注释可能过于通用: 字段名 'mine_name' 注释为 '矿山名称',人工确认注释是否准确描述该字段业务含义
+rs_enterprise_info_lsg,mine_name,character varying,矿山名称,湖北省磷石膏尾矿库企业信息表：宜昌水环境,very_short_comment,注释极短 (4字): '矿山名称',确认该注释是否足以让模型理解字段含义
+rs_enterprise_info_lsg,enterprise,character varying,所属企业,湖北省磷石膏尾矿库企业信息表：宜昌水环境,very_short_comment,注释极短 (4字): '所属企业',确认该注释是否足以让模型理解字段含义
+rs_enterprise_info_lsg,out_type,character varying,排渣方式,湖北省磷石膏尾矿库企业信息表：宜昌水环境,code_like_field,类型类字段，注释可能过于通用: 字段名 'out_type' 注释为 '排渣方式',人工确认注释是否准确描述该字段业务含义
+rs_enterprise_info_lsg,out_type,character varying,排渣方式,湖北省磷石膏尾矿库企业信息表：宜昌水环境,very_short_comment,注释极短 (4字): '排渣方式',确认该注释是否足以让模型理解字段含义
+rs_enterprise_info_lsg,product_status,character varying,目前生产情况,湖北省磷石膏尾矿库企业信息表：宜昌水环境,status_like_field,状态类字段，注释可能过于通用: 字段名 'product_status' 注释为 '目前生产情况',人工确认注释是否准确描述该字段业务含义
+rs_enterprise_info_lsg,lon,double precision,经度,湖北省磷石膏尾矿库企业信息表：宜昌水环境,very_short_comment,注释极短 (2字): '经度',确认该注释是否足以让模型理解字段含义
+rs_enterprise_info_lsg,lat,double precision,纬度,湖北省磷石膏尾矿库企业信息表：宜昌水环境,very_short_comment,注释极短 (2字): '纬度',确认该注释是否足以让模型理解字段含义
+rs_enterprise_info_wade,industry_type,character varying,行业类型,污染源自动监管涉水企业：宜昌水环境,code_like_field,类型类字段，注释可能过于通用: 字段名 'industry_type' 注释为 '行业类型',人工确认注释是否准确描述该字段业务含义
+rs_enterprise_info_wade,industry_type,character varying,行业类型,污染源自动监管涉水企业：宜昌水环境,very_short_comment,注释极短 (4字): '行业类型',确认该注释是否足以让模型理解字段含义
+rs_enterprise_info_wade,lon,double precision,经度,污染源自动监管涉水企业：宜昌水环境,very_short_comment,注释极短 (2字): '经度',确认该注释是否足以让模型理解字段含义
+rs_enterprise_info_wade,lat,double precision,纬度,污染源自动监管涉水企业：宜昌水环境,very_short_comment,注释极短 (2字): '纬度',确认该注释是否足以让模型理解字段含义
+rs_industrial_info_yc,name_part,character varying,分园名称,工业园区环境监测数据表,name_like_field,名称类字段，注释可能过于通用: 字段名 'name_part' 注释为 '分园名称',人工确认注释是否准确描述该字段业务含义
+rs_industrial_info_yc,name_part,character varying,分园名称,工业园区环境监测数据表,very_short_comment,注释极短 (4字): '分园名称',确认该注释是否足以让模型理解字段含义
+rs_industrial_info_yc,lon,double precision,经度,工业园区环境监测数据表,very_short_comment,注释极短 (2字): '经度',确认该注释是否足以让模型理解字段含义
+rs_industrial_info_yc,lat,double precision,纬度,工业园区环境监测数据表,very_short_comment,注释极短 (2字): '纬度',确认该注释是否足以让模型理解字段含义
+rs_industrial_info_yc,belong_watershed,character varying,所属流域,工业园区环境监测数据表,very_short_comment,注释极短 (4字): '所属流域',确认该注释是否足以让模型理解字段含义
+rs_industrial_info_yc,park_development_status,character varying,园区发展现状,工业园区环境监测数据表,status_like_field,状态类字段，注释可能过于通用: 字段名 'park_development_status' 注释为 '园区发展现状',人工确认注释是否准确描述该字段业务含义
+rs_industrial_info_yc,leading_industry,text,主导产业,工业园区环境监测数据表,very_short_comment,注释极短 (4字): '主导产业',确认该注释是否足以让模型理解字段含义
+rs_industrial_info_yc,park_drainage_status,character varying,工业园区排水现状,工业园区环境监测数据表,status_like_field,状态类字段，注释可能过于通用: 字段名 'park_drainage_status' 注释为 '工业园区排水现状',人工确认注释是否准确描述该字段业务含义
+rs_industrial_info_yc,treatment_facility_name,character varying,污水处理设施名称,工业园区环境监测数据表,name_like_field,名称类字段，注释可能过于通用: 字段名 'treatment_facility_name' 注释为 '污水处理设施名称',人工确认注释是否准确描述该字段业务含义
+rs_industrial_info_yc,pollution_discharge_permit_code,character varying,排污许可证编码,工业园区环境监测数据表,code_like_field,编码类字段，注释可能过于通用: 字段名 'pollution_discharge_permit_code' 注释为 '排污许可证编码',人工确认注释是否准确描述该字段业务含义
+rs_industrial_info_yc,treatment_facility_type,character varying,污水处理设施类型,工业园区环境监测数据表,code_like_field,类型类字段，注释可能过于通用: 字段名 'treatment_facility_type' 注释为 '污水处理设施类型',人工确认注释是否准确描述该字段业务含义
+rs_industrial_info_yc,treatment_process_name,character varying,污水处理工艺名称,工业园区环境监测数据表,name_like_field,名称类字段，注释可能过于通用: 字段名 'treatment_process_name' 注释为 '污水处理工艺名称',人工确认注释是否准确描述该字段业务含义
+rs_industrial_info_yc,exceedance_days,character varying,超标天数,工业园区环境监测数据表,very_short_comment,注释极短 (4字): '超标天数',确认该注释是否足以让模型理解字段含义
+rs_industrial_info_yc,exceedance_reason,text,超标原因,工业园区环境监测数据表,very_short_comment,注释极短 (4字): '超标原因',确认该注释是否足以让模型理解字段含义
+rs_industrial_info_yc,chemical_addition_type,character varying,药剂添加类型,工业园区环境监测数据表,code_like_field,类型类字段，注释可能过于通用: 字段名 'chemical_addition_type' 注释为 '药剂添加类型',人工确认注释是否准确描述该字段业务含义
+rs_industrial_info_yc,rectification_status,text,整改情况,工业园区环境监测数据表,status_like_field,状态类字段，注释可能过于通用: 字段名 'rectification_status' 注释为 '整改情况',人工确认注释是否准确描述该字段业务含义
+rs_industrial_info_yc,rectification_status,text,整改情况,工业园区环境监测数据表,very_short_comment,注释极短 (4字): '整改情况',确认该注释是否足以让模型理解字段含义
+rs_industrial_info_yc_bak0305,name_part,character varying,分园名称,,missing_table_comment,表 rs_industrial_info_yc_bak0305 无表级注释，字段 name_part 的训练语义可能不完整,优先补齐表级注释后再训练该表字段
+rs_industrial_info_yc_bak0305,name_part,character varying,分园名称,,name_like_field,名称类字段，注释可能过于通用: 字段名 'name_part' 注释为 '分园名称',人工确认注释是否准确描述该字段业务含义
+rs_industrial_info_yc_bak0305,name_part,character varying,分园名称,,very_short_comment,注释极短 (4字): '分园名称',确认该注释是否足以让模型理解字段含义
+rs_industrial_info_yc_bak0305,park_level,character,园区级别：0-未知、1-国家级、2-省级、3-市级,,missing_table_comment,表 rs_industrial_info_yc_bak0305 无表级注释，字段 park_level 的训练语义可能不完整,优先补齐表级注释后再训练该表字段
+rs_industrial_info_yc_bak0305,lon,double precision,经度,,missing_table_comment,表 rs_industrial_info_yc_bak0305 无表级注释，字段 lon 的训练语义可能不完整,优先补齐表级注释后再训练该表字段
+rs_industrial_info_yc_bak0305,lon,double precision,经度,,very_short_comment,注释极短 (2字): '经度',确认该注释是否足以让模型理解字段含义
+rs_industrial_info_yc_bak0305,lat,double precision,纬度,,missing_table_comment,表 rs_industrial_info_yc_bak0305 无表级注释，字段 lat 的训练语义可能不完整,优先补齐表级注释后再训练该表字段
+rs_industrial_info_yc_bak0305,lat,double precision,纬度,,very_short_comment,注释极短 (2字): '纬度',确认该注释是否足以让模型理解字段含义
+rs_livestock_info_yc,name_old,character varying,曾用名,规模化畜禽养殖场-宜昌水环境,name_like_field,名称类字段，注释可能过于通用: 字段名 'name_old' 注释为 '曾用名',人工确认注释是否准确描述该字段业务含义
+rs_livestock_info_yc,name_old,character varying,曾用名,规模化畜禽养殖场-宜昌水环境,very_short_comment,注释极短 (3字): '曾用名',确认该注释是否足以让模型理解字段含义
+rs_livestock_info_yc,representative,character varying,法定代表人,规模化畜禽养殖场-宜昌水环境,very_short_comment,注释极短 (5字): '法定代表人',确认该注释是否足以让模型理解字段含义
+rs_livestock_info_yc,community_code,character varying,普查小区代码,规模化畜禽养殖场-宜昌水环境,code_like_field,编码类字段，注释可能过于通用: 字段名 'community_code' 注释为 '普查小区代码',人工确认注释是否准确描述该字段业务含义
+rs_livestock_info_yc,year,character varying,年份,规模化畜禽养殖场-宜昌水环境,very_short_comment,注释极短 (2字): '年份',确认该注释是否足以让模型理解字段含义
+rs_livestock_info_yc,organize_code,character varying,组织机构代码,规模化畜禽养殖场-宜昌水环境,code_like_field,编码类字段，注释可能过于通用: 字段名 'organize_code' 注释为 '组织机构代码',人工确认注释是否准确描述该字段业务含义
+rs_livestock_info_yc,town,character varying,乡镇,规模化畜禽养殖场-宜昌水环境,very_short_comment,注释极短 (2字): '乡镇',确认该注释是否足以让模型理解字段含义
+rs_livestock_info_yc,livestock_type,character varying,养殖类型,规模化畜禽养殖场-宜昌水环境,code_like_field,类型类字段，注释可能过于通用: 字段名 'livestock_type' 注释为 '养殖类型',人工确认注释是否准确描述该字段业务含义
+rs_livestock_info_yc,livestock_type,character varying,养殖类型,规模化畜禽养殖场-宜昌水环境,very_short_comment,注释极短 (4字): '养殖类型',确认该注释是否足以让模型理解字段含义
+rs_livestock_info_yc,clean_type,character varying,圈舍清理方式,规模化畜禽养殖场-宜昌水环境,code_like_field,类型类字段，注释可能过于通用: 字段名 'clean_type' 注释为 '圈舍清理方式',人工确认注释是否准确描述该字段业务含义
+rs_livestock_info_yc,intake_type,character varying,圈舍通风方式,规模化畜禽养殖场-宜昌水环境,code_like_field,类型类字段，注释可能过于通用: 字段名 'intake_type' 注释为 '圈舍通风方式',人工确认注释是否准确描述该字段业务含义
+rs_livestock_info_yc,water_store_type,character varying,原水存储设施类型,规模化畜禽养殖场-宜昌水环境,code_like_field,类型类字段，注释可能过于通用: 字段名 'water_store_type' 注释为 '原水存储设施类型',人工确认注释是否准确描述该字段业务含义
+rs_livestock_info_yc,water_name,character varying,受纳水体名称,规模化畜禽养殖场-宜昌水环境,name_like_field,名称类字段，注释可能过于通用: 字段名 'water_name' 注释为 '受纳水体名称',人工确认注释是否准确描述该字段业务含义
+rs_livestock_info_yc,water_code,character varying,受纳水体代码,规模化畜禽养殖场-宜昌水环境,code_like_field,编码类字段，注释可能过于通用: 字段名 'water_code' 注释为 '受纳水体代码',人工确认注释是否准确描述该字段业务含义
+rs_livestock_info_yc,glbh_flag,smallint,养殖场是否有锅炉,规模化畜禽养殖场-宜昌水环境,status_like_field,标记类字段，注释可能过于通用: 字段名 'glbh_flag' 注释为 '养殖场是否有锅炉',人工确认注释是否准确描述该字段业务含义
+rs_livestock_info_yc,fzr,character varying,单位负责人,规模化畜禽养殖场-宜昌水环境,very_short_comment,注释极短 (5字): '单位负责人',确认该注释是否足以让模型理解字段含义
+rs_livestock_info_yc,tjr,character varying,统计负责人,规模化畜禽养殖场-宜昌水环境,very_short_comment,注释极短 (5字): '统计负责人',确认该注释是否足以让模型理解字段含义
+rs_livestock_info_yc,shr,character varying,审核人,规模化畜禽养殖场-宜昌水环境,very_short_comment,注释极短 (3字): '审核人',确认该注释是否足以让模型理解字段含义
+rs_livestock_info_yc,bcrq,timestamp without time zone,报出日期,规模化畜禽养殖场-宜昌水环境,very_short_comment,注释极短 (4字): '报出日期',确认该注释是否足以让模型理解字段含义
+rs_livestock_info_yc,lon,double precision,经度,规模化畜禽养殖场-宜昌水环境,very_short_comment,注释极短 (2字): '经度',确认该注释是否足以让模型理解字段含义
+rs_livestock_info_yc,lat,double precision,纬度,规模化畜禽养殖场-宜昌水环境,very_short_comment,注释极短 (2字): '纬度',确认该注释是否足以让模型理解字段含义
+rs_outlet,area_code,character varying,行政区代码,排污口信息表,code_like_field,编码类字段，注释可能过于通用: 字段名 'area_code' 注释为 '行政区代码',人工确认注释是否准确描述该字段业务含义
+rs_outlet,area_code,character varying,行政区代码,排污口信息表,very_short_comment,注释极短 (5字): '行政区代码',确认该注释是否足以让模型理解字段含义
+rs_outlet,area_name,character varying,行政区名称：乡镇（街道）,排污口信息表,name_like_field,名称类字段，注释可能过于通用: 字段名 'area_name' 注释为 '行政区名称：乡镇（街道）',人工确认注释是否准确描述该字段业务含义
+rs_outlet,county_name,character varying,县(区)名称,排污口信息表,name_like_field,名称类字段，注释可能过于通用: 字段名 'county_name' 注释为 '县(区)名称',人工确认注释是否准确描述该字段业务含义
+rs_outlet,outlet_code,character varying,排污口编码：国家级,排污口信息表,code_like_field,编码类字段，注释可能过于通用: 字段名 'outlet_code' 注释为 '排污口编码：国家级',人工确认注释是否准确描述该字段业务含义
+rs_outlet,outlet_name,character varying,排污口名称,排污口信息表,name_like_field,名称类字段，注释可能过于通用: 字段名 'outlet_name' 注释为 '排污口名称',人工确认注释是否准确描述该字段业务含义
+rs_outlet,outlet_name,character varying,排污口名称,排污口信息表,very_short_comment,注释极短 (5字): '排污口名称',确认该注释是否足以让模型理解字段含义
+rs_outlet,river_basin,character varying,流域名称,排污口信息表,very_short_comment,注释极短 (4字): '流域名称',确认该注释是否足以让模型理解字段含义
+rs_outlet,outlet_address,character varying,排污口地址,排污口信息表,very_short_comment,注释极短 (5字): '排污口地址',确认该注释是否足以让模型理解字段含义
+rs_outlet,outlet_lon,double precision,排污口经度,排污口信息表,very_short_comment,注释极短 (5字): '排污口经度',确认该注释是否足以让模型理解字段含义
+rs_outlet,outlet_lat,double precision,排污口纬度,排污口信息表,very_short_comment,注释极短 (5字): '排污口纬度',确认该注释是否足以让模型理解字段含义
+rs_outlet,river_system,character varying,所属水系,排污口信息表,very_short_comment,注释极短 (4字): '所属水系',确认该注释是否足以让模型理解字段含义
+rs_outlet,lake_name,character varying,湖泊名称,排污口信息表,name_like_field,名称类字段，注释可能过于通用: 字段名 'lake_name' 注释为 '湖泊名称',人工确认注释是否准确描述该字段业务含义
+rs_outlet,lake_name,character varying,湖泊名称,排污口信息表,very_short_comment,注释极短 (4字): '湖泊名称',确认该注释是否足以让模型理解字段含义
+rs_outlet,country_section_name,character varying,国控断面名称,排污口信息表,name_like_field,名称类字段，注释可能过于通用: 字段名 'country_section_name' 注释为 '国控断面名称',人工确认注释是否准确描述该字段业务含义
+rs_outlet,province_section_name,character varying,省控断面名称,排污口信息表,name_like_field,名称类字段，注释可能过于通用: 字段名 'province_section_name' 注释为 '省控断面名称',人工确认注释是否准确描述该字段业务含义
+rs_outlet,city_section_name,character varying,市控断面名称,排污口信息表,name_like_field,名称类字段，注释可能过于通用: 字段名 'city_section_name' 注释为 '市控断面名称',人工确认注释是否准确描述该字段业务含义
+rs_outlet,river_info,character varying,河长信息,排污口信息表,very_short_comment,注释极短 (4字): '河长信息',确认该注释是否足以让模型理解字段含义
+rs_outlet,handle_type,character varying,整治类型（依法取缔、清理合并、规范整治、无需整治，单选）,排污口信息表,code_like_field,类型类字段，注释可能过于通用: 字段名 'handle_type' 注释为 '整治类型（依法取缔、清理合并、规范整治、无需整治，单选）',人工确认注释是否准确描述该字段业务含义
+rs_outlet,finish_date,timestamp without time zone,完成时限,排污口信息表,time_like_field,日期类字段，注释可能过于通用: 字段名 'finish_date' 注释为 '完成时限',人工确认注释是否准确描述该字段业务含义
+rs_outlet,finish_date,timestamp without time zone,完成时限,排污口信息表,very_short_comment,注释极短 (4字): '完成时限',确认该注释是否足以让模型理解字段含义
+rs_outlet,handle_result,character varying,整治成效,排污口信息表,very_short_comment,注释极短 (4字): '整治成效',确认该注释是否足以让模型理解字段含义
+rs_outlet,approve_advice,character varying,审批意见,排污口信息表,very_short_comment,注释极短 (4字): '审批意见',确认该注释是否足以让模型理解字段含义
+rs_outlet,approve_node,character varying,审批标记,排污口信息表,very_short_comment,注释极短 (4字): '审批标记',确认该注释是否足以让模型理解字段含义
+rs_outlet,other_sewage_type,character varying,其他污水类型,排污口信息表,code_like_field,类型类字段，注释可能过于通用: 字段名 'other_sewage_type' 注释为 '其他污水类型',人工确认注释是否准确描述该字段业务含义
+rs_outlet,approve_status,character varying,审批登记情况（已审批、已登记、未审批、未登记）,排污口信息表,status_like_field,状态类字段，注释可能过于通用: 字段名 'approve_status' 注释为 '审批登记情况（已审批、已登记、未审批、未登记）',人工确认注释是否准确描述该字段业务含义
+rs_outlet,monitor_sample_date,character varying,采样时间（yyyy-MM-dd）,排污口信息表,time_like_field,日期类字段，注释可能过于通用: 字段名 'monitor_sample_date' 注释为 '采样时间（yyyy-MM-dd）',人工确认注释是否准确描述该字段业务含义
+rs_outlet,drain_abnormal_other,character varying,其他状况,排污口信息表,very_short_comment,注释极短 (4字): '其他状况',确认该注释是否足以让模型理解字段含义
+rs_outlet,primary_obligor_code,character varying,主要责任主体排污许可证号或排污登记号,排污口信息表,code_like_field,编码类字段，注释可能过于通用: 字段名 'primary_obligor_code' 注释为 '主要责任主体排污许可证号或排污登记号',人工确认注释是否准确描述该字段业务含义
+rs_outlet,unified_credit_code,character varying,统一信用代码,排污口信息表,code_like_field,编码类字段，注释可能过于通用: 字段名 'unified_credit_code' 注释为 '统一信用代码',人工确认注释是否准确描述该字段业务含义
+rs_outlet,pollutant_name,character varying,污染物（多个用英文逗号拼接）,排污口信息表,name_like_field,名称类字段，注释可能过于通用: 字段名 'pollutant_name' 注释为 '污染物（多个用英文逗号拼接）',人工确认注释是否准确描述该字段业务含义
+rs_outlet,monitor_sample_type,character varying,采样类型,排污口信息表,code_like_field,类型类字段，注释可能过于通用: 字段名 'monitor_sample_type' 注释为 '采样类型',人工确认注释是否准确描述该字段业务含义
+rs_outlet,monitor_sample_type,character varying,采样类型,排污口信息表,very_short_comment,注释极短 (4字): '采样类型',确认该注释是否足以让模型理解字段含义
+rs_outlet,monitor_sample_mark,character varying,采样备注,排污口信息表,very_short_comment,注释极短 (4字): '采样备注',确认该注释是否足以让模型理解字段含义
+rs_outlet,primary_table_id,character varying,主表ID,排污口信息表,id_like_field,ID 类字段，注释可能过于通用: 字段名 'primary_table_id' 注释为 '主表ID',人工确认注释是否准确描述该字段业务含义
+rs_outlet,primary_table_id,character varying,主表ID,排污口信息表,very_short_comment,注释极短 (4字): '主表ID',确认该注释是否足以让模型理解字段含义
+rs_outlet_info_v2,river_system,character varying,所属水系,排污口管理,very_short_comment,注释极短 (4字): '所属水系',确认该注释是否足以让模型理解字段含义
+rs_outlet_info_v2,province_city_district,character varying,省市区县,排污口管理,very_short_comment,注释极短 (4字): '省市区县',确认该注释是否足以让模型理解字段含义
+rs_outlet_info_v2,outlet_name,character varying,排污口名称,排污口管理,name_like_field,名称类字段，注释可能过于通用: 字段名 'outlet_name' 注释为 '排污口名称',人工确认注释是否准确描述该字段业务含义
+rs_outlet_info_v2,outlet_name,character varying,排污口名称,排污口管理,very_short_comment,注释极短 (5字): '排污口名称',确认该注释是否足以让模型理解字段含义
+rs_outlet_info_v2,watershed_name,character varying,流域名称,排污口管理,name_like_field,名称类字段，注释可能过于通用: 字段名 'watershed_name' 注释为 '流域名称',人工确认注释是否准确描述该字段业务含义
+rs_outlet_info_v2,watershed_name,character varying,流域名称,排污口管理,very_short_comment,注释极短 (4字): '流域名称',确认该注释是否足以让模型理解字段含义
+rs_outlet_info_v2,outlet_category,character varying,排污口分类,排污口管理,very_short_comment,注释极短 (5字): '排污口分类',确认该注释是否足以让模型理解字段含义
+rs_outlet_info_v2,water_env_func_zone_name,character varying,水环境功能区名称,排污口管理,name_like_field,名称类字段，注释可能过于通用: 字段名 'water_env_func_zone_name' 注释为 '水环境功能区名称',人工确认注释是否准确描述该字段业务含义
+rs_outlet_info_v2,national_section_name,character varying,国控断面名称,排污口管理,name_like_field,名称类字段，注释可能过于通用: 字段名 'national_section_name' 注释为 '国控断面名称',人工确认注释是否准确描述该字段业务含义
+rs_outlet_info_v2,provincial_section_name,character varying,省控断面名称,排污口管理,name_like_field,名称类字段，注释可能过于通用: 字段名 'provincial_section_name' 注释为 '省控断面名称',人工确认注释是否准确描述该字段业务含义
+rs_outlet_info_v2,municipal_section_name,character varying,市控断面名称,排污口管理,name_like_field,名称类字段，注释可能过于通用: 字段名 'municipal_section_name' 注释为 '市控断面名称',人工确认注释是否准确描述该字段业务含义
+rs_outlet_info_v2,river_chief_info,character varying,河长信息,排污口管理,very_short_comment,注释极短 (4字): '河长信息',确认该注释是否足以让模型理解字段含义
+rs_outlet_live_v2,gate_morphology,character varying,口门形态,排污口实况,very_short_comment,注释极短 (4字): '口门形态',确认该注释是否足以让模型理解字段含义
+rs_outlet_live_v2,drainage_feature,character varying,排水特征,排污口实况,very_short_comment,注释极短 (4字): '排水特征',确认该注释是否足以让模型理解字段含义
+rs_outlet_live_v2,outlet_name,character varying,排污口名称,排污口实况,name_like_field,名称类字段，注释可能过于通用: 字段名 'outlet_name' 注释为 '排污口名称',人工确认注释是否准确描述该字段业务含义
+rs_outlet_live_v2,outlet_name,character varying,排污口名称,排污口实况,very_short_comment,注释极短 (5字): '排污口名称',确认该注释是否足以让模型理解字段含义
+rs_outlet_monitor_v2,sampling_time,timestamp without time zone,采样时间,排污口监测,time_like_field,时间类字段，注释可能过于通用: 字段名 'sampling_time' 注释为 '采样时间',人工确认注释是否准确描述该字段业务含义
+rs_outlet_monitor_v2,sampling_time,timestamp without time zone,采样时间,排污口监测,very_short_comment,注释极短 (4字): '采样时间',确认该注释是否足以让模型理解字段含义
+rs_outlet_monitor_v2,monitor_type,character varying,监测类型,排污口监测,code_like_field,类型类字段，注释可能过于通用: 字段名 'monitor_type' 注释为 '监测类型',人工确认注释是否准确描述该字段业务含义
+rs_outlet_monitor_v2,monitor_type,character varying,监测类型,排污口监测,very_short_comment,注释极短 (4字): '监测类型',确认该注释是否足以让模型理解字段含义
+rs_outlet_monitor_v2,water_temp,numeric,水温(℃),排污口监测,very_short_comment,注释极短 (5字): '水温(℃)',确认该注释是否足以让模型理解字段含义
+rs_outlet_monitor_v2,ph,numeric,pH,排污口监测,very_short_comment,注释极短 (2字): 'pH',确认该注释是否足以让模型理解字段含义
+rs_outlet_monitor_v2,outlet_name,character varying,排污口名称,排污口监测,name_like_field,名称类字段，注释可能过于通用: 字段名 'outlet_name' 注释为 '排污口名称',人工确认注释是否准确描述该字段业务含义
+rs_outlet_monitor_v2,outlet_name,character varying,排污口名称,排污口监测,very_short_comment,注释极短 (5字): '排污口名称',确认该注释是否足以让模型理解字段含义
+rs_outlet_remediation_v2,remediation_type,character varying,整治类型,排污口整治,code_like_field,类型类字段，注释可能过于通用: 字段名 'remediation_type' 注释为 '整治类型',人工确认注释是否准确描述该字段业务含义
+rs_outlet_remediation_v2,remediation_type,character varying,整治类型,排污口整治,very_short_comment,注释极短 (4字): '整治类型',确认该注释是否足以让模型理解字段含义
+rs_outlet_remediation_v2,remediation_video,character varying,整治视频,排污口整治,very_short_comment,注释极短 (4字): '整治视频',确认该注释是否足以让模型理解字段含义
+rs_outlet_remediation_v2,supporting_docs,character varying,证明材料,排污口整治,very_short_comment,注释极短 (4字): '证明材料',确认该注释是否足以让模型理解字段含义
+rs_outlet_remediation_v2,outlet_name,character varying,排污口名称,排污口整治,name_like_field,名称类字段，注释可能过于通用: 字段名 'outlet_name' 注释为 '排污口名称',人工确认注释是否准确描述该字段业务含义
+rs_outlet_remediation_v2,outlet_name,character varying,排污口名称,排污口整治,very_short_comment,注释极短 (5字): '排污口名称',确认该注释是否足以让模型理解字段含义
+rs_outlet_trace_v2,primary_entity_name,character varying,主要责任主体名称,排污口溯源,name_like_field,名称类字段，注释可能过于通用: 字段名 'primary_entity_name' 注释为 '主要责任主体名称',人工确认注释是否准确描述该字段业务含义
+rs_outlet_trace_v2,other_entity_name,character varying,其他责任主体名称,排污口溯源,name_like_field,名称类字段，注释可能过于通用: 字段名 'other_entity_name' 注释为 '其他责任主体名称',人工确认注释是否准确描述该字段业务含义
+rs_outlet_trace_v2,wastewater_type,character varying,污水类型,排污口溯源,code_like_field,类型类字段，注释可能过于通用: 字段名 'wastewater_type' 注释为 '污水类型',人工确认注释是否准确描述该字段业务含义
+rs_outlet_trace_v2,wastewater_type,character varying,污水类型,排污口溯源,very_short_comment,注释极短 (4字): '污水类型',确认该注释是否足以让模型理解字段含义
+rs_outlet_trace_v2,other_wastewater_type,character varying,其他污水类型,排污口溯源,code_like_field,类型类字段，注释可能过于通用: 字段名 'other_wastewater_type' 注释为 '其他污水类型',人工确认注释是否准确描述该字段业务含义
+rs_outlet_trace_v2,approval_status,character varying,审批登记情况,排污口溯源,status_like_field,状态类字段，注释可能过于通用: 字段名 'approval_status' 注释为 '审批登记情况',人工确认注释是否准确描述该字段业务含义
+rs_outlet_trace_v2,outlet_name,character varying,排污口名称,排污口溯源,name_like_field,名称类字段，注释可能过于通用: 字段名 'outlet_name' 注释为 '排污口名称',人工确认注释是否准确描述该字段业务含义
+rs_outlet_trace_v2,outlet_name,character varying,排污口名称,排污口溯源,very_short_comment,注释极短 (5字): '排污口名称',确认该注释是否足以让模型理解字段含义
+rs_pollutant_enterprise,wrybh,character varying,污染源编号,污染源企业信息表：宜昌污染源在线平台企业信息,very_short_comment,注释极短 (5字): '污染源编号',确认该注释是否足以让模型理解字段含义
+rs_pollutant_enterprise,wrymc,character varying,污染源名称,污染源企业信息表：宜昌污染源在线平台企业信息,very_short_comment,注释极短 (5字): '污染源名称',确认该注释是否足以让模型理解字段含义
+rs_pollutant_enterprise,frmc,character varying,法人名称,污染源企业信息表：宜昌污染源在线平台企业信息,very_short_comment,注释极短 (4字): '法人名称',确认该注释是否足以让模型理解字段含义
+rs_pollutant_enterprise,lxdh,character varying,联系电话,污染源企业信息表：宜昌污染源在线平台企业信息,very_short_comment,注释极短 (4字): '联系电话',确认该注释是否足以让模型理解字段含义
+rs_pollutant_enterprise,zcdz,character varying,注册地址,污染源企业信息表：宜昌污染源在线平台企业信息,very_short_comment,注释极短 (4字): '注册地址',确认该注释是否足以让模型理解字段含义
+rs_pollutant_enterprise,jd,double precision,经度,污染源企业信息表：宜昌污染源在线平台企业信息,very_short_comment,注释极短 (2字): '经度',确认该注释是否足以让模型理解字段含义
+rs_pollutant_enterprise,wd,double precision,纬度,污染源企业信息表：宜昌污染源在线平台企业信息,very_short_comment,注释极短 (2字): '纬度',确认该注释是否足以让模型理解字段含义
+rs_pollutant_enterprise,hblxr,character varying,环保联系人,污染源企业信息表：宜昌污染源在线平台企业信息,very_short_comment,注释极短 (5字): '环保联系人',确认该注释是否足以让模型理解字段含义
+rs_pollutant_enterprise,hymc,character varying,行业名称,污染源企业信息表：宜昌污染源在线平台企业信息,very_short_comment,注释极短 (4字): '行业名称',确认该注释是否足以让模型理解字段含义
+rs_pollutant_enterprise,ywgs,character varying,运维公司,污染源企业信息表：宜昌污染源在线平台企业信息,very_short_comment,注释极短 (4字): '运维公司',确认该注释是否足以让模型理解字段含义
+rs_pollutant_enterprise,ssqxmc,character varying,区县名称,污染源企业信息表：宜昌污染源在线平台企业信息,very_short_comment,注释极短 (4字): '区县名称',确认该注释是否足以让模型理解字段含义
+rs_pollutant_info,jcdbh,character varying,监测点编号,企业污染源排口信息表：宜昌污染源在线平台,very_short_comment,注释极短 (5字): '监测点编号',确认该注释是否足以让模型理解字段含义
+rs_pollutant_info,jcdmc,character varying,监测点名称,企业污染源排口信息表：宜昌污染源在线平台,very_short_comment,注释极短 (5字): '监测点名称',确认该注释是否足以让模型理解字段含义
+rs_pollutant_info,wrybh,character varying,污染源编号,企业污染源排口信息表：宜昌污染源在线平台,very_short_comment,注释极短 (5字): '污染源编号',确认该注释是否足以让模型理解字段含义
+rs_pollutant_info,pwkwz,character varying,排放口位置,企业污染源排口信息表：宜昌污染源在线平台,very_short_comment,注释极短 (5字): '排放口位置',确认该注释是否足以让模型理解字段含义
+rs_pollutant_info,zsxs,character varying,折算系数,企业污染源排口信息表：宜昌污染源在线平台,very_short_comment,注释极短 (4字): '折算系数',确认该注释是否足以让模型理解字段含义
+rs_pollutant_info,jd,double precision,经度,企业污染源排口信息表：宜昌污染源在线平台,very_short_comment,注释极短 (2字): '经度',确认该注释是否足以让模型理解字段含义
+rs_pollutant_info,wd,double precision,纬度,企业污染源排口信息表：宜昌污染源在线平台,very_short_comment,注释极短 (2字): '纬度',确认该注释是否足以让模型理解字段含义
+rs_sewage_info_v2,admin_division,character varying,行政区划,污水处理厂档案管理及监测,very_short_comment,注释极短 (4字): '行政区划',确认该注释是否足以让模型理解字段含义
+rs_sewage_info_v2,project_name,character varying,项目名称,污水处理厂档案管理及监测,name_like_field,名称类字段，注释可能过于通用: 字段名 'project_name' 注释为 '项目名称',人工确认注释是否准确描述该字段业务含义
+rs_sewage_info_v2,project_name,character varying,项目名称,污水处理厂档案管理及监测,very_short_comment,注释极短 (4字): '项目名称',确认该注释是否足以让模型理解字段含义
+rs_sewage_info_v2,run_status,character varying,运行状态,污水处理厂档案管理及监测,status_like_field,状态类字段，注释可能过于通用: 字段名 'run_status' 注释为 '运行状态',人工确认注释是否准确描述该字段业务含义
+rs_sewage_info_v2,run_status,character varying,运行状态,污水处理厂档案管理及监测,very_short_comment,注释极短 (4字): '运行状态',确认该注释是否足以让模型理解字段含义
+rs_sewage_info_v2,treatment_process,character varying,处理工艺,污水处理厂档案管理及监测,very_short_comment,注释极短 (4字): '处理工艺',确认该注释是否足以让模型理解字段含义
+rs_sewage_info_v2,influent_ph,numeric,进水pH,污水处理厂档案管理及监测,very_short_comment,注释极短 (4字): '进水pH',确认该注释是否足以让模型理解字段含义
+rs_sewage_info_v2,effluent_ph,numeric,出水pH,污水处理厂档案管理及监测,very_short_comment,注释极短 (4字): '出水pH',确认该注释是否足以让模型理解字段含义
+rs_sewage_info_v2,operation_unit,character varying,运营单位,污水处理厂档案管理及监测,very_short_comment,注释极短 (4字): '运营单位',确认该注释是否足以让模型理解字段含义
+rs_sewage_info_v2,outlet_photo,character varying,排口照片,污水处理厂档案管理及监测,very_short_comment,注释极短 (4字): '排口照片',确认该注释是否足以让模型理解字段含义
+rs_sewage_info_yc,monitor_name,character varying,检测点名称,污水处理厂信息表：宜昌水环境,name_like_field,名称类字段，注释可能过于通用: 字段名 'monitor_name' 注释为 '检测点名称',人工确认注释是否准确描述该字段业务含义
+rs_sewage_info_yc,monitor_name,character varying,检测点名称,污水处理厂信息表：宜昌水环境,very_short_comment,注释极短 (5字): '检测点名称',确认该注释是否足以让模型理解字段含义
+rs_sewage_info_yc,emission_type,character,排放类型：0-废水,污水处理厂信息表：宜昌水环境,code_like_field,类型类字段，注释可能过于通用: 字段名 'emission_type' 注释为 '排放类型：0-废水',人工确认注释是否准确描述该字段业务含义
+rs_sewage_info_yc,outlet_location,character varying,排污口位置,污水处理厂信息表：宜昌水环境,very_short_comment,注释极短 (5字): '排污口位置',确认该注释是否足以让模型理解字段含义
+rs_sewage_info_yc,lon,double precision,经度,污水处理厂信息表：宜昌水环境,very_short_comment,注释极短 (2字): '经度',确认该注释是否足以让模型理解字段含义
+rs_sewage_info_yc,lat,double precision,纬度,污水处理厂信息表：宜昌水环境,very_short_comment,注释极短 (2字): '纬度',确认该注释是否足以让模型理解字段含义
+rs_sewage_info_yc,town_flag,boolean,是否城镇污水处理厂,污水处理厂信息表：宜昌水环境,status_like_field,标记类字段，注释可能过于通用: 字段名 'town_flag' 注释为 '是否城镇污水处理厂',人工确认注释是否准确描述该字段业务含义
+rs_sewage_info_yc,industrial_flag,boolean,是否工业污水处理厂,污水处理厂信息表：宜昌水环境,status_like_field,标记类字段，注释可能过于通用: 字段名 'industrial_flag' 注释为 '是否工业污水处理厂',人工确认注释是否准确描述该字段业务含义
+rs_sewage_park_info,sewage_name,character varying,污水处理厂名称,污水处理厂-园区配套信息表,name_like_field,名称类字段，注释可能过于通用: 字段名 'sewage_name' 注释为 '污水处理厂名称',人工确认注释是否准确描述该字段业务含义
+rs_sewage_park_info,sewage_id,bigint,污水厂ID,污水处理厂-园区配套信息表,id_like_field,ID 类字段，注释可能过于通用: 字段名 'sewage_id' 注释为 '污水厂ID',人工确认注释是否准确描述该字段业务含义
+rs_sewage_park_info,sewage_id,bigint,污水厂ID,污水处理厂-园区配套信息表,very_short_comment,注释极短 (5字): '污水厂ID',确认该注释是否足以让模型理解字段含义
+rs_sewage_park_info,park_id,bigint,配套园区ID,污水处理厂-园区配套信息表,id_like_field,ID 类字段，注释可能过于通用: 字段名 'park_id' 注释为 '配套园区ID',人工确认注释是否准确描述该字段业务含义
+rs_sewage_park_info,park_name,character varying,配套园区名称,污水处理厂-园区配套信息表,name_like_field,名称类字段，注释可能过于通用: 字段名 'park_name' 注释为 '配套园区名称',人工确认注释是否准确描述该字段业务含义
+rs_sewage_park_info,lon,double precision,经度,污水处理厂-园区配套信息表,very_short_comment,注释极短 (2字): '经度',确认该注释是否足以让模型理解字段含义
+rs_sewage_park_info,lat,double precision,纬度,污水处理厂-园区配套信息表,very_short_comment,注释极短 (2字): '纬度',确认该注释是否足以让模型理解字段含义
+rs_warn_records,key_point_id,bigint,"关键点id, warn_type为6时",污染预警消息通知,id_like_field,"ID 类字段，注释可能过于通用: 字段名 'key_point_id' 注释为 '关键点id, warn_type为6时'",人工确认注释是否准确描述该字段业务含义
+rs_warn_records,warn_indicator,character varying,预警指标,污染预警消息通知,very_short_comment,注释极短 (4字): '预警指标',确认该注释是否足以让模型理解字段含义
+rs_warn_records,warn_type,character,预警类型：0 水质预警、1 水文预警、2 气象预警、3 污染源预警、4 网络异常、5 仪器异常,污染预警消息通知,code_like_field,类型类字段，注释可能过于通用: 字段名 'warn_type' 注释为 '预警类型：0 水质预警、1 水文预警、2 气象预警、3 污染源预警、4 网络异常、5 仪器异常',人工确认注释是否准确描述该字段业务含义
+rs_warn_records,warn_value,double precision,预警值,污染预警消息通知,very_short_comment,注释极短 (3字): '预警值',确认该注释是否足以让模型理解字段含义
+rs_warn_records,standard_value,double precision,标准值,污染预警消息通知,very_short_comment,注释极短 (3字): '标准值',确认该注释是否足以让模型理解字段含义
+rs_warn_records,warn_content,character varying,预警内容,污染预警消息通知,very_short_comment,注释极短 (4字): '预警内容',确认该注释是否足以让模型理解字段含义
+rs_warn_records,warn_time,timestamp without time zone,预警时间,污染预警消息通知,time_like_field,时间类字段，注释可能过于通用: 字段名 'warn_time' 注释为 '预警时间',人工确认注释是否准确描述该字段业务含义
+rs_warn_records,warn_time,timestamp without time zone,预警时间,污染预警消息通知,very_short_comment,注释极短 (4字): '预警时间',确认该注释是否足以让模型理解字段含义
+rs_warn_records,publish_status,character,是否发布：0 未发布、1 已发布,污染预警消息通知,status_like_field,状态类字段，注释可能过于通用: 字段名 'publish_status' 注释为 '是否发布：0 未发布、1 已发布',人工确认注释是否准确描述该字段业务含义
+rs_warn_records,publish_time,timestamp without time zone,发布时间,污染预警消息通知,time_like_field,时间类字段，注释可能过于通用: 字段名 'publish_time' 注释为 '发布时间',人工确认注释是否准确描述该字段业务含义
+rs_warn_records,publish_time,timestamp without time zone,发布时间,污染预警消息通知,very_short_comment,注释极短 (4字): '发布时间',确认该注释是否足以让模型理解字段含义
+rs_warn_records,check_status,character,是否审核：0 未审核、1 已审核,污染预警消息通知,status_like_field,状态类字段，注释可能过于通用: 字段名 'check_status' 注释为 '是否审核：0 未审核、1 已审核',人工确认注释是否准确描述该字段业务含义
+rs_warn_records,check_time,timestamp without time zone,审核时间,污染预警消息通知,time_like_field,时间类字段，注释可能过于通用: 字段名 'check_time' 注释为 '审核时间',人工确认注释是否准确描述该字段业务含义
+rs_warn_records,check_time,timestamp without time zone,审核时间,污染预警消息通知,very_short_comment,注释极短 (4字): '审核时间',确认该注释是否足以让模型理解字段含义
+rs_warn_records,release_status,character,是否解除：0 未解除、1 已解除,污染预警消息通知,status_like_field,状态类字段，注释可能过于通用: 字段名 'release_status' 注释为 '是否解除：0 未解除、1 已解除',人工确认注释是否准确描述该字段业务含义
+rs_warn_records,release_time,timestamp without time zone,解除时间,污染预警消息通知,time_like_field,时间类字段，注释可能过于通用: 字段名 'release_time' 注释为 '解除时间',人工确认注释是否准确描述该字段业务含义
+rs_warn_records,release_time,timestamp without time zone,解除时间,污染预警消息通知,very_short_comment,注释极短 (4字): '解除时间',确认该注释是否足以让模型理解字段含义
+rs_wastewater_month_records,monitor_year,integer,监测年份,污染源监测月记录表,very_short_comment,注释极短 (4字): '监测年份',确认该注释是否足以让模型理解字段含义
+rs_wastewater_month_records,monitor_month,integer,监测月份,污染源监测月记录表,very_short_comment,注释极短 (4字): '监测月份',确认该注释是否足以让模型理解字段含义
+rs_wastewater_standard,apply_type,character,适用类型：0 污水处理厂、1 其他,废水/废气排放标准配置表,code_like_field,类型类字段，注释可能过于通用: 字段名 'apply_type' 注释为 '适用类型：0 污水处理厂、1 其他',人工确认注释是否准确描述该字段业务含义
+rs_wastewater_standard,jcdbh,character varying,监测点编号,废水/废气排放标准配置表,very_short_comment,注释极短 (5字): '监测点编号',确认该注释是否足以让模型理解字段含义
+se_watershed,total_population,double precision,总人口,流域产值信息：年统计值,very_short_comment,注释极短 (3字): '总人口',确认该注释是否足以让模型理解字段含义
+se_watershed,statistic_year,bigint,统计年份,流域产值信息：年统计值,very_short_comment,注释极短 (4字): '统计年份',确认该注释是否足以让模型理解字段含义
+se_watershed,mark,character varying,备注,流域产值信息：年统计值,very_short_comment,注释极短 (2字): '备注',确认该注释是否足以让模型理解字段含义
+se_watershed,mark,character varying,备注,流域产值信息：年统计值,generic_comment,注释过于通用: '备注'，可能不足以区分业务上下文,确认该注释是否需要补充业务含义，但禁止在当前阶段修改
+se_watershed_river,serial_no,integer,序号,流域河流管理档案表,very_short_comment,注释极短 (2字): '序号',确认该注释是否足以让模型理解字段含义
+se_watershed_river,serial_no,integer,序号,流域河流管理档案表,generic_comment,注释过于通用: '序号'，可能不足以区分业务上下文,确认该注释是否需要补充业务含义，但禁止在当前阶段修改
+se_watershed_river,river_alias,character varying,河流别称,流域河流管理档案表,very_short_comment,注释极短 (4字): '河流别称',确认该注释是否足以让模型理解字段含义
+se_watershed_river,river_level,integer,河流级别,流域河流管理档案表,very_short_comment,注释极短 (4字): '河流级别',确认该注释是否足以让模型理解字段含义
+se_watershed_river,parent_river_name,character varying,上一级河流名称,流域河流管理档案表,name_like_field,名称类字段，注释可能过于通用: 字段名 'parent_river_name' 注释为 '上一级河流名称',人工确认注释是否准确描述该字段业务含义
+se_watershed_river,source_province,character varying,源头省,流域河流管理档案表,very_short_comment,注释极短 (3字): '源头省',确认该注释是否足以让模型理解字段含义
+se_watershed_river,source_town,character varying,源头乡镇,流域河流管理档案表,very_short_comment,注释极短 (4字): '源头乡镇',确认该注释是否足以让模型理解字段含义
+se_watershed_river,source_village,character varying,源头村,流域河流管理档案表,very_short_comment,注释极短 (3字): '源头村',确认该注释是否足以让模型理解字段含义
+se_watershed_river,mouth_province,character varying,河口省,流域河流管理档案表,very_short_comment,注释极短 (3字): '河口省',确认该注释是否足以让模型理解字段含义
+se_watershed_river,mouth_town,character varying,河口乡镇,流域河流管理档案表,very_short_comment,注释极短 (4字): '河口乡镇',确认该注释是否足以让模型理解字段含义
+se_watershed_river,mouth_village,character varying,河口村,流域河流管理档案表,very_short_comment,注释极短 (3字): '河口村',确认该注释是否足以让模型理解字段含义
+stg_sjtj_sxhysjzxpt_dbo_operator_day_burnup_df,b_date,character varying,日期,船舶公司每天的燃耗,time_like_field,日期类字段，注释可能过于通用: 字段名 'b_date' 注释为 '日期',人工确认注释是否准确描述该字段业务含义
+stg_sjtj_sxhysjzxpt_dbo_operator_day_burnup_df,b_date,character varying,日期,船舶公司每天的燃耗,very_short_comment,注释极短 (2字): '日期',确认该注释是否足以让模型理解字段含义
+stg_sjtj_sxhysjzxpt_dbo_operator_day_burnup_df,b_date,character varying,日期,船舶公司每天的燃耗,generic_comment,注释过于通用: '日期'，可能不足以区分业务上下文,确认该注释是否需要补充业务含义，但禁止在当前阶段修改
+stg_sjtj_sxhysjzxpt_dbo_operator_day_burnup_df,operator,character varying,船运公司,船舶公司每天的燃耗,very_short_comment,注释极短 (4字): '船运公司',确认该注释是否足以让模型理解字段含义
+stg_sjtj_sxhysjzxpt_dbo_operator_day_burnup_df,burnup,double precision,燃耗值,船舶公司每天的燃耗,very_short_comment,注释极短 (3字): '燃耗值',确认该注释是否足以让模型理解字段含义
+stg_sjtj_sxhysjzxpt_dbo_operator_day_burnup_df,dt,character varying,分区日期,船舶公司每天的燃耗,very_short_comment,注释极短 (4字): '分区日期',确认该注释是否足以让模型理解字段含义
+stg_sjtj_sxhysjzxpt_t_vessel_info_df,declareno,character varying,船舶报港号,船舶报港离港信息,very_short_comment,注释极短 (5字): '船舶报港号',确认该注释是否足以让模型理解字段含义
+stg_sjtj_sxhysjzxpt_t_vessel_info_df,portname,character varying,港口,船舶报港离港信息,very_short_comment,注释极短 (2字): '港口',确认该注释是否足以让模型理解字段含义
+stg_sjtj_sxhysjzxpt_t_vessel_info_df,voyname,character varying,航线,船舶报港离港信息,very_short_comment,注释极短 (2字): '航线',确认该注释是否足以让模型理解字段含义
+stg_sjtj_sxhysjzxpt_t_vessel_info_df,vslname,character varying,船号,船舶报港离港信息,very_short_comment,注释极短 (2字): '船号',确认该注释是否足以让模型理解字段含义
+stg_sjtj_sxhysjzxpt_t_vessel_info_df,declaretime,character varying,报港时间,船舶报港离港信息,very_short_comment,注释极短 (4字): '报港时间',确认该注释是否足以让模型理解字段含义
+stg_sjtj_sxhysjzxpt_t_vessel_info_df,levelporttime,character varying,离港时间,船舶报港离港信息,very_short_comment,注释极短 (4字): '离港时间',确认该注释是否足以让模型理解字段含义
+stg_sjtj_sxhysjzxpt_t_vessel_info_df,dt,character varying,分区日期,船舶报港离港信息,very_short_comment,注释极短 (4字): '分区日期',确认该注释是否足以让模型理解字段含义
+stg_sjtysj_cbwrwxtzlxxxt_b_anchorage_clean_company_df,dt,character varying,分区日期,锚地与清洁公司关联表,very_short_comment,注释极短 (4字): '分区日期',确认该注释是否足以让模型理解字段含义
+stg_sjtysj_cbwrwxtzlxxxt_b_anchorage_info_df,lon,double precision,经度,锚地信息表,very_short_comment,注释极短 (2字): '经度',确认该注释是否足以让模型理解字段含义
+stg_sjtysj_cbwrwxtzlxxxt_b_anchorage_info_df,lat,double precision,纬度,锚地信息表,very_short_comment,注释极短 (2字): '纬度',确认该注释是否足以让模型理解字段含义
+stg_sjtysj_cbwrwxtzlxxxt_b_anchorage_info_df,corp_code,character varying,所属管理机构code,锚地信息表,code_like_field,编码类字段，注释可能过于通用: 字段名 'corp_code' 注释为 '所属管理机构code',人工确认注释是否准确描述该字段业务含义
+stg_sjtysj_cbwrwxtzlxxxt_b_anchorage_info_df,river_area,character varying,流域,锚地信息表,very_short_comment,注释极短 (2字): '流域',确认该注释是否足以让模型理解字段含义
+stg_sjtysj_cbwrwxtzlxxxt_b_anchorage_info_df,dt,character varying,分区日期,锚地信息表,very_short_comment,注释极短 (4字): '分区日期',确认该注释是否足以让模型理解字段含义
+stg_sjtysj_cbwrwxtzlxxxt_b_clean_company_df,comp_name,character varying,清洁公司名称,船舶污染物清洁公司信息,name_like_field,名称类字段，注释可能过于通用: 字段名 'comp_name' 注释为 '清洁公司名称',人工确认注释是否准确描述该字段业务含义
+stg_sjtysj_cbwrwxtzlxxxt_b_clean_company_df,comp_code,character varying,组织机构代码,船舶污染物清洁公司信息,code_like_field,编码类字段，注释可能过于通用: 字段名 'comp_code' 注释为 '组织机构代码',人工确认注释是否准确描述该字段业务含义
+stg_sjtysj_cbwrwxtzlxxxt_b_clean_company_df,tel,character varying,联系电话,船舶污染物清洁公司信息,very_short_comment,注释极短 (4字): '联系电话',确认该注释是否足以让模型理解字段含义
+stg_sjtysj_cbwrwxtzlxxxt_b_clean_company_df,dt,character varying,分区日期,船舶污染物清洁公司信息,very_short_comment,注释极短 (4字): '分区日期',确认该注释是否足以让模型理解字段含义
+stg_sjtysj_cbwrwxtzlxxxt_b_coordination_index_df,transfer_num,bigint,转运单次,全流程协同指数,very_short_comment,注释极短 (4字): '转运单次',确认该注释是否足以让模型理解字段含义
+stg_sjtysj_cbwrwxtzlxxxt_b_coordination_index_df,process_num,bigint,处置单次,全流程协同指数,very_short_comment,注释极短 (4字): '处置单次',确认该注释是否足以让模型理解字段含义
+stg_sjtysj_cbwrwxtzlxxxt_b_coordination_index_df,day,character varying,日期,全流程协同指数,very_short_comment,注释极短 (2字): '日期',确认该注释是否足以让模型理解字段含义
+stg_sjtysj_cbwrwxtzlxxxt_b_coordination_index_df,day,character varying,日期,全流程协同指数,generic_comment,注释过于通用: '日期'，可能不足以区分业务上下文,确认该注释是否需要补充业务含义，但禁止在当前阶段修改
+stg_sjtysj_cbwrwxtzlxxxt_b_coordination_index_df,coordination_index,numeric,协同指数,全流程协同指数,very_short_comment,注释极短 (4字): '协同指数',确认该注释是否足以让模型理解字段含义
+stg_sjtysj_cbwrwxtzlxxxt_b_coordination_index_df,dt,character varying,分区日期,全流程协同指数,very_short_comment,注释极短 (4字): '分区日期',确认该注释是否足以让模型理解字段含义
+stg_sjtysj_cbwrwxtzlxxxt_b_day_pollution_weight_df,date,timestamp without time zone,日期,根据行船类别统计每日污染物提交重量,time_like_field,日期类字段，注释可能过于通用: 字段名 'date' 注释为 '日期',人工确认注释是否准确描述该字段业务含义
+stg_sjtysj_cbwrwxtzlxxxt_b_day_pollution_weight_df,date,timestamp without time zone,日期,根据行船类别统计每日污染物提交重量,very_short_comment,注释极短 (2字): '日期',确认该注释是否足以让模型理解字段含义
+stg_sjtysj_cbwrwxtzlxxxt_b_day_pollution_weight_df,date,timestamp without time zone,日期,根据行船类别统计每日污染物提交重量,generic_comment,注释过于通用: '日期'，可能不足以区分业务上下文,确认该注释是否需要补充业务含义，但禁止在当前阶段修改
+stg_sjtysj_cbwrwxtzlxxxt_b_day_pollution_weight_df,dt,character varying,分区日期,根据行船类别统计每日污染物提交重量,very_short_comment,注释极短 (4字): '分区日期',确认该注释是否足以让模型理解字段含义
+stg_sjtysj_cbwrwxtzlxxxt_b_day_receive_ship_kpi_df,day,character varying,日期,接收船舶考评日报,very_short_comment,注释极短 (2字): '日期',确认该注释是否足以让模型理解字段含义
+stg_sjtysj_cbwrwxtzlxxxt_b_day_receive_ship_kpi_df,day,character varying,日期,接收船舶考评日报,generic_comment,注释过于通用: '日期'，可能不足以区分业务上下文,确认该注释是否需要补充业务含义，但禁止在当前阶段修改
+stg_sjtysj_cbwrwxtzlxxxt_b_day_receive_ship_kpi_df,receive_ship_id,bigint,接收船舶id,接收船舶考评日报,id_like_field,ID 类字段，注释可能过于通用: 字段名 'receive_ship_id' 注释为 '接收船舶id',人工确认注释是否准确描述该字段业务含义
+stg_sjtysj_cbwrwxtzlxxxt_b_day_receive_ship_kpi_df,ship_select_count,bigint,行船选择数,接收船舶考评日报,very_short_comment,注释极短 (5字): '行船选择数',确认该注释是否足以让模型理解字段含义
+stg_sjtysj_cbwrwxtzlxxxt_b_day_receive_ship_kpi_df,qrcode_js_count,bigint,扫码接单数,接收船舶考评日报,very_short_comment,注释极短 (5字): '扫码接单数',确认该注释是否足以让模型理解字段含义
+stg_sjtysj_cbwrwxtzlxxxt_b_day_receive_ship_kpi_df,subscribe_js_count,bigint,预约接单数,接收船舶考评日报,very_short_comment,注释极短 (5字): '预约接单数',确认该注释是否足以让模型理解字段含义
+stg_sjtysj_cbwrwxtzlxxxt_b_day_receive_ship_kpi_df,dt,character varying,分区日期,接收船舶考评日报,very_short_comment,注释极短 (4字): '分区日期',确认该注释是否足以让模型理解字段含义
+stg_sjtysj_cbwrwxtzlxxxt_b_day_subject_num_df,day,character varying,日期,净小宜全流程各类型主体数量,very_short_comment,注释极短 (2字): '日期',确认该注释是否足以让模型理解字段含义
+stg_sjtysj_cbwrwxtzlxxxt_b_day_subject_num_df,day,character varying,日期,净小宜全流程各类型主体数量,generic_comment,注释过于通用: '日期'，可能不足以区分业务上下文,确认该注释是否需要补充业务含义，但禁止在当前阶段修改
+stg_sjtysj_cbwrwxtzlxxxt_b_day_subject_num_df,wharf_num,bigint,码头数量,净小宜全流程各类型主体数量,very_short_comment,注释极短 (4字): '码头数量',确认该注释是否足以让模型理解字段含义
+stg_sjtysj_cbwrwxtzlxxxt_b_day_subject_num_df,dt,character varying,分区日期,净小宜全流程各类型主体数量,very_short_comment,注释极短 (4字): '分区日期',确认该注释是否足以让模型理解字段含义
+stg_sjtysj_cbwrwxtzlxxxt_b_day_sxhy_df,day,character varying,日期,洗舱服务,very_short_comment,注释极短 (2字): '日期',确认该注释是否足以让模型理解字段含义
+stg_sjtysj_cbwrwxtzlxxxt_b_day_sxhy_df,day,character varying,日期,洗舱服务,generic_comment,注释过于通用: '日期'，可能不足以区分业务上下文,确认该注释是否需要补充业务含义，但禁止在当前阶段修改
+stg_sjtysj_cbwrwxtzlxxxt_b_day_sxhy_df,xcs_order_cnt,bigint,洗舱水艘次,洗舱服务,very_short_comment,注释极短 (5字): '洗舱水艘次',确认该注释是否足以让模型理解字段含义
+stg_sjtysj_cbwrwxtzlxxxt_b_day_sxhy_df,dt,character varying,分区日期,洗舱服务,very_short_comment,注释极短 (4字): '分区日期',确认该注释是否足以让模型理解字段含义
+stg_sjtysj_cbwrwxtzlxxxt_b_month_receive_ship_kpi_df,receive_ship_id,bigint,接收船舶id,污染物接收量数据,id_like_field,ID 类字段，注释可能过于通用: 字段名 'receive_ship_id' 注释为 '接收船舶id',人工确认注释是否准确描述该字段业务含义
+stg_sjtysj_cbwrwxtzlxxxt_b_month_receive_ship_kpi_df,subsidy_amount,numeric,补贴金额,污染物接收量数据,very_short_comment,注释极短 (4字): '补贴金额',确认该注释是否足以让模型理解字段含义
+stg_sjtysj_cbwrwxtzlxxxt_b_month_receive_ship_kpi_df,receive_order_count,bigint,接单数,污染物接收量数据,very_short_comment,注释极短 (3字): '接单数',确认该注释是否足以让模型理解字段含义
+stg_sjtysj_cbwrwxtzlxxxt_b_month_receive_ship_kpi_df,receive_fy_num,numeric,废油接收量,污染物接收量数据,very_short_comment,注释极短 (5字): '废油接收量',确认该注释是否足以让模型理解字段含义
+stg_sjtysj_cbwrwxtzlxxxt_b_month_receive_ship_kpi_df,receive_fy_order_count,bigint,废油接单数,污染物接收量数据,very_short_comment,注释极短 (5字): '废油接单数',确认该注释是否足以让模型理解字段含义
+stg_sjtysj_cbwrwxtzlxxxt_b_month_receive_ship_kpi_df,dt,character varying,分区日期,污染物接收量数据,very_short_comment,注释极短 (4字): '分区日期',确认该注释是否足以让模型理解字段含义
+stg_sjtysj_cbwrwxtzlxxxt_b_order_receive_minute_df,day,character varying,日期,每日各清洁公司接单接收时效数据,very_short_comment,注释极短 (2字): '日期',确认该注释是否足以让模型理解字段含义
+stg_sjtysj_cbwrwxtzlxxxt_b_order_receive_minute_df,day,character varying,日期,每日各清洁公司接单接收时效数据,generic_comment,注释过于通用: '日期'，可能不足以区分业务上下文,确认该注释是否需要补充业务含义，但禁止在当前阶段修改
+stg_sjtysj_cbwrwxtzlxxxt_b_order_receive_minute_df,clean_company_name,character varying,清洁公司名称,每日各清洁公司接单接收时效数据,name_like_field,名称类字段，注释可能过于通用: 字段名 'clean_company_name' 注释为 '清洁公司名称',人工确认注释是否准确描述该字段业务含义
+stg_sjtysj_cbwrwxtzlxxxt_b_order_receive_minute_df,order_minute,numeric,接单时效,每日各清洁公司接单接收时效数据,very_short_comment,注释极短 (4字): '接单时效',确认该注释是否足以让模型理解字段含义
+stg_sjtysj_cbwrwxtzlxxxt_b_order_receive_minute_df,order_num,bigint,接单单数,每日各清洁公司接单接收时效数据,very_short_comment,注释极短 (4字): '接单单数',确认该注释是否足以让模型理解字段含义
+stg_sjtysj_cbwrwxtzlxxxt_b_order_receive_minute_df,receive_minute,numeric,接收时效,每日各清洁公司接单接收时效数据,very_short_comment,注释极短 (4字): '接收时效',确认该注释是否足以让模型理解字段含义
+stg_sjtysj_cbwrwxtzlxxxt_b_order_receive_minute_df,dt,character varying,分区日期,每日各清洁公司接单接收时效数据,very_short_comment,注释极短 (4字): '分区日期',确认该注释是否足以让模型理解字段含义
+stg_sjtysj_cbwrwxtzlxxxt_b_process_unit_info_df,unit_name,character varying,处置单位名称,船舶污染物处置单位信息表,name_like_field,名称类字段，注释可能过于通用: 字段名 'unit_name' 注释为 '处置单位名称',人工确认注释是否准确描述该字段业务含义
+stg_sjtysj_cbwrwxtzlxxxt_b_process_unit_info_df,unit_code,character varying,组织机构代码,船舶污染物处置单位信息表,code_like_field,编码类字段，注释可能过于通用: 字段名 'unit_code' 注释为 '组织机构代码',人工确认注释是否准确描述该字段业务含义
+stg_sjtysj_cbwrwxtzlxxxt_b_process_unit_info_df,unit_type,character varying,"单位类型:转运单位,处置单位",船舶污染物处置单位信息表,code_like_field,"类型类字段，注释可能过于通用: 字段名 'unit_type' 注释为 '单位类型:转运单位,处置单位'",人工确认注释是否准确描述该字段业务含义
+stg_sjtysj_cbwrwxtzlxxxt_b_process_unit_info_df,phone,character varying,联系电话,船舶污染物处置单位信息表,very_short_comment,注释极短 (4字): '联系电话',确认该注释是否足以让模型理解字段含义
+stg_sjtysj_cbwrwxtzlxxxt_b_process_unit_info_df,address_name,character varying,省，市，区，地址名称,船舶污染物处置单位信息表,name_like_field,名称类字段，注释可能过于通用: 字段名 'address_name' 注释为 '省，市，区，地址名称',人工确认注释是否准确描述该字段业务含义
+stg_sjtysj_cbwrwxtzlxxxt_b_process_unit_info_df,detail,character varying,地址详情,船舶污染物处置单位信息表,very_short_comment,注释极短 (4字): '地址详情',确认该注释是否足以让模型理解字段含义
+stg_sjtysj_cbwrwxtzlxxxt_b_process_unit_info_df,process_unit_type,character varying,处置单位类型，1：固废处置场，2:污水处理场，3炼油场,船舶污染物处置单位信息表,code_like_field,类型类字段，注释可能过于通用: 字段名 'process_unit_type' 注释为 '处置单位类型，1：固废处置场，2:污水处理场，3炼油场',人工确认注释是否准确描述该字段业务含义
+stg_sjtysj_cbwrwxtzlxxxt_b_process_unit_info_df,manager_unit,character varying,主管单位,船舶污染物处置单位信息表,very_short_comment,注释极短 (4字): '主管单位',确认该注释是否足以让模型理解字段含义
+stg_sjtysj_cbwrwxtzlxxxt_b_process_unit_info_df,business_scope_name,character varying,业务范围名称,船舶污染物处置单位信息表,name_like_field,名称类字段，注释可能过于通用: 字段名 'business_scope_name' 注释为 '业务范围名称',人工确认注释是否准确描述该字段业务含义
+stg_sjtysj_cbwrwxtzlxxxt_b_process_unit_info_df,dt,character varying,分区日期,船舶污染物处置单位信息表,very_short_comment,注释极短 (4字): '分区日期',确认该注释是否足以让模型理解字段含义
+stg_sjtysj_cbwrwxtzlxxxt_b_receive_ship_assessment_df,shipnum,bigint,行船选择,接受船舶评估,very_short_comment,注释极短 (4字): '行船选择',确认该注释是否足以让模型理解字段含义
+stg_sjtysj_cbwrwxtzlxxxt_b_receive_ship_assessment_df,billnum,bigint,按时接单,接受船舶评估,very_short_comment,注释极短 (4字): '按时接单',确认该注释是否足以让模型理解字段含义
+stg_sjtysj_cbwrwxtzlxxxt_b_receive_ship_assessment_df,ontimes,bigint,按时接收,接受船舶评估,very_short_comment,注释极短 (4字): '按时接收',确认该注释是否足以让模型理解字段含义
+stg_sjtysj_cbwrwxtzlxxxt_b_receive_ship_assessment_df,unbillnum,bigint,未按时接单,接受船舶评估,very_short_comment,注释极短 (5字): '未按时接单',确认该注释是否足以让模型理解字段含义
+stg_sjtysj_cbwrwxtzlxxxt_b_receive_ship_assessment_df,untimes,bigint,未按时接收,接受船舶评估,very_short_comment,注释极短 (5字): '未按时接收',确认该注释是否足以让模型理解字段含义
+stg_sjtysj_cbwrwxtzlxxxt_b_receive_ship_assessment_df,dt,character varying,分区日期,接受船舶评估,very_short_comment,注释极短 (4字): '分区日期',确认该注释是否足以让模型理解字段含义
+stg_sjtysj_cbwrwxtzlxxxt_b_receive_ship_info_df,ship_name,character varying,船名,船舶污染物接收船舶信息表,name_like_field,名称类字段，注释可能过于通用: 字段名 'ship_name' 注释为 '船名',人工确认注释是否准确描述该字段业务含义
+stg_sjtysj_cbwrwxtzlxxxt_b_receive_ship_info_df,ship_name,character varying,船名,船舶污染物接收船舶信息表,very_short_comment,注释极短 (2字): '船名',确认该注释是否足以让模型理解字段含义
+stg_sjtysj_cbwrwxtzlxxxt_b_receive_ship_info_df,clean_company_id,bigint,所属公司id,船舶污染物接收船舶信息表,id_like_field,ID 类字段，注释可能过于通用: 字段名 'clean_company_id' 注释为 '所属公司id',人工确认注释是否准确描述该字段业务含义
+stg_sjtysj_cbwrwxtzlxxxt_b_receive_ship_info_df,registry_port,character varying,船籍港,船舶污染物接收船舶信息表,very_short_comment,注释极短 (3字): '船籍港',确认该注释是否足以让模型理解字段含义
+stg_sjtysj_cbwrwxtzlxxxt_b_receive_ship_info_df,ship_owner,character varying,船舶所有人,船舶污染物接收船舶信息表,very_short_comment,注释极短 (5字): '船舶所有人',确认该注释是否足以让模型理解字段含义
+stg_sjtysj_cbwrwxtzlxxxt_b_receive_ship_info_df,ship_operator,character varying,船舶经营人,船舶污染物接收船舶信息表,very_short_comment,注释极短 (5字): '船舶经营人',确认该注释是否足以让模型理解字段含义
+stg_sjtysj_cbwrwxtzlxxxt_b_receive_ship_info_df,captain,character varying,船长,船舶污染物接收船舶信息表,very_short_comment,注释极短 (2字): '船长',确认该注释是否足以让模型理解字段含义
+stg_sjtysj_cbwrwxtzlxxxt_b_receive_ship_info_df,ship_type,character varying,船舶类型：生活垃圾、生活污水、油污水、多功能,船舶污染物接收船舶信息表,code_like_field,类型类字段，注释可能过于通用: 字段名 'ship_type' 注释为 '船舶类型：生活垃圾、生活污水、油污水、多功能',人工确认注释是否准确描述该字段业务含义
+stg_sjtysj_cbwrwxtzlxxxt_b_receive_ship_info_df,load_weight,numeric,核载重量,船舶污染物接收船舶信息表,very_short_comment,注释极短 (4字): '核载重量',确认该注释是否足以让模型理解字段含义
+stg_sjtysj_cbwrwxtzlxxxt_b_receive_ship_info_df,carrier_volume,numeric,核载体积,船舶污染物接收船舶信息表,very_short_comment,注释极短 (4字): '核载体积',确认该注释是否足以让模型理解字段含义
+stg_sjtysj_cbwrwxtzlxxxt_b_receive_ship_info_df,fee_standard_status,character varying,收费标准申请状态，0为审批中，1为已完成,船舶污染物接收船舶信息表,status_like_field,状态类字段，注释可能过于通用: 字段名 'fee_standard_status' 注释为 '收费标准申请状态，0为审批中，1为已完成',人工确认注释是否准确描述该字段业务含义
+stg_sjtysj_cbwrwxtzlxxxt_b_receive_ship_info_df,anchoring_distance,bigint,锚定距离,船舶污染物接收船舶信息表,very_short_comment,注释极短 (4字): '锚定距离',确认该注释是否足以让模型理解字段含义
+stg_sjtysj_cbwrwxtzlxxxt_b_receive_ship_info_df,free_flag,bigint,是否从事免费接收,船舶污染物接收船舶信息表,status_like_field,标记类字段，注释可能过于通用: 字段名 'free_flag' 注释为 '是否从事免费接收',人工确认注释是否准确描述该字段业务含义
+stg_sjtysj_cbwrwxtzlxxxt_b_receive_ship_info_df,dt,character varying,分区日期,船舶污染物接收船舶信息表,very_short_comment,注释极短 (4字): '分区日期',确认该注释是否足以让模型理解字段含义
+stg_sjtysj_cbwrwxtzlxxxt_b_transfer_car_df,driver,character varying,主要司机,转运车辆信息,very_short_comment,注释极短 (4字): '主要司机',确认该注释是否足以让模型理解字段含义
+stg_sjtysj_cbwrwxtzlxxxt_b_transfer_car_df,phone,character varying,联系电话,转运车辆信息,very_short_comment,注释极短 (4字): '联系电话',确认该注释是否足以让模型理解字段含义
+stg_sjtysj_cbwrwxtzlxxxt_b_transfer_car_df,car_type,character varying,车辆类型,转运车辆信息,code_like_field,类型类字段，注释可能过于通用: 字段名 'car_type' 注释为 '车辆类型',人工确认注释是否准确描述该字段业务含义
+stg_sjtysj_cbwrwxtzlxxxt_b_transfer_car_df,car_type,character varying,车辆类型,转运车辆信息,very_short_comment,注释极短 (4字): '车辆类型',确认该注释是否足以让模型理解字段含义
+stg_sjtysj_cbwrwxtzlxxxt_b_transfer_car_df,auto_trans_flag,bigint,上岸即处置开关,转运车辆信息,status_like_field,标记类字段，注释可能过于通用: 字段名 'auto_trans_flag' 注释为 '上岸即处置开关',人工确认注释是否准确描述该字段业务含义
+stg_sjtysj_cbwrwxtzlxxxt_b_transfer_car_df,dt,character varying,分区日期,转运车辆信息,very_short_comment,注释极短 (4字): '分区日期',确认该注释是否足以让模型理解字段含义
+stg_sjtysj_cbwrwxtzlxxxt_b_wharf_info_df,wharf_code,character varying,码头代码,船舶污染物接收码头信息表,code_like_field,编码类字段，注释可能过于通用: 字段名 'wharf_code' 注释为 '码头代码',人工确认注释是否准确描述该字段业务含义
+stg_sjtysj_cbwrwxtzlxxxt_b_wharf_info_df,wharf_code,character varying,码头代码,船舶污染物接收码头信息表,very_short_comment,注释极短 (4字): '码头代码',确认该注释是否足以让模型理解字段含义
+stg_sjtysj_cbwrwxtzlxxxt_b_wharf_info_df,phone,character varying,联系电话,船舶污染物接收码头信息表,very_short_comment,注释极短 (4字): '联系电话',确认该注释是否足以让模型理解字段含义
+stg_sjtysj_cbwrwxtzlxxxt_b_wharf_info_df,process_id,bigint,处置单位id,船舶污染物接收码头信息表,id_like_field,ID 类字段，注释可能过于通用: 字段名 'process_id' 注释为 '处置单位id',人工确认注释是否准确描述该字段业务含义
+stg_sjtysj_cbwrwxtzlxxxt_b_wharf_info_df,only_jxy_flag,bigint,是否只用于净小宜,船舶污染物接收码头信息表,status_like_field,标记类字段，注释可能过于通用: 字段名 'only_jxy_flag' 注释为 '是否只用于净小宜',人工确认注释是否准确描述该字段业务含义
+stg_sjtysj_cbwrwxtzlxxxt_b_wharf_info_df,dt,character varying,分区日期,船舶污染物接收码头信息表,very_short_comment,注释极短 (4字): '分区日期',确认该注释是否足以让模型理解字段含义
+stg_sjtysj_cbwrwxtzlxxxt_b_wharf_kpi_df,day,character varying,日期,码头接单情况,very_short_comment,注释极短 (2字): '日期',确认该注释是否足以让模型理解字段含义
+stg_sjtysj_cbwrwxtzlxxxt_b_wharf_kpi_df,day,character varying,日期,码头接单情况,generic_comment,注释过于通用: '日期'，可能不足以区分业务上下文,确认该注释是否需要补充业务含义，但禁止在当前阶段修改
+stg_sjtysj_cbwrwxtzlxxxt_b_wharf_kpi_df,fy_num,numeric,废油接收量,码头接单情况,very_short_comment,注释极短 (5字): '废油接收量',确认该注释是否足以让模型理解字段含义
+stg_sjtysj_cbwrwxtzlxxxt_b_wharf_kpi_df,order_count,bigint,接收单数,码头接单情况,very_short_comment,注释极短 (4字): '接收单数',确认该注释是否足以让模型理解字段含义
+stg_sjtysj_cbwrwxtzlxxxt_b_wharf_kpi_df,dt,character varying,分区日期,码头接单情况,very_short_comment,注释极短 (4字): '分区日期',确认该注释是否足以让模型理解字段含义
+stg_sjtysj_cbwrwxtzlxxxt_p_apply_detail_df,remain_num,character varying,剩余数量,污染物接收明细,very_short_comment,注释极短 (4字): '剩余数量',确认该注释是否足以让模型理解字段含义
+stg_sjtysj_cbwrwxtzlxxxt_p_apply_detail_df,amount,numeric,金额,污染物接收明细,very_short_comment,注释极短 (2字): '金额',确认该注释是否足以让模型理解字段含义
+stg_sjtysj_cbwrwxtzlxxxt_p_apply_detail_df,apply_picture,character varying,申请照,污染物接收明细,very_short_comment,注释极短 (3字): '申请照',确认该注释是否足以让模型理解字段含义
+stg_sjtysj_cbwrwxtzlxxxt_p_apply_detail_df,handle_picture,character varying,处理照片,污染物接收明细,very_short_comment,注释极短 (4字): '处理照片',确认该注释是否足以让模型理解字段含义
+stg_sjtysj_cbwrwxtzlxxxt_p_apply_detail_df,trans_status,bigint,转运状态,污染物接收明细,status_like_field,状态类字段，注释可能过于通用: 字段名 'trans_status' 注释为 '转运状态',人工确认注释是否准确描述该字段业务含义
+stg_sjtysj_cbwrwxtzlxxxt_p_apply_detail_df,trans_status,bigint,转运状态,污染物接收明细,very_short_comment,注释极短 (4字): '转运状态',确认该注释是否足以让模型理解字段含义
+stg_sjtysj_cbwrwxtzlxxxt_p_apply_detail_df,dt,character varying,分区日期,污染物接收明细,very_short_comment,注释极短 (4字): '分区日期',确认该注释是否足以让模型理解字段含义
+stg_sjtysj_cbwrwxtzlxxxt_p_ashore_apply_df,port_id,bigint,港口id,污染物接收表,id_like_field,ID 类字段，注释可能过于通用: 字段名 'port_id' 注释为 '港口id',人工确认注释是否准确描述该字段业务含义
+stg_sjtysj_cbwrwxtzlxxxt_p_ashore_apply_df,port_id,bigint,港口id,污染物接收表,very_short_comment,注释极短 (4字): '港口id',确认该注释是否足以让模型理解字段含义
+stg_sjtysj_cbwrwxtzlxxxt_p_ashore_apply_df,ship_name,character varying,船名,污染物接收表,name_like_field,名称类字段，注释可能过于通用: 字段名 'ship_name' 注释为 '船名',人工确认注释是否准确描述该字段业务含义
+stg_sjtysj_cbwrwxtzlxxxt_p_ashore_apply_df,ship_name,character varying,船名,污染物接收表,very_short_comment,注释极短 (2字): '船名',确认该注释是否足以让模型理解字段含义
+stg_sjtysj_cbwrwxtzlxxxt_p_ashore_apply_df,ship_nation,character varying,船舶国籍,污染物接收表,very_short_comment,注释极短 (4字): '船舶国籍',确认该注释是否足以让模型理解字段含义
+stg_sjtysj_cbwrwxtzlxxxt_p_ashore_apply_df,amount,numeric,金额,污染物接收表,very_short_comment,注释极短 (2字): '金额',确认该注释是否足以让模型理解字段含义
+stg_sjtysj_cbwrwxtzlxxxt_p_ashore_apply_df,app_id,character varying,申请照id,污染物接收表,id_like_field,ID 类字段，注释可能过于通用: 字段名 'app_id' 注释为 '申请照id',人工确认注释是否准确描述该字段业务含义
+stg_sjtysj_cbwrwxtzlxxxt_p_ashore_apply_df,app_id,character varying,申请照id,污染物接收表,very_short_comment,注释极短 (5字): '申请照id',确认该注释是否足以让模型理解字段含义
+stg_sjtysj_cbwrwxtzlxxxt_p_ashore_apply_df,confirm_date,timestamp without time zone,确认时间,污染物接收表,time_like_field,日期类字段，注释可能过于通用: 字段名 'confirm_date' 注释为 '确认时间',人工确认注释是否准确描述该字段业务含义
+stg_sjtysj_cbwrwxtzlxxxt_p_ashore_apply_df,confirm_date,timestamp without time zone,确认时间,污染物接收表,very_short_comment,注释极短 (4字): '确认时间',确认该注释是否足以让模型理解字段含义
+stg_sjtysj_cbwrwxtzlxxxt_p_ashore_apply_df,confirm_id,character varying,确认照id,污染物接收表,id_like_field,ID 类字段，注释可能过于通用: 字段名 'confirm_id' 注释为 '确认照id',人工确认注释是否准确描述该字段业务含义
+stg_sjtysj_cbwrwxtzlxxxt_p_ashore_apply_df,confirm_id,character varying,确认照id,污染物接收表,very_short_comment,注释极短 (5字): '确认照id',确认该注释是否足以让模型理解字段含义
+stg_sjtysj_cbwrwxtzlxxxt_p_ashore_apply_df,receive_ship_id,bigint,接收船舶id,污染物接收表,id_like_field,ID 类字段，注释可能过于通用: 字段名 'receive_ship_id' 注释为 '接收船舶id',人工确认注释是否准确描述该字段业务含义
+stg_sjtysj_cbwrwxtzlxxxt_p_ashore_apply_df,receive_company,character varying,接收单位,污染物接收表,very_short_comment,注释极短 (4字): '接收单位',确认该注释是否足以让模型理解字段含义
+stg_sjtysj_cbwrwxtzlxxxt_p_ashore_apply_df,receive_person,character varying,接收人,污染物接收表,very_short_comment,注释极短 (3字): '接收人',确认该注释是否足以让模型理解字段含义
+stg_sjtysj_cbwrwxtzlxxxt_p_ashore_apply_df,receive_date,timestamp without time zone,接收时间：当状态为：yjs,污染物接收表,time_like_field,日期类字段，注释可能过于通用: 字段名 'receive_date' 注释为 '接收时间：当状态为：yjs',人工确认注释是否准确描述该字段业务含义
+stg_sjtysj_cbwrwxtzlxxxt_p_ashore_apply_df,complete_receive_date,timestamp without time zone,完成接收时间,污染物接收表,time_like_field,日期类字段，注释可能过于通用: 字段名 'complete_receive_date' 注释为 '完成接收时间',人工确认注释是否准确描述该字段业务含义
+stg_sjtysj_cbwrwxtzlxxxt_p_ashore_apply_df,goods_type,character varying,货物种类,污染物接收表,code_like_field,类型类字段，注释可能过于通用: 字段名 'goods_type' 注释为 '货物种类',人工确认注释是否准确描述该字段业务含义
+stg_sjtysj_cbwrwxtzlxxxt_p_ashore_apply_df,goods_type,character varying,货物种类,污染物接收表,very_short_comment,注释极短 (4字): '货物种类',确认该注释是否足以让模型理解字段含义
+stg_sjtysj_cbwrwxtzlxxxt_p_ashore_apply_df,actual_tons,numeric,实载吨位,污染物接收表,very_short_comment,注释极短 (4字): '实载吨位',确认该注释是否足以让模型理解字段含义
+stg_sjtysj_cbwrwxtzlxxxt_p_ashore_apply_df,standard_container_num,numeric,标箱数量,污染物接收表,very_short_comment,注释极短 (4字): '标箱数量',确认该注释是否足以让模型理解字段含义
+stg_sjtysj_cbwrwxtzlxxxt_p_ashore_apply_df,domestic_trade_num,numeric,内贸数量,污染物接收表,very_short_comment,注释极短 (4字): '内贸数量',确认该注释是否足以让模型理解字段含义
+stg_sjtysj_cbwrwxtzlxxxt_p_ashore_apply_df,foreign_trade_num,numeric,外贸数量,污染物接收表,very_short_comment,注释极短 (4字): '外贸数量',确认该注释是否足以让模型理解字段含义
+stg_sjtysj_cbwrwxtzlxxxt_p_ashore_apply_df,actual_poll_type,character varying,实际污染物类型,污染物接收表,code_like_field,类型类字段，注释可能过于通用: 字段名 'actual_poll_type' 注释为 '实际污染物类型',人工确认注释是否准确描述该字段业务含义
+stg_sjtysj_cbwrwxtzlxxxt_p_ashore_apply_df,expected_delivery_time,timestamp without time zone,期望交付时间,污染物接收表,time_like_field,时间类字段，注释可能过于通用: 字段名 'expected_delivery_time' 注释为 '期望交付时间',人工确认注释是否准确描述该字段业务含义
+stg_sjtysj_cbwrwxtzlxxxt_p_ashore_apply_df,reject_reason,character varying,拒收理由,污染物接收表,very_short_comment,注释极短 (4字): '拒收理由',确认该注释是否足以让模型理解字段含义
+stg_sjtysj_cbwrwxtzlxxxt_p_ashore_apply_df,shlj_time,character varying,生活垃圾说明,污染物接收表,time_like_field,时间类字段，注释可能过于通用: 字段名 'shlj_time' 注释为 '生活垃圾说明',人工确认注释是否准确描述该字段业务含义
+stg_sjtysj_cbwrwxtzlxxxt_p_ashore_apply_df,fy_text,character varying,费油说明,污染物接收表,very_short_comment,注释极短 (4字): '费油说明',确认该注释是否足以让模型理解字段含义
+stg_sjtysj_cbwrwxtzlxxxt_p_ashore_apply_df,hyws_text,character varying,含油污水,污染物接收表,very_short_comment,注释极短 (4字): '含油污水',确认该注释是否足以让模型理解字段含义
+stg_sjtysj_cbwrwxtzlxxxt_p_ashore_apply_df,ypj_status,character varying,是否已评价状态,污染物接收表,status_like_field,状态类字段，注释可能过于通用: 字段名 'ypj_status' 注释为 '是否已评价状态',人工确认注释是否准确描述该字段业务含义
+stg_sjtysj_cbwrwxtzlxxxt_p_ashore_apply_df,deliverer,character varying,交付人,污染物接收表,very_short_comment,注释极短 (3字): '交付人',确认该注释是否足以让模型理解字段含义
+stg_sjtysj_cbwrwxtzlxxxt_p_ashore_apply_df,qrcode_confirm_flag,bigint,扫码交互，是否确认过 0：未确认 1：已确认 是否有填报货种货量标志,污染物接收表,status_like_field,标记类字段，注释可能过于通用: 字段名 'qrcode_confirm_flag' 注释为 '扫码交互，是否确认过 0：未确认 1：已确认 是否有填报货种货量标志',人工确认注释是否准确描述该字段业务含义
+stg_sjtysj_cbwrwxtzlxxxt_p_ashore_apply_df,qrcode_confirm_time,timestamp without time zone,扫码交互确认时间（填报货种货量时间）,污染物接收表,time_like_field,时间类字段，注释可能过于通用: 字段名 'qrcode_confirm_time' 注释为 '扫码交互确认时间（填报货种货量时间）',人工确认注释是否准确描述该字段业务含义
+stg_sjtysj_cbwrwxtzlxxxt_p_ashore_apply_df,dt,character varying,分区日期,污染物接收表,very_short_comment,注释极短 (4字): '分区日期',确认该注释是否足以让模型理解字段含义
+stg_sjtysj_cbwrwxtzlxxxt_p_handover_trans_detail_df,dt,character varying,分区日期,污染物转运B流程明细单,very_short_comment,注释极短 (4字): '分区日期',确认该注释是否足以让模型理解字段含义
+stg_sjtysj_cbwrwxtzlxxxt_p_handover_trans_df,cc_status,character varying, 后续存储状态 wsq：未申请， dcc : 待存储，ycc : 已存储,污染物转运B流程,status_like_field,状态类字段，注释可能过于通用: 字段名 'cc_status' 注释为 ' 后续存储状态 wsq：未申请， dcc : 待存储，ycc : 已存储',人工确认注释是否准确描述该字段业务含义
+stg_sjtysj_cbwrwxtzlxxxt_p_handover_trans_df,trans_subject_type,character varying,转运主体类型 0:接收船舶 1:转运车辆,污染物转运B流程,code_like_field,类型类字段，注释可能过于通用: 字段名 'trans_subject_type' 注释为 '转运主体类型 0:接收船舶 1:转运车辆',人工确认注释是否准确描述该字段业务含义
+stg_sjtysj_cbwrwxtzlxxxt_p_handover_trans_df,trans_subject_id,bigint,转运主体id,污染物转运B流程,id_like_field,ID 类字段，注释可能过于通用: 字段名 'trans_subject_id' 注释为 '转运主体id',人工确认注释是否准确描述该字段业务含义
+stg_sjtysj_cbwrwxtzlxxxt_p_handover_trans_df,trans_subject_name,character varying,转运主体名称（船名、车牌号）,污染物转运B流程,name_like_field,名称类字段，注释可能过于通用: 字段名 'trans_subject_name' 注释为 '转运主体名称（船名、车牌号）',人工确认注释是否准确描述该字段业务含义
+stg_sjtysj_cbwrwxtzlxxxt_p_handover_trans_df,confirm_receive_time,character varying,转运主体确认接收完成时间（点击按钮的时间）,污染物转运B流程,time_like_field,时间类字段，注释可能过于通用: 字段名 'confirm_receive_time' 注释为 '转运主体确认接收完成时间（点击按钮的时间）',人工确认注释是否准确描述该字段业务含义
+stg_sjtysj_cbwrwxtzlxxxt_p_handover_trans_df,receive_complete_time,character varying,接收完成时间,污染物转运B流程,time_like_field,时间类字段，注释可能过于通用: 字段名 'receive_complete_time' 注释为 '接收完成时间',人工确认注释是否准确描述该字段业务含义
+stg_sjtysj_cbwrwxtzlxxxt_p_handover_trans_df,poll_weight_num,numeric,污染物数量,污染物转运B流程,very_short_comment,注释极短 (5字): '污染物数量',确认该注释是否足以让模型理解字段含义
+stg_sjtysj_cbwrwxtzlxxxt_p_handover_trans_df,apply_wharf_id,bigint,申请码头id,污染物转运B流程,id_like_field,ID 类字段，注释可能过于通用: 字段名 'apply_wharf_id' 注释为 '申请码头id',人工确认注释是否准确描述该字段业务含义
+stg_sjtysj_cbwrwxtzlxxxt_p_handover_trans_df,apply_wharf_name,character varying,申请码头名称,污染物转运B流程,name_like_field,名称类字段，注释可能过于通用: 字段名 'apply_wharf_name' 注释为 '申请码头名称',人工确认注释是否准确描述该字段业务含义
+stg_sjtysj_cbwrwxtzlxxxt_p_handover_trans_df,apply_anchorage_name,character varying,交互水域,污染物转运B流程,name_like_field,名称类字段，注释可能过于通用: 字段名 'apply_anchorage_name' 注释为 '交互水域',人工确认注释是否准确描述该字段业务含义
+stg_sjtysj_cbwrwxtzlxxxt_p_handover_trans_df,apply_anchorage_name,character varying,交互水域,污染物转运B流程,very_short_comment,注释极短 (4字): '交互水域',确认该注释是否足以让模型理解字段含义
+stg_sjtysj_cbwrwxtzlxxxt_p_handover_trans_df,target_wharf_id,bigint,目的地码头id （注：目的码头界面上看不到该单据）,污染物转运B流程,id_like_field,ID 类字段，注释可能过于通用: 字段名 'target_wharf_id' 注释为 '目的地码头id （注：目的码头界面上看不到该单据）',人工确认注释是否准确描述该字段业务含义
+stg_sjtysj_cbwrwxtzlxxxt_p_handover_trans_df,target_wharf_name,character varying,目的地码头名称,污染物转运B流程,name_like_field,名称类字段，注释可能过于通用: 字段名 'target_wharf_name' 注释为 '目的地码头名称',人工确认注释是否准确描述该字段业务含义
+stg_sjtysj_cbwrwxtzlxxxt_p_handover_trans_df,trans_start_time,character varying,交互时间（转运开始时间）,污染物转运B流程,time_like_field,时间类字段，注释可能过于通用: 字段名 'trans_start_time' 注释为 '交互时间（转运开始时间）',人工确认注释是否准确描述该字段业务含义
+stg_sjtysj_cbwrwxtzlxxxt_p_handover_trans_df,trans_complete_time,character varying,转运完成时间,污染物转运B流程,time_like_field,时间类字段，注释可能过于通用: 字段名 'trans_complete_time' 注释为 '转运完成时间',人工确认注释是否准确描述该字段业务含义
+stg_sjtysj_cbwrwxtzlxxxt_p_handover_trans_df,remarks,character varying,备注,污染物转运B流程,very_short_comment,注释极短 (2字): '备注',确认该注释是否足以让模型理解字段含义
+stg_sjtysj_cbwrwxtzlxxxt_p_handover_trans_df,remarks,character varying,备注,污染物转运B流程,generic_comment,注释过于通用: '备注'，可能不足以区分业务上下文,确认该注释是否需要补充业务含义，但禁止在当前阶段修改
+stg_sjtysj_cbwrwxtzlxxxt_p_handover_trans_df,dt,character varying,分区日期,污染物转运B流程,very_short_comment,注释极短 (4字): '分区日期',确认该注释是否足以让模型理解字段含义
+stg_sjtysj_cbwrwxtzlxxxt_p_receive_storage_df,apply_detail_id,bigint,id,污染物存储明细单,id_like_field,ID 类字段，注释可能过于通用: 字段名 'apply_detail_id' 注释为 'id',人工确认注释是否准确描述该字段业务含义
+stg_sjtysj_cbwrwxtzlxxxt_p_receive_storage_df,apply_detail_id,bigint,id,污染物存储明细单,very_short_comment,注释极短 (2字): 'id',确认该注释是否足以让模型理解字段含义
+stg_sjtysj_cbwrwxtzlxxxt_p_receive_storage_df,apply_detail_id,bigint,id,污染物存储明细单,generic_comment,注释过于通用: 'id'，可能不足以区分业务上下文,确认该注释是否需要补充业务含义，但禁止在当前阶段修改
+stg_sjtysj_cbwrwxtzlxxxt_p_receive_storage_df,dt,character varying,分区日期,污染物存储明细单,very_short_comment,注释极短 (4字): '分区日期',确认该注释是否足以让模型理解字段含义
+stg_sjtysj_cbwrwxtzlxxxt_p_trans_apply_detail_df,trans_apply_line,bigint,转运申请行,污染物转运处置明细单,very_short_comment,注释极短 (5字): '转运申请行',确认该注释是否足以让模型理解字段含义
+stg_sjtysj_cbwrwxtzlxxxt_p_trans_apply_detail_df,receive_line,bigint,接收申请行,污染物转运处置明细单,very_short_comment,注释极短 (5字): '接收申请行',确认该注释是否足以让模型理解字段含义
+stg_sjtysj_cbwrwxtzlxxxt_p_trans_apply_detail_df,ashore_apply_no,character varying,接收申请号,污染物转运处置明细单,very_short_comment,注释极短 (5字): '接收申请号',确认该注释是否足以让模型理解字段含义
+stg_sjtysj_cbwrwxtzlxxxt_p_trans_apply_detail_df,dt,character varying,分区日期,污染物转运处置明细单,very_short_comment,注释极短 (4字): '分区日期',确认该注释是否足以让模型理解字段含义
+stg_sjtysj_cbwrwxtzlxxxt_p_trans_apply_df,delivery_company_name,character varying,交付单位,污染物转运处置表,name_like_field,名称类字段，注释可能过于通用: 字段名 'delivery_company_name' 注释为 '交付单位',人工确认注释是否准确描述该字段业务含义
+stg_sjtysj_cbwrwxtzlxxxt_p_trans_apply_df,delivery_company_name,character varying,交付单位,污染物转运处置表,very_short_comment,注释极短 (4字): '交付单位',确认该注释是否足以让模型理解字段含义
+stg_sjtysj_cbwrwxtzlxxxt_p_trans_apply_df,delivery_ship_name,character varying,交付船舶名,污染物转运处置表,name_like_field,名称类字段，注释可能过于通用: 字段名 'delivery_ship_name' 注释为 '交付船舶名',人工确认注释是否准确描述该字段业务含义
+stg_sjtysj_cbwrwxtzlxxxt_p_trans_apply_df,delivery_ship_name,character varying,交付船舶名,污染物转运处置表,very_short_comment,注释极短 (5字): '交付船舶名',确认该注释是否足以让模型理解字段含义
+stg_sjtysj_cbwrwxtzlxxxt_p_trans_apply_df,delivery_ship_nation,character varying,船舶国籍,污染物转运处置表,very_short_comment,注释极短 (4字): '船舶国籍',确认该注释是否足以让模型理解字段含义
+stg_sjtysj_cbwrwxtzlxxxt_p_trans_apply_df,car_id,bigint,车辆id,污染物转运处置表,id_like_field,ID 类字段，注释可能过于通用: 字段名 'car_id' 注释为 '车辆id',人工确认注释是否准确描述该字段业务含义
+stg_sjtysj_cbwrwxtzlxxxt_p_trans_apply_df,car_id,bigint,车辆id,污染物转运处置表,very_short_comment,注释极短 (4字): '车辆id',确认该注释是否足以让模型理解字段含义
+stg_sjtysj_cbwrwxtzlxxxt_p_trans_apply_df,car_driver_tel,character varying,联系方式,污染物转运处置表,very_short_comment,注释极短 (4字): '联系方式',确认该注释是否足以让模型理解字段含义
+stg_sjtysj_cbwrwxtzlxxxt_p_trans_apply_df,trans_address,character varying,转运地址,污染物转运处置表,very_short_comment,注释极短 (4字): '转运地址',确认该注释是否足以让模型理解字段含义
+stg_sjtysj_cbwrwxtzlxxxt_p_trans_apply_df,commit_num,numeric,提交数,污染物转运处置表,very_short_comment,注释极短 (3字): '提交数',确认该注释是否足以让模型理解字段含义
+stg_sjtysj_cbwrwxtzlxxxt_p_trans_apply_df,trans_num,numeric,转运数,污染物转运处置表,very_short_comment,注释极短 (3字): '转运数',确认该注释是否足以让模型理解字段含义
+stg_sjtysj_cbwrwxtzlxxxt_p_trans_apply_df,hander_num,numeric,处置数,污染物转运处置表,very_short_comment,注释极短 (3字): '处置数',确认该注释是否足以让模型理解字段含义
+stg_sjtysj_cbwrwxtzlxxxt_p_trans_apply_df,confirm_date,timestamp without time zone,确认时间,污染物转运处置表,time_like_field,日期类字段，注释可能过于通用: 字段名 'confirm_date' 注释为 '确认时间',人工确认注释是否准确描述该字段业务含义
+stg_sjtysj_cbwrwxtzlxxxt_p_trans_apply_df,confirm_date,timestamp without time zone,确认时间,污染物转运处置表,very_short_comment,注释极短 (4字): '确认时间',确认该注释是否足以让模型理解字段含义
+stg_sjtysj_cbwrwxtzlxxxt_p_trans_apply_df,recycle_company_id,bigint,回收单位id,污染物转运处置表,id_like_field,ID 类字段，注释可能过于通用: 字段名 'recycle_company_id' 注释为 '回收单位id',人工确认注释是否准确描述该字段业务含义
+stg_sjtysj_cbwrwxtzlxxxt_p_trans_apply_df,recycle_company_name,character varying,回收单位名,污染物转运处置表,name_like_field,名称类字段，注释可能过于通用: 字段名 'recycle_company_name' 注释为 '回收单位名',人工确认注释是否准确描述该字段业务含义
+stg_sjtysj_cbwrwxtzlxxxt_p_trans_apply_df,recycle_company_name,character varying,回收单位名,污染物转运处置表,very_short_comment,注释极短 (5字): '回收单位名',确认该注释是否足以让模型理解字段含义
+stg_sjtysj_cbwrwxtzlxxxt_p_trans_apply_df,recycle_person,character varying,回收人,污染物转运处置表,very_short_comment,注释极短 (3字): '回收人',确认该注释是否足以让模型理解字段含义
+stg_sjtysj_cbwrwxtzlxxxt_p_trans_apply_df,delivery_address,character varying,交付地点,污染物转运处置表,very_short_comment,注释极短 (4字): '交付地点',确认该注释是否足以让模型理解字段含义
+stg_sjtysj_cbwrwxtzlxxxt_p_trans_apply_df,hander_by,character varying,处置人,污染物转运处置表,very_short_comment,注释极短 (3字): '处置人',确认该注释是否足以让模型理解字段含义
+stg_sjtysj_cbwrwxtzlxxxt_p_trans_apply_df,hander_date,timestamp without time zone,处置时间,污染物转运处置表,time_like_field,日期类字段，注释可能过于通用: 字段名 'hander_date' 注释为 '处置时间',人工确认注释是否准确描述该字段业务含义
+stg_sjtysj_cbwrwxtzlxxxt_p_trans_apply_df,hander_date,timestamp without time zone,处置时间,污染物转运处置表,very_short_comment,注释极短 (4字): '处置时间',确认该注释是否足以让模型理解字段含义
+stg_sjtysj_cbwrwxtzlxxxt_p_trans_apply_df,hander_comp,character varying,处置单位,污染物转运处置表,very_short_comment,注释极短 (4字): '处置单位',确认该注释是否足以让模型理解字段含义
+stg_sjtysj_cbwrwxtzlxxxt_p_trans_apply_df,process_address,character varying,处置地址 ,污染物转运处置表,very_short_comment,注释极短 (4字): '处置地址',确认该注释是否足以让模型理解字段含义
+stg_sjtysj_cbwrwxtzlxxxt_p_trans_apply_df,recycle_pic,character varying,回收照片,污染物转运处置表,very_short_comment,注释极短 (4字): '回收照片',确认该注释是否足以让模型理解字段含义
+stg_sjtysj_cbwrwxtzlxxxt_p_trans_apply_df,recycle_remarks,character varying,回收备注,污染物转运处置表,very_short_comment,注释极短 (4字): '回收备注',确认该注释是否足以让模型理解字段含义
+stg_sjtysj_cbwrwxtzlxxxt_p_trans_apply_df,process_pdf,character varying,处置pdf,污染物转运处置表,very_short_comment,注释极短 (5字): '处置pdf',确认该注释是否足以让模型理解字段含义
+stg_sjtysj_cbwrwxtzlxxxt_p_trans_apply_df,landing_time,timestamp without time zone,靠岸时间,污染物转运处置表,time_like_field,时间类字段，注释可能过于通用: 字段名 'landing_time' 注释为 '靠岸时间',人工确认注释是否准确描述该字段业务含义
+stg_sjtysj_cbwrwxtzlxxxt_p_trans_apply_df,landing_time,timestamp without time zone,靠岸时间,污染物转运处置表,very_short_comment,注释极短 (4字): '靠岸时间',确认该注释是否足以让模型理解字段含义
+stg_sjtysj_cbwrwxtzlxxxt_p_trans_apply_df,trans_vo_time,character varying,推送船e行转运时间,污染物转运处置表,time_like_field,时间类字段，注释可能过于通用: 字段名 'trans_vo_time' 注释为 '推送船e行转运时间',人工确认注释是否准确描述该字段业务含义
+stg_sjtysj_cbwrwxtzlxxxt_p_trans_apply_df,process_vo_time,character varying,推送船e行处置时间,污染物转运处置表,time_like_field,时间类字段，注释可能过于通用: 字段名 'process_vo_time' 注释为 '推送船e行处置时间',人工确认注释是否准确描述该字段业务含义
+stg_sjtysj_cbwrwxtzlxxxt_p_trans_apply_df,delivery_subject_type,character varying,申请主体类型 4: 码头; 0:接收船舶,污染物转运处置表,code_like_field,类型类字段，注释可能过于通用: 字段名 'delivery_subject_type' 注释为 '申请主体类型 4: 码头; 0:接收船舶',人工确认注释是否准确描述该字段业务含义
+stg_sjtysj_cbwrwxtzlxxxt_p_trans_apply_df,delivery_subject_id,bigint,申请主体id,污染物转运处置表,id_like_field,ID 类字段，注释可能过于通用: 字段名 'delivery_subject_id' 注释为 '申请主体id',人工确认注释是否准确描述该字段业务含义
+stg_sjtysj_cbwrwxtzlxxxt_p_trans_apply_df,confirm_trans_time,timestamp without time zone,确认转运时间,污染物转运处置表,time_like_field,时间类字段，注释可能过于通用: 字段名 'confirm_trans_time' 注释为 '确认转运时间',人工确认注释是否准确描述该字段业务含义
+stg_sjtysj_cbwrwxtzlxxxt_p_trans_apply_df,confirm_process_time,timestamp without time zone,确认处置时间,污染物转运处置表,time_like_field,时间类字段，注释可能过于通用: 字段名 'confirm_process_time' 注释为 '确认处置时间',人工确认注释是否准确描述该字段业务含义
+stg_sjtysj_cbwrwxtzlxxxt_p_trans_apply_df,dt,character varying,分区日期,污染物转运处置表,very_short_comment,注释极短 (4字): '分区日期',确认该注释是否足以让模型理解字段含义
+stg_sjtysj_cbwrwxtzlxxxt_p_wharf_storage_df,receive_company_name,character varying,接收船舶公司名,污染物码头存储表,name_like_field,名称类字段，注释可能过于通用: 字段名 'receive_company_name' 注释为 '接收船舶公司名',人工确认注释是否准确描述该字段业务含义
+stg_sjtysj_cbwrwxtzlxxxt_p_wharf_storage_df,receive_ship_caption,character varying,接收船船长,污染物码头存储表,very_short_comment,注释极短 (5字): '接收船船长',确认该注释是否足以让模型理解字段含义
+stg_sjtysj_cbwrwxtzlxxxt_p_wharf_storage_df,confirm_date,timestamp without time zone,确认时间,污染物码头存储表,time_like_field,日期类字段，注释可能过于通用: 字段名 'confirm_date' 注释为 '确认时间',人工确认注释是否准确描述该字段业务含义
+stg_sjtysj_cbwrwxtzlxxxt_p_wharf_storage_df,confirm_date,timestamp without time zone,确认时间,污染物码头存储表,very_short_comment,注释极短 (4字): '确认时间',确认该注释是否足以让模型理解字段含义
+stg_sjtysj_cbwrwxtzlxxxt_p_wharf_storage_df,remarks,character varying,备注,污染物码头存储表,very_short_comment,注释极短 (2字): '备注',确认该注释是否足以让模型理解字段含义
+stg_sjtysj_cbwrwxtzlxxxt_p_wharf_storage_df,remarks,character varying,备注,污染物码头存储表,generic_comment,注释过于通用: '备注'，可能不足以区分业务上下文,确认该注释是否需要补充业务含义，但禁止在当前阶段修改
+stg_sjtysj_cbwrwxtzlxxxt_p_wharf_storage_df,picture,character varying,图片地址,污染物码头存储表,very_short_comment,注释极短 (4字): '图片地址',确认该注释是否足以让模型理解字段含义
+stg_sjtysj_cbwrwxtzlxxxt_p_wharf_storage_df,receive_area,character varying,接收水域,污染物码头存储表,very_short_comment,注释极短 (4字): '接收水域',确认该注释是否足以让模型理解字段含义
+stg_sjtysj_cbwrwxtzlxxxt_p_wharf_storage_df,dt,character varying,分区日期,污染物码头存储表,very_short_comment,注释极短 (4字): '分区日期',确认该注释是否足以让模型理解字段含义
+stg_sslhhpj_hbsxkqycszhslzhglptjsxm_att_bas_base_df,bas_code,character varying,流域代码,流域基础信息,code_like_field,编码类字段，注释可能过于通用: 字段名 'bas_code' 注释为 '流域代码',人工确认注释是否准确描述该字段业务含义
+stg_sslhhpj_hbsxkqycszhslzhglptjsxm_att_bas_base_df,bas_code,character varying,流域代码,流域基础信息,very_short_comment,注释极短 (4字): '流域代码',确认该注释是否足以让模型理解字段含义
+stg_sslhhpj_hbsxkqycszhslzhglptjsxm_att_bas_base_df,bas_name,character varying,流域名称,流域基础信息,name_like_field,名称类字段，注释可能过于通用: 字段名 'bas_name' 注释为 '流域名称',人工确认注释是否准确描述该字段业务含义
+stg_sslhhpj_hbsxkqycszhslzhglptjsxm_att_bas_base_df,bas_name,character varying,流域名称,流域基础信息,very_short_comment,注释极短 (4字): '流域名称',确认该注释是否足以让模型理解字段含义
+stg_sslhhpj_hbsxkqycszhslzhglptjsxm_att_bas_base_df,parent_bas_code,character varying,父级流域代码,流域基础信息,code_like_field,编码类字段，注释可能过于通用: 字段名 'parent_bas_code' 注释为 '父级流域代码',人工确认注释是否准确描述该字段业务含义
+stg_sslhhpj_hbsxkqycszhslzhglptjsxm_att_bas_base_df,businessid,character varying,统一编码,流域基础信息,very_short_comment,注释极短 (4字): '统一编码',确认该注释是否足以让模型理解字段含义
+stg_sslhhpj_hbsxkqycszhslzhglptjsxm_att_bas_base_df,low_left_long,numeric,左下角经度,流域基础信息,very_short_comment,注释极短 (5字): '左下角经度',确认该注释是否足以让模型理解字段含义
+stg_sslhhpj_hbsxkqycszhslzhglptjsxm_att_bas_base_df,low_left_lat,numeric,左下角纬度,流域基础信息,very_short_comment,注释极短 (5字): '左下角纬度',确认该注释是否足以让模型理解字段含义
+stg_sslhhpj_hbsxkqycszhslzhglptjsxm_att_bas_base_df,up_right_long,numeric,右上角经度,流域基础信息,very_short_comment,注释极短 (5字): '右上角经度',确认该注释是否足以让模型理解字段含义
+stg_sslhhpj_hbsxkqycszhslzhglptjsxm_att_bas_base_df,up_right_lat,numeric,右上角纬度,流域基础信息,very_short_comment,注释极短 (5字): '右上角纬度',确认该注释是否足以让模型理解字段含义
+stg_sslhhpj_hbsxkqycszhslzhglptjsxm_att_bas_base_df,cr_over_type,character varying,跨界类型 0未知 1跨国并跨省 2跨国 3跨省 4跨市 5跨县 6县界内,流域基础信息,code_like_field,类型类字段，注释可能过于通用: 字段名 'cr_over_type' 注释为 '跨界类型 0未知 1跨国并跨省 2跨国 3跨省 4跨市 5跨县 6县界内',人工确认注释是否准确描述该字段业务含义
+stg_sslhhpj_hbsxkqycszhslzhglptjsxm_att_bas_base_df,bas_ad_name,character varying,流域所属行政区,流域基础信息,name_like_field,名称类字段，注释可能过于通用: 字段名 'bas_ad_name' 注释为 '流域所属行政区',人工确认注释是否准确描述该字段业务含义
+stg_sslhhpj_hbsxkqycszhslzhglptjsxm_att_bas_base_df,bas_area,numeric,流域面积,流域基础信息,very_short_comment,注释极短 (4字): '流域面积',确认该注释是否足以让模型理解字段含义
+stg_sslhhpj_hbsxkqycszhslzhglptjsxm_att_bas_base_df,coordinates,character varying,地理坐标,流域基础信息,very_short_comment,注释极短 (4字): '地理坐标',确认该注释是否足以让模型理解字段含义
+stg_sslhhpj_hbsxkqycszhslzhglptjsxm_att_bas_base_df,optime,timestamp without time zone,操作时间,流域基础信息,very_short_comment,注释极短 (4字): '操作时间',确认该注释是否足以让模型理解字段含义
+stg_sslhhpj_hbsxkqycszhslzhglptjsxm_att_bas_base_df,dt,character varying,分区日期,流域基础信息,very_short_comment,注释极短 (4字): '分区日期',确认该注释是否足以让模型理解字段含义
+stg_sslhhpj_hbsxkqycszhslzhglptjsxm_att_wmst_base_df,wmst_code,character varying,监视点代码,影像监视点基础信息,code_like_field,编码类字段，注释可能过于通用: 字段名 'wmst_code' 注释为 '监视点代码',人工确认注释是否准确描述该字段业务含义
+stg_sslhhpj_hbsxkqycszhslzhglptjsxm_att_wmst_base_df,wmst_code,character varying,监视点代码,影像监视点基础信息,very_short_comment,注释极短 (5字): '监视点代码',确认该注释是否足以让模型理解字段含义
+stg_sslhhpj_hbsxkqycszhslzhglptjsxm_att_wmst_base_df,wmst_name,character varying,监视点名称,影像监视点基础信息,name_like_field,名称类字段，注释可能过于通用: 字段名 'wmst_name' 注释为 '监视点名称',人工确认注释是否准确描述该字段业务含义
+stg_sslhhpj_hbsxkqycszhslzhglptjsxm_att_wmst_base_df,wmst_name,character varying,监视点名称,影像监视点基础信息,very_short_comment,注释极短 (5字): '监视点名称',确认该注释是否足以让模型理解字段含义
+stg_sslhhpj_hbsxkqycszhslzhglptjsxm_att_wmst_base_df,businessid,character varying,统一编码,影像监视点基础信息,very_short_comment,注释极短 (4字): '统一编码',确认该注释是否足以让模型理解字段含义
+stg_sslhhpj_hbsxkqycszhslzhglptjsxm_att_wmst_base_df,wmst_type,character varying,监视点类型(1-图像站 2-视频站),影像监视点基础信息,code_like_field,类型类字段，注释可能过于通用: 字段名 'wmst_type' 注释为 '监视点类型(1-图像站 2-视频站)',人工确认注释是否准确描述该字段业务含义
+stg_sslhhpj_hbsxkqycszhslzhglptjsxm_att_wmst_base_df,wmst_lon,numeric,监视点经度,影像监视点基础信息,very_short_comment,注释极短 (5字): '监视点经度',确认该注释是否足以让模型理解字段含义
+stg_sslhhpj_hbsxkqycszhslzhglptjsxm_att_wmst_base_df,wmst_lat,numeric,监视点纬度,影像监视点基础信息,very_short_comment,注释极短 (5字): '监视点纬度',确认该注释是否足以让模型理解字段含义
+stg_sslhhpj_hbsxkqycszhslzhglptjsxm_att_wmst_base_df,rv_name,character varying,所在河流名称,影像监视点基础信息,name_like_field,名称类字段，注释可能过于通用: 字段名 'rv_name' 注释为 '所在河流名称',人工确认注释是否准确描述该字段业务含义
+stg_sslhhpj_hbsxkqycszhslzhglptjsxm_att_wmst_base_df,object_code,character varying,监控对象编码,影像监视点基础信息,code_like_field,编码类字段，注释可能过于通用: 字段名 'object_code' 注释为 '监控对象编码',人工确认注释是否准确描述该字段业务含义
+stg_sslhhpj_hbsxkqycszhslzhglptjsxm_att_wmst_base_df,wmst_status,character varying,设备状态(0-离线 1-在线),影像监视点基础信息,status_like_field,状态类字段，注释可能过于通用: 字段名 'wmst_status' 注释为 '设备状态(0-离线 1-在线)',人工确认注释是否准确描述该字段业务含义
+stg_sslhhpj_hbsxkqycszhslzhglptjsxm_att_wmst_base_df,sbcs,character varying,设备厂商,影像监视点基础信息,very_short_comment,注释极短 (4字): '设备厂商',确认该注释是否足以让模型理解字段含义
+stg_sslhhpj_hbsxkqycszhslzhglptjsxm_att_wmst_base_df,bmgs,character varying,编码格式,影像监视点基础信息,very_short_comment,注释极短 (4字): '编码格式',确认该注释是否足以让模型理解字段含义
+stg_sslhhpj_hbsxkqycszhslzhglptjsxm_att_wmst_base_df,fbl,character varying,分辨率,影像监视点基础信息,very_short_comment,注释极短 (3字): '分辨率',确认该注释是否足以让模型理解字段含义
+stg_sslhhpj_hbsxkqycszhslzhglptjsxm_att_wmst_base_df,adminunit,character varying,管理单位,影像监视点基础信息,very_short_comment,注释极短 (4字): '管理单位',确认该注释是否足以让模型理解字段含义
+stg_sslhhpj_hbsxkqycszhslzhglptjsxm_att_wmst_base_df,drctrdpt,character varying,主管部门,影像监视点基础信息,very_short_comment,注释极短 (4字): '主管部门',确认该注释是否足以让模型理解字段含义
+stg_sslhhpj_hbsxkqycszhslzhglptjsxm_att_wmst_base_df,optime,timestamp without time zone,操作时间,影像监视点基础信息,very_short_comment,注释极短 (4字): '操作时间',确认该注释是否足以让模型理解字段含义
+stg_sslhhpj_hbsxkqycszhslzhglptjsxm_att_wmst_base_df,dt,character varying,分区日期,影像监视点基础信息,very_short_comment,注释极短 (4字): '分区日期',确认该注释是否足以让模型理解字段含义
+stg_sslhhpj_hbsxkqycszhslzhglptjsxm_rcm_rv_lk_res_df,obj_id,character varying,河流id/湖泊id/水库id,河湖库信息表,id_like_field,ID 类字段，注释可能过于通用: 字段名 'obj_id' 注释为 '河流id/湖泊id/水库id',人工确认注释是否准确描述该字段业务含义
+stg_sslhhpj_hbsxkqycszhslzhglptjsxm_rcm_rv_lk_res_df,obj_type,character varying,河湖库类型,河湖库信息表,code_like_field,类型类字段，注释可能过于通用: 字段名 'obj_type' 注释为 '河湖库类型',人工确认注释是否准确描述该字段业务含义
+stg_sslhhpj_hbsxkqycszhslzhglptjsxm_rcm_rv_lk_res_df,obj_type,character varying,河湖库类型,河湖库信息表,very_short_comment,注释极短 (5字): '河湖库类型',确认该注释是否足以让模型理解字段含义
+stg_sslhhpj_hbsxkqycszhslzhglptjsxm_rcm_rv_lk_res_df,obj_code,character varying,河湖库编号,河湖库信息表,code_like_field,编码类字段，注释可能过于通用: 字段名 'obj_code' 注释为 '河湖库编号',人工确认注释是否准确描述该字段业务含义
+stg_sslhhpj_hbsxkqycszhslzhglptjsxm_rcm_rv_lk_res_df,obj_code,character varying,河湖库编号,河湖库信息表,very_short_comment,注释极短 (5字): '河湖库编号',确认该注释是否足以让模型理解字段含义
+stg_sslhhpj_hbsxkqycszhslzhglptjsxm_rcm_rv_lk_res_df,obj_name,character varying,河湖库名称,河湖库信息表,name_like_field,名称类字段，注释可能过于通用: 字段名 'obj_name' 注释为 '河湖库名称',人工确认注释是否准确描述该字段业务含义
+stg_sslhhpj_hbsxkqycszhslzhglptjsxm_rcm_rv_lk_res_df,obj_name,character varying,河湖库名称,河湖库信息表,very_short_comment,注释极短 (5字): '河湖库名称',确认该注释是否足以让模型理解字段含义
+stg_sslhhpj_hbsxkqycszhslzhglptjsxm_rcm_rv_lk_res_df,basin_id,character varying,流域id,河湖库信息表,id_like_field,ID 类字段，注释可能过于通用: 字段名 'basin_id' 注释为 '流域id',人工确认注释是否准确描述该字段业务含义
+stg_sslhhpj_hbsxkqycszhslzhglptjsxm_rcm_rv_lk_res_df,basin_id,character varying,流域id,河湖库信息表,very_short_comment,注释极短 (4字): '流域id',确认该注释是否足以让模型理解字段含义
+stg_sslhhpj_hbsxkqycszhslzhglptjsxm_rcm_rv_lk_res_df,iz_del,character varying,是否删除,河湖库信息表,very_short_comment,注释极短 (4字): '是否删除',确认该注释是否足以让模型理解字段含义
+stg_sslhhpj_hbsxkqycszhslzhglptjsxm_rcm_rv_lk_res_df,water_system,character varying,水系,河湖库信息表,very_short_comment,注释极短 (2字): '水系',确认该注释是否足以让模型理解字段含义
+stg_sslhhpj_hbsxkqycszhslzhglptjsxm_rcm_rv_lk_res_df,dt,character varying,分区日期,河湖库信息表,very_short_comment,注释极短 (4字): '分区日期',确认该注释是否足以让模型理解字段含义
+stg_sslhhpj_hbsxkqycszhslzhglptjsxm_rel_st_source_df,st_code,character varying,监测站编码,监测站来源分类表,code_like_field,编码类字段，注释可能过于通用: 字段名 'st_code' 注释为 '监测站编码',人工确认注释是否准确描述该字段业务含义
+stg_sslhhpj_hbsxkqycszhslzhglptjsxm_rel_st_source_df,st_code,character varying,监测站编码,监测站来源分类表,very_short_comment,注释极短 (5字): '监测站编码',确认该注释是否足以让模型理解字段含义
+stg_sslhhpj_hbsxkqycszhslzhglptjsxm_rel_st_source_df,dt,character varying,分区日期,监测站来源分类表,very_short_comment,注释极短 (4字): '分区日期',确认该注释是否足以让模型理解字段含义
+stg_sslhhpj_hbsxkqycszhslzhglptjsxm_warn_stcd_r_df,warnid,character varying,预警id,预警测站关联表,very_short_comment,注释极短 (4字): '预警id',确认该注释是否足以让模型理解字段含义
+stg_sslhhpj_hbsxkqycszhslzhglptjsxm_warn_stcd_r_df,stcd,character varying,测站编码,预警测站关联表,very_short_comment,注释极短 (4字): '测站编码',确认该注释是否足以让模型理解字段含义
+stg_sslhhpj_hbsxkqycszhslzhglptjsxm_warn_stcd_r_df,dt,character varying,分区日期,预警测站关联表,very_short_comment,注释极短 (4字): '分区日期',确认该注释是否足以让模型理解字段含义
+stg_sslhhpj_hbsxkqycszhslzhglptjsxm_wr_mp_b_df,mp_cd,character varying,监测点代码,监测站(点)-取用水监测点基本信息表,very_short_comment,注释极短 (5字): '监测点代码',确认该注释是否足以让模型理解字段含义
+stg_sslhhpj_hbsxkqycszhslzhglptjsxm_wr_mp_b_df,mp_nm,character varying,监测点名称,监测站(点)-取用水监测点基本信息表,very_short_comment,注释极短 (5字): '监测点名称',确认该注释是否足以让模型理解字段含义
+stg_sslhhpj_hbsxkqycszhslzhglptjsxm_wr_mp_b_df,mp_addr,character varying,监测点地址,监测站(点)-取用水监测点基本信息表,very_short_comment,注释极短 (5字): '监测点地址',确认该注释是否足以让模型理解字段含义
+stg_sslhhpj_hbsxkqycszhslzhglptjsxm_wr_mp_b_df,mp_item,character varying,监测项目,监测站(点)-取用水监测点基本信息表,very_short_comment,注释极短 (4字): '监测项目',确认该注释是否足以让模型理解字段含义
+stg_sslhhpj_hbsxkqycszhslzhglptjsxm_wr_mp_b_df,sour_tp,character varying,水源类型,监测站(点)-取用水监测点基本信息表,very_short_comment,注释极短 (4字): '水源类型',确认该注释是否足以让模型理解字段含义
+stg_sslhhpj_hbsxkqycszhslzhglptjsxm_wr_mp_b_df,ts,timestamp without time zone,时间戳,监测站(点)-取用水监测点基本信息表,very_short_comment,注释极短 (3字): '时间戳',确认该注释是否足以让模型理解字段含义
+stg_sslhhpj_hbsxkqycszhslzhglptjsxm_wr_mp_b_df,nt,character varying,备注,监测站(点)-取用水监测点基本信息表,very_short_comment,注释极短 (2字): '备注',确认该注释是否足以让模型理解字段含义
+stg_sslhhpj_hbsxkqycszhslzhglptjsxm_wr_mp_b_df,nt,character varying,备注,监测站(点)-取用水监测点基本信息表,generic_comment,注释过于通用: '备注'，可能不足以区分业务上下文,确认该注释是否需要补充业务含义，但禁止在当前阶段修改
+stg_sslhhpj_hbsxkqycszhslzhglptjsxm_wr_mp_b_df,use_type,character varying,用水类型,监测站(点)-取用水监测点基本信息表,code_like_field,类型类字段，注释可能过于通用: 字段名 'use_type' 注释为 '用水类型',人工确认注释是否准确描述该字段业务含义
+stg_sslhhpj_hbsxkqycszhslzhglptjsxm_wr_mp_b_df,use_type,character varying,用水类型,监测站(点)-取用水监测点基本信息表,very_short_comment,注释极短 (4字): '用水类型',确认该注释是否足以让模型理解字段含义
+stg_sslhhpj_hbsxkqycszhslzhglptjsxm_wr_mp_b_df,mon_g,character varying,监控级别,监测站(点)-取用水监测点基本信息表,very_short_comment,注释极短 (4字): '监控级别',确认该注释是否足以让模型理解字段含义
+stg_sslhhpj_hbsxkqycszhslzhglptjsxm_wr_mp_b_df,wi_type,character varying,取水特征类型,监测站(点)-取用水监测点基本信息表,code_like_field,类型类字段，注释可能过于通用: 字段名 'wi_type' 注释为 '取水特征类型',人工确认注释是否准确描述该字段业务含义
+stg_sslhhpj_hbsxkqycszhslzhglptjsxm_wr_mp_b_df,mon_rat,numeric,监控比例,监测站(点)-取用水监测点基本信息表,very_short_comment,注释极短 (4字): '监控比例',确认该注释是否足以让模型理解字段含义
+stg_sslhhpj_hbsxkqycszhslzhglptjsxm_wr_mp_b_df,lon,character varying,经度,监测站(点)-取用水监测点基本信息表,very_short_comment,注释极短 (2字): '经度',确认该注释是否足以让模型理解字段含义
+stg_sslhhpj_hbsxkqycszhslzhglptjsxm_wr_mp_b_df,lat,character varying,纬度,监测站(点)-取用水监测点基本信息表,very_short_comment,注释极短 (2字): '纬度',确认该注释是否足以让模型理解字段含义
+stg_sslhhpj_hbsxkqycszhslzhglptjsxm_wr_mp_b_df,dt,character varying,分区日期,监测站(点)-取用水监测点基本信息表,very_short_comment,注释极短 (4字): '分区日期',确认该注释是否足以让模型理解字段含义
+stg_ycsjtysj_sxhyzssj_base_channel_df,channel_start_point,character varying,航道起点,航道信息表,very_short_comment,注释极短 (4字): '航道起点',确认该注释是否足以让模型理解字段含义
+stg_ycsjtysj_sxhyzssj_base_channel_df,channel_end_point,character varying,航道终点,航道信息表,very_short_comment,注释极短 (4字): '航道终点',确认该注释是否足以让模型理解字段含义
+stg_ycsjtysj_sxhyzssj_base_channel_df,of_branch,character varying,所属支流,航道信息表,very_short_comment,注释极短 (4字): '所属支流',确认该注释是否足以让模型理解字段含义
+stg_ycsjtysj_sxhyzssj_base_channel_df,delete_flag,bigint,逻辑删除标志位,航道信息表,status_like_field,标记类字段，注释可能过于通用: 字段名 'delete_flag' 注释为 '逻辑删除标志位',人工确认注释是否准确描述该字段业务含义
+stg_ycsjtysj_sxhyzssj_base_channel_df,dt,character varying,分区日期,航道信息表,very_short_comment,注释极短 (4字): '分区日期',确认该注释是否足以让模型理解字段含义
+stg_ycsjtysj_sxhyzssj_base_channel_level_df,channel_id,bigint,航道id,航道按等级|县市区划分,id_like_field,ID 类字段，注释可能过于通用: 字段名 'channel_id' 注释为 '航道id',人工确认注释是否准确描述该字段业务含义
+stg_ycsjtysj_sxhyzssj_base_channel_level_df,channel_id,bigint,航道id,航道按等级|县市区划分,very_short_comment,注释极短 (4字): '航道id',确认该注释是否足以让模型理解字段含义
+stg_ycsjtysj_sxhyzssj_base_channel_level_df,level_num,bigint,航道等级,航道按等级|县市区划分,very_short_comment,注释极短 (4字): '航道等级',确认该注释是否足以让模型理解字段含义
+stg_ycsjtysj_sxhyzssj_base_channel_level_df,mileage,numeric,里程,航道按等级|县市区划分,very_short_comment,注释极短 (2字): '里程',确认该注释是否足以让模型理解字段含义
+stg_ycsjtysj_sxhyzssj_base_channel_level_df,dt,character varying,分区日期,航道按等级|县市区划分,very_short_comment,注释极短 (4字): '分区日期',确认该注释是否足以让模型理解字段含义
+stg_ycsjtysj_sxhyzssj_base_ship_df,custom_ship_type,character varying,船舶类型(集装箱船/滚装船/货船/客船/清洁船/公务船),图层管理（船舶）KPI,code_like_field,类型类字段，注释可能过于通用: 字段名 'custom_ship_type' 注释为 '船舶类型(集装箱船/滚装船/货船/客船/清洁船/公务船)',人工确认注释是否准确描述该字段业务含义
+stg_ycsjtysj_sxhyzssj_base_ship_df,name_en,character varying,英文船名,图层管理（船舶）KPI,name_like_field,名称类字段，注释可能过于通用: 字段名 'name_en' 注释为 '英文船名',人工确认注释是否准确描述该字段业务含义
+stg_ycsjtysj_sxhyzssj_base_ship_df,name_en,character varying,英文船名,图层管理（船舶）KPI,very_short_comment,注释极短 (4字): '英文船名',确认该注释是否足以让模型理解字段含义
+stg_ycsjtysj_sxhyzssj_base_ship_df,name_cn,character varying,中文船名,图层管理（船舶）KPI,name_like_field,名称类字段，注释可能过于通用: 字段名 'name_cn' 注释为 '中文船名',人工确认注释是否准确描述该字段业务含义
+stg_ycsjtysj_sxhyzssj_base_ship_df,name_cn,character varying,中文船名,图层管理（船舶）KPI,very_short_comment,注释极短 (4字): '中文船名',确认该注释是否足以让模型理解字段含义
+stg_ycsjtysj_sxhyzssj_base_ship_df,ship_length,numeric,船长,图层管理（船舶）KPI,very_short_comment,注释极短 (2字): '船长',确认该注释是否足以让模型理解字段含义
+stg_ycsjtysj_sxhyzssj_base_ship_df,ship_width,numeric,船宽,图层管理（船舶）KPI,very_short_comment,注释极短 (2字): '船宽',确认该注释是否足以让模型理解字段含义
+stg_ycsjtysj_sxhyzssj_base_ship_df,ship_left,numeric,左舷距,图层管理（船舶）KPI,very_short_comment,注释极短 (3字): '左舷距',确认该注释是否足以让模型理解字段含义
+stg_ycsjtysj_sxhyzssj_base_ship_df,ship_trail,numeric,尾距,图层管理（船舶）KPI,very_short_comment,注释极短 (2字): '尾距',确认该注释是否足以让模型理解字段含义
+stg_ycsjtysj_sxhyzssj_base_ship_df,ship_draft,numeric,吃水,图层管理（船舶）KPI,very_short_comment,注释极短 (2字): '吃水',确认该注释是否足以让模型理解字段含义
+stg_ycsjtysj_sxhyzssj_base_ship_df,guest_amount,character varying,客位数,图层管理（船舶）KPI,very_short_comment,注释极短 (3字): '客位数',确认该注释是否足以让模型理解字段含义
+stg_ycsjtysj_sxhyzssj_base_ship_df,org,character varying,所属机构,图层管理（船舶）KPI,very_short_comment,注释极短 (4字): '所属机构',确认该注释是否足以让模型理解字段含义
+stg_ycsjtysj_sxhyzssj_base_ship_df,jxy_receive_ship_id,bigint,清洁船净小宜id,图层管理（船舶）KPI,id_like_field,ID 类字段，注释可能过于通用: 字段名 'jxy_receive_ship_id' 注释为 '清洁船净小宜id',人工确认注释是否准确描述该字段业务含义
+stg_ycsjtysj_sxhyzssj_base_ship_df,delete_flag,character varying,逻辑删除标志位,图层管理（船舶）KPI,status_like_field,标记类字段，注释可能过于通用: 字段名 'delete_flag' 注释为 '逻辑删除标志位',人工确认注释是否准确描述该字段业务含义
+stg_ycsjtysj_sxhyzssj_base_ship_df,dt,character varying,分区日期,图层管理（船舶）KPI,very_short_comment,注释极短 (4字): '分区日期',确认该注释是否足以让模型理解字段含义
+stg_ycsjtysj_sxhyzssj_data_coverage_wharf_df,wharf_type,character varying,码头类型(客运码头/货运码头/环保专业码头),图层管理（码头）KPI,code_like_field,类型类字段，注释可能过于通用: 字段名 'wharf_type' 注释为 '码头类型(客运码头/货运码头/环保专业码头)',人工确认注释是否准确描述该字段业务含义
+stg_ycsjtysj_sxhyzssj_data_coverage_wharf_df,build_scale,character varying,建设规模,图层管理（码头）KPI,very_short_comment,注释极短 (4字): '建设规模',确认该注释是否足以让模型理解字段含义
+stg_ycsjtysj_sxhyzssj_data_coverage_wharf_df,shoreline_length,character varying,岸线长度,图层管理（码头）KPI,very_short_comment,注释极短 (4字): '岸线长度',确认该注释是否足以让模型理解字段含义
+stg_ycsjtysj_sxhyzssj_data_coverage_wharf_df,wharf_full_name,character varying,码头全称,图层管理（码头）KPI,name_like_field,名称类字段，注释可能过于通用: 字段名 'wharf_full_name' 注释为 '码头全称',人工确认注释是否准确描述该字段业务含义
+stg_ycsjtysj_sxhyzssj_data_coverage_wharf_df,wharf_full_name,character varying,码头全称,图层管理（码头）KPI,very_short_comment,注释极短 (4字): '码头全称',确认该注释是否足以让模型理解字段含义
+stg_ycsjtysj_sxhyzssj_data_coverage_wharf_df,jxy_wharf_id,bigint,净小宜码头 id,图层管理（码头）KPI,id_like_field,ID 类字段，注释可能过于通用: 字段名 'jxy_wharf_id' 注释为 '净小宜码头 id',人工确认注释是否准确描述该字段业务含义
+stg_ycsjtysj_sxhyzssj_data_coverage_wharf_df,dt,character varying,分区日期,图层管理（码头）KPI,very_short_comment,注释极短 (4字): '分区日期',确认该注释是否足以让模型理解字段含义
+stg_ycsjtysj_sxhyzssj_data_ship_info_df,cnname,character varying,中文船名,图层管理（清洁船舶）KPI,very_short_comment,注释极短 (4字): '中文船名',确认该注释是否足以让模型理解字段含义
+stg_ycsjtysj_sxhyzssj_data_ship_info_df,jxy_receive_ship_id,bigint,清洁船净小宜id,图层管理（清洁船舶）KPI,id_like_field,ID 类字段，注释可能过于通用: 字段名 'jxy_receive_ship_id' 注释为 '清洁船净小宜id',人工确认注释是否准确描述该字段业务含义
+stg_ycsjtysj_sxhyzssj_data_ship_info_df,draught,character varying,吃水,图层管理（清洁船舶）KPI,very_short_comment,注释极短 (2字): '吃水',确认该注释是否足以让模型理解字段含义
+stg_ycsjtysj_sxhyzssj_data_ship_info_df,type_other,character varying,船舶小类,图层管理（清洁船舶）KPI,code_like_field,类型类字段，注释可能过于通用: 字段名 'type_other' 注释为 '船舶小类',人工确认注释是否准确描述该字段业务含义
+stg_ycsjtysj_sxhyzssj_data_ship_info_df,type_other,character varying,船舶小类,图层管理（清洁船舶）KPI,very_short_comment,注释极短 (4字): '船舶小类',确认该注释是否足以让模型理解字段含义
+stg_ycsjtysj_sxhyzssj_data_ship_info_df,seat,character varying,座位数,图层管理（清洁船舶）KPI,very_short_comment,注释极短 (3字): '座位数',确认该注释是否足以让模型理解字段含义
+stg_ycsjtysj_sxhyzssj_data_ship_info_df,dt,character varying,分区日期,图层管理（清洁船舶）KPI,very_short_comment,注释极短 (4字): '分区日期',确认该注释是否足以让模型理解字段含义
+stg_ycssthjj_ltwsjgpt_t_sjzx_wry_jbxx_df,entername,character varying,固定源名称,污染源_基本信息,very_short_comment,注释极短 (5字): '固定源名称',确认该注释是否足以让模型理解字段含义
+stg_ycssthjj_ltwsjgpt_t_sjzx_wry_jbxx_df,registrationid,character varying,税务注册号,污染源_基本信息,very_short_comment,注释极短 (5字): '税务注册号',确认该注释是否足以让模型理解字段含义
+stg_ycssthjj_ltwsjgpt_t_sjzx_wry_jbxx_df,code_region,character varying,符合GB/T 2260-2019行政区代码表,污染源_基本信息,code_like_field,编码类字段，注释可能过于通用: 字段名 'code_region' 注释为 '符合GB/T 2260-2019行政区代码表',人工确认注释是否准确描述该字段业务含义
+stg_ycssthjj_ltwsjgpt_t_sjzx_wry_jbxx_df,code_trade,character varying,符合GB/T 4754-2017行业代码表,污染源_基本信息,code_like_field,编码类字段，注释可能过于通用: 字段名 'code_trade' 注释为 '符合GB/T 4754-2017行业代码表',人工确认注释是否准确描述该字段业务含义
+stg_ycssthjj_ltwsjgpt_t_sjzx_wry_jbxx_df,regaddress,character varying,注册地址,污染源_基本信息,very_short_comment,注释极短 (4字): '注册地址',确认该注释是否足以让模型理解字段含义
+stg_ycssthjj_ltwsjgpt_t_sjzx_wry_jbxx_df,corpname,character varying,法人名称,污染源_基本信息,very_short_comment,注释极短 (4字): '法人名称',确认该注释是否足以让模型理解字段含义
+stg_ycssthjj_ltwsjgpt_t_sjzx_wry_jbxx_df,environlinkmen,character varying,环保联系人,污染源_基本信息,very_short_comment,注释极短 (5字): '环保联系人',确认该注释是否足以让模型理解字段含义
+stg_ycssthjj_ltwsjgpt_t_sjzx_wry_jbxx_df,jyfw,character varying,经营范围,污染源_基本信息,very_short_comment,注释极短 (4字): '经营范围',确认该注释是否足以让模型理解字段含义
+stg_ycssthjj_ltwsjgpt_t_sjzx_wry_jbxx_df,fax,character varying,传真,污染源_基本信息,very_short_comment,注释极短 (2字): '传真',确认该注释是否足以让模型理解字段含义
+stg_ycssthjj_ltwsjgpt_t_sjzx_wry_jbxx_df,website,character varying,网址,污染源_基本信息,very_short_comment,注释极短 (2字): '网址',确认该注释是否足以让模型理解字段含义
+stg_ycssthjj_ltwsjgpt_t_sjzx_wry_jbxx_df,email,character varying,邮箱,污染源_基本信息,very_short_comment,注释极短 (2字): '邮箱',确认该注释是否足以让模型理解字段含义
+stg_ycssthjj_ltwsjgpt_t_sjzx_wry_jbxx_df,cjr,character varying,创建人,污染源_基本信息,very_short_comment,注释极短 (3字): '创建人',确认该注释是否足以让模型理解字段含义
+stg_ycssthjj_ltwsjgpt_t_sjzx_wry_jbxx_df,cjr,character varying,创建人,污染源_基本信息,generic_comment,注释过于通用: '创建人'，可能不足以区分业务上下文,确认该注释是否需要补充业务含义，但禁止在当前阶段修改
+stg_ycssthjj_ltwsjgpt_t_sjzx_wry_jbxx_df,cjsj,timestamp without time zone,创建时间,污染源_基本信息,very_short_comment,注释极短 (4字): '创建时间',确认该注释是否足以让模型理解字段含义
+stg_ycssthjj_ltwsjgpt_t_sjzx_wry_jbxx_df,cjsj,timestamp without time zone,创建时间,污染源_基本信息,generic_comment,注释过于通用: '创建时间'，可能不足以区分业务上下文,确认该注释是否需要补充业务含义，但禁止在当前阶段修改
+stg_ycssthjj_ltwsjgpt_t_sjzx_wry_jbxx_df,xgr,character varying,修改人,污染源_基本信息,very_short_comment,注释极短 (3字): '修改人',确认该注释是否足以让模型理解字段含义
+stg_ycssthjj_ltwsjgpt_t_sjzx_wry_jbxx_df,xgr,character varying,修改人,污染源_基本信息,generic_comment,注释过于通用: '修改人'，可能不足以区分业务上下文,确认该注释是否需要补充业务含义，但禁止在当前阶段修改
+stg_ycssthjj_ltwsjgpt_t_sjzx_wry_jbxx_df,xgsj,timestamp without time zone,修改时间,污染源_基本信息,very_short_comment,注释极短 (4字): '修改时间',确认该注释是否足以让模型理解字段含义
+stg_ycssthjj_ltwsjgpt_t_sjzx_wry_jbxx_df,dt,character varying,分区日期,污染源_基本信息,very_short_comment,注释极短 (4字): '分区日期',确认该注释是否足以让模型理解字段含义
+stg_ycssthjj_lysthjjkyjpt_t_sjzx_szzdjcz_df,ywid,character varying,业务id,城市数字公共基础设施建设__水质自动监测站,very_short_comment,注释极短 (4字): '业务id',确认该注释是否足以让模型理解字段含义
+stg_ycssthjj_lysthjjkyjpt_t_sjzx_szzdjcz_df,ywmc,character varying,业务名称,城市数字公共基础设施建设__水质自动监测站,very_short_comment,注释极短 (4字): '业务名称',确认该注释是否足以让模型理解字段含义
+stg_ycssthjj_lysthjjkyjpt_t_sjzx_szzdjcz_df,qxbm,character varying,区县编码,城市数字公共基础设施建设__水质自动监测站,very_short_comment,注释极短 (4字): '区县编码',确认该注释是否足以让模型理解字段含义
+stg_ycssthjj_lysthjjkyjpt_t_sjzx_szzdjcz_df,flbm,character varying,分类编码,城市数字公共基础设施建设__水质自动监测站,very_short_comment,注释极短 (4字): '分类编码',确认该注释是否足以让模型理解字段含义
+stg_ycssthjj_lysthjjkyjpt_t_sjzx_szzdjcz_df,flmc,character varying,分类名称,城市数字公共基础设施建设__水质自动监测站,very_short_comment,注释极短 (4字): '分类名称',确认该注释是否足以让模型理解字段含义
+stg_ycssthjj_lysthjjkyjpt_t_sjzx_szzdjcz_df,zcbm,character varying,注册部门,城市数字公共基础设施建设__水质自动监测站,very_short_comment,注释极短 (4字): '注册部门',确认该注释是否足以让模型理解字段含义
+stg_ycssthjj_lysthjjkyjpt_t_sjzx_szzdjcz_df,dm,character varying,短码,城市数字公共基础设施建设__水质自动监测站,very_short_comment,注释极短 (2字): '短码',确认该注释是否足以让模型理解字段含义
+stg_ycssthjj_lysthjjkyjpt_t_sjzx_szzdjcz_df,bdm,character varying,北斗码,城市数字公共基础设施建设__水质自动监测站,very_short_comment,注释极短 (3字): '北斗码',确认该注释是否足以让模型理解字段含义
+stg_ycssthjj_lysthjjkyjpt_t_sjzx_szzdjcz_df,dt,character varying,分区日期,城市数字公共基础设施建设__水质自动监测站,very_short_comment,注释极短 (4字): '分区日期',确认该注释是否足以让模型理解字段含义
+stg_ycssthjj_wryzxjkpt_t_zxjc_s_w_1_df,jcdxh,character varying,监测点序号,监控数据_日数据_污染物_,very_short_comment,注释极短 (5字): '监测点序号',确认该注释是否足以让模型理解字段含义
+stg_ycssthjj_wryzxjkpt_t_zxjc_s_w_1_df,jcsj,timestamp without time zone,监测时间,监控数据_日数据_污染物_,very_short_comment,注释极短 (4字): '监测时间',确认该注释是否足以让模型理解字段含义
+stg_ycssthjj_wryzxjkpt_t_zxjc_s_w_1_df,wrwbh,character varying,污染源编号,监控数据_日数据_污染物_,very_short_comment,注释极短 (5字): '污染源编号',确认该注释是否足以让模型理解字段含义
+stg_ycssthjj_wryzxjkpt_t_zxjc_s_w_1_df,zxjcz,numeric,最新监测值,监控数据_日数据_污染物_,very_short_comment,注释极短 (5字): '最新监测值',确认该注释是否足以让模型理解字段含义
+stg_ycssthjj_wryzxjkpt_t_zxjc_s_w_1_df,pjjcz,numeric,平均监测值,监控数据_日数据_污染物_,very_short_comment,注释极短 (5字): '平均监测值',确认该注释是否足以让模型理解字段含义
+stg_ycssthjj_wryzxjkpt_t_zxjc_s_w_1_df,zdjcz,numeric,最大监测值,监控数据_日数据_污染物_,very_short_comment,注释极短 (5字): '最大监测值',确认该注释是否足以让模型理解字段含义
+stg_ycssthjj_wryzxjkpt_t_zxjc_s_w_1_df,xyz,numeric,最小监测值,监控数据_日数据_污染物_,very_short_comment,注释极短 (5字): '最小监测值',确认该注释是否足以让模型理解字段含义
+stg_ycssthjj_wryzxjkpt_t_zxjc_s_w_1_df,zxzsz,numeric,最新指数值,监控数据_日数据_污染物_,very_short_comment,注释极短 (5字): '最新指数值',确认该注释是否足以让模型理解字段含义
+stg_ycssthjj_wryzxjkpt_t_zxjc_s_w_1_df,pjzsz,numeric,平均指数值,监控数据_日数据_污染物_,very_short_comment,注释极短 (5字): '平均指数值',确认该注释是否足以让模型理解字段含义
+stg_ycssthjj_wryzxjkpt_t_zxjc_s_w_1_df,zdzsz,numeric,最大指数值,监控数据_日数据_污染物_,very_short_comment,注释极短 (5字): '最大指数值',确认该注释是否足以让模型理解字段含义
+stg_ycssthjj_wryzxjkpt_t_zxjc_s_w_1_df,xyzsz,numeric,最小指数值,监控数据_日数据_污染物_,very_short_comment,注释极短 (5字): '最小指数值',确认该注释是否足以让模型理解字段含义
+stg_ycssthjj_wryzxjkpt_t_zxjc_s_w_1_df,sjzt,character varying,数据状态,监控数据_日数据_污染物_,very_short_comment,注释极短 (4字): '数据状态',确认该注释是否足以让模型理解字段含义
+stg_ycssthjj_wryzxjkpt_t_zxjc_s_w_1_df,zt,character varying,记录状态,监控数据_日数据_污染物_,very_short_comment,注释极短 (4字): '记录状态',确认该注释是否足以让模型理解字段含义
+stg_ycssthjj_wryzxjkpt_t_zxjc_s_w_1_df,cjr,character varying,创建人,监控数据_日数据_污染物_,very_short_comment,注释极短 (3字): '创建人',确认该注释是否足以让模型理解字段含义
+stg_ycssthjj_wryzxjkpt_t_zxjc_s_w_1_df,cjr,character varying,创建人,监控数据_日数据_污染物_,generic_comment,注释过于通用: '创建人'，可能不足以区分业务上下文,确认该注释是否需要补充业务含义，但禁止在当前阶段修改
+stg_ycssthjj_wryzxjkpt_t_zxjc_s_w_1_df,cjsj,timestamp without time zone,创建时间,监控数据_日数据_污染物_,very_short_comment,注释极短 (4字): '创建时间',确认该注释是否足以让模型理解字段含义
+stg_ycssthjj_wryzxjkpt_t_zxjc_s_w_1_df,cjsj,timestamp without time zone,创建时间,监控数据_日数据_污染物_,generic_comment,注释过于通用: '创建时间'，可能不足以区分业务上下文,确认该注释是否需要补充业务含义，但禁止在当前阶段修改
+stg_ycssthjj_wryzxjkpt_t_zxjc_s_w_1_df,xgr,character varying,修改人,监控数据_日数据_污染物_,very_short_comment,注释极短 (3字): '修改人',确认该注释是否足以让模型理解字段含义
+stg_ycssthjj_wryzxjkpt_t_zxjc_s_w_1_df,xgr,character varying,修改人,监控数据_日数据_污染物_,generic_comment,注释过于通用: '修改人'，可能不足以区分业务上下文,确认该注释是否需要补充业务含义，但禁止在当前阶段修改
+stg_ycssthjj_wryzxjkpt_t_zxjc_s_w_1_df,xgsj,timestamp without time zone,修改时间,监控数据_日数据_污染物_,very_short_comment,注释极短 (4字): '修改时间',确认该注释是否足以让模型理解字段含义
+stg_ycssthjj_wryzxjkpt_t_zxjc_s_w_1_df,dt,character varying,分区日期,监控数据_日数据_污染物_,very_short_comment,注释极短 (4字): '分区日期',确认该注释是否足以让模型理解字段含义
+wh_hydrological_records_1,monitor_value,double precision,监测值,水文数据表,very_short_comment,注释极短 (3字): '监测值',确认该注释是否足以让模型理解字段含义
+wh_meteorological_predict_day_records,time,bigint,"预报时次,如08时、20时",气象预报日记录表,time_like_field,"时间类字段，注释可能过于通用: 字段名 'time' 注释为 '预报时次,如08时、20时'",人工确认注释是否准确描述该字段业务含义
+wh_meteorological_predict_hour_records,time,bigint,"预报时次,如08时、20时",气象预报小时记录表,time_like_field,"时间类字段，注释可能过于通用: 字段名 'time' 注释为 '预报时次,如08时、20时'",人工确认注释是否准确描述该字段业务含义
+wh_meteorological_records_1,monitor_value,double precision,监测值,气象数据表,very_short_comment,注释极短 (3字): '监测值',确认该注释是否足以让模型理解字段含义
+wm_camera_info,camera_name,character varying,摄像头名称,摄像头基本信息表,name_like_field,名称类字段，注释可能过于通用: 字段名 'camera_name' 注释为 '摄像头名称',人工确认注释是否准确描述该字段业务含义
+wm_camera_info,camera_name,character varying,摄像头名称,摄像头基本信息表,very_short_comment,注释极短 (5字): '摄像头名称',确认该注释是否足以让模型理解字段含义
+wm_camera_info,device_supplier,character varying,设备厂商,摄像头基本信息表,very_short_comment,注释极短 (4字): '设备厂商',确认该注释是否足以让模型理解字段含义
+wm_camera_info,device_origin,character varying,设备来源,摄像头基本信息表,very_short_comment,注释极短 (4字): '设备来源',确认该注释是否足以让模型理解字段含义
+wm_camera_info,lon,numeric,经度,摄像头基本信息表,very_short_comment,注释极短 (2字): '经度',确认该注释是否足以让模型理解字段含义
+wm_camera_info,lat,numeric,纬度,摄像头基本信息表,very_short_comment,注释极短 (2字): '纬度',确认该注释是否足以让模型理解字段含义
+wm_camera_info,monitor_subject,character varying,监控对象,摄像头基本信息表,very_short_comment,注释极短 (4字): '监控对象',确认该注释是否足以让模型理解字段含义
+wm_camera_platform,manufacturer,character varying,厂商,视频平台设备信息表,very_short_comment,注释极短 (2字): '厂商',确认该注释是否足以让模型理解字段含义
+wm_camera_platform,model,character varying,型号,视频平台设备信息表,very_short_comment,注释极短 (2字): '型号',确认该注释是否足以让模型理解字段含义
+wm_camera_platform,port,integer,设备端口,视频平台设备信息表,very_short_comment,注释极短 (4字): '设备端口',确认该注释是否足以让模型理解字段含义
+wm_camera_platform,charset,character varying,字符集,视频平台设备信息表,very_short_comment,注释极短 (3字): '字符集',确认该注释是否足以让模型理解字段含义
+wm_camera_platform,lon,double precision,经度,视频平台设备信息表,very_short_comment,注释极短 (2字): '经度',确认该注释是否足以让模型理解字段含义
+wm_camera_platform,lat,double precision,纬度,视频平台设备信息表,very_short_comment,注释极短 (2字): '纬度',确认该注释是否足以让模型理解字段含义
+wm_directory,path,character varying,完整路径,目录树实体,very_short_comment,注释极短 (4字): '完整路径',确认该注释是否足以让模型理解字段含义
+wm_hydrological_info,iot_connect_type,character varying,通信协议类型：0 tcp、1 http、2 mqtt,水位站基本信息表,code_like_field,类型类字段，注释可能过于通用: 字段名 'iot_connect_type' 注释为 '通信协议类型：0 tcp、1 http、2 mqtt',人工确认注释是否准确描述该字段业务含义
+wm_hydrological_info,belong_to_city,character varying,归属地市,水位站基本信息表,very_short_comment,注释极短 (4字): '归属地市',确认该注释是否足以让模型理解字段含义
+wm_hydrological_info,section_id,bigint,断面id,水位站基本信息表,id_like_field,ID 类字段，注释可能过于通用: 字段名 'section_id' 注释为 '断面id',人工确认注释是否准确描述该字段业务含义
+wm_hydrological_info,section_id,bigint,断面id,水位站基本信息表,very_short_comment,注释极短 (4字): '断面id',确认该注释是否足以让模型理解字段含义
+wm_hydrological_info,build_time,date,建设时间,水位站基本信息表,time_like_field,时间类字段，注释可能过于通用: 字段名 'build_time' 注释为 '建设时间',人工确认注释是否准确描述该字段业务含义
+wm_hydrological_info,build_time,date,建设时间,水位站基本信息表,very_short_comment,注释极短 (4字): '建设时间',确认该注释是否足以让模型理解字段含义
+wm_hydrological_info,responsible_person,character varying,站点责任人,水位站基本信息表,very_short_comment,注释极短 (5字): '站点责任人',确认该注释是否足以让模型理解字段含义
+wm_hydrological_info,img_name,character varying,照片名称,水位站基本信息表,name_like_field,名称类字段，注释可能过于通用: 字段名 'img_name' 注释为 '照片名称',人工确认注释是否准确描述该字段业务含义
+wm_hydrological_info,img_name,character varying,照片名称,水位站基本信息表,very_short_comment,注释极短 (4字): '照片名称',确认该注释是否足以让模型理解字段含义
+wm_image_info,image_url,character varying,图片地址,档案图片信息表：用于保存各种站点、断面、污染源的图片信息,very_short_comment,注释极短 (4字): '图片地址',确认该注释是否足以让模型理解字段含义
+wm_image_info,image_formats,character varying,图片格式,档案图片信息表：用于保存各种站点、断面、污染源的图片信息,very_short_comment,注释极短 (4字): '图片格式',确认该注释是否足以让模型理解字段含义
+wm_image_info,image_type,smallint,图片类型：0-未知、1-断面、2-自动站......,档案图片信息表：用于保存各种站点、断面、污染源的图片信息,code_like_field,类型类字段，注释可能过于通用: 字段名 'image_type' 注释为 '图片类型：0-未知、1-断面、2-自动站......',人工确认注释是否准确描述该字段业务含义
+wm_image_info,image_name,character varying,文件名称：原始文件名,档案图片信息表：用于保存各种站点、断面、污染源的图片信息,name_like_field,名称类字段，注释可能过于通用: 字段名 'image_name' 注释为 '文件名称：原始文件名',人工确认注释是否准确描述该字段业务含义
+wm_image_info,image_tag,character varying,图片标签,档案图片信息表：用于保存各种站点、断面、污染源的图片信息,very_short_comment,注释极短 (4字): '图片标签',确认该注释是否足以让模型理解字段含义
+wm_meteorological_info,iot_connect_type,character varying,通信协议类型：0 tcp、1 http、2 mqtt,气象自动监测站基本信息表,code_like_field,类型类字段，注释可能过于通用: 字段名 'iot_connect_type' 注释为 '通信协议类型：0 tcp、1 http、2 mqtt',人工确认注释是否准确描述该字段业务含义
+wm_meteorological_info,belong_to_city,character varying,归属地市,气象自动监测站基本信息表,very_short_comment,注释极短 (4字): '归属地市',确认该注释是否足以让模型理解字段含义
+wm_meteorological_info,section_id,bigint,断面id,气象自动监测站基本信息表,id_like_field,ID 类字段，注释可能过于通用: 字段名 'section_id' 注释为 '断面id',人工确认注释是否准确描述该字段业务含义
+wm_meteorological_info,section_id,bigint,断面id,气象自动监测站基本信息表,very_short_comment,注释极短 (4字): '断面id',确认该注释是否足以让模型理解字段含义
+wm_meteorological_info,meteorological_table_name,character varying,气象监测记录表名,气象自动监测站基本信息表,name_like_field,名称类字段，注释可能过于通用: 字段名 'meteorological_table_name' 注释为 '气象监测记录表名',人工确认注释是否准确描述该字段业务含义
+wm_meteorological_info,build_time,date,建设时间,气象自动监测站基本信息表,time_like_field,时间类字段，注释可能过于通用: 字段名 'build_time' 注释为 '建设时间',人工确认注释是否准确描述该字段业务含义
+wm_meteorological_info,build_time,date,建设时间,气象自动监测站基本信息表,very_short_comment,注释极短 (4字): '建设时间',确认该注释是否足以让模型理解字段含义
+wm_meteorological_info,responsible_person,character varying,站点责任人,气象自动监测站基本信息表,very_short_comment,注释极短 (5字): '站点责任人',确认该注释是否足以让模型理解字段含义
+wm_meteorological_info,img_name,character varying,照片名称,气象自动监测站基本信息表,name_like_field,名称类字段，注释可能过于通用: 字段名 'img_name' 注释为 '照片名称',人工确认注释是否准确描述该字段业务含义
+wm_meteorological_info,img_name,character varying,照片名称,气象自动监测站基本信息表,very_short_comment,注释极短 (4字): '照片名称',确认该注释是否足以让模型理解字段含义
+wm_panorama_layer,point_name,character varying,点位名称,全景图层信息表,name_like_field,名称类字段，注释可能过于通用: 字段名 'point_name' 注释为 '点位名称',人工确认注释是否准确描述该字段业务含义
+wm_panorama_layer,point_name,character varying,点位名称,全景图层信息表,very_short_comment,注释极短 (4字): '点位名称',确认该注释是否足以让模型理解字段含义
+wm_panorama_layer,topic,character varying,所属专题,全景图层信息表,very_short_comment,注释极短 (4字): '所属专题',确认该注释是否足以让模型理解字段含义
+wm_panorama_layer,directory_id,bigint,目录ID,全景图层信息表,id_like_field,ID 类字段，注释可能过于通用: 字段名 'directory_id' 注释为 '目录ID',人工确认注释是否准确描述该字段业务含义
+wm_panorama_layer,directory_id,bigint,目录ID,全景图层信息表,very_short_comment,注释极短 (4字): '目录ID',确认该注释是否足以让模型理解字段含义
+wm_panorama_layer,icon,character varying,图标地址,全景图层信息表,very_short_comment,注释极短 (4字): '图标地址',确认该注释是否足以让模型理解字段含义
+wm_panorama_layer_relation,panorama_id,bigint,全景ID,全景图层关联关系表,id_like_field,ID 类字段，注释可能过于通用: 字段名 'panorama_id' 注释为 '全景ID',人工确认注释是否准确描述该字段业务含义
+wm_panorama_layer_relation,panorama_id,bigint,全景ID,全景图层关联关系表,very_short_comment,注释极短 (4字): '全景ID',确认该注释是否足以让模型理解字段含义
+wm_panorama_layer_relation,feature_id,character varying,要素ID,全景图层关联关系表,id_like_field,ID 类字段，注释可能过于通用: 字段名 'feature_id' 注释为 '要素ID',人工确认注释是否准确描述该字段业务含义
+wm_panorama_layer_relation,feature_id,character varying,要素ID,全景图层关联关系表,very_short_comment,注释极短 (4字): '要素ID',确认该注释是否足以让模型理解字段含义
+wm_panorama_video,shoot_time,timestamp without time zone,拍摄时间,全景视频信息表,time_like_field,时间类字段，注释可能过于通用: 字段名 'shoot_time' 注释为 '拍摄时间',人工确认注释是否准确描述该字段业务含义
+wm_panorama_video,shoot_time,timestamp without time zone,拍摄时间,全景视频信息表,very_short_comment,注释极短 (4字): '拍摄时间',确认该注释是否足以让模型理解字段含义
+wm_panorama_video,url,character varying,访问地址,全景视频信息表,very_short_comment,注释极短 (4字): '访问地址',确认该注释是否足以让模型理解字段含义
+wm_raster_info,scene_id,character varying,遥感监测影像信息实体类,,missing_table_comment,表 wm_raster_info 无表级注释，字段 scene_id 的训练语义可能不完整,优先补齐表级注释后再训练该表字段
+wm_raster_info,scene_id,character varying,遥感监测影像信息实体类,,id_like_field,ID 类字段，注释可能过于通用: 字段名 'scene_id' 注释为 '遥感监测影像信息实体类',人工确认注释是否准确描述该字段业务含义
+wm_raster_info,satellite_info,character varying,拍摄卫星,,missing_table_comment,表 wm_raster_info 无表级注释，字段 satellite_info 的训练语义可能不完整,优先补齐表级注释后再训练该表字段
+wm_raster_info,satellite_info,character varying,拍摄卫星,,very_short_comment,注释极短 (4字): '拍摄卫星',确认该注释是否足以让模型理解字段含义
+wm_raster_info,sensor_info,character varying,传感器信息,,missing_table_comment,表 wm_raster_info 无表级注释，字段 sensor_info 的训练语义可能不完整,优先补齐表级注释后再训练该表字段
+wm_raster_info,sensor_info,character varying,传感器信息,,very_short_comment,注释极短 (5字): '传感器信息',确认该注释是否足以让模型理解字段含义
+wm_raster_info,orbit_name,character varying,轨道名称,,missing_table_comment,表 wm_raster_info 无表级注释，字段 orbit_name 的训练语义可能不完整,优先补齐表级注释后再训练该表字段
+wm_raster_info,orbit_name,character varying,轨道名称,,name_like_field,名称类字段，注释可能过于通用: 字段名 'orbit_name' 注释为 '轨道名称',人工确认注释是否准确描述该字段业务含义
+wm_raster_info,orbit_name,character varying,轨道名称,,very_short_comment,注释极短 (4字): '轨道名称',确认该注释是否足以让模型理解字段含义
+wm_raster_info,processing_version,character varying,数据级别,,missing_table_comment,表 wm_raster_info 无表级注释，字段 processing_version 的训练语义可能不完整,优先补齐表级注释后再训练该表字段
+wm_raster_info,processing_version,character varying,数据级别,,very_short_comment,注释极短 (4字): '数据级别',确认该注释是否足以让模型理解字段含义
+wm_raster_info,content_type,character varying,文件内容类型,,missing_table_comment,表 wm_raster_info 无表级注释，字段 content_type 的训练语义可能不完整,优先补齐表级注释后再训练该表字段
+wm_raster_info,content_type,character varying,文件内容类型,,code_like_field,类型类字段，注释可能过于通用: 字段名 'content_type' 注释为 '文件内容类型',人工确认注释是否准确描述该字段业务含义
+wm_raster_info,data_location,character varying,数据位置,,missing_table_comment,表 wm_raster_info 无表级注释，字段 data_location 的训练语义可能不完整,优先补齐表级注释后再训练该表字段
+wm_raster_info,data_location,character varying,数据位置,,very_short_comment,注释极短 (4字): '数据位置',确认该注释是否足以让模型理解字段含义
+wm_raster_info,image_datetime,timestamp without time zone,影像获取时间（年_月_日_时_分）,,missing_table_comment,表 wm_raster_info 无表级注释，字段 image_datetime 的训练语义可能不完整,优先补齐表级注释后再训练该表字段
+wm_raster_info,inversion_flag,character varying,是否反演,,missing_table_comment,表 wm_raster_info 无表级注释，字段 inversion_flag 的训练语义可能不完整,优先补齐表级注释后再训练该表字段
+wm_raster_info,inversion_flag,character varying,是否反演,,status_like_field,标记类字段，注释可能过于通用: 字段名 'inversion_flag' 注释为 '是否反演',人工确认注释是否准确描述该字段业务含义
+wm_raster_info,inversion_flag,character varying,是否反演,,very_short_comment,注释极短 (4字): '是否反演',确认该注释是否足以让模型理解字段含义
+wm_raster_inversion,record_id,bigint,遥感反演结果表（合并版）,,missing_table_comment,表 wm_raster_inversion 无表级注释，字段 record_id 的训练语义可能不完整,优先补齐表级注释后再训练该表字段
+wm_raster_inversion,record_id,bigint,遥感反演结果表（合并版）,,id_like_field,ID 类字段，注释可能过于通用: 字段名 'record_id' 注释为 '遥感反演结果表（合并版）',人工确认注释是否准确描述该字段业务含义
+wm_raster_inversion,inversion_type,character varying,反演类型：water_environment-水环境，algalbloom-水生态，landuse-土地利用,,missing_table_comment,表 wm_raster_inversion 无表级注释，字段 inversion_type 的训练语义可能不完整,优先补齐表级注释后再训练该表字段
+wm_raster_inversion,inversion_type,character varying,反演类型：water_environment-水环境，algalbloom-水生态，landuse-土地利用,,code_like_field,类型类字段，注释可能过于通用: 字段名 'inversion_type' 注释为 '反演类型：water_environment-水环境，algalbloom-水生态，landuse-土地利用',人工确认注释是否准确描述该字段业务含义
+wm_raster_inversion,l1_area,double precision,I类/浮叶挺水植被/背景面积,,missing_table_comment,表 wm_raster_inversion 无表级注释，字段 l1_area 的训练语义可能不完整,优先补齐表级注释后再训练该表字段
+wm_raster_inversion,l2_area,double precision,II类/沉水植被/耕地面积,,missing_table_comment,表 wm_raster_inversion 无表级注释，字段 l2_area 的训练语义可能不完整,优先补齐表级注释后再训练该表字段
+wm_raster_inversion,l3_area,double precision,III类/水华/园地面积,,missing_table_comment,表 wm_raster_inversion 无表级注释，字段 l3_area 的训练语义可能不完整,优先补齐表级注释后再训练该表字段
+wm_raster_inversion,l4_area,double precision,IV类/水体/林地面积,,missing_table_comment,表 wm_raster_inversion 无表级注释，字段 l4_area 的训练语义可能不完整,优先补齐表级注释后再训练该表字段
+wm_raster_inversion,l5_area,double precision,V类/水体面积,,missing_table_comment,表 wm_raster_inversion 无表级注释，字段 l5_area 的训练语义可能不完整,优先补齐表级注释后再训练该表字段
+wm_raster_inversion,l6_area,double precision,劣V类/建设用地面积,,missing_table_comment,表 wm_raster_inversion 无表级注释，字段 l6_area 的训练语义可能不完整,优先补齐表级注释后再训练该表字段
+wm_raster_inversion,service_url,text,服务地址,,missing_table_comment,表 wm_raster_inversion 无表级注释，字段 service_url 的训练语义可能不完整,优先补齐表级注释后再训练该表字段
+wm_raster_inversion,service_url,text,服务地址,,very_short_comment,注释极短 (4字): '服务地址',确认该注释是否足以让模型理解字段含义
+wm_raster_inversion,data_time,timestamp without time zone,数据日期,,missing_table_comment,表 wm_raster_inversion 无表级注释，字段 data_time 的训练语义可能不完整,优先补齐表级注释后再训练该表字段
+wm_raster_inversion,data_time,timestamp without time zone,数据日期,,time_like_field,时间类字段，注释可能过于通用: 字段名 'data_time' 注释为 '数据日期',人工确认注释是否准确描述该字段业务含义
+wm_raster_inversion,data_time,timestamp without time zone,数据日期,,very_short_comment,注释极短 (4字): '数据日期',确认该注释是否足以让模型理解字段含义
+wm_section_info,region_id,bigint,所属区域id,断面基本信息表,id_like_field,ID 类字段，注释可能过于通用: 字段名 'region_id' 注释为 '所属区域id',人工确认注释是否准确描述该字段业务含义
+wm_section_info,section_code,character varying,断面编码,断面基本信息表,code_like_field,编码类字段，注释可能过于通用: 字段名 'section_code' 注释为 '断面编码',人工确认注释是否准确描述该字段业务含义
+wm_section_info,section_code,character varying,断面编码,断面基本信息表,very_short_comment,注释极短 (4字): '断面编码',确认该注释是否足以让模型理解字段含义
+wm_section_info,trans_regional,character varying,跨界类型,断面基本信息表,very_short_comment,注释极短 (4字): '跨界类型',确认该注释是否足以让模型理解字段含义
+wm_section_info,section_nature,character varying,断面属性,断面基本信息表,very_short_comment,注释极短 (4字): '断面属性',确认该注释是否足以让模型理解字段含义
+wm_section_info,manage_type,character varying,管理类型,断面基本信息表,code_like_field,类型类字段，注释可能过于通用: 字段名 'manage_type' 注释为 '管理类型',人工确认注释是否准确描述该字段业务含义
+wm_section_info,manage_type,character varying,管理类型,断面基本信息表,very_short_comment,注释极短 (4字): '管理类型',确认该注释是否足以让模型理解字段含义
+wm_section_info,manage_level,character varying,管理级别,断面基本信息表,very_short_comment,注释极短 (4字): '管理级别',确认该注释是否足以让模型理解字段含义
+wm_section_info,examine_level,character varying,考核级别,断面基本信息表,very_short_comment,注释极短 (4字): '考核级别',确认该注释是否足以让模型理解字段含义
+wm_section_info,examine_city,character varying,考核城市,断面基本信息表,very_short_comment,注释极短 (4字): '考核城市',确认该注释是否足以让模型理解字段含义
+wm_section_info,upstream_section_id,bigint,上游断面id,断面基本信息表,id_like_field,ID 类字段，注释可能过于通用: 字段名 'upstream_section_id' 注释为 '上游断面id',人工确认注释是否准确描述该字段业务含义
+wm_section_info,grid_code,character varying,网格号,断面基本信息表,code_like_field,编码类字段，注释可能过于通用: 字段名 'grid_code' 注释为 '网格号',人工确认注释是否准确描述该字段业务含义
+wm_section_info,grid_code,character varying,网格号,断面基本信息表,very_short_comment,注释极短 (3字): '网格号',确认该注释是否足以让模型理解字段含义
+wm_section_info,grid_i,character varying,网格I值,断面基本信息表,very_short_comment,注释极短 (4字): '网格I值',确认该注释是否足以让模型理解字段含义
+wm_section_info,grid_j,character varying,网格J值,断面基本信息表,very_short_comment,注释极短 (4字): '网格J值',确认该注释是否足以让模型理解字段含义
+wm_section_wq_info,section_id,bigint,断面id,断面水质目标信息表,id_like_field,ID 类字段，注释可能过于通用: 字段名 'section_id' 注释为 '断面id',人工确认注释是否准确描述该字段业务含义
+wm_section_wq_info,section_id,bigint,断面id,断面水质目标信息表,very_short_comment,注释极短 (4字): '断面id',确认该注释是否足以让模型理解字段含义
+wm_section_wq_info,year,bigint,年份,断面水质目标信息表,very_short_comment,注释极短 (2字): '年份',确认该注释是否足以让模型理解字段含义
+wm_section_wq_info,water_quality_target_level,character varying,目标水质,断面水质目标信息表,very_short_comment,注释极短 (4字): '目标水质',确认该注释是否足以让模型理解字段含义
+wm_station_info,iot_connect_type,character varying,通信协议类型：0 tcp、1 http、2 mqtt,水质自动监测站基本信息表,code_like_field,类型类字段，注释可能过于通用: 字段名 'iot_connect_type' 注释为 '通信协议类型：0 tcp、1 http、2 mqtt',人工确认注释是否准确描述该字段业务含义
+wm_station_info,belong_to_city,character varying,归属地市,水质自动监测站基本信息表,very_short_comment,注释极短 (4字): '归属地市',确认该注释是否足以让模型理解字段含义
+wm_station_info,section_id,bigint,断面id,水质自动监测站基本信息表,id_like_field,ID 类字段，注释可能过于通用: 字段名 'section_id' 注释为 '断面id',人工确认注释是否准确描述该字段业务含义
+wm_station_info,section_id,bigint,断面id,水质自动监测站基本信息表,very_short_comment,注释极短 (4字): '断面id',确认该注释是否足以让模型理解字段含义
+wm_station_info,water_quality_table_name,character varying,水质监测记录表名,水质自动监测站基本信息表,name_like_field,名称类字段，注释可能过于通用: 字段名 'water_quality_table_name' 注释为 '水质监测记录表名',人工确认注释是否准确描述该字段业务含义
+wm_station_info,meteorological_table_name,character varying,气象监测记录表名,水质自动监测站基本信息表,name_like_field,名称类字段，注释可能过于通用: 字段名 'meteorological_table_name' 注释为 '气象监测记录表名',人工确认注释是否准确描述该字段业务含义
+wm_station_info,intake_lon,double precision,取水口位置,水质自动监测站基本信息表,very_short_comment,注释极短 (5字): '取水口位置',确认该注释是否足以让模型理解字段含义
+wm_station_info,intake_lat,double precision,取水口位置,水质自动监测站基本信息表,very_short_comment,注释极短 (5字): '取水口位置',确认该注释是否足以让模型理解字段含义
+wm_station_info,build_time,date,建设时间,水质自动监测站基本信息表,time_like_field,时间类字段，注释可能过于通用: 字段名 'build_time' 注释为 '建设时间',人工确认注释是否准确描述该字段业务含义
+wm_station_info,build_time,date,建设时间,水质自动监测站基本信息表,very_short_comment,注释极短 (4字): '建设时间',确认该注释是否足以让模型理解字段含义
+wm_station_info,responsible_person,character varying,站点责任人,水质自动监测站基本信息表,very_short_comment,注释极短 (5字): '站点责任人',确认该注释是否足以让模型理解字段含义
+wm_station_info,img_name,character varying,照片名称,水质自动监测站基本信息表,name_like_field,名称类字段，注释可能过于通用: 字段名 'img_name' 注释为 '照片名称',人工确认注释是否准确描述该字段业务含义
+wm_station_info,img_name,character varying,照片名称,水质自动监测站基本信息表,very_short_comment,注释极短 (4字): '照片名称',确认该注释是否足以让模型理解字段含义
+wm_station_info_v2,iot_connect_type,character varying,通信协议类型：0 tcp、1 http、2 mqtt,自动站管理,code_like_field,类型类字段，注释可能过于通用: 字段名 'iot_connect_type' 注释为 '通信协议类型：0 tcp、1 http、2 mqtt',人工确认注释是否准确描述该字段业务含义
+wm_station_info_v2,build_time,timestamp without time zone,建设时间,自动站管理,time_like_field,时间类字段，注释可能过于通用: 字段名 'build_time' 注释为 '建设时间',人工确认注释是否准确描述该字段业务含义
+wm_station_info_v2,build_time,timestamp without time zone,建设时间,自动站管理,very_short_comment,注释极短 (4字): '建设时间',确认该注释是否足以让模型理解字段含义
+wm_station_info_v2,section_id,bigint,断面id,自动站管理,id_like_field,ID 类字段，注释可能过于通用: 字段名 'section_id' 注释为 '断面id',人工确认注释是否准确描述该字段业务含义
+wm_station_info_v2,section_id,bigint,断面id,自动站管理,very_short_comment,注释极短 (4字): '断面id',确认该注释是否足以让模型理解字段含义
+wm_station_info_v2,equipment_manufacturer,character varying,设备厂家,自动站管理,very_short_comment,注释极短 (4字): '设备厂家',确认该注释是否足以让模型理解字段含义
+wm_station_info_v2,equipment_model,character varying,设备型号,自动站管理,very_short_comment,注释极短 (4字): '设备型号',确认该注释是否足以让模型理解字段含义
+wm_station_info_v2,monitor_indicators,character varying,监测指标,自动站管理,very_short_comment,注释极短 (4字): '监测指标',确认该注释是否足以让模型理解字段含义
+wm_station_info_v2,monitor_frequency,character varying,监测频次,自动站管理,very_short_comment,注释极短 (4字): '监测频次',确认该注释是否足以让模型理解字段含义
+wm_station_info_v2,eight_direction_photo,character varying,八方图,自动站管理,very_short_comment,注释极短 (3字): '八方图',确认该注释是否足以让模型理解字段含义
+wm_station_info_v2,om_unit,character varying,运维单位,自动站管理,very_short_comment,注释极短 (4字): '运维单位',确认该注释是否足以让模型理解字段含义
+wm_station_info_v2,om_person,character varying,运维人员,自动站管理,very_short_comment,注释极短 (4字): '运维人员',确认该注释是否足以让模型理解字段含义
+wm_station_info_v2,contact_info,character varying,联系方式,自动站管理,very_short_comment,注释极短 (4字): '联系方式',确认该注释是否足以让模型理解字段含义
+wm_station_info_v2,water_body_name,character varying,水体名称,自动站管理,name_like_field,名称类字段，注释可能过于通用: 字段名 'water_body_name' 注释为 '水体名称',人工确认注释是否准确描述该字段业务含义
+wm_station_info_v2,water_body_name,character varying,水体名称,自动站管理,very_short_comment,注释极短 (4字): '水体名称',确认该注释是否足以让模型理解字段含义
+wm_uav_info,gateway_callsign,character varying,网关名称,大疆无人机基础信息,very_short_comment,注释极短 (4字): '网关名称',确认该注释是否足以让模型理解字段含义
+wm_uav_info,gateway_device_online_status,smallint,网关在线状态,大疆无人机基础信息,status_like_field,状态类字段，注释可能过于通用: 字段名 'gateway_device_online_status' 注释为 '网关在线状态',人工确认注释是否准确描述该字段业务含义
+wm_uav_info,gateway_mode_code,integer,网关型号编码,大疆无人机基础信息,code_like_field,编码类字段，注释可能过于通用: 字段名 'gateway_mode_code' 注释为 '网关型号编码',人工确认注释是否准确描述该字段业务含义
+wm_uav_info,drone_callsign,character varying,无人机名称,大疆无人机基础信息,very_short_comment,注释极短 (5字): '无人机名称',确认该注释是否足以让模型理解字段含义
+wm_uav_info,drone_device_model,character varying,无人机型号,大疆无人机基础信息,very_short_comment,注释极短 (5字): '无人机型号',确认该注释是否足以让模型理解字段含义
+wm_uav_info,drone_device_online_status,character varying,无人机在线状态,大疆无人机基础信息,status_like_field,状态类字段，注释可能过于通用: 字段名 'drone_device_online_status' 注释为 '无人机在线状态',人工确认注释是否准确描述该字段业务含义
+wm_uav_info,drone_mode_code,integer,型号编码,大疆无人机基础信息,code_like_field,编码类字段，注释可能过于通用: 字段名 'drone_mode_code' 注释为 '型号编码',人工确认注释是否准确描述该字段业务含义
+wm_uav_info,drone_mode_code,integer,型号编码,大疆无人机基础信息,very_short_comment,注释极短 (4字): '型号编码',确认该注释是否足以让模型理解字段含义
+wm_uav_info,gateway_lon,double precision,网关经度,大疆无人机基础信息,very_short_comment,注释极短 (4字): '网关经度',确认该注释是否足以让模型理解字段含义
+wm_uav_info,gateway_lat,double precision,网关纬度,大疆无人机基础信息,very_short_comment,注释极短 (4字): '网关纬度',确认该注释是否足以让模型理解字段含义
+wm_uav_info,activation_time,bigint,机场激活时间(unix 时间戳),大疆无人机基础信息,time_like_field,时间类字段，注释可能过于通用: 字段名 'activation_time' 注释为 '机场激活时间(unix 时间戳)',人工确认注释是否准确描述该字段业务含义
+wm_uav_info,acc_time,integer,机场累计运行时长,大疆无人机基础信息,time_like_field,时间类字段，注释可能过于通用: 字段名 'acc_time' 注释为 '机场累计运行时长',人工确认注释是否准确描述该字段业务含义
+wm_uav_info,humidity,real,舱内湿度,大疆无人机基础信息,very_short_comment,注释极短 (4字): '舱内湿度',确认该注释是否足以让模型理解字段含义
+wm_uav_info,weight,character varying,整机重量,大疆无人机基础信息,very_short_comment,注释极短 (4字): '整机重量',确认该注释是否足以让模型理解字段含义
+wm_uav_info,power,character varying,功率,大疆无人机基础信息,very_short_comment,注释极短 (2字): '功率',确认该注释是否足以让模型理解字段含义
+wm_uav_info,temperature,character varying,工作温度,大疆无人机基础信息,very_short_comment,注释极短 (4字): '工作温度',确认该注释是否足以让模型理解字段含义
+wm_uav_info,max_height,character varying,最大高度,大疆无人机基础信息,very_short_comment,注释极短 (4字): '最大高度',确认该注释是否足以让模型理解字段含义
+wm_uav_info,charging_time,character varying,充电时间,大疆无人机基础信息,time_like_field,时间类字段，注释可能过于通用: 字段名 'charging_time' 注释为 '充电时间',人工确认注释是否准确描述该字段业务含义
+wm_uav_info,charging_time,character varying,充电时间,大疆无人机基础信息,very_short_comment,注释极短 (4字): '充电时间',确认该注释是否足以让模型理解字段含义
+wm_uav_info,duration_time,character varying,备用电池续航时间,大疆无人机基础信息,time_like_field,时间类字段，注释可能过于通用: 字段名 'duration_time' 注释为 '备用电池续航时间',人工确认注释是否准确描述该字段业务含义
+wm_water_intake,used_mark,character varying,使用状态,水源地-取水口,very_short_comment,注释极短 (4字): '使用状态',确认该注释是否足以让模型理解字段含义
+wm_water_intake,static_flag,character varying,统计标识：是、否,水源地-取水口,status_like_field,标记类字段，注释可能过于通用: 字段名 'static_flag' 注释为 '统计标识：是、否',人工确认注释是否准确描述该字段业务含义
+wm_water_source,alias,character varying,别名,水源地信息：通过code码关联,very_short_comment,注释极短 (2字): '别名',确认该注释是否足以让模型理解字段含义
+wm_water_source,river_system_name,character varying,水系名称,水源地信息：通过code码关联,name_like_field,名称类字段，注释可能过于通用: 字段名 'river_system_name' 注释为 '水系名称',人工确认注释是否准确描述该字段业务含义
+wm_water_source,river_system_name,character varying,水系名称,水源地信息：通过code码关联,very_short_comment,注释极短 (4字): '水系名称',确认该注释是否足以让模型理解字段含义
+wm_water_source,source_state,character varying,水源状态,水源地信息：通过code码关联,very_short_comment,注释极短 (4字): '水源状态',确认该注释是否足以让模型理解字段含义
+wm_water_source,protect_area_status,character varying,保护区划定情况,水源地信息：通过code码关联,status_like_field,状态类字段，注释可能过于通用: 字段名 'protect_area_status' 注释为 '保护区划定情况',人工确认注释是否准确描述该字段业务含义
+wm_water_source,supply_type,character varying,供水类型,水源地信息：通过code码关联,code_like_field,类型类字段，注释可能过于通用: 字段名 'supply_type' 注释为 '供水类型',人工确认注释是否准确描述该字段业务含义
+wm_water_source,supply_type,character varying,供水类型,水源地信息：通过code码关联,very_short_comment,注释极短 (4字): '供水类型',确认该注释是否足以让模型理解字段含义
+wm_water_source,supply_service,character varying,服务对象,水源地信息：通过code码关联,very_short_comment,注释极短 (4字): '服务对象',确认该注释是否足以让模型理解字段含义
+wm_water_source,service_people_count,bigint,服务人数,水源地信息：通过code码关联,very_short_comment,注释极短 (4字): '服务人数',确认该注释是否足以让模型理解字段含义
+wm_water_source_bak0421,alias,character varying,别名,水源地信息：通过code码关联,very_short_comment,注释极短 (2字): '别名',确认该注释是否足以让模型理解字段含义
+wm_water_source_bak0421,area_code,character varying,行政区代码,水源地信息：通过code码关联,code_like_field,编码类字段，注释可能过于通用: 字段名 'area_code' 注释为 '行政区代码',人工确认注释是否准确描述该字段业务含义
+wm_water_source_bak0421,area_code,character varying,行政区代码,水源地信息：通过code码关联,very_short_comment,注释极短 (5字): '行政区代码',确认该注释是否足以让模型理解字段含义
+wm_water_source_bak0421,river_system_name,character varying,水系名称,水源地信息：通过code码关联,name_like_field,名称类字段，注释可能过于通用: 字段名 'river_system_name' 注释为 '水系名称',人工确认注释是否准确描述该字段业务含义
+wm_water_source_bak0421,river_system_name,character varying,水系名称,水源地信息：通过code码关联,very_short_comment,注释极短 (4字): '水系名称',确认该注释是否足以让模型理解字段含义
+wm_water_source_bak0421,supply_type,character varying,供水类型,水源地信息：通过code码关联,code_like_field,类型类字段，注释可能过于通用: 字段名 'supply_type' 注释为 '供水类型',人工确认注释是否准确描述该字段业务含义
+wm_water_source_bak0421,supply_type,character varying,供水类型,水源地信息：通过code码关联,very_short_comment,注释极短 (4字): '供水类型',确认该注释是否足以让模型理解字段含义
+wm_water_source_bak0421,supply_service,character varying,服务对象,水源地信息：通过code码关联,very_short_comment,注释极短 (4字): '服务对象',确认该注释是否足以让模型理解字段含义
+wm_water_source_bak0421,source_state,character varying,水源状态,水源地信息：通过code码关联,very_short_comment,注释极短 (4字): '水源状态',确认该注释是否足以让模型理解字段含义
+wm_water_source_bak0421,service_people_count,bigint,服务人数,水源地信息：通过code码关联,very_short_comment,注释极短 (4字): '服务人数',确认该注释是否足以让模型理解字段含义
+wm_water_source_bak0421,check_result,character varying,考核结果,水源地信息：通过code码关联,very_short_comment,注释极短 (4字): '考核结果',确认该注释是否足以让模型理解字段含义
+wm_water_source_bak0421,monitor_count,bigint,监测次数,水源地信息：通过code码关联,very_short_comment,注释极短 (4字): '监测次数',确认该注释是否足以让模型理解字段含义
+wm_water_source_bak0421,monitor_result,bigint,达标情况,水源地信息：通过code码关联,very_short_comment,注释极短 (4字): '达标情况',确认该注释是否足以让模型理解字段含义
+wm_water_source_bak0421,take_cert_code,character varying,取水许可证文号,水源地信息：通过code码关联,code_like_field,编码类字段，注释可能过于通用: 字段名 'take_cert_code' 注释为 '取水许可证文号',人工确认注释是否准确描述该字段业务含义
+wm_water_source_bak0421,health_cert_code,character varying,卫生合格证号,水源地信息：通过code码关联,code_like_field,编码类字段，注释可能过于通用: 字段名 'health_cert_code' 注释为 '卫生合格证号',人工确认注释是否准确描述该字段业务含义
+wm_water_source_bak0421,lon,double precision,经度,水源地信息：通过code码关联,very_short_comment,注释极短 (2字): '经度',确认该注释是否足以让模型理解字段含义
+wm_water_source_bak0421,lat,double precision,纬度,水源地信息：通过code码关联,very_short_comment,注释极短 (2字): '纬度',确认该注释是否足以让模型理解字段含义
+wm_water_source_bak0421,protect_area_status,character varying,保护区划定情况,水源地信息：通过code码关联,status_like_field,状态类字段，注释可能过于通用: 字段名 'protect_area_status' 注释为 '保护区划定情况',人工确认注释是否准确描述该字段业务含义
+wm_water_source_intake_v2,district,character varying,区县,饮用水水源地管理及监测-取水口,very_short_comment,注释极短 (2字): '区县',确认该注释是否足以让模型理解字段含义
+wm_water_source_intake_v2,source_status,character varying,水源地状态（在用；备用；应急；规划）,饮用水水源地管理及监测-取水口,status_like_field,状态类字段，注释可能过于通用: 字段名 'source_status' 注释为 '水源地状态（在用；备用；应急；规划）',人工确认注释是否准确描述该字段业务含义
+wm_water_source_intake_v2,source_code,character varying,水源地编码,饮用水水源地管理及监测-取水口,code_like_field,编码类字段，注释可能过于通用: 字段名 'source_code' 注释为 '水源地编码',人工确认注释是否准确描述该字段业务含义
+wm_water_source_intake_v2,source_code,character varying,水源地编码,饮用水水源地管理及监测-取水口,very_short_comment,注释极短 (5字): '水源地编码',确认该注释是否足以让模型理解字段含义
+wm_water_source_zone_v2,district,character varying,区县,饮用水水源地管理及监测-保护区,very_short_comment,注释极短 (2字): '区县',确认该注释是否足以让模型理解字段含义
+wm_water_source_zone_v2,source_status,character varying,水源地状态（在用；备用；应急；规划）,饮用水水源地管理及监测-保护区,status_like_field,状态类字段，注释可能过于通用: 字段名 'source_status' 注释为 '水源地状态（在用；备用；应急；规划）',人工确认注释是否准确描述该字段业务含义
+wm_water_source_zone_v2,source_code,character varying,水源地编码,饮用水水源地管理及监测-保护区,code_like_field,编码类字段，注释可能过于通用: 字段名 'source_code' 注释为 '水源地编码',人工确认注释是否准确描述该字段业务含义
+wm_water_source_zone_v2,source_code,character varying,水源地编码,饮用水水源地管理及监测-保护区,very_short_comment,注释极短 (5字): '水源地编码',确认该注释是否足以让模型理解字段含义
+wm_waterbody_info,water_body_name,character varying,水体名称,水体信息实体类,name_like_field,名称类字段，注释可能过于通用: 字段名 'water_body_name' 注释为 '水体名称',人工确认注释是否准确描述该字段业务含义
+wm_waterbody_info,water_body_name,character varying,水体名称,水体信息实体类,very_short_comment,注释极短 (4字): '水体名称',确认该注释是否足以让模型理解字段含义
+wm_waterbody_info,img_name,character varying,照片名称,水体信息实体类,name_like_field,名称类字段，注释可能过于通用: 字段名 'img_name' 注释为 '照片名称',人工确认注释是否准确描述该字段业务含义
+wm_waterbody_info,img_name,character varying,照片名称,水体信息实体类,very_short_comment,注释极短 (4字): '照片名称',确认该注释是否足以让模型理解字段含义
+wm_waterbody_info,bend_coefficient,double precision,弯曲系数,水体信息实体类,very_short_comment,注释极短 (4字): '弯曲系数',确认该注释是否足以让模型理解字段含义
+wm_waterquality_day_records,m23_count,bigint,记录数23,水质监测日记录表,very_short_comment,注释极短 (5字): '记录数23',确认该注释是否足以让模型理解字段含义
+wm_waterquality_day_records,m24_count,bigint,记录数24,水质监测日记录表,very_short_comment,注释极短 (5字): '记录数24',确认该注释是否足以让模型理解字段含义
+wm_waterquality_day_records,m25_count,bigint,记录数25,水质监测日记录表,very_short_comment,注释极短 (5字): '记录数25',确认该注释是否足以让模型理解字段含义
+wm_waterquality_day_records,m26_count,bigint,记录数26,水质监测日记录表,very_short_comment,注释极短 (5字): '记录数26',确认该注释是否足以让模型理解字段含义
+wm_waterquality_day_records,m27_count,bigint,记录数27,水质监测日记录表,very_short_comment,注释极短 (5字): '记录数27',确认该注释是否足以让模型理解字段含义
+wm_waterquality_day_records,m28_count,bigint,记录数28,水质监测日记录表,very_short_comment,注释极短 (5字): '记录数28',确认该注释是否足以让模型理解字段含义
+wm_waterquality_day_records,m29_count,bigint,记录数29,水质监测日记录表,very_short_comment,注释极短 (5字): '记录数29',确认该注释是否足以让模型理解字段含义
+wm_waterquality_day_records,m30_count,bigint,记录数30,水质监测日记录表,very_short_comment,注释极短 (5字): '记录数30',确认该注释是否足以让模型理解字段含义
+wm_waterquality_day_records,m31_count,bigint,记录数31,水质监测日记录表,very_short_comment,注释极短 (5字): '记录数31',确认该注释是否足以让模型理解字段含义
+wm_waterquality_hour_records,m23_status,character,监测结果：0 正常、1 超标,水质监测小时记录表,status_like_field,状态类字段，注释可能过于通用: 字段名 'm23_status' 注释为 '监测结果：0 正常、1 超标',人工确认注释是否准确描述该字段业务含义
+wm_waterquality_hour_records,m24_status,character,监测结果：0 正常、1 超标,水质监测小时记录表,status_like_field,状态类字段，注释可能过于通用: 字段名 'm24_status' 注释为 '监测结果：0 正常、1 超标',人工确认注释是否准确描述该字段业务含义
+wm_waterquality_hour_records,m25_status,character,监测结果：0 正常、1 超标,水质监测小时记录表,status_like_field,状态类字段，注释可能过于通用: 字段名 'm25_status' 注释为 '监测结果：0 正常、1 超标',人工确认注释是否准确描述该字段业务含义
+wm_waterquality_hour_records,m26_status,character,监测结果：0 正常、1 超标,水质监测小时记录表,status_like_field,状态类字段，注释可能过于通用: 字段名 'm26_status' 注释为 '监测结果：0 正常、1 超标',人工确认注释是否准确描述该字段业务含义
+wm_waterquality_hour_records,m27_status,character,监测结果：0 正常、1 超标,水质监测小时记录表,status_like_field,状态类字段，注释可能过于通用: 字段名 'm27_status' 注释为 '监测结果：0 正常、1 超标',人工确认注释是否准确描述该字段业务含义
+wm_waterquality_hour_records,m28_status,character,监测结果：0 正常、1 超标,水质监测小时记录表,status_like_field,状态类字段，注释可能过于通用: 字段名 'm28_status' 注释为 '监测结果：0 正常、1 超标',人工确认注释是否准确描述该字段业务含义
+wm_waterquality_hour_records,m29_status,character,监测结果：0 正常、1 超标,水质监测小时记录表,status_like_field,状态类字段，注释可能过于通用: 字段名 'm29_status' 注释为 '监测结果：0 正常、1 超标',人工确认注释是否准确描述该字段业务含义
+wm_waterquality_hour_records,m30_status,character,监测结果：0 正常、1 超标,水质监测小时记录表,status_like_field,状态类字段，注释可能过于通用: 字段名 'm30_status' 注释为 '监测结果：0 正常、1 超标',人工确认注释是否准确描述该字段业务含义
+wm_waterquality_hour_records,m31_status,character,监测结果：0 正常、1 超标,水质监测小时记录表,status_like_field,状态类字段，注释可能过于通用: 字段名 'm31_status' 注释为 '监测结果：0 正常、1 超标',人工确认注释是否准确描述该字段业务含义
+wm_waterquality_month_records,section_id,bigint,断面id,水质监测月记录表,id_like_field,ID 类字段，注释可能过于通用: 字段名 'section_id' 注释为 '断面id',人工确认注释是否准确描述该字段业务含义
+wm_waterquality_month_records,section_id,bigint,断面id,水质监测月记录表,very_short_comment,注释极短 (4字): '断面id',确认该注释是否足以让模型理解字段含义
+wm_waterquality_month_records,m23_count,bigint,记录数23,水质监测月记录表,very_short_comment,注释极短 (5字): '记录数23',确认该注释是否足以让模型理解字段含义
+wm_waterquality_month_records,m24_count,bigint,记录数24,水质监测月记录表,very_short_comment,注释极短 (5字): '记录数24',确认该注释是否足以让模型理解字段含义
+wm_waterquality_month_records,m25_count,bigint,记录数25,水质监测月记录表,very_short_comment,注释极短 (5字): '记录数25',确认该注释是否足以让模型理解字段含义
+wm_waterquality_month_records,m26_count,bigint,记录数26,水质监测月记录表,very_short_comment,注释极短 (5字): '记录数26',确认该注释是否足以让模型理解字段含义
+wm_waterquality_month_records,m27_count,bigint,记录数27,水质监测月记录表,very_short_comment,注释极短 (5字): '记录数27',确认该注释是否足以让模型理解字段含义
+wm_waterquality_month_records,m28_count,bigint,记录数28,水质监测月记录表,very_short_comment,注释极短 (5字): '记录数28',确认该注释是否足以让模型理解字段含义
+wm_waterquality_month_records,m29_count,bigint,记录数29,水质监测月记录表,very_short_comment,注释极短 (5字): '记录数29',确认该注释是否足以让模型理解字段含义
+wm_waterquality_month_records,m30_count,bigint,记录数30,水质监测月记录表,very_short_comment,注释极短 (5字): '记录数30',确认该注释是否足以让模型理解字段含义
+wm_waterquality_month_records,m31_count,bigint,记录数31,水质监测月记录表,very_short_comment,注释极短 (5字): '记录数31',确认该注释是否足以让模型理解字段含义
+wm_waterquality_month_records,monitor_year,bigint,监测年份,水质监测月记录表,very_short_comment,注释极短 (4字): '监测年份',确认该注释是否足以让模型理解字段含义
+wm_waterquality_month_records,monitor_month,bigint,监测月份,水质监测月记录表,very_short_comment,注释极短 (4字): '监测月份',确认该注释是否足以让模型理解字段含义
+wm_waterquality_year_records,section_id,bigint,断面id,水质监测年记录表,id_like_field,ID 类字段，注释可能过于通用: 字段名 'section_id' 注释为 '断面id',人工确认注释是否准确描述该字段业务含义
+wm_waterquality_year_records,section_id,bigint,断面id,水质监测年记录表,very_short_comment,注释极短 (4字): '断面id',确认该注释是否足以让模型理解字段含义
+wm_waterquality_year_records,m23_count,bigint,记录数23,水质监测年记录表,very_short_comment,注释极短 (5字): '记录数23',确认该注释是否足以让模型理解字段含义
+wm_waterquality_year_records,m24_count,bigint,记录数24,水质监测年记录表,very_short_comment,注释极短 (5字): '记录数24',确认该注释是否足以让模型理解字段含义
+wm_waterquality_year_records,m25_count,bigint,记录数25,水质监测年记录表,very_short_comment,注释极短 (5字): '记录数25',确认该注释是否足以让模型理解字段含义
+wm_waterquality_year_records,m26_count,bigint,记录数26,水质监测年记录表,very_short_comment,注释极短 (5字): '记录数26',确认该注释是否足以让模型理解字段含义
+wm_waterquality_year_records,m27_count,bigint,记录数27,水质监测年记录表,very_short_comment,注释极短 (5字): '记录数27',确认该注释是否足以让模型理解字段含义
+wm_waterquality_year_records,m28_count,bigint,记录数28,水质监测年记录表,very_short_comment,注释极短 (5字): '记录数28',确认该注释是否足以让模型理解字段含义
+wm_waterquality_year_records,monitor_year,bigint,监测年份,水质监测年记录表,very_short_comment,注释极短 (4字): '监测年份',确认该注释是否足以让模型理解字段含义
+wm_waterquality_year_records,monitor_month,bigint,监测月份,水质监测年记录表,very_short_comment,注释极短 (4字): '监测月份',确认该注释是否足以让模型理解字段含义
+wst_asset,asset_code,character varying,资产编码,水安全溯源模块-统一资产表，存储断面、站点、排口、企业、园区、闸坝、管线、摄像头、事故池等可上图、可查询、可关联对象,code_like_field,编码类字段，注释可能过于通用: 字段名 'asset_code' 注释为 '资产编码',人工确认注释是否准确描述该字段业务含义
+wst_asset,asset_code,character varying,资产编码,水安全溯源模块-统一资产表，存储断面、站点、排口、企业、园区、闸坝、管线、摄像头、事故池等可上图、可查询、可关联对象,very_short_comment,注释极短 (4字): '资产编码',确认该注释是否足以让模型理解字段含义
+wst_asset,asset_name,character varying,资产名称,水安全溯源模块-统一资产表，存储断面、站点、排口、企业、园区、闸坝、管线、摄像头、事故池等可上图、可查询、可关联对象,name_like_field,名称类字段，注释可能过于通用: 字段名 'asset_name' 注释为 '资产名称',人工确认注释是否准确描述该字段业务含义
+wst_asset,asset_name,character varying,资产名称,水安全溯源模块-统一资产表，存储断面、站点、排口、企业、园区、闸坝、管线、摄像头、事故池等可上图、可查询、可关联对象,very_short_comment,注释极短 (4字): '资产名称',确认该注释是否足以让模型理解字段含义
+wst_asset,source_id,character varying,来源系统中的原始ID,水安全溯源模块-统一资产表，存储断面、站点、排口、企业、园区、闸坝、管线、摄像头、事故池等可上图、可查询、可关联对象,id_like_field,ID 类字段，注释可能过于通用: 字段名 'source_id' 注释为 '来源系统中的原始ID',人工确认注释是否准确描述该字段业务含义
+wst_asset,administrative_region_code,character varying,行政区划编码,水安全溯源模块-统一资产表，存储断面、站点、排口、企业、园区、闸坝、管线、摄像头、事故池等可上图、可查询、可关联对象,code_like_field,编码类字段，注释可能过于通用: 字段名 'administrative_region_code' 注释为 '行政区划编码',人工确认注释是否准确描述该字段业务含义
+wst_asset,administrative_region_name,character varying,行政区划名称,水安全溯源模块-统一资产表，存储断面、站点、排口、企业、园区、闸坝、管线、摄像头、事故池等可上图、可查询、可关联对象,name_like_field,名称类字段，注释可能过于通用: 字段名 'administrative_region_name' 注释为 '行政区划名称',人工确认注释是否准确描述该字段业务含义
+wst_asset,created_by,character varying,创建人,水安全溯源模块-统一资产表，存储断面、站点、排口、企业、园区、闸坝、管线、摄像头、事故池等可上图、可查询、可关联对象,very_short_comment,注释极短 (3字): '创建人',确认该注释是否足以让模型理解字段含义
+wst_asset,created_by,character varying,创建人,水安全溯源模块-统一资产表，存储断面、站点、排口、企业、园区、闸坝、管线、摄像头、事故池等可上图、可查询、可关联对象,generic_comment,注释过于通用: '创建人'，可能不足以区分业务上下文,确认该注释是否需要补充业务含义，但禁止在当前阶段修改
+wst_asset,created_at,timestamp without time zone,创建时间,水安全溯源模块-统一资产表，存储断面、站点、排口、企业、园区、闸坝、管线、摄像头、事故池等可上图、可查询、可关联对象,very_short_comment,注释极短 (4字): '创建时间',确认该注释是否足以让模型理解字段含义
+wst_asset,created_at,timestamp without time zone,创建时间,水安全溯源模块-统一资产表，存储断面、站点、排口、企业、园区、闸坝、管线、摄像头、事故池等可上图、可查询、可关联对象,generic_comment,注释过于通用: '创建时间'，可能不足以区分业务上下文,确认该注释是否需要补充业务含义，但禁止在当前阶段修改
+wst_asset,updated_by,character varying,更新人,水安全溯源模块-统一资产表，存储断面、站点、排口、企业、园区、闸坝、管线、摄像头、事故池等可上图、可查询、可关联对象,very_short_comment,注释极短 (3字): '更新人',确认该注释是否足以让模型理解字段含义
+wst_asset,updated_at,timestamp without time zone,更新时间,水安全溯源模块-统一资产表，存储断面、站点、排口、企业、园区、闸坝、管线、摄像头、事故池等可上图、可查询、可关联对象,very_short_comment,注释极短 (4字): '更新时间',确认该注释是否足以让模型理解字段含义
+wst_asset,updated_at,timestamp without time zone,更新时间,水安全溯源模块-统一资产表，存储断面、站点、排口、企业、园区、闸坝、管线、摄像头、事故池等可上图、可查询、可关联对象,generic_comment,注释过于通用: '更新时间'，可能不足以区分业务上下文,确认该注释是否需要补充业务含义，但禁止在当前阶段修改
+wst_asset_relation,target_asset_id,bigint,目标资产ID，对应 wst_asset.id,资产关系实例表，存储资产与资产之间的一度业务关系，不代表水流路径,id_like_field,ID 类字段，注释可能过于通用: 字段名 'target_asset_id' 注释为 '目标资产ID，对应 wst_asset.id',人工确认注释是否准确描述该字段业务含义
+wst_asset_relation,relation_type,character varying,关系大类编码，对应 wst_relation_type_dict.type_code,资产关系实例表，存储资产与资产之间的一度业务关系，不代表水流路径,code_like_field,类型类字段，注释可能过于通用: 字段名 'relation_type' 注释为 '关系大类编码，对应 wst_relation_type_dict.type_code',人工确认注释是否准确描述该字段业务含义
+wst_asset_relation,created_at,timestamp without time zone,创建时间,资产关系实例表，存储资产与资产之间的一度业务关系，不代表水流路径,very_short_comment,注释极短 (4字): '创建时间',确认该注释是否足以让模型理解字段含义
+wst_asset_relation,created_at,timestamp without time zone,创建时间,资产关系实例表，存储资产与资产之间的一度业务关系，不代表水流路径,generic_comment,注释过于通用: '创建时间'，可能不足以区分业务上下文,确认该注释是否需要补充业务含义，但禁止在当前阶段修改
+wst_asset_relation,updated_at,timestamp without time zone,更新时间,资产关系实例表，存储资产与资产之间的一度业务关系，不代表水流路径,very_short_comment,注释极短 (4字): '更新时间',确认该注释是否足以让模型理解字段含义
+wst_asset_relation,updated_at,timestamp without time zone,更新时间,资产关系实例表，存储资产与资产之间的一度业务关系，不代表水流路径,generic_comment,注释过于通用: '更新时间'，可能不足以区分业务上下文,确认该注释是否需要补充业务含义，但禁止在当前阶段修改
+wst_asset_trace_snap,asset_id,bigint,资产ID，关联 wst_asset.id,水安全溯源模块-资产拓扑挂接表，用于维护业务资产与溯源拓扑节点之间的挂接关系，是资产进入 pgRouting 网络计算的桥梁,id_like_field,ID 类字段，注释可能过于通用: 字段名 'asset_id' 注释为 '资产ID，关联 wst_asset.id',人工确认注释是否准确描述该字段业务含义
+wst_asset_trace_snap,trace_node_id,bigint,挂接后的拓扑节点ID，关联 wst_trace_node.id，pgRouting 查询必须从该节点出发,水安全溯源模块-资产拓扑挂接表，用于维护业务资产与溯源拓扑节点之间的挂接关系，是资产进入 pgRouting 网络计算的桥梁,id_like_field,ID 类字段，注释可能过于通用: 字段名 'trace_node_id' 注释为 '挂接后的拓扑节点ID，关联 wst_trace_node.id，pgRouting 查询必须从该节点出发',人工确认注释是否准确描述该字段业务含义
+wst_asset_trace_snap,trace_edge_id,bigint,原始挂接边ID，关联 wst_trace_edge.id，仅作为来源记录或展示辅助字段，不作为 pgRouting 起点,水安全溯源模块-资产拓扑挂接表，用于维护业务资产与溯源拓扑节点之间的挂接关系，是资产进入 pgRouting 网络计算的桥梁,id_like_field,ID 类字段，注释可能过于通用: 字段名 'trace_edge_id' 注释为 '原始挂接边ID，关联 wst_trace_edge.id，仅作为来源记录或展示辅助字段，不作为 pgRouting 起点',人工确认注释是否准确描述该字段业务含义
+wst_asset_trace_snap,snap_point_geom,USER-DEFINED,资产在拓扑网络上的实际挂接点坐标，坐标系SRID=4326,水安全溯源模块-资产拓扑挂接表，用于维护业务资产与溯源拓扑节点之间的挂接关系，是资产进入 pgRouting 网络计算的桥梁,business_sensitive_field,空间几何字段，需确认注释准确性: 字段名 'snap_point_geom' 注释为 '资产在拓扑网络上的实际挂接点坐标，坐标系SRID=4326',人工确认注释是否准确描述该字段业务含义
+wst_asset_trace_snap,asset_point_geom,USER-DEFINED,资产原始点坐标，主要用于记录资产原始位置,水安全溯源模块-资产拓扑挂接表，用于维护业务资产与溯源拓扑节点之间的挂接关系，是资产进入 pgRouting 网络计算的桥梁,business_sensitive_field,空间几何字段，需确认注释准确性: 字段名 'asset_point_geom' 注释为 '资产原始点坐标，主要用于记录资产原始位置',人工确认注释是否准确描述该字段业务含义
+wst_asset_trace_snap,snap_type,character varying,挂接类型：node=挂接到已有节点，split_edge=挂接到边中间并拆边，manual=人工指定,水安全溯源模块-资产拓扑挂接表，用于维护业务资产与溯源拓扑节点之间的挂接关系，是资产进入 pgRouting 网络计算的桥梁,code_like_field,类型类字段，注释可能过于通用: 字段名 'snap_type' 注释为 '挂接类型：node=挂接到已有节点，split_edge=挂接到边中间并拆边，manual=人工指定',人工确认注释是否准确描述该字段业务含义
+wst_asset_trace_snap,snap_status,character varying,挂接状态：candidate=候选，confirmed=已确认，invalid=无效,水安全溯源模块-资产拓扑挂接表，用于维护业务资产与溯源拓扑节点之间的挂接关系，是资产进入 pgRouting 网络计算的桥梁,status_like_field,状态类字段，注释可能过于通用: 字段名 'snap_status' 注释为 '挂接状态：candidate=候选，confirmed=已确认，invalid=无效',人工确认注释是否准确描述该字段业务含义
+wst_asset_trace_snap,confirmed_by,character varying,确认人,水安全溯源模块-资产拓扑挂接表，用于维护业务资产与溯源拓扑节点之间的挂接关系，是资产进入 pgRouting 网络计算的桥梁,very_short_comment,注释极短 (3字): '确认人',确认该注释是否足以让模型理解字段含义
+wst_asset_trace_snap,confirmed_at,timestamp without time zone,确认时间,水安全溯源模块-资产拓扑挂接表，用于维护业务资产与溯源拓扑节点之间的挂接关系，是资产进入 pgRouting 网络计算的桥梁,very_short_comment,注释极短 (4字): '确认时间',确认该注释是否足以让模型理解字段含义
+wst_asset_trace_snap,created_by,character varying,创建人,水安全溯源模块-资产拓扑挂接表，用于维护业务资产与溯源拓扑节点之间的挂接关系，是资产进入 pgRouting 网络计算的桥梁,very_short_comment,注释极短 (3字): '创建人',确认该注释是否足以让模型理解字段含义
+wst_asset_trace_snap,created_by,character varying,创建人,水安全溯源模块-资产拓扑挂接表，用于维护业务资产与溯源拓扑节点之间的挂接关系，是资产进入 pgRouting 网络计算的桥梁,generic_comment,注释过于通用: '创建人'，可能不足以区分业务上下文,确认该注释是否需要补充业务含义，但禁止在当前阶段修改
+wst_asset_trace_snap,created_at,timestamp without time zone,创建时间,水安全溯源模块-资产拓扑挂接表，用于维护业务资产与溯源拓扑节点之间的挂接关系，是资产进入 pgRouting 网络计算的桥梁,very_short_comment,注释极短 (4字): '创建时间',确认该注释是否足以让模型理解字段含义
+wst_asset_trace_snap,created_at,timestamp without time zone,创建时间,水安全溯源模块-资产拓扑挂接表，用于维护业务资产与溯源拓扑节点之间的挂接关系，是资产进入 pgRouting 网络计算的桥梁,generic_comment,注释过于通用: '创建时间'，可能不足以区分业务上下文,确认该注释是否需要补充业务含义，但禁止在当前阶段修改
+wst_asset_trace_snap,updated_by,character varying,更新人,水安全溯源模块-资产拓扑挂接表，用于维护业务资产与溯源拓扑节点之间的挂接关系，是资产进入 pgRouting 网络计算的桥梁,very_short_comment,注释极短 (3字): '更新人',确认该注释是否足以让模型理解字段含义
+wst_asset_trace_snap,updated_at,timestamp without time zone,更新时间,水安全溯源模块-资产拓扑挂接表，用于维护业务资产与溯源拓扑节点之间的挂接关系，是资产进入 pgRouting 网络计算的桥梁,very_short_comment,注释极短 (4字): '更新时间',确认该注释是否足以让模型理解字段含义
+wst_asset_trace_snap,updated_at,timestamp without time zone,更新时间,水安全溯源模块-资产拓扑挂接表，用于维护业务资产与溯源拓扑节点之间的挂接关系，是资产进入 pgRouting 网络计算的桥梁,generic_comment,注释过于通用: '更新时间'，可能不足以区分业务上下文,确认该注释是否需要补充业务含义，但禁止在当前阶段修改
+wst_asset_trace_snap,network_type,character varying,网络类型，例如 river=外部河网，park_pipe=园区管网，park_river=园区内部排污河流，mixed=混合衔接网络,水安全溯源模块-资产拓扑挂接表，用于维护业务资产与溯源拓扑节点之间的挂接关系，是资产进入 pgRouting 网络计算的桥梁,code_like_field,类型类字段，注释可能过于通用: 字段名 'network_type' 注释为 '网络类型，例如 river=外部河网，park_pipe=园区管网，park_river=园区内部排污河流，mixed=',人工确认注释是否准确描述该字段业务含义
+wst_asset_type_dict,asset_type_name,character varying,资产类型名称，例如国控断面、自动站、排污口、涉水企业、化工园区、摄像头,水安全溯源模块-资产类型字典表，用于统一管理资产类型、图层、图标、几何类型和前端展示规则,name_like_field,名称类字段，注释可能过于通用: 字段名 'asset_type_name' 注释为 '资产类型名称，例如国控断面、自动站、排污口、涉水企业、化工园区、摄像头',人工确认注释是否准确描述该字段业务含义
+wst_asset_type_dict,parent_type,character varying,上级资产类型编码，用于资产类型分组,水安全溯源模块-资产类型字典表，用于统一管理资产类型、图层、图标、几何类型和前端展示规则,code_like_field,类型类字段，注释可能过于通用: 字段名 'parent_type' 注释为 '上级资产类型编码，用于资产类型分组',人工确认注释是否准确描述该字段业务含义
+wst_asset_type_dict,icon_name,character varying,前端图标名称,水安全溯源模块-资产类型字典表，用于统一管理资产类型、图层、图标、几何类型和前端展示规则,name_like_field,名称类字段，注释可能过于通用: 字段名 'icon_name' 注释为 '前端图标名称',人工确认注释是否准确描述该字段业务含义
+wst_asset_type_dict,layer_name,character varying,前端图层名称,水安全溯源模块-资产类型字典表，用于统一管理资产类型、图层、图标、几何类型和前端展示规则,name_like_field,名称类字段，注释可能过于通用: 字段名 'layer_name' 注释为 '前端图层名称',人工确认注释是否准确描述该字段业务含义
+wst_asset_type_dict,sort_no,integer,排序号,水安全溯源模块-资产类型字典表，用于统一管理资产类型、图层、图标、几何类型和前端展示规则,very_short_comment,注释极短 (3字): '排序号',确认该注释是否足以让模型理解字段含义
+wst_asset_type_dict,created_by,character varying,创建人,水安全溯源模块-资产类型字典表，用于统一管理资产类型、图层、图标、几何类型和前端展示规则,very_short_comment,注释极短 (3字): '创建人',确认该注释是否足以让模型理解字段含义
+wst_asset_type_dict,created_by,character varying,创建人,水安全溯源模块-资产类型字典表，用于统一管理资产类型、图层、图标、几何类型和前端展示规则,generic_comment,注释过于通用: '创建人'，可能不足以区分业务上下文,确认该注释是否需要补充业务含义，但禁止在当前阶段修改
+wst_asset_type_dict,created_at,timestamp without time zone,创建时间,水安全溯源模块-资产类型字典表，用于统一管理资产类型、图层、图标、几何类型和前端展示规则,very_short_comment,注释极短 (4字): '创建时间',确认该注释是否足以让模型理解字段含义
+wst_asset_type_dict,created_at,timestamp without time zone,创建时间,水安全溯源模块-资产类型字典表，用于统一管理资产类型、图层、图标、几何类型和前端展示规则,generic_comment,注释过于通用: '创建时间'，可能不足以区分业务上下文,确认该注释是否需要补充业务含义，但禁止在当前阶段修改
+wst_asset_type_dict,updated_by,character varying,更新人,水安全溯源模块-资产类型字典表，用于统一管理资产类型、图层、图标、几何类型和前端展示规则,very_short_comment,注释极短 (3字): '更新人',确认该注释是否足以让模型理解字段含义
+wst_asset_type_dict,updated_at,timestamp without time zone,更新时间,水安全溯源模块-资产类型字典表，用于统一管理资产类型、图层、图标、几何类型和前端展示规则,very_short_comment,注释极短 (4字): '更新时间',确认该注释是否足以让模型理解字段含义
+wst_asset_type_dict,updated_at,timestamp without time zone,更新时间,水安全溯源模块-资产类型字典表，用于统一管理资产类型、图层、图标、几何类型和前端展示规则,generic_comment,注释过于通用: '更新时间'，可能不足以区分业务上下文,确认该注释是否需要补充业务含义，但禁止在当前阶段修改
+wst_control_zone,zone_code,character varying,分区编码,水安全溯源模块-三级分区表，用于管理国控断面控制单元、自动站分区、工业园区/分水岭分区,code_like_field,编码类字段，注释可能过于通用: 字段名 'zone_code' 注释为 '分区编码',人工确认注释是否准确描述该字段业务含义
+wst_control_zone,zone_code,character varying,分区编码,水安全溯源模块-三级分区表，用于管理国控断面控制单元、自动站分区、工业园区/分水岭分区,very_short_comment,注释极短 (4字): '分区编码',确认该注释是否足以让模型理解字段含义
+wst_control_zone,zone_name,character varying,分区名称,水安全溯源模块-三级分区表，用于管理国控断面控制单元、自动站分区、工业园区/分水岭分区,name_like_field,名称类字段，注释可能过于通用: 字段名 'zone_name' 注释为 '分区名称',人工确认注释是否准确描述该字段业务含义
+wst_control_zone,zone_name,character varying,分区名称,水安全溯源模块-三级分区表，用于管理国控断面控制单元、自动站分区、工业园区/分水岭分区,very_short_comment,注释极短 (4字): '分区名称',确认该注释是否足以让模型理解字段含义
+wst_control_zone,zone_type,character varying,分区类型，例如 control_unit=控制单元，station_unit=自动站单元，park_unit=园区单元，watershed_unit=分水岭单元,水安全溯源模块-三级分区表，用于管理国控断面控制单元、自动站分区、工业园区/分水岭分区,code_like_field,类型类字段，注释可能过于通用: 字段名 'zone_type' 注释为 '分区类型，例如 control_unit=控制单元，station_unit=自动站单元，park_unit=园区单元，',人工确认注释是否准确描述该字段业务含义
+wst_control_zone,sort_no,integer,排序号,水安全溯源模块-三级分区表，用于管理国控断面控制单元、自动站分区、工业园区/分水岭分区,very_short_comment,注释极短 (3字): '排序号',确认该注释是否足以让模型理解字段含义
+wst_control_zone,created_by,character varying,创建人,水安全溯源模块-三级分区表，用于管理国控断面控制单元、自动站分区、工业园区/分水岭分区,very_short_comment,注释极短 (3字): '创建人',确认该注释是否足以让模型理解字段含义
+wst_control_zone,created_by,character varying,创建人,水安全溯源模块-三级分区表，用于管理国控断面控制单元、自动站分区、工业园区/分水岭分区,generic_comment,注释过于通用: '创建人'，可能不足以区分业务上下文,确认该注释是否需要补充业务含义，但禁止在当前阶段修改
+wst_control_zone,created_at,timestamp without time zone,创建时间,水安全溯源模块-三级分区表，用于管理国控断面控制单元、自动站分区、工业园区/分水岭分区,very_short_comment,注释极短 (4字): '创建时间',确认该注释是否足以让模型理解字段含义
+wst_control_zone,created_at,timestamp without time zone,创建时间,水安全溯源模块-三级分区表，用于管理国控断面控制单元、自动站分区、工业园区/分水岭分区,generic_comment,注释过于通用: '创建时间'，可能不足以区分业务上下文,确认该注释是否需要补充业务含义，但禁止在当前阶段修改
+wst_control_zone,updated_by,character varying,更新人,水安全溯源模块-三级分区表，用于管理国控断面控制单元、自动站分区、工业园区/分水岭分区,very_short_comment,注释极短 (3字): '更新人',确认该注释是否足以让模型理解字段含义
+wst_control_zone,updated_at,timestamp without time zone,更新时间,水安全溯源模块-三级分区表，用于管理国控断面控制单元、自动站分区、工业园区/分水岭分区,very_short_comment,注释极短 (4字): '更新时间',确认该注释是否足以让模型理解字段含义
+wst_control_zone,updated_at,timestamp without time zone,更新时间,水安全溯源模块-三级分区表，用于管理国控断面控制单元、自动站分区、工业园区/分水岭分区,generic_comment,注释过于通用: '更新时间'，可能不足以区分业务上下文,确认该注释是否需要补充业务含义，但禁止在当前阶段修改
+wst_layer_river,created_at,timestamp without time zone,创建时间,,missing_table_comment,表 wst_layer_river 无表级注释，字段 created_at 的训练语义可能不完整,优先补齐表级注释后再训练该表字段
+wst_layer_river,created_at,timestamp without time zone,创建时间,,very_short_comment,注释极短 (4字): '创建时间',确认该注释是否足以让模型理解字段含义
+wst_layer_river,created_at,timestamp without time zone,创建时间,,generic_comment,注释过于通用: '创建时间'，可能不足以区分业务上下文,确认该注释是否需要补充业务含义，但禁止在当前阶段修改
+wst_layer_river,updated_at,timestamp without time zone,更新时间,,missing_table_comment,表 wst_layer_river 无表级注释，字段 updated_at 的训练语义可能不完整,优先补齐表级注释后再训练该表字段
+wst_layer_river,updated_at,timestamp without time zone,更新时间,,very_short_comment,注释极短 (4字): '更新时间',确认该注释是否足以让模型理解字段含义
+wst_layer_river,updated_at,timestamp without time zone,更新时间,,generic_comment,注释过于通用: '更新时间'，可能不足以区分业务上下文,确认该注释是否需要补充业务含义，但禁止在当前阶段修改
+wst_relation_subtype_dict,relation_type,character varying,关系大类编码，对应 wst_relation_type_dict.type_code,关系子类字典表，维护具体业务关系类型、标准方向和允许资产类型,code_like_field,类型类字段，注释可能过于通用: 字段名 'relation_type' 注释为 '关系大类编码，对应 wst_relation_type_dict.type_code',人工确认注释是否准确描述该字段业务含义
+wst_relation_subtype_dict,relation_name,character varying,关系子类中文名称，例如 企业关联排污口,关系子类字典表，维护具体业务关系类型、标准方向和允许资产类型,name_like_field,名称类字段，注释可能过于通用: 字段名 'relation_name' 注释为 '关系子类中文名称，例如 企业关联排污口',人工确认注释是否准确描述该字段业务含义
+wst_relation_subtype_dict,default_confidence,numeric,默认置信度,关系子类字典表，维护具体业务关系类型、标准方向和允许资产类型,very_short_comment,注释极短 (5字): '默认置信度',确认该注释是否足以让模型理解字段含义
+wst_relation_subtype_dict,created_at,timestamp without time zone,创建时间,关系子类字典表，维护具体业务关系类型、标准方向和允许资产类型,very_short_comment,注释极短 (4字): '创建时间',确认该注释是否足以让模型理解字段含义
+wst_relation_subtype_dict,created_at,timestamp without time zone,创建时间,关系子类字典表，维护具体业务关系类型、标准方向和允许资产类型,generic_comment,注释过于通用: '创建时间'，可能不足以区分业务上下文,确认该注释是否需要补充业务含义，但禁止在当前阶段修改
+wst_relation_subtype_dict,updated_at,timestamp without time zone,更新时间,关系子类字典表，维护具体业务关系类型、标准方向和允许资产类型,very_short_comment,注释极短 (4字): '更新时间',确认该注释是否足以让模型理解字段含义
+wst_relation_subtype_dict,updated_at,timestamp without time zone,更新时间,关系子类字典表，维护具体业务关系类型、标准方向和允许资产类型,generic_comment,注释过于通用: '更新时间'，可能不足以区分业务上下文,确认该注释是否需要补充业务含义，但禁止在当前阶段修改
+wst_relation_type_dict,type_code,character varying,关系大类编码，例如 ownership、discharge、monitoring,关系大类字典表，用于维护资产关系的大类编码,code_like_field,编码类字段，注释可能过于通用: 字段名 'type_code' 注释为 '关系大类编码，例如 ownership、discharge、monitoring',人工确认注释是否准确描述该字段业务含义
+wst_relation_type_dict,type_name,character varying,关系大类名称,关系大类字典表，用于维护资产关系的大类编码,name_like_field,名称类字段，注释可能过于通用: 字段名 'type_name' 注释为 '关系大类名称',人工确认注释是否准确描述该字段业务含义
+wst_relation_type_dict,created_at,timestamp without time zone,创建时间,关系大类字典表，用于维护资产关系的大类编码,very_short_comment,注释极短 (4字): '创建时间',确认该注释是否足以让模型理解字段含义
+wst_relation_type_dict,created_at,timestamp without time zone,创建时间,关系大类字典表，用于维护资产关系的大类编码,generic_comment,注释过于通用: '创建时间'，可能不足以区分业务上下文,确认该注释是否需要补充业务含义，但禁止在当前阶段修改
+wst_relation_type_dict,updated_at,timestamp without time zone,更新时间,关系大类字典表，用于维护资产关系的大类编码,very_short_comment,注释极短 (4字): '更新时间',确认该注释是否足以让模型理解字段含义
+wst_relation_type_dict,updated_at,timestamp without time zone,更新时间,关系大类字典表，用于维护资产关系的大类编码,generic_comment,注释过于通用: '更新时间'，可能不足以区分业务上下文,确认该注释是否需要补充业务含义，但禁止在当前阶段修改
+wst_trace_edge,edge_code,character varying,边编码,水安全溯源模块-溯源拓扑边表，用于存储河网、管网、排水路径、园区内外衔接路径，是 pgRouting 上下游分析的核心边表,code_like_field,编码类字段，注释可能过于通用: 字段名 'edge_code' 注释为 '边编码',人工确认注释是否准确描述该字段业务含义
+wst_trace_edge,edge_code,character varying,边编码,水安全溯源模块-溯源拓扑边表，用于存储河网、管网、排水路径、园区内外衔接路径，是 pgRouting 上下游分析的核心边表,very_short_comment,注释极短 (3字): '边编码',确认该注释是否足以让模型理解字段含义
+wst_trace_edge,edge_name,character varying,边名称,水安全溯源模块-溯源拓扑边表，用于存储河网、管网、排水路径、园区内外衔接路径，是 pgRouting 上下游分析的核心边表,name_like_field,名称类字段，注释可能过于通用: 字段名 'edge_name' 注释为 '边名称',人工确认注释是否准确描述该字段业务含义
+wst_trace_edge,edge_name,character varying,边名称,水安全溯源模块-溯源拓扑边表，用于存储河网、管网、排水路径、园区内外衔接路径，是 pgRouting 上下游分析的核心边表,very_short_comment,注释极短 (3字): '边名称',确认该注释是否足以让模型理解字段含义
+wst_trace_edge,edge_type,character varying,边类型，例如 river=河道，pipe=管线，park_pipe=园区管网，park_river=园区内部排污河流，discharge=排放连接边，boundary=边界衔接边,水安全溯源模块-溯源拓扑边表，用于存储河网、管网、排水路径、园区内外衔接路径，是 pgRouting 上下游分析的核心边表,code_like_field,类型类字段，注释可能过于通用: 字段名 'edge_type' 注释为 '边类型，例如 river=河道，pipe=管线，park_pipe=园区管网，park_river=园区内部排污河流，d',人工确认注释是否准确描述该字段业务含义
+wst_trace_edge,network_type,character varying,网络类型，例如 river=外部河网，park_pipe=园区管网，park_river=园区内部排污河流，mixed=混合衔接网络,水安全溯源模块-溯源拓扑边表，用于存储河网、管网、排水路径、园区内外衔接路径，是 pgRouting 上下游分析的核心边表,code_like_field,类型类字段，注释可能过于通用: 字段名 'network_type' 注释为 '网络类型，例如 river=外部河网，park_pipe=园区管网，park_river=园区内部排污河流，mixed=',人工确认注释是否准确描述该字段业务含义
+wst_trace_edge,pipe_code,character varying,管线编码,水安全溯源模块-溯源拓扑边表，用于存储河网、管网、排水路径、园区内外衔接路径，是 pgRouting 上下游分析的核心边表,code_like_field,编码类字段，注释可能过于通用: 字段名 'pipe_code' 注释为 '管线编码',人工确认注释是否准确描述该字段业务含义
+wst_trace_edge,pipe_code,character varying,管线编码,水安全溯源模块-溯源拓扑边表，用于存储河网、管网、排水路径、园区内外衔接路径，是 pgRouting 上下游分析的核心边表,very_short_comment,注释极短 (4字): '管线编码',确认该注释是否足以让模型理解字段含义
+wst_trace_edge,gate_asset_id,bigint,关联闸门/闸坝资产ID，关联 wst_asset.id,水安全溯源模块-溯源拓扑边表，用于存储河网、管网、排水路径、园区内外衔接路径，是 pgRouting 上下游分析的核心边表,id_like_field,ID 类字段，注释可能过于通用: 字段名 'gate_asset_id' 注释为 '关联闸门/闸坝资产ID，关联 wst_asset.id',人工确认注释是否准确描述该字段业务含义
+wst_trace_edge,pump_asset_id,bigint,关联泵站资产ID，关联 wst_asset.id,水安全溯源模块-溯源拓扑边表，用于存储河网、管网、排水路径、园区内外衔接路径，是 pgRouting 上下游分析的核心边表,id_like_field,ID 类字段，注释可能过于通用: 字段名 'pump_asset_id' 注释为 '关联泵站资产ID，关联 wst_asset.id',人工确认注释是否准确描述该字段业务含义
+wst_trace_edge,original_edge_id,bigint,原始边ID，资产挂接到边中间并拆边时记录来源边,水安全溯源模块-溯源拓扑边表，用于存储河网、管网、排水路径、园区内外衔接路径，是 pgRouting 上下游分析的核心边表,id_like_field,ID 类字段，注释可能过于通用: 字段名 'original_edge_id' 注释为 '原始边ID，资产挂接到边中间并拆边时记录来源边',人工确认注释是否准确描述该字段业务含义
+wst_trace_edge,created_by,character varying,创建人,水安全溯源模块-溯源拓扑边表，用于存储河网、管网、排水路径、园区内外衔接路径，是 pgRouting 上下游分析的核心边表,very_short_comment,注释极短 (3字): '创建人',确认该注释是否足以让模型理解字段含义
+wst_trace_edge,created_by,character varying,创建人,水安全溯源模块-溯源拓扑边表，用于存储河网、管网、排水路径、园区内外衔接路径，是 pgRouting 上下游分析的核心边表,generic_comment,注释过于通用: '创建人'，可能不足以区分业务上下文,确认该注释是否需要补充业务含义，但禁止在当前阶段修改
+wst_trace_edge,created_at,timestamp without time zone,创建时间,水安全溯源模块-溯源拓扑边表，用于存储河网、管网、排水路径、园区内外衔接路径，是 pgRouting 上下游分析的核心边表,very_short_comment,注释极短 (4字): '创建时间',确认该注释是否足以让模型理解字段含义
+wst_trace_edge,created_at,timestamp without time zone,创建时间,水安全溯源模块-溯源拓扑边表，用于存储河网、管网、排水路径、园区内外衔接路径，是 pgRouting 上下游分析的核心边表,generic_comment,注释过于通用: '创建时间'，可能不足以区分业务上下文,确认该注释是否需要补充业务含义，但禁止在当前阶段修改
+wst_trace_edge,updated_by,character varying,更新人,水安全溯源模块-溯源拓扑边表，用于存储河网、管网、排水路径、园区内外衔接路径，是 pgRouting 上下游分析的核心边表,very_short_comment,注释极短 (3字): '更新人',确认该注释是否足以让模型理解字段含义
+wst_trace_edge,updated_at,timestamp without time zone,更新时间,水安全溯源模块-溯源拓扑边表，用于存储河网、管网、排水路径、园区内外衔接路径，是 pgRouting 上下游分析的核心边表,very_short_comment,注释极短 (4字): '更新时间',确认该注释是否足以让模型理解字段含义
+wst_trace_edge,updated_at,timestamp without time zone,更新时间,水安全溯源模块-溯源拓扑边表，用于存储河网、管网、排水路径、园区内外衔接路径，是 pgRouting 上下游分析的核心边表,generic_comment,注释过于通用: '更新时间'，可能不足以区分业务上下文,确认该注释是否需要补充业务含义，但禁止在当前阶段修改
+wst_trace_node,node_code,character varying,节点编码,水安全溯源模块-溯源拓扑节点表，用于存储河网、管网、园区排污河流、排口挂接点、断面挂接点、园区出口等 pgRouting 节点,code_like_field,编码类字段，注释可能过于通用: 字段名 'node_code' 注释为 '节点编码',人工确认注释是否准确描述该字段业务含义
+wst_trace_node,node_code,character varying,节点编码,水安全溯源模块-溯源拓扑节点表，用于存储河网、管网、园区排污河流、排口挂接点、断面挂接点、园区出口等 pgRouting 节点,very_short_comment,注释极短 (4字): '节点编码',确认该注释是否足以让模型理解字段含义
+wst_trace_node,node_name,character varying,节点名称,水安全溯源模块-溯源拓扑节点表，用于存储河网、管网、园区排污河流、排口挂接点、断面挂接点、园区出口等 pgRouting 节点,name_like_field,名称类字段，注释可能过于通用: 字段名 'node_name' 注释为 '节点名称',人工确认注释是否准确描述该字段业务含义
+wst_trace_node,node_name,character varying,节点名称,水安全溯源模块-溯源拓扑节点表，用于存储河网、管网、园区排污河流、排口挂接点、断面挂接点、园区出口等 pgRouting 节点,very_short_comment,注释极短 (4字): '节点名称',确认该注释是否足以让模型理解字段含义
+wst_trace_node,network_type,character varying,网络类型，例如 river=外部河网，park_pipe=园区管网，park_river=园区内部排污河流，mixed=混合衔接网络,水安全溯源模块-溯源拓扑节点表，用于存储河网、管网、园区排污河流、排口挂接点、断面挂接点、园区出口等 pgRouting 节点,code_like_field,类型类字段，注释可能过于通用: 字段名 'network_type' 注释为 '网络类型，例如 river=外部河网，park_pipe=园区管网，park_river=园区内部排污河流，mixed=',人工确认注释是否准确描述该字段业务含义
+wst_trace_node,boundary_type,character varying,边界节点类型，例如 park_outlet、pipe_to_river、river_inlet、external_river_join,水安全溯源模块-溯源拓扑节点表，用于存储河网、管网、园区排污河流、排口挂接点、断面挂接点、园区出口等 pgRouting 节点,code_like_field,类型类字段，注释可能过于通用: 字段名 'boundary_type' 注释为 '边界节点类型，例如 park_outlet、pipe_to_river、river_inlet、external_riv',人工确认注释是否准确描述该字段业务含义
+wst_trace_node,boundary_name,character varying,边界节点名称,水安全溯源模块-溯源拓扑节点表，用于存储河网、管网、园区排污河流、排口挂接点、断面挂接点、园区出口等 pgRouting 节点,name_like_field,名称类字段，注释可能过于通用: 字段名 'boundary_name' 注释为 '边界节点名称',人工确认注释是否准确描述该字段业务含义
+wst_trace_node,source_id,character varying,来源系统中的原始ID,水安全溯源模块-溯源拓扑节点表，用于存储河网、管网、园区排污河流、排口挂接点、断面挂接点、园区出口等 pgRouting 节点,id_like_field,ID 类字段，注释可能过于通用: 字段名 'source_id' 注释为 '来源系统中的原始ID',人工确认注释是否准确描述该字段业务含义
+wst_trace_node,created_by,character varying,创建人,水安全溯源模块-溯源拓扑节点表，用于存储河网、管网、园区排污河流、排口挂接点、断面挂接点、园区出口等 pgRouting 节点,very_short_comment,注释极短 (3字): '创建人',确认该注释是否足以让模型理解字段含义
+wst_trace_node,created_by,character varying,创建人,水安全溯源模块-溯源拓扑节点表，用于存储河网、管网、园区排污河流、排口挂接点、断面挂接点、园区出口等 pgRouting 节点,generic_comment,注释过于通用: '创建人'，可能不足以区分业务上下文,确认该注释是否需要补充业务含义，但禁止在当前阶段修改
+wst_trace_node,created_at,timestamp without time zone,创建时间,水安全溯源模块-溯源拓扑节点表，用于存储河网、管网、园区排污河流、排口挂接点、断面挂接点、园区出口等 pgRouting 节点,very_short_comment,注释极短 (4字): '创建时间',确认该注释是否足以让模型理解字段含义
+wst_trace_node,created_at,timestamp without time zone,创建时间,水安全溯源模块-溯源拓扑节点表，用于存储河网、管网、园区排污河流、排口挂接点、断面挂接点、园区出口等 pgRouting 节点,generic_comment,注释过于通用: '创建时间'，可能不足以区分业务上下文,确认该注释是否需要补充业务含义，但禁止在当前阶段修改
+wst_trace_node,updated_by,character varying,更新人,水安全溯源模块-溯源拓扑节点表，用于存储河网、管网、园区排污河流、排口挂接点、断面挂接点、园区出口等 pgRouting 节点,very_short_comment,注释极短 (3字): '更新人',确认该注释是否足以让模型理解字段含义
+wst_trace_node,updated_at,timestamp without time zone,更新时间,水安全溯源模块-溯源拓扑节点表，用于存储河网、管网、园区排污河流、排口挂接点、断面挂接点、园区出口等 pgRouting 节点,very_short_comment,注释极短 (4字): '更新时间',确认该注释是否足以让模型理解字段含义
+wst_trace_node,updated_at,timestamp without time zone,更新时间,水安全溯源模块-溯源拓扑节点表，用于存储河网、管网、园区排污河流、排口挂接点、断面挂接点、园区出口等 pgRouting 节点,generic_comment,注释过于通用: '更新时间'，可能不足以区分业务上下文,确认该注释是否需要补充业务含义，但禁止在当前阶段修改
+wst_trace_topology_issue,object_code,character varying,监控对象编码,,missing_table_comment,表 wst_trace_topology_issue 无表级注释，字段 object_code 的训练语义可能不完整,优先补齐表级注释后再训练该表字段
+wst_trace_topology_issue,object_code,character varying,监控对象编码,,code_like_field,编码类字段，注释可能过于通用: 字段名 'object_code' 注释为 '监控对象编码',人工确认注释是否准确描述该字段业务含义
+wst_trace_topology_issue,created_by,character varying,创建人,,missing_table_comment,表 wst_trace_topology_issue 无表级注释，字段 created_by 的训练语义可能不完整,优先补齐表级注释后再训练该表字段
+wst_trace_topology_issue,created_by,character varying,创建人,,very_short_comment,注释极短 (3字): '创建人',确认该注释是否足以让模型理解字段含义
+wst_trace_topology_issue,created_by,character varying,创建人,,generic_comment,注释过于通用: '创建人'，可能不足以区分业务上下文,确认该注释是否需要补充业务含义，但禁止在当前阶段修改
+wst_trace_topology_issue,created_at,timestamp without time zone,创建时间,,missing_table_comment,表 wst_trace_topology_issue 无表级注释，字段 created_at 的训练语义可能不完整,优先补齐表级注释后再训练该表字段
+wst_trace_topology_issue,created_at,timestamp without time zone,创建时间,,very_short_comment,注释极短 (4字): '创建时间',确认该注释是否足以让模型理解字段含义
+wst_trace_topology_issue,created_at,timestamp without time zone,创建时间,,generic_comment,注释过于通用: '创建时间'，可能不足以区分业务上下文,确认该注释是否需要补充业务含义，但禁止在当前阶段修改
+wst_trace_topology_issue,updated_by,character varying,更新人,,missing_table_comment,表 wst_trace_topology_issue 无表级注释，字段 updated_by 的训练语义可能不完整,优先补齐表级注释后再训练该表字段
+wst_trace_topology_issue,updated_by,character varying,更新人,,very_short_comment,注释极短 (3字): '更新人',确认该注释是否足以让模型理解字段含义
+wst_trace_topology_issue,updated_at,timestamp without time zone,更新时间,,missing_table_comment,表 wst_trace_topology_issue 无表级注释，字段 updated_at 的训练语义可能不完整,优先补齐表级注释后再训练该表字段
+wst_trace_topology_issue,updated_at,timestamp without time zone,更新时间,,very_short_comment,注释极短 (4字): '更新时间',确认该注释是否足以让模型理解字段含义
+wst_trace_topology_issue,updated_at,timestamp without time zone,更新时间,,generic_comment,注释过于通用: '更新时间'，可能不足以区分业务上下文,确认该注释是否需要补充业务含义，但禁止在当前阶段修改
+wt_service_directory,id_path,character varying,id路径，逗号连接,主键id,id_like_field,ID 类字段，注释可能过于通用: 字段名 'id_path' 注释为 'id路径，逗号连接',人工确认注释是否准确描述该字段业务含义
+wt_service_directory,service_type,character,服务类型：0 WMS、1 WMTS、2 REST接口 、3 公司出图服务 HGTWMS 4 arcgis服务、5 geoserver服务,主键id,code_like_field,类型类字段，注释可能过于通用: 字段名 'service_type' 注释为 '服务类型：0 WMS、1 WMTS、2 REST接口 、3 公司出图服务 HGTWMS 4 arcgis服务、5 geo',人工确认注释是否准确描述该字段业务含义
+wt_service_directory,x_min,character varying,x最小值,主键id,very_short_comment,注释极短 (4字): 'x最小值',确认该注释是否足以让模型理解字段含义
+wt_service_directory,x_max,character varying,x最大值,主键id,very_short_comment,注释极短 (4字): 'x最大值',确认该注释是否足以让模型理解字段含义
+wt_service_directory,y_min,character varying,y最小值,主键id,very_short_comment,注释极短 (4字): 'y最小值',确认该注释是否足以让模型理解字段含义
+wt_service_directory,y_max,character varying,y最大值,主键id,very_short_comment,注释极短 (4字): 'y最大值',确认该注释是否足以让模型理解字段含义
+wt_service_directory,check_type,character,是否选中：0 未选中、1 已选中,主键id,code_like_field,类型类字段，注释可能过于通用: 字段名 'check_type' 注释为 '是否选中：0 未选中、1 已选中',人工确认注释是否准确描述该字段业务含义
+wt_warnparm_config,l4_value,double precision,四级,监测预警参数配置表,very_short_comment,注释极短 (2字): '四级',确认该注释是否足以让模型理解字段含义
+wt_warnparm_config,l5_value,double precision,五级,监测预警参数配置表,very_short_comment,注释极短 (2字): '五级',确认该注释是否足以让模型理解字段含义
+wt_warnparm_config,zero,double precision,零点核查,监测预警参数配置表,very_short_comment,注释极短 (4字): '零点核查',确认该注释是否足以让模型理解字段含义
+wt_warnparm_config,span,double precision,跨度核查,监测预警参数配置表,very_short_comment,注释极短 (4字): '跨度核查',确认该注释是否足以让模型理解字段含义

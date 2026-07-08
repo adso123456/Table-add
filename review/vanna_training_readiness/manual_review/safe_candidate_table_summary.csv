@@ -1,0 +1,129 @@
+table_name,table_comment,safe_candidate_count,total_columns_in_table,commented_columns_in_table,safe_candidate_ratio,review_priority,reason
+ad_dict,数据字典,9,14,9,64.3%,low,表注释清楚且字段注释明确
+cf_auto_build_flag,主键id,1,7,7,14.3%,low,表注释清楚且字段注释明确
+day_quality_records,日质控数据,16,25,25,64.0%,low,表注释清楚且字段注释明确
+day_quality_setting,日质控设置,2,13,10,15.4%,low,表注释清楚且字段注释明确
+dc_survey_app,APP安装包版本管理表,6,11,11,54.5%,low,表注释清楚且字段注释明确
+dc_survey_info,巡回调查-调查后的核查信息,9,23,23,39.1%,low,表注释清楚且字段注释明确
+dc_survey_offline_sync,离线同步任务表,8,14,14,57.1%,low,表注释清楚且字段注释明确
+dc_survey_offline_upload,文件上传缓存表 - 支持断点续传和本地文件缓存,8,16,16,50.0%,low,表注释清楚且字段注释明确
+dc_survey_task,巡查任务表,6,18,18,33.3%,low,表注释清楚且字段注释明确
+dc_survey_task_instance,任务实例：记录轨迹、点位的添加,2,6,6,33.3%,low,表注释清楚且字段注释明确
+dc_survey_track,巡查轨迹记录表,2,9,9,22.2%,low,表注释清楚且字段注释明确
+gis_control_unit,,2,12,12,16.7%,medium,表级注释缺失
+gis_poi,主键id,4,17,12,23.5%,low,表注释清楚且字段注释明确
+gis_watershed_partition,空间-流域分区数据,2,13,12,15.4%,low,表注释清楚且字段注释明确
+gis_watershed_partition_4,,1,11,5,9.1%,medium,表级注释缺失
+layer_boundary_park,工业园区-园区边界,2,7,3,28.6%,low,表注释清楚且字段注释明确
+layer_entity_process,溯源关系查询流程：使用到的图层信息,7,9,9,77.8%,low,表注释清楚且字段注释明确
+layer_entity_relation,图层-要素关联关系表,6,8,8,75.0%,low,表注释清楚且字段注释明确
+layer_outlet_sewage,工业园区-污水排放口,1,7,1,14.3%,low,表注释清楚且字段注释明确
+layer_partition_2,二级分区,1,5,3,20.0%,low,表注释清楚且字段注释明确
+layer_partition_3,三级分区,2,6,4,33.3%,low,表注释清楚且字段注释明确
+metadata_view,元数据-视图,1,9,3,11.1%,low,表注释清楚且字段注释明确
+min_value_setting,最低检出限,1,8,8,12.5%,low,表注释清楚且字段注释明确
+rs_enterprise_info_lsg,湖北省磷石膏尾矿库企业信息表：宜昌水环境,10,22,22,45.5%,low,表注释清楚且字段注释明确
+rs_enterprise_info_wade,污染源自动监管涉水企业：宜昌水环境,4,16,16,25.0%,low,表注释清楚且字段注释明确
+rs_industrial_info_yc,工业园区环境监测数据表,56,66,61,84.8%,medium,safe_candidate 数量多(56字段)
+rs_industrial_info_yc_bak0305,,4,13,7,30.8%,medium,表级注释缺失
+rs_livestock_info_yc,规模化畜禽养殖场-宜昌水环境,54,68,68,79.4%,medium,safe_candidate 数量多(54字段)
+rs_outlet,排污口信息表,96,106,105,90.6%,medium,safe_candidate 数量多(96字段)
+rs_outlet_info_v2,排污口管理,21,30,24,70.0%,low,表注释清楚且字段注释明确
+rs_outlet_live_v2,排污口实况,6,14,8,42.9%,low,表注释清楚且字段注释明确
+rs_outlet_monitor_v2,排污口监测,11,19,13,57.9%,low,表注释清楚且字段注释明确
+rs_outlet_remediation_v2,排污口整治,7,14,8,50.0%,low,表注释清楚且字段注释明确
+rs_outlet_trace_v2,排污口溯源,12,23,17,52.2%,low,表注释清楚且字段注释明确
+rs_pollutant_enterprise,污染源企业信息表：宜昌污染源在线平台企业信息,17,27,27,63.0%,low,表注释清楚且字段注释明确
+rs_pollutant_info,企业污染源排口信息表：宜昌污染源在线平台,10,21,21,47.6%,low,表注释清楚且字段注释明确
+rs_sewage_info_v2,污水处理厂档案管理及监测,58,64,58,90.6%,medium,safe_candidate 数量多(58字段)
+rs_sewage_info_yc,污水处理厂信息表：宜昌水环境,8,17,17,47.1%,low,表注释清楚且字段注释明确
+rs_sewage_park_info,污水处理厂-园区配套信息表,7,18,13,38.9%,low,表注释清楚且字段注释明确
+rs_warn_records,污染预警消息通知,15,25,25,60.0%,low,表注释清楚且字段注释明确
+rs_wastewater_month_records,污染源监测月记录表,2,62,62,3.2%,low,表注释清楚且字段注释明确
+rs_wastewater_standard,废水/废气排放标准配置表,3,15,15,20.0%,low,表注释清楚且字段注释明确
+se_watershed,流域产值信息：年统计值,8,14,13,57.1%,low,表注释清楚且字段注释明确
+se_watershed_river,流域河流管理档案表,19,26,26,73.1%,low,表注释清楚且字段注释明确
+stg_sjtj_sxhysjzxpt_dbo_operator_day_burnup_df,船舶公司每天的燃耗,4,4,4,100.0%,low,表注释清楚且字段注释明确
+stg_sjtj_sxhysjzxpt_t_vessel_info_df,船舶报港离港信息,7,8,8,87.5%,low,表注释清楚且字段注释明确
+stg_sjtysj_cbwrwxtzlxxxt_b_anchorage_clean_company_df,锚地与清洁公司关联表,1,4,4,25.0%,low,表注释清楚且字段注释明确
+stg_sjtysj_cbwrwxtzlxxxt_b_anchorage_info_df,锚地信息表,7,15,11,46.7%,low,表注释清楚且字段注释明确
+stg_sjtysj_cbwrwxtzlxxxt_b_clean_company_df,船舶污染物清洁公司信息,5,15,15,33.3%,low,表注释清楚且字段注释明确
+stg_sjtysj_cbwrwxtzlxxxt_b_coordination_index_df,全流程协同指数,7,9,9,77.8%,low,表注释清楚且字段注释明确
+stg_sjtysj_cbwrwxtzlxxxt_b_day_pollution_weight_df,根据行船类别统计每日污染物提交重量,14,15,15,93.3%,low,表注释清楚且字段注释明确
+stg_sjtysj_cbwrwxtzlxxxt_b_day_receive_ship_kpi_df,接收船舶考评日报,7,11,11,63.6%,low,表注释清楚且字段注释明确
+stg_sjtysj_cbwrwxtzlxxxt_b_day_subject_num_df,净小宜全流程各类型主体数量,7,8,8,87.5%,low,表注释清楚且字段注释明确
+stg_sjtysj_cbwrwxtzlxxxt_b_day_sxhy_df,洗舱服务,9,10,10,90.0%,low,表注释清楚且字段注释明确
+stg_sjtysj_cbwrwxtzlxxxt_b_month_receive_ship_kpi_df,污染物接收量数据,13,20,20,65.0%,low,表注释清楚且字段注释明确
+stg_sjtysj_cbwrwxtzlxxxt_b_order_receive_minute_df,每日各清洁公司接单接收时效数据,6,8,8,75.0%,low,表注释清楚且字段注释明确
+stg_sjtysj_cbwrwxtzlxxxt_b_process_unit_info_df,船舶污染物处置单位信息表,10,19,19,52.6%,low,表注释清楚且字段注释明确
+stg_sjtysj_cbwrwxtzlxxxt_b_receive_ship_assessment_df,接受船舶评估,10,13,12,76.9%,low,表注释清楚且字段注释明确
+stg_sjtysj_cbwrwxtzlxxxt_b_receive_ship_info_df,船舶污染物接收船舶信息表,14,22,22,63.6%,low,表注释清楚且字段注释明确
+stg_sjtysj_cbwrwxtzlxxxt_b_transfer_car_df,转运车辆信息,5,12,12,41.7%,low,表注释清楚且字段注释明确
+stg_sjtysj_cbwrwxtzlxxxt_b_wharf_info_df,船舶污染物接收码头信息表,7,20,18,35.0%,low,表注释清楚且字段注释明确
+stg_sjtysj_cbwrwxtzlxxxt_b_wharf_kpi_df,码头接单情况,7,9,9,77.8%,low,表注释清楚且字段注释明确
+stg_sjtysj_cbwrwxtzlxxxt_p_apply_detail_df,污染物接收明细,9,16,16,56.2%,low,表注释清楚且字段注释明确
+stg_sjtysj_cbwrwxtzlxxxt_p_ashore_apply_df,污染物接收表,37,64,56,57.8%,medium,safe_candidate 数量多(37字段)
+stg_sjtysj_cbwrwxtzlxxxt_p_handover_trans_detail_df,污染物转运B流程明细单,1,8,4,12.5%,low,表注释清楚且字段注释明确
+stg_sjtysj_cbwrwxtzlxxxt_p_handover_trans_df,污染物转运B流程,23,31,31,74.2%,low,表注释清楚且字段注释明确
+stg_sjtysj_cbwrwxtzlxxxt_p_receive_storage_df,污染物存储明细单,2,5,5,40.0%,low,表注释清楚且字段注释明确
+stg_sjtysj_cbwrwxtzlxxxt_p_trans_apply_detail_df,污染物转运处置明细单,4,5,5,80.0%,low,表注释清楚且字段注释明确
+stg_sjtysj_cbwrwxtzlxxxt_p_trans_apply_df,污染物转运处置表,55,72,72,76.4%,medium,safe_candidate 数量多(55字段)
+stg_sjtysj_cbwrwxtzlxxxt_p_wharf_storage_df,污染物码头存储表,11,25,25,44.0%,low,表注释清楚且字段注释明确
+stg_sslhhpj_hbsxkqycszhslzhglptjsxm_att_bas_base_df,流域基础信息,16,21,21,76.2%,low,表注释清楚且字段注释明确
+stg_sslhhpj_hbsxkqycszhslzhglptjsxm_att_wmst_base_df,影像监视点基础信息,23,28,28,82.1%,low,表注释清楚且字段注释明确
+stg_sslhhpj_hbsxkqycszhslzhglptjsxm_rcm_rv_lk_res_df,河湖库信息表,8,15,15,53.3%,low,表注释清楚且字段注释明确
+stg_sslhhpj_hbsxkqycszhslzhglptjsxm_rel_st_source_df,监测站来源分类表,3,3,3,100.0%,low,表注释清楚且字段注释明确
+stg_sslhhpj_hbsxkqycszhslzhglptjsxm_warn_stcd_r_df,预警测站关联表,6,6,6,100.0%,low,表注释清楚且字段注释明确
+stg_sslhhpj_hbsxkqycszhslzhglptjsxm_wr_mp_b_df,监测站(点)-取用水监测点基本信息表,23,24,24,95.8%,low,表注释清楚且字段注释明确
+stg_ycsjtysj_sxhyzssj_base_channel_df,航道信息表,6,9,9,66.7%,low,表注释清楚且字段注释明确
+stg_ycsjtysj_sxhyzssj_base_channel_level_df,航道按等级|县市区划分,6,10,10,60.0%,low,表注释清楚且字段注释明确
+stg_ycsjtysj_sxhyzssj_base_ship_df,图层管理（船舶）KPI,14,18,15,77.8%,low,表注释清楚且字段注释明确
+stg_ycsjtysj_sxhyzssj_data_coverage_wharf_df,图层管理（码头）KPI,8,13,13,61.5%,low,表注释清楚且字段注释明确
+stg_ycsjtysj_sxhyzssj_data_ship_info_df,图层管理（清洁船舶）KPI,6,11,11,54.5%,low,表注释清楚且字段注释明确
+stg_ycssthjj_ltwsjgpt_t_sjzx_wry_jbxx_df,污染源_基本信息,36,47,47,76.6%,medium,safe_candidate 数量多(36字段)
+stg_ycssthjj_lysthjjkyjpt_t_sjzx_szzdjcz_df,城市数字公共基础设施建设__水质自动监测站,11,12,12,91.7%,low,表注释清楚且字段注释明确
+stg_ycssthjj_wryzxjkpt_t_zxjc_s_w_1_df,监控数据_日数据_污染物_,20,23,23,87.0%,low,表注释清楚且字段注释明确
+wh_hydrological_records_1,水文数据表,1,11,11,9.1%,low,表注释清楚且字段注释明确
+wh_meteorological_day_records,气象数据日记录表,3,42,42,7.1%,low,表注释清楚且字段注释明确
+wh_meteorological_predict_day_records,气象预报日记录表,1,40,8,2.5%,low,表注释清楚且字段注释明确
+wh_meteorological_predict_hour_records,气象预报小时记录表,1,41,8,2.4%,low,表注释清楚且字段注释明确
+wh_meteorological_records_1,气象数据表,1,11,11,9.1%,low,表注释清楚且字段注释明确
+wm_camera_info,摄像头基本信息表,6,16,16,37.5%,low,表注释清楚且字段注释明确
+wm_camera_platform,视频平台设备信息表,12,21,20,57.1%,low,表注释清楚且字段注释明确
+wm_directory,目录树实体,1,10,10,10.0%,low,表注释清楚且字段注释明确
+wm_hydrological_info,水位站基本信息表,18,40,37,45.0%,low,表注释清楚且字段注释明确
+wm_image_info,档案图片信息表：用于保存各种站点、断面、污染源的图片信息,5,12,11,41.7%,low,表注释清楚且字段注释明确
+wm_meteorological_info,气象自动监测站基本信息表,19,40,37,47.5%,low,表注释清楚且字段注释明确
+wm_panorama_layer,全景图层信息表,5,11,11,45.5%,low,表注释清楚且字段注释明确
+wm_panorama_layer_relation,全景图层关联关系表,2,7,7,28.6%,low,表注释清楚且字段注释明确
+wm_panorama_video,全景视频信息表,2,9,9,22.2%,low,表注释清楚且字段注释明确
+wm_raster_info,,9,14,13,64.3%,medium,表级注释缺失
+wm_raster_inversion,,10,18,17,55.6%,high,表级注释缺失
+wm_section_info,断面基本信息表,15,26,26,57.7%,low,表注释清楚且字段注释明确
+wm_section_wq_info,断面水质目标信息表,3,10,10,30.0%,low,表注释清楚且字段注释明确
+wm_station_info,水质自动监测站基本信息表,23,47,44,48.9%,low,表注释清楚且字段注释明确
+wm_station_info_v2,自动站管理,12,31,27,38.7%,low,表注释清楚且字段注释明确
+wm_uav_info,大疆无人机基础信息,29,39,38,74.4%,low,表注释清楚且字段注释明确
+wm_water_intake,水源地-取水口,2,14,12,14.3%,low,表注释清楚且字段注释明确
+wm_water_source,水源地信息：通过code码关联,24,36,34,66.7%,low,表注释清楚且字段注释明确
+wm_water_source_bak0421,水源地信息：通过code码关联,52,61,60,85.2%,medium,safe_candidate 数量多(52字段)
+wm_water_source_intake_v2,饮用水水源地管理及监测-取水口,9,22,16,40.9%,low,表注释清楚且字段注释明确
+wm_water_source_zone_v2,饮用水水源地管理及监测-保护区,4,19,12,21.1%,low,表注释清楚且字段注释明确
+wm_waterbody_info,水体信息实体类,5,27,18,18.5%,low,表注释清楚且字段注释明确
+wm_waterquality_day_records,水质监测日记录表,9,73,71,12.3%,low,表注释清楚且字段注释明确
+wm_waterquality_hour_records,水质监测小时记录表,18,82,82,22.0%,low,表注释清楚且字段注释明确
+wm_waterquality_month_records,水质监测月记录表,13,77,77,16.9%,low,表注释清楚且字段注释明确
+wm_waterquality_year_records,水质监测年记录表,10,71,71,14.1%,low,表注释清楚且字段注释明确
+wst_asset,水安全溯源模块-统一资产表，存储断面、站点、排口、企业、园区、闸坝、管线、摄像头、事故池等可上图、可查询、可关联对象,11,26,26,42.3%,low,表注释清楚且字段注释明确
+wst_asset_relation,资产关系实例表，存储资产与资产之间的一度业务关系，不代表水流路径,4,11,11,36.4%,low,表注释清楚且字段注释明确
+wst_asset_trace_snap,水安全溯源模块-资产拓扑挂接表，用于维护业务资产与溯源拓扑节点之间的挂接关系，是资产进入 pgRouting 网络计算的桥梁,18,27,23,66.7%,low,表注释清楚且字段注释明确
+wst_asset_type_dict,水安全溯源模块-资产类型字典表，用于统一管理资产类型、图层、图标、几何类型和前端展示规则,10,22,18,45.5%,low,表注释清楚且字段注释明确
+wst_control_zone,水安全溯源模块-三级分区表，用于管理国控断面控制单元、自动站分区、工业园区/分水岭分区,9,19,19,47.4%,low,表注释清楚且字段注释明确
+wst_layer_river,,2,12,2,16.7%,medium,表级注释缺失
+wst_relation_subtype_dict,关系子类字典表，维护具体业务关系类型、标准方向和允许资产类型,14,19,19,73.7%,low,表注释清楚且字段注释明确
+wst_relation_type_dict,关系大类字典表，用于维护资产关系的大类编码,4,8,8,50.0%,low,表注释清楚且字段注释明确
+wst_trace_edge,水安全溯源模块-溯源拓扑边表，用于存储河网、管网、排水路径、园区内外衔接路径，是 pgRouting 上下游分析的核心边表,22,36,32,61.1%,low,表注释清楚且字段注释明确
+wst_trace_node,水安全溯源模块-溯源拓扑节点表，用于存储河网、管网、园区排污河流、排口挂接点、断面挂接点、园区出口等 pgRouting 节点,12,25,24,48.0%,low,表注释清楚且字段注释明确
+wst_trace_topology_issue,,5,18,5,27.8%,medium,表级注释缺失
+wt_service_directory,主键id,12,25,25,48.0%,low,表注释清楚且字段注释明确
+wt_warnparm_config,监测预警参数配置表,9,21,21,42.9%,low,表注释清楚且字段注释明确
