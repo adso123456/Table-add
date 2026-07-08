@@ -1,0 +1,25 @@
+# Table: public.wm_water_source_intake_v2 — 饮用水水源地管理及监测-取水口
+
+# Column documentation:
+wm_water_source_intake_v2.id: 主键ID
+wm_water_source_intake_v2.name: 名称
+wm_water_source_intake_v2.city: 地市
+wm_water_source_intake_v2.district: 区县
+wm_water_source_intake_v2.township: 乡镇
+wm_water_source_intake_v2.source_level: 水源地级别（县级以上；乡镇级；百吨千人）
+wm_water_source_intake_v2.source_type: 水源地类型（河流型；湖库型；地下水型）
+wm_water_source_intake_v2.source_status: 水源地状态（在用；备用；应急；规划）
+wm_water_source_intake_v2.source_code: 水源地编码
+wm_water_source_intake_v2.water_quality_class: 水质类别（Ⅰ；Ⅱ；Ⅲ；Ⅳ；Ⅴ）
+wm_water_source_intake_v2.supply_population: 供水人口（人）
+wm_water_source_intake_v2.daily_supply_capacity: 日均供水能力（吨/天）
+wm_water_source_intake_v2.annual_actual_withdrawal: 年实际取水量（万吨）
+wm_water_source_intake_v2.per_capita_withdrawal: 人均取水量（升/天）
+wm_water_source_intake_v2.remark: 备注
+wm_water_source_intake_v2.create_by: 创建人
+wm_water_source_intake_v2.create_time: 创建时间
+wm_water_source_intake_v2.update_by: 修改人
+wm_water_source_intake_v2.update_time: 修改时间
+wm_water_source_intake_v2.del_flag: 删除标志：0-正常，1-已删除
+wm_water_source_intake_v2.geom: 取水口位置
+wm_water_source_intake_v2.region_code: 行政区编码

@@ -1,0 +1,3 @@
+-- Table: public.wm_raster_inversion
+-- Comment: 遥感反演结果表（合并版）
+-- DDL not available for wm_raster_inversion

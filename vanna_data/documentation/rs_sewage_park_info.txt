@@ -1,0 +1,21 @@
+# Table: public.rs_sewage_park_info — 污水处理厂-园区配套信息表
+
+# Column documentation:
+rs_sewage_park_info.id: 主键id
+rs_sewage_park_info.region_code: 行政区编码
+rs_sewage_park_info.region_name: 行政区名称
+rs_sewage_park_info.sewage_name: 污水处理厂名称
+rs_sewage_park_info.sewage_id: 污水厂ID
+rs_sewage_park_info.throughput: 处理能力（万吨/日）
+rs_sewage_park_info.park_id: 配套园区ID
+rs_sewage_park_info.park_name: 配套园区名称
+rs_sewage_park_info.lon: 经度
+rs_sewage_park_info.lat: 纬度
+rs_sewage_park_info.geom: 图形信息
+rs_sewage_park_info.remark: 备注
+rs_sewage_park_info.create_by: 创建人
+rs_sewage_park_info.create_time: 创建时间
+rs_sewage_park_info.update_by: 修改人
+rs_sewage_park_info.update_time: 修改时间
+rs_sewage_park_info.del_flag: 删除标志：0-正常，1-已删除
+rs_sewage_park_info.sewage_type: 污水处理厂类型：0-工业、1-生活

@@ -1,0 +1,3 @@
+-- Table: public.layer_reservoir_provincial_label
+-- Comment: 省控水库注记
+-- DDL not available for layer_reservoir_provincial_label

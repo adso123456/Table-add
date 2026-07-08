@@ -1,0 +1,3 @@
+-- Table: public.wst_asset
+-- Comment: 水安全溯源模块-统一资产表，存储断面、站点、排口、企业、园区、闸坝、管线、摄像头、事故池等可上图、可查询、可关联对象
+-- DDL not available for wst_asset

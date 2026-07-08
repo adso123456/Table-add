@@ -1,0 +1,14 @@
+# Table: public.wh_hydrological_records_1 — 水文数据表
+
+# Column documentation:
+wh_hydrological_records_1.id: 主键id
+wh_hydrological_records_1.station_id: 所属站点id
+wh_hydrological_records_1.indicator_code: 监测指标编号
+wh_hydrological_records_1.monitor_value: 监测值
+wh_hydrological_records_1.monitor_time: 监测时间
+wh_hydrological_records_1.record_type: 记录类型：0 自动、1 手工
+wh_hydrological_records_1.create_by: 创建人
+wh_hydrological_records_1.create_time: 创建时间
+wh_hydrological_records_1.update_by: 更新人
+wh_hydrological_records_1.update_time: 更新时间
+wh_hydrological_records_1.del_flag: 删除标记：0 未删除、1 已删除

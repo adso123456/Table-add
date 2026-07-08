@@ -1,0 +1,10 @@
+# Table: public.layer_outlet_sewage — 工业园区-污水排放口
+
+# Column documentation:
+layer_outlet_sewage.id: 主键ID
+layer_outlet_sewage.x: X坐标
+layer_outlet_sewage.y: Y坐标
+layer_outlet_sewage.name: 名称
+layer_outlet_sewage.code: 编码
+layer_outlet_sewage.jcdbh: 监测点编号
+layer_outlet_sewage.geom: 空间几何数据

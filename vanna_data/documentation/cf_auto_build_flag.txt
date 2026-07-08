@@ -1,0 +1,10 @@
+# Table: public.cf_auto_build_flag — 主键id
+
+# Column documentation:
+cf_auto_build_flag.id: 主键id
+cf_auto_build_flag.manual_auto: 0 手动处理、1 自动处理
+cf_auto_build_flag.create_by: 创建人
+cf_auto_build_flag.create_time: 创建时间
+cf_auto_build_flag.update_by: 更新人
+cf_auto_build_flag.update_time: 更新时间
+cf_auto_build_flag.del_flag: 删除标记：0 未删除、1 已删除

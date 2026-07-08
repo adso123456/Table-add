@@ -1,0 +1,3 @@
+-- Table: public.dc_survey_offline_upload
+-- Comment: 文件上传缓存表 - 支持断点续传和本地文件缓存
+-- DDL not available for dc_survey_offline_upload

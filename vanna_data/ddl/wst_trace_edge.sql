@@ -1,0 +1,3 @@
+-- Table: public.wst_trace_edge
+-- Comment: 水安全溯源模块-溯源拓扑边表，用于存储河网、管网、排水路径、园区内外衔接路径，是 pgRouting 上下游分析的核心边表
+-- DDL not available for wst_trace_edge

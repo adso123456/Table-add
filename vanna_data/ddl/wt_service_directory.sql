@@ -1,0 +1,3 @@
+-- Table: public.wt_service_directory
+-- Comment: 主键id
+-- DDL not available for wt_service_directory

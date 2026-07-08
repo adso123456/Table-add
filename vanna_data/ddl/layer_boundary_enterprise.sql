@@ -1,0 +1,3 @@
+-- Table: public.layer_boundary_enterprise
+-- Comment: 工业园区-企业边界
+-- DDL not available for layer_boundary_enterprise

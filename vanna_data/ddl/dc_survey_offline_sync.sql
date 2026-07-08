@@ -1,0 +1,3 @@
+-- Table: public.dc_survey_offline_sync
+-- Comment: 离线同步任务表
+-- DDL not available for dc_survey_offline_sync

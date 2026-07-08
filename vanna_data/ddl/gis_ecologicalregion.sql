@@ -1,0 +1,3 @@
+-- Table: public.gis_ecologicalregion
+-- Comment: 生态保护红线区域表
+-- DDL not available for gis_ecologicalregion

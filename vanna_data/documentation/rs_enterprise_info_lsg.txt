@@ -1,0 +1,25 @@
+# Table: public.rs_enterprise_info_lsg — 湖北省磷石膏尾矿库企业信息表：宜昌水环境
+
+# Column documentation:
+rs_enterprise_info_lsg.id: 主键id
+rs_enterprise_info_lsg.name: 磷石膏库名称
+rs_enterprise_info_lsg.mine_name: 矿山名称
+rs_enterprise_info_lsg.enterprise: 所属企业
+rs_enterprise_info_lsg.city: 市
+rs_enterprise_info_lsg.county: 县
+rs_enterprise_info_lsg.address: 污染源地址
+rs_enterprise_info_lsg.region_code: 行政区编码
+rs_enterprise_info_lsg.region_name: 行政区名称
+rs_enterprise_info_lsg.out_type: 排渣方式
+rs_enterprise_info_lsg.design_storage: 设计库容（单位：万立方米）
+rs_enterprise_info_lsg.existed_storage: 现有堆量（单位：万立方米）
+rs_enterprise_info_lsg.floor_area: 占地面积（单位平方公里）
+rs_enterprise_info_lsg.product_status: 目前生产情况
+rs_enterprise_info_lsg.lon: 经度
+rs_enterprise_info_lsg.lat: 纬度
+rs_enterprise_info_lsg.create_by: 创建人
+rs_enterprise_info_lsg.create_time: 创建时间
+rs_enterprise_info_lsg.update_by: 更新人
+rs_enterprise_info_lsg.update_time: 更新时间
+rs_enterprise_info_lsg.del_flag: 删除标记
+rs_enterprise_info_lsg.product_capacity: 磷酸产能（万吨/年）

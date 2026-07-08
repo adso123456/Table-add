@@ -1,0 +1,7 @@
+# Table: public.layer_industrial_lsf — 工业园区-园区临时闸阀
+
+# Column documentation:
+layer_industrial_lsf.id: 主键ID
+layer_industrial_lsf.geom: 空间几何数据
+layer_industrial_lsf.name: 名称
+layer_industrial_lsf.code: 编码

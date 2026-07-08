@@ -1,0 +1,3 @@
+-- Table: public.gis_region_population
+-- Comment: 行政区人口统计表
+-- DDL not available for gis_region_population

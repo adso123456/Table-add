@@ -1,0 +1,29 @@
+# Table: public.wm_waterbody_info — 水体信息实体类
+
+# Column documentation:
+wm_waterbody_info.id: id
+wm_waterbody_info.water_body_code: 水体编码
+wm_waterbody_info.water_body_name: 水体名称
+wm_waterbody_info.water_body_type: 水体类型：0 河流、1 湖泊
+wm_waterbody_info.water_body_function: 水体功能类别
+wm_waterbody_info.geom: 几何信息
+wm_waterbody_info.img_url: 照片地址
+wm_waterbody_info.img_format: 照片格式：img、png等
+wm_waterbody_info.img_name: 照片名称
+wm_waterbody_info.control_unit_id: 所属控制单元id
+wm_waterbody_info.basin: 所在流域
+wm_waterbody_info.length: 水体长度（km）
+wm_waterbody_info.width: 水体宽度（m）
+wm_waterbody_info.area: 水体面积（km2）
+wm_waterbody_info.bend_coefficient: 弯曲系数
+wm_waterbody_info.storage: 蓄水量（m3）
+wm_waterbody_info.start_village: 起点村/社区
+wm_waterbody_info.end_village: 终点村/社区
+wm_waterbody_info.up_stream: 上游水体
+wm_waterbody_info.down_stream: 下游水体
+wm_waterbody_info.remark: 备注
+wm_waterbody_info.create_by: 创建人
+wm_waterbody_info.create_time: 创建时间
+wm_waterbody_info.update_by: 更新人
+wm_waterbody_info.update_time: 更新时间
+wm_waterbody_info.del_flag: 删除标记：0 未删除、1 已删除

@@ -1,0 +1,3 @@
+-- Table: public.layer_industrial_ysc
+-- Comment: 工业园区-雨水池
+-- DDL not available for layer_industrial_ysc

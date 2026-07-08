@@ -1,0 +1,21 @@
+# Table: public.dc_survey_task — 巡查任务表
+
+# Column documentation:
+dc_survey_task.id: 主键
+dc_survey_task.title: 巡查标题
+dc_survey_task.survey_time: 巡查时间: yyyyMMdd
+dc_survey_task.watershed_partition_id: 流域分区ID
+dc_survey_task.status: 任务状态: 0-进行中, 1-已暂停, 2-已结束
+dc_survey_task.point_count: 点位数量
+dc_survey_task.remark: 备注
+dc_survey_task.create_by: 创建人
+dc_survey_task.create_time: 创建时间
+dc_survey_task.update_by: 更新人
+dc_survey_task.update_time: 更新时间
+dc_survey_task.del_flag: 删除标记：0 未删除、1 已删除
+dc_survey_task.image_count: 照片数量
+dc_survey_task.duration: 巡查时长: 单位秒
+dc_survey_task.distance: 巡查距离: 单位km
+dc_survey_task.current_point_count: 本次巡查点位数量: 重新开启后自动清零
+dc_survey_task.update_name: 更新人名称：当前巡查人员
+dc_survey_task.cache_id: 本地缓存ID：APP端维护

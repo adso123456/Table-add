@@ -1,0 +1,3 @@
+-- Table: public.wm_waterbody_info
+-- Comment: 水体信息实体类
+-- DDL not available for wm_waterbody_info

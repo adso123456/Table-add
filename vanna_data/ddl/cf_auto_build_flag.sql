@@ -1,0 +1,3 @@
+-- Table: public.cf_auto_build_flag
+-- Comment: 主键id
+-- DDL not available for cf_auto_build_flag

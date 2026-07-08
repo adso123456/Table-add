@@ -1,0 +1,39 @@
+# Table: public.wst_trace_edge — 水安全溯源模块-溯源拓扑边表，用于存储河网、管网、排水路径、园区内外衔接路径，是 pgRouting 上下游分析的核心边表
+
+# Column documentation:
+wst_trace_edge.id: 主键ID，同时作为 pgRouting 的边ID
+wst_trace_edge.edge_code: 边编码
+wst_trace_edge.edge_name: 边名称
+wst_trace_edge.source: 起点拓扑节点ID，关联 wst_trace_node.id，约定为默认水流方向的上游节点
+wst_trace_edge.target: 终点拓扑节点ID，关联 wst_trace_node.id，约定为默认水流方向的下游节点
+wst_trace_edge.edge_type: 边类型，例如 river=河道，pipe=管线，park_pipe=园区管网，park_river=园区内部排污河流，discharge=排放连接边，boundary=边界衔接边
+wst_trace_edge.network_type: 网络类型，例如 river=外部河网，park_pipe=园区管网，park_river=园区内部排污河流，mixed=混合衔接网络
+wst_trace_edge.from_network: 起点所属网络类型，用于表达园区管网到园区河流、园区河流到外部河网的衔接
+wst_trace_edge.to_network: 终点所属网络类型，用于表达网络转换关系
+wst_trace_edge.zone_id: 所属分区ID，关联 wst_control_zone.id
+wst_trace_edge.river_name: 河流名称
+wst_trace_edge.river_code: 河流编码
+wst_trace_edge.pipe_code: 管线编码
+wst_trace_edge.cost: 正向通行成本，通常为长度米；source->target 可通行时为正数，不可通行时为-1
+wst_trace_edge.reverse_cost: 反向通行成本；普通单向水流通常为-1，库区/回水/双向场景可设置为正数
+wst_trace_edge.length_m: 边长度，单位米
+wst_trace_edge.flow_direction: 流向说明，默认 source_to_target 表示 source 到 target 为水流方向
+wst_trace_edge.flow_mode: 流向模式：normal=正常单向，bidirectional=双向，controlled=受控，reservoir=库区/回水，unknown=未知
+wst_trace_edge.control_mode: 控制方式，例如 gate=闸门，pump=泵站，manual=人工控制，temporary_dam=临时筑坝
+wst_trace_edge.gate_asset_id: 关联闸门/闸坝资产ID，关联 wst_asset.id
+wst_trace_edge.pump_asset_id: 关联泵站资产ID，关联 wst_asset.id
+wst_trace_edge.is_split_edge: 是否由原始边拆分生成
+wst_trace_edge.original_edge_id: 原始边ID，资产挂接到边中间并拆边时记录来源边
+wst_trace_edge.status: 状态：active=启用，disabled=停用，split=已拆分，invalid=无效
+wst_trace_edge.geom: 边线几何，坐标系SRID=4326
+wst_trace_edge.metadata_json: 扩展属性JSON，用于存储管径、材质、坡度、流速、原始河段编码等扩展信息
+wst_trace_edge.remark: 备注
+wst_trace_edge.created_by: 创建人
+wst_trace_edge.created_at: 创建时间
+wst_trace_edge.updated_by: 更新人
+wst_trace_edge.updated_at: 更新时间
+wst_trace_edge.del_flag: 逻辑删除标记：0=未删除，1=已删除
+wst_trace_edge.source_asset_id: 源资产ID
+wst_trace_edge.from_node_id: 上游节点ID
+wst_trace_edge.to_node_id: 下游节点ID
+wst_trace_edge.direction_status: 流向状态

@@ -1,0 +1,3 @@
+-- Table: public.wst_layer_river
+-- Comment: 溯源图层河流表
+-- DDL not available for wst_layer_river

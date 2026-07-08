@@ -1,0 +1,17 @@
+# Table: public.dc_survey_offline_sync — 离线同步任务表
+
+# Column documentation:
+dc_survey_offline_sync.id: 主键
+dc_survey_offline_sync.cache_id: 缓存ID：APP端维护，用于关联提交数据
+dc_survey_offline_sync.sync_status: 同步状态：0-待同步，1-同步中，2-同步成功，3-同步失败
+dc_survey_offline_sync.sync_progress: 同步进度：0-100
+dc_survey_offline_sync.total_steps: 总步骤数
+dc_survey_offline_sync.current_step: 当前步骤
+dc_survey_offline_sync.sync_start_time: 同步开始时间
+dc_survey_offline_sync.sync_end_time: 同步结束时间
+dc_survey_offline_sync.task_id: 任务ID：关联的巡查任务ID
+dc_survey_offline_sync.sync_result: 同步结果信息
+dc_survey_offline_sync.error_message: 错误信息
+dc_survey_offline_sync.create_by: 创建人
+dc_survey_offline_sync.create_time: 创建时间
+dc_survey_offline_sync.del_flag: 删除标记：0 未删除、1 已删除

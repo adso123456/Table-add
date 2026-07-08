@@ -1,0 +1,3 @@
+-- Table: public.wm_waterquality_year_records
+-- Comment: 水质监测年记录表
+-- DDL not available for wm_waterquality_year_records

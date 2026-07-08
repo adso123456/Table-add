@@ -1,0 +1,3 @@
+-- Table: public.gis_poi
+-- Comment: 主键id
+-- DDL not available for gis_poi

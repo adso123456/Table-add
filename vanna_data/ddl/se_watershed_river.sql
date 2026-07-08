@@ -1,0 +1,3 @@
+-- Table: public.se_watershed_river
+-- Comment: 流域河流管理档案表
+-- DDL not available for se_watershed_river

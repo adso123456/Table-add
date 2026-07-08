@@ -1,0 +1,3 @@
+-- Table: public.dc_survey_task
+-- Comment: 巡查任务表
+-- DDL not available for dc_survey_task

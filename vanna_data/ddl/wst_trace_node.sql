@@ -1,0 +1,3 @@
+-- Table: public.wst_trace_node
+-- Comment: 水安全溯源模块-溯源拓扑节点表，用于存储河网、管网、园区排污河流、排口挂接点、断面挂接点、园区出口等 pgRouting 节点
+-- DDL not available for wst_trace_node

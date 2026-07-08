@@ -1,0 +1,8 @@
+# Table: public.gis_region_county — 行政区-区县
+
+# Column documentation:
+gis_region_county.id: 主键ID
+gis_region_county.geom: 空间几何数据
+gis_region_county.region_name: 行政区名称
+gis_region_county.city: 市级名称
+gis_region_county.region_code: 行政区编码

@@ -1,0 +1,12 @@
+# Table: public.dc_survey_track — 巡查轨迹记录表
+
+# Column documentation:
+dc_survey_track.id: 主键
+dc_survey_track.task_id: 巡查任务ID
+dc_survey_track.lat: 纬度
+dc_survey_track.lon: 经度
+dc_survey_track.distance: 距离上一个点的距离（米）
+dc_survey_track.create_by: 创建人
+dc_survey_track.create_time: 创建时间
+dc_survey_track.num: 点位编号
+dc_survey_track.task_instance_id: 实例ID

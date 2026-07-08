@@ -1,0 +1,3 @@
+-- Table: public.min_value_setting
+-- Comment: 最低检出限
+-- DDL not available for min_value_setting

@@ -1,0 +1,22 @@
+# Table: public.wm_water_source_zone_v2 — 饮用水水源地管理及监测-保护区
+
+# Column documentation:
+wm_water_source_zone_v2.id: 主键ID
+wm_water_source_zone_v2.name: 名称
+wm_water_source_zone_v2.city: 地市
+wm_water_source_zone_v2.district: 区县
+wm_water_source_zone_v2.township: 乡镇
+wm_water_source_zone_v2.source_level: 水源地级别（县级以上；乡镇级；百吨千人）
+wm_water_source_zone_v2.zone_level: 保护区级别（1-一级保护区；2-二级保护区；3-准保护区）
+wm_water_source_zone_v2.area: 面积（单位：平方千米）
+wm_water_source_zone_v2.source_type: 水源地类型（河流型；湖库型；地下水型）
+wm_water_source_zone_v2.source_status: 水源地状态（在用；备用；应急；规划）
+wm_water_source_zone_v2.source_code: 水源地编码
+wm_water_source_zone_v2.remark: 备注
+wm_water_source_zone_v2.create_by: 创建人
+wm_water_source_zone_v2.create_time: 创建时间
+wm_water_source_zone_v2.update_by: 修改人
+wm_water_source_zone_v2.update_time: 修改时间
+wm_water_source_zone_v2.del_flag: 删除标志：0-正常，1-已删除
+wm_water_source_zone_v2.region_code: 行政区代码
+wm_water_source_zone_v2.geom: 空间几何数据

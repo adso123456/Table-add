@@ -1,0 +1,29 @@
+# Table: public.wst_asset — 水安全溯源模块-统一资产表，存储断面、站点、排口、企业、园区、闸坝、管线、摄像头、事故池等可上图、可查询、可关联对象
+
+# Column documentation:
+wst_asset.id: 主键ID
+wst_asset.asset_code: 资产编码
+wst_asset.asset_name: 资产名称
+wst_asset.asset_type: 资产类型，例如 national_section、provincial_section、auto_station、outfall、water_enterprise、chemical_park、wwtp、water_intake、camera、accident_pool、park_pipe、park_river
+wst_asset.asset_subtype: 资产子类型，用于进一步细分资产类型，例如雨水排口、污水排口、永久闸、临时闸、主管、支管
+wst_asset.zone_id: 默认所属分区ID，关联 wst_control_zone.id，用于列表过滤、统计、权限、地图筛选
+wst_asset.source_system: 数据来源系统，例如 manual=手工录入，permit=排污许可系统，monitor=监测系统，gis=GIS导入
+wst_asset.source_id: 来源系统中的原始ID
+wst_asset.administrative_region_code: 行政区划编码
+wst_asset.administrative_region_name: 行政区划名称
+wst_asset.address: 详细地址
+wst_asset.river_name: 关联河流名称
+wst_asset.river_code: 关联河流编码
+wst_asset.basin_code: 所属流域编码
+wst_asset.longitude: 经度
+wst_asset.latitude: 纬度
+wst_asset.elevation: 高程，单位米
+wst_asset.status: 状态：active=启用，disabled=停用，candidate=候选，invalid=无效
+wst_asset.geom: 资产空间几何，点、线、面均可，坐标系SRID=4326
+wst_asset.metadata_json: 扩展属性JSON，用于存储行业类型、污染物类型、许可证号、联系人、监测因子等扩展信息
+wst_asset.remark: 备注
+wst_asset.created_by: 创建人
+wst_asset.created_at: 创建时间
+wst_asset.updated_by: 更新人
+wst_asset.updated_at: 更新时间
+wst_asset.del_flag: 逻辑删除标记：0=未删除，1=已删除

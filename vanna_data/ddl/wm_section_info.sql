@@ -1,0 +1,3 @@
+-- Table: public.wm_section_info
+-- Comment: 断面基本信息表
+-- DDL not available for wm_section_info

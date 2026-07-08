@@ -1,0 +1,3 @@
+-- Table: public.wm_station_info_v2
+-- Comment: 自动站管理
+-- DDL not available for wm_station_info_v2

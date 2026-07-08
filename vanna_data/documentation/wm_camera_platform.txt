@@ -1,0 +1,24 @@
+# Table: public.wm_camera_platform — 视频平台设备信息表
+
+# Column documentation:
+wm_camera_platform.id: 主键ID
+wm_camera_platform.device_code: 设备编码(国标20位)
+wm_camera_platform.name: 设备名称
+wm_camera_platform.manufacturer: 厂商
+wm_camera_platform.model: 型号
+wm_camera_platform.transport: 传输方式: TCP/UDP
+wm_camera_platform.stream_mode: 流模式: TCP被动模式/UDP
+wm_camera_platform.ip_address: 设备IP地址
+wm_camera_platform.port: 设备端口
+wm_camera_platform.online: 是否在线: 0-离线, 1-在线
+wm_camera_platform.heart_beat_interval: 心跳检测间隔(秒)
+wm_camera_platform.heart_beat_count: 健康检查次数
+wm_camera_platform.charset: 字符集
+wm_camera_platform.lon: 经度
+wm_camera_platform.lat: 纬度
+wm_camera_platform.remark: 备注
+wm_camera_platform.create_by: 创建人
+wm_camera_platform.create_time: 创建时间
+wm_camera_platform.update_by: 更新人
+wm_camera_platform.update_time: 更新时间
+wm_camera_platform.del_flag: 删除标记: 0-未删除, 1-已删除

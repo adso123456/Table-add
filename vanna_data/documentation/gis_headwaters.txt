@@ -1,0 +1,19 @@
+# Table: public.gis_headwaters — 水源地表
+
+# Column documentation:
+gis_headwaters.id: 主键ID
+gis_headwaters.headwaters_name: 水源地名称
+gis_headwaters.headwaters_code: 水源地编码
+gis_headwaters.address: 地址
+gis_headwaters.geom: 空间几何数据
+gis_headwaters.level: 级别
+gis_headwaters.type: 类型
+gis_headwaters.water_intake_quantity: 年取水量
+gis_headwaters.water_supply_population: 供水人口数
+gis_headwaters.is_protect_region: 是否在保护区范围内
+gis_headwaters.remark: 备注
+gis_headwaters.create_by: 创建人
+gis_headwaters.create_time: 创建时间
+gis_headwaters.update_by: 修改人
+gis_headwaters.update_time: 修改时间
+gis_headwaters.del_flag: 删除标志：0-正常，1-已删除

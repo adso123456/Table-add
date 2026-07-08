@@ -1,0 +1,3 @@
+-- Table: public.wm_raster_info
+-- Comment: 遥感影像栅格信息表
+-- DDL not available for wm_raster_info

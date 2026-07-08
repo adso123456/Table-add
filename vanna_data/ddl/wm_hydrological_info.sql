@@ -1,0 +1,3 @@
+-- Table: public.wm_hydrological_info
+-- Comment: 水位站基本信息表
+-- DDL not available for wm_hydrological_info

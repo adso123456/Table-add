@@ -1,0 +1,3 @@
+-- Table: public.layer_reservoir_provincial_合并
+-- Comment: 省控水库
+-- DDL not available for layer_reservoir_provincial_合并

@@ -1,0 +1,3 @@
+-- Table: public.layer_section
+-- Comment: 工业园区-监测断面
+-- DDL not available for layer_section

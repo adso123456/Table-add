@@ -1,0 +1,3 @@
+-- Table: public.wst_asset_type_dict
+-- Comment: 水安全溯源模块-资产类型字典表，用于统一管理资产类型、图层、图标、几何类型和前端展示规则
+-- DDL not available for wst_asset_type_dict

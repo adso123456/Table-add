@@ -1,0 +1,3 @@
+-- Table: public.gis_watershed_partition
+-- Comment: 空间-流域分区数据
+-- DDL not available for gis_watershed_partition

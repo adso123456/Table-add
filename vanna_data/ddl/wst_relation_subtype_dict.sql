@@ -1,0 +1,3 @@
+-- Table: public.wst_relation_subtype_dict
+-- Comment: 关系子类字典表，维护具体业务关系类型、标准方向和允许资产类型
+-- DDL not available for wst_relation_subtype_dict

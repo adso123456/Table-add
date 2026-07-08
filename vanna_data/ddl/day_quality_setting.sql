@@ -1,0 +1,3 @@
+-- Table: public.day_quality_setting
+-- Comment: 日质控设置
+-- DDL not available for day_quality_setting

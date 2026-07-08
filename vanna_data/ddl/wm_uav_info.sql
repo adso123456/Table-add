@@ -1,0 +1,3 @@
+-- Table: public.wm_uav_info
+-- Comment: 大疆无人机基础信息
+-- DDL not available for wm_uav_info

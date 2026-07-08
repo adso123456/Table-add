@@ -1,0 +1,9 @@
+# Table: public.layer_partition_3 — 三级分区
+
+# Column documentation:
+layer_partition_3.id: 主键ID
+layer_partition_3.geom: 空间几何数据
+layer_partition_3.name: 分区名称
+layer_partition_3.name_2: 二级分区名称
+layer_partition_3.name_1: 一级分区名称
+layer_partition_3.area: 面积

@@ -1,0 +1,3 @@
+-- Table: public.wm_panorama_layer
+-- Comment: 全景图层信息表
+-- DDL not available for wm_panorama_layer

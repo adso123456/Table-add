@@ -1,0 +1,22 @@
+# Table: public.wst_relation_subtype_dict — 关系子类字典表，维护具体业务关系类型、标准方向和允许资产类型
+
+# Column documentation:
+wst_relation_subtype_dict.id: 主键ID
+wst_relation_subtype_dict.relation_type: 关系大类编码，对应 wst_relation_type_dict.type_code
+wst_relation_subtype_dict.relation_subtype: 关系子类编码，例如 enterprise_outfall
+wst_relation_subtype_dict.relation_name: 关系子类中文名称，例如 企业关联排污口
+wst_relation_subtype_dict.source_type_codes: 允许作为源对象的资产类型，多个用英文逗号分隔
+wst_relation_subtype_dict.target_type_codes: 允许作为目标对象的资产类型，多个用英文逗号分隔
+wst_relation_subtype_dict.source_label: 源对象中文标签
+wst_relation_subtype_dict.target_label: 目标对象中文标签
+wst_relation_subtype_dict.direction_desc: 标准方向说明，例如 企业 → 排污口
+wst_relation_subtype_dict.allow_manual: 是否允许人工录入
+wst_relation_subtype_dict.allow_import: 是否允许导入
+wst_relation_subtype_dict.allow_graph_edit: 是否允许图谱编辑
+wst_relation_subtype_dict.allow_map_draw: 是否允许地图连线绘制
+wst_relation_subtype_dict.default_confidence: 默认置信度
+wst_relation_subtype_dict.sort_order: 排序号
+wst_relation_subtype_dict.status: 状态，active 表示启用
+wst_relation_subtype_dict.description: 关系子类说明
+wst_relation_subtype_dict.created_at: 创建时间
+wst_relation_subtype_dict.updated_at: 更新时间

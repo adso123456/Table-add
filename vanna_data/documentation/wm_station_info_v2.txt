@@ -1,0 +1,34 @@
+# Table: public.wm_station_info_v2 — 自动站管理
+
+# Column documentation:
+wm_station_info_v2.id: 主键
+wm_station_info_v2.station_code: 站点编码
+wm_station_info_v2.station_name: 站点名称
+wm_station_info_v2.short_name: 站点简称
+wm_station_info_v2.station_type: 站类型：1-岸基站、2-浮船站
+wm_station_info_v2.station_level: 站点的级别：1-省站、2-市站
+wm_station_info_v2.iot_connect_type: 通信协议类型：0 tcp、1 http、2 mqtt
+wm_station_info_v2.region_code: 行政区编码
+wm_station_info_v2.region_name: 行政区名称
+wm_station_info_v2.build_state: 建站状态：0-待建、1-已建
+wm_station_info_v2.build_time: 建设时间
+wm_station_info_v2.water_body_id: 水体id
+wm_station_info_v2.section_id: 断面id
+wm_station_info_v2.equipment_manufacturer: 设备厂家
+wm_station_info_v2.equipment_model: 设备型号
+wm_station_info_v2.monitor_indicators: 监测指标
+wm_station_info_v2.monitor_frequency: 监测频次
+wm_station_info_v2.eight_direction_photo: 八方图
+wm_station_info_v2.om_unit: 运维单位
+wm_station_info_v2.om_person: 运维人员
+wm_station_info_v2.contact_info: 联系方式
+wm_station_info_v2.geom: 图形信息
+wm_station_info_v2.create_by: 创建人
+wm_station_info_v2.create_time: 创建时间
+wm_station_info_v2.update_by: 修改人
+wm_station_info_v2.update_time: 修改时间
+wm_station_info_v2.del_flag: 0未删除,1已删除
+wm_station_info_v2.remark: 备注
+wm_station_info_v2.section_name: 断面名称
+wm_station_info_v2.water_body_name: 水体名称
+wm_station_info_v2.water_body_type: 水体类型：0-河流、1-湖泊

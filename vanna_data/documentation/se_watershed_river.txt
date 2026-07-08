@@ -1,0 +1,29 @@
+# Table: public.se_watershed_river — 流域河流管理档案表
+
+# Column documentation:
+se_watershed_river.id: 主键id
+se_watershed_river.serial_no: 序号
+se_watershed_river.river_name: 河流名称
+se_watershed_river.river_alias: 河流别称
+se_watershed_river.river_level: 河流级别
+se_watershed_river.parent_river_name: 上一级河流名称
+se_watershed_river.river_length: 河流长度(km)
+se_watershed_river.hubei_length: 湖北长度(km)
+se_watershed_river.yichang_length: 宜昌长度(km)
+se_watershed_river.watershed_area: 流域面积(km2)
+se_watershed_river.hubei_area: 湖北面积(km2)
+se_watershed_river.yichang_area: 宜昌面积(km2)
+se_watershed_river.flow_districts: 流经市内行政区
+se_watershed_river.source_province: 源头省
+se_watershed_river.source_county: 源头县（市）
+se_watershed_river.source_town: 源头乡镇
+se_watershed_river.source_village: 源头村
+se_watershed_river.mouth_province: 河口省
+se_watershed_river.mouth_county: 河口县（市）
+se_watershed_river.mouth_town: 河口乡镇
+se_watershed_river.mouth_village: 河口村
+se_watershed_river.create_by: 创建人
+se_watershed_river.create_time: 创建时间
+se_watershed_river.update_by: 更新人
+se_watershed_river.update_time: 更新时间
+se_watershed_river.del_flag: 删除标记: 0-未删除、1-已删除

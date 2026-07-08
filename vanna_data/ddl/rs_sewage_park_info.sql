@@ -1,0 +1,3 @@
+-- Table: public.rs_sewage_park_info
+-- Comment: 污水处理厂-园区配套信息表
+-- DDL not available for rs_sewage_park_info

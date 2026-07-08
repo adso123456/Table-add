@@ -1,0 +1,7 @@
+# Table: public.layer_watershed — 工业园区-汇水区
+
+# Column documentation:
+layer_watershed.id: 主键ID
+layer_watershed.name: 名称
+layer_watershed.code: 编码
+layer_watershed.geom: 空间几何数据

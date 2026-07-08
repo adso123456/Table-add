@@ -1,0 +1,3 @@
+-- Table: public.rs_livestock_info_yc
+-- Comment: 规模化畜禽养殖场-宜昌水环境
+-- DDL not available for rs_livestock_info_yc

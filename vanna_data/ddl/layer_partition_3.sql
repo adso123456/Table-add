@@ -1,0 +1,3 @@
+-- Table: public.layer_partition_3
+-- Comment: 三级分区
+-- DDL not available for layer_partition_3

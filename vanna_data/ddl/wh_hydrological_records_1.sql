@@ -1,0 +1,3 @@
+-- Table: public.wh_hydrological_records_1
+-- Comment: 水文数据表
+-- DDL not available for wh_hydrological_records_1

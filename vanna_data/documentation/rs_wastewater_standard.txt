@@ -1,0 +1,18 @@
+# Table: public.rs_wastewater_standard — 废水/废气排放标准配置表
+
+# Column documentation:
+rs_wastewater_standard.id: 主键id
+rs_wastewater_standard.indicator_name: 指标名称
+rs_wastewater_standard.apply_type: 适用类型：0 污水处理厂、1 其他
+rs_wastewater_standard.l1_value: 最低标准
+rs_wastewater_standard.l2_value: 小时标准
+rs_wastewater_standard.l3_value: 日标准
+rs_wastewater_standard.max_value: 最高允许排放浓度
+rs_wastewater_standard.create_by: 创建人
+rs_wastewater_standard.create_time: 创建时间
+rs_wastewater_standard.update_by: 更新人
+rs_wastewater_standard.update_time: 更新时间
+rs_wastewater_standard.del_flag: 删除标记：0 未删除、1 已删除
+rs_wastewater_standard.jcdbh: 监测点编号
+rs_wastewater_standard.indicator_code: 指标编码
+rs_wastewater_standard.type: 排放口类型：PS 排水口、PQ 排气口

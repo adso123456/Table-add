@@ -1,0 +1,3 @@
+-- Table: public.wm_station_info
+-- Comment: 水质自动监测站基本信息表
+-- DDL not available for wm_station_info

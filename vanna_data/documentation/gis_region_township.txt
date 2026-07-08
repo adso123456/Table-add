@@ -1,0 +1,9 @@
+# Table: public.gis_region_township — 行政区划-乡镇
+
+# Column documentation:
+gis_region_township.id: 主键ID
+gis_region_township.geom: 空间几何数据
+gis_region_township.region_code: 行政区划编码
+gis_region_township.county: 区县名称
+gis_region_township.region_name: 行政区划名称
+gis_region_township.city: 市级名称

@@ -1,0 +1,27 @@
+# Table: public.wh_meteorological_hour_records — 气象数据小时记录表
+
+# Column documentation:
+wh_meteorological_hour_records.id: id
+wh_meteorological_hour_records.station_id: 所属站点id
+wh_meteorological_hour_records.m1_value: 风速（m/s）
+wh_meteorological_hour_records.m2_value: 风向
+wh_meteorological_hour_records.m3_value: 气压（hPa）
+wh_meteorological_hour_records.m4_value: 气温（℃）
+wh_meteorological_hour_records.m5_value: 相对湿度（%）
+wh_meteorological_hour_records.m6_value: 分钟降雨量（mm）
+wh_meteorological_hour_records.m7_value: 蒸发量（单位mm/m2）
+wh_meteorological_hour_records.m8_value: 小时降雨量（mm）
+wh_meteorological_hour_records.m9_value: 24小时降雨量（mm）
+wh_meteorological_hour_records.m10_value: 累计降雨量（mm）
+wh_meteorological_hour_records.m11_value: m11_value
+wh_meteorological_hour_records.m12_value: m12_value
+wh_meteorological_hour_records.m13_value: m13_value
+wh_meteorological_hour_records.m14_value: m14_value
+wh_meteorological_hour_records.m15_value: m15_value
+wh_meteorological_hour_records.record_type: 记录类型：0 自动、1 手工
+wh_meteorological_hour_records.monitor_time: 监测时间
+wh_meteorological_hour_records.create_by: 创建人
+wh_meteorological_hour_records.create_time: 创建时间
+wh_meteorological_hour_records.update_by: 更新人
+wh_meteorological_hour_records.update_time: 更新时间
+wh_meteorological_hour_records.del_flag: 删除标记：0 未删除、1 已删除

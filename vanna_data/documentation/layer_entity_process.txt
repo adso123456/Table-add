@@ -1,0 +1,12 @@
+# Table: public.layer_entity_process — 溯源关系查询流程：使用到的图层信息
+
+# Column documentation:
+layer_entity_process.id: 主键
+layer_entity_process.process_type: 溯源查询类型：industrial-工业园区
+layer_entity_process.layer_type: 溯源查询类型：0-查询图层、1-静态图层...
+layer_entity_process.layer_name_en: 图层英文名称
+layer_entity_process.layer_name_cn: 图层中文名称
+layer_entity_process.geom_type: 图形类型：点、线、面
+layer_entity_process.layer_level: 图层层级：查询过程的级别
+layer_entity_process.query_expand_mark: 扩展查询标记：关联查询相关属性
+layer_entity_process.remark: 备注

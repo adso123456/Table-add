@@ -1,0 +1,3 @@
+-- Table: public.rs_outlet
+-- Comment: 排污口信息表
+-- DDL not available for rs_outlet

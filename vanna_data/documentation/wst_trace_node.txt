@@ -1,0 +1,28 @@
+# Table: public.wst_trace_node — 水安全溯源模块-溯源拓扑节点表，用于存储河网、管网、园区排污河流、排口挂接点、断面挂接点、园区出口等 pgRouting 节点
+
+# Column documentation:
+wst_trace_node.id: 主键ID，同时作为 pgRouting 的 source/target 节点ID
+wst_trace_node.node_code: 节点编码
+wst_trace_node.node_name: 节点名称
+wst_trace_node.node_type: 节点类型，例如 river_node、pipe_node、outfall_snap_node、section_snap_node、intake_snap_node、gate_node、park_outlet_node
+wst_trace_node.network_type: 网络类型，例如 river=外部河网，park_pipe=园区管网，park_river=园区内部排污河流，mixed=混合衔接网络
+wst_trace_node.zone_id: 所属分区ID，关联 wst_control_zone.id
+wst_trace_node.is_boundary_node: 是否边界节点，例如园区出口、管网入河口、内外网络衔接点
+wst_trace_node.boundary_type: 边界节点类型，例如 park_outlet、pipe_to_river、river_inlet、external_river_join
+wst_trace_node.boundary_name: 边界节点名称
+wst_trace_node.source_asset_id: 来源资产ID，如果该节点由某个资产生成，可关联 wst_asset.id
+wst_trace_node.source_system: 数据来源系统
+wst_trace_node.source_id: 来源系统中的原始ID
+wst_trace_node.longitude: 经度
+wst_trace_node.latitude: 纬度
+wst_trace_node.elevation: 高程，单位米
+wst_trace_node.status: 状态：active=启用，disabled=停用，candidate=候选，invalid=无效
+wst_trace_node.geom: 节点点几何，坐标系SRID=4326
+wst_trace_node.metadata_json: 扩展属性JSON
+wst_trace_node.remark: 备注
+wst_trace_node.created_by: 创建人
+wst_trace_node.created_at: 创建时间
+wst_trace_node.updated_by: 更新人
+wst_trace_node.updated_at: 更新时间
+wst_trace_node.del_flag: 逻辑删除标记：0=未删除，1=已删除
+wst_trace_node.asset_id: 资产ID

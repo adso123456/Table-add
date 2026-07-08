@@ -1,0 +1,12 @@
+# Table: public.wm_panorama_video — 全景视频信息表
+
+# Column documentation:
+wm_panorama_video.id: 自增主键
+wm_panorama_video.layer_id: 所属全景图层ID
+wm_panorama_video.name: 视频名称
+wm_panorama_video.shoot_time: 拍摄时间
+wm_panorama_video.description: 描述
+wm_panorama_video.url: 访问地址
+wm_panorama_video.create_time: 创建时间
+wm_panorama_video.update_time: 更新时间
+wm_panorama_video.is_deleted: 是否删除（true:已删除，false:未删除）

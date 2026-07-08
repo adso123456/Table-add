@@ -1,0 +1,3 @@
+-- Table: public.layer_river_provincial
+-- Comment: 省级河流空间表
+-- DDL not available for layer_river_provincial

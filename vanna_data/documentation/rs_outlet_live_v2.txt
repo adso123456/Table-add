@@ -1,0 +1,17 @@
+# Table: public.rs_outlet_live_v2 — 排污口实况
+
+# Column documentation:
+rs_outlet_live_v2.id: 主键ID
+rs_outlet_live_v2.outlet_id: 关联排污口ID
+rs_outlet_live_v2.geom: 排污口所在位置
+rs_outlet_live_v2.gate_morphology: 口门形态
+rs_outlet_live_v2.drainage_feature: 排水特征
+rs_outlet_live_v2.has_abnormal: 有无异常状况
+rs_outlet_live_v2.has_online_monitor: 是否实现在线监测
+rs_outlet_live_v2.has_sampling_condition: 是否具备采样条件
+rs_outlet_live_v2.create_by: 创建人
+rs_outlet_live_v2.create_time: 创建时间
+rs_outlet_live_v2.update_by: 修改人
+rs_outlet_live_v2.update_time: 修改时间
+rs_outlet_live_v2.del_flag: 删除标志：0-正常，1-已删除
+rs_outlet_live_v2.outlet_name: 排污口名称

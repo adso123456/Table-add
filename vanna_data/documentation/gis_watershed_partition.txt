@@ -1,0 +1,16 @@
+# Table: public.gis_watershed_partition — 空间-流域分区数据
+
+# Column documentation:
+gis_watershed_partition.id: 主键ID
+gis_watershed_partition.name: 名称
+gis_watershed_partition.name_alias: 别名
+gis_watershed_partition.area: 面积：平方千米
+gis_watershed_partition.remark: 备注
+gis_watershed_partition.code: 编码
+gis_watershed_partition.create_by: 创建人
+gis_watershed_partition.create_time: 创建时间
+gis_watershed_partition.update_by: 更新人
+gis_watershed_partition.update_time: 更新时间
+gis_watershed_partition.del_flag: 删除标记: 0-未删除、1-已删除
+gis_watershed_partition.geom: 图形
+gis_watershed_partition.version: 当前版本：从0开始递增

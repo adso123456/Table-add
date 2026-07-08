@@ -1,0 +1,3 @@
+-- Table: public.gis_headwaters
+-- Comment: 水源地表
+-- DDL not available for gis_headwaters

@@ -1,0 +1,10 @@
+# Table: public.wm_panorama_layer_relation — 全景图层关联关系表
+
+# Column documentation:
+wm_panorama_layer_relation.id: 自增主键
+wm_panorama_layer_relation.panorama_id: 全景ID
+wm_panorama_layer_relation.layer_id: 图层ID
+wm_panorama_layer_relation.feature_id: 要素ID
+wm_panorama_layer_relation.create_time: 创建时间
+wm_panorama_layer_relation.update_time: 更新时间
+wm_panorama_layer_relation.is_deleted: 是否删除（true:已删除，false:未删除）

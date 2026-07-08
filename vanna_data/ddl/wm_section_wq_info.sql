@@ -1,0 +1,3 @@
+-- Table: public.wm_section_wq_info
+-- Comment: 断面水质目标信息表
+-- DDL not available for wm_section_wq_info

@@ -1,0 +1,24 @@
+# Table: public.layer_reservoir_provincial_label — 省控水库注记
+
+# Column documentation:
+layer_reservoir_provincial_label.geom: 空间几何数据
+layer_reservoir_provincial_label.cc: 行政区划编码
+layer_reservoir_provincial_label.gb: 国标编码
+layer_reservoir_provincial_label.bas: 流域编码
+layer_reservoir_provincial_label.name: 名称
+layer_reservoir_provincial_label.period: 时期/阶段
+layer_reservoir_provincial_label.type: 类型
+layer_reservoir_provincial_label.wq: 水质类别
+layer_reservoir_provincial_label.aheight: 坝高
+layer_reservoir_provincial_label.parea: 永久占地面积
+layer_reservoir_provincial_label.ec: 生态分区编码
+layer_reservoir_provincial_label.grade: 等级/级别
+layer_reservoir_provincial_label.length: 长度
+layer_reservoir_provincial_label.mheight: 最大坝高
+layer_reservoir_provincial_label.sdtf: 水系特征码
+layer_reservoir_provincial_label.shrc: 所属河湖编码
+layer_reservoir_provincial_label.vol: 库容
+layer_reservoir_provincial_label.featid: 要素唯一标识
+layer_reservoir_provincial_label.areacode: 行政区划代码
+layer_reservoir_provincial_label.changetype: 变更类型
+layer_reservoir_provincial_label.id: 主键ID

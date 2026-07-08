@@ -1,0 +1,3 @@
+-- Table: public.gis_watershed_partition_3
+-- Comment: 三级流域分区表
+-- DDL not available for gis_watershed_partition_3

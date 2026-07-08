@@ -1,0 +1,3 @@
+-- Table: public.wm_panorama_video
+-- Comment: 全景视频信息表
+-- DDL not available for wm_panorama_video

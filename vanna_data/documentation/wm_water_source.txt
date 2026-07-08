@@ -1,0 +1,39 @@
+# Table: public.wm_water_source — 水源地信息：通过code码关联
+
+# Column documentation:
+wm_water_source.id: 主键ID
+wm_water_source.code: 代码
+wm_water_source.name: 水源名称
+wm_water_source.alias: 别名
+wm_water_source.region_code: 行政区代码
+wm_water_source.region_name: 行政区名称
+wm_water_source.river_system_code: 水系代码
+wm_water_source.river_system_name: 水系名称
+wm_water_source.river_system_name_2: 二级水系名称
+wm_water_source.river_system_name_3: 三级级水系名称
+wm_water_source.source_type: 水源类型
+wm_water_source.source_state: 水源状态
+wm_water_source.level: 级别
+wm_water_source.protect_area_status: 保护区划定情况
+wm_water_source.protect_area_cert: 保护区划定文号
+wm_water_source.protect_level: 保护区级别：1、2、3
+wm_water_source.supply_type: 供水类型
+wm_water_source.supply_service: 服务对象
+wm_water_source.supply_water_daily: 日均供水能力（吨/天）
+wm_water_source.supply_water_year: 年实际取水量(万吨)
+wm_water_source.supply_water_avg: 人均取水量（升/天）
+wm_water_source.service_people_count: 服务人数
+wm_water_source.water_word_info: 对应水厂名称
+wm_water_source.dbsqssw: 地表水取水水位（m）
+wm_water_source.dbssjksw: 地表水设计枯水位（m）
+wm_water_source.dxsmctj: 地下水埋藏条件
+wm_water_source.dxshsjzlx: 地下水含水介质类型
+wm_water_source.dxssjjs: 地下水设计降深（m）
+wm_water_source.dxsswms: 地下水水位埋深（m）
+wm_water_source.ccsy: 超采水源: 是、否
+wm_water_source.cjjjdkhzb: 长江经济带考核指标: 是、否
+wm_water_source.build_year: 取水口建成年份
+wm_water_source.used_year: 取水口正式使用年份
+wm_water_source.image_path: 图片路径
+wm_water_source.remark: 备注
+wm_water_source.geom: 空间几何数据

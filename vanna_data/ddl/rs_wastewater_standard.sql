@@ -1,0 +1,3 @@
+-- Table: public.rs_wastewater_standard
+-- Comment: 废水/废气排放标准配置表
+-- DDL not available for rs_wastewater_standard

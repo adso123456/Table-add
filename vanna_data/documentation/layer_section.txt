@@ -1,0 +1,9 @@
+# Table: public.layer_section — 工业园区-监测断面
+
+# Column documentation:
+layer_section.id: 主键ID
+layer_section.x: X坐标
+layer_section.y: Y坐标
+layer_section.name: 名称
+layer_section.code: 编码
+layer_section.geom: 空间几何数据

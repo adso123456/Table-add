@@ -1,0 +1,3 @@
+-- Table: public.rs_industrial_info_yc
+-- Comment: 工业园区环境监测数据表
+-- DDL not available for rs_industrial_info_yc

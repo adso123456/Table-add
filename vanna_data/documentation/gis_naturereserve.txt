@@ -1,0 +1,25 @@
+# Table: public.gis_naturereserve — 自然保护区表
+
+# Column documentation:
+gis_naturereserve.id: 主键ID
+gis_naturereserve.nature_reserve_name: 自然保护区名称
+gis_naturereserve.nature_reserve_code: 自然保护区编码
+gis_naturereserve.address: 地址
+gis_naturereserve.geom: 空间几何数据
+gis_naturereserve.department: 主管部门
+gis_naturereserve.type: 类型
+gis_naturereserve.level: 级别
+gis_naturereserve.protect_target: 主要保护对象
+gis_naturereserve.manage_org_name: 管理机构名称
+gis_naturereserve.manage_org_type: 管理机构类型
+gis_naturereserve.manage_org_level: 管理机构级别
+gis_naturereserve.population: 人口数量
+gis_naturereserve.first_protect_animals: 国家一级保护动物
+gis_naturereserve.second_protect_animals: 国家二级保护动物
+gis_naturereserve.first_protect_plants: 国家一级保护植物
+gis_naturereserve.second_protect_plants: 国家二级保护植物
+gis_naturereserve.create_by: 创建人
+gis_naturereserve.create_time: 创建时间
+gis_naturereserve.update_by: 修改人
+gis_naturereserve.update_time: 修改时间
+gis_naturereserve.del_flag: 删除标志：0-正常，1-已删除

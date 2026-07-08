@@ -1,0 +1,3 @@
+-- Table: public.wm_meteorological_info
+-- Comment: 气象自动监测站基本信息表
+-- DDL not available for wm_meteorological_info

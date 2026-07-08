@@ -1,0 +1,13 @@
+# Table: public.day_quality_setting — 日质控设置
+
+# Column documentation:
+day_quality_setting.id: 主键id
+day_quality_setting.station_id: 站点id
+day_quality_setting.indicator_code: 监测指标编号
+day_quality_setting.audit_by: 审核人
+day_quality_setting.audit_time: 审核时间
+day_quality_setting.create_by: 创建人
+day_quality_setting.create_time: 创建时间
+day_quality_setting.update_by: 更新人
+day_quality_setting.update_time: 更新时间
+day_quality_setting.del_flag: 删除标记：0 未删除、1 已删除

@@ -1,0 +1,3 @@
+-- Table: public.rs_wastewater_month_records
+-- Comment: 污染源监测月记录表
+-- DDL not available for rs_wastewater_month_records

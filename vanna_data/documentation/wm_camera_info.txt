@@ -1,0 +1,19 @@
+# Table: public.wm_camera_info — 摄像头基本信息表
+
+# Column documentation:
+wm_camera_info.id: 主键
+wm_camera_info.camera_name: 摄像头名称
+wm_camera_info.device_type: 设备类型
+wm_camera_info.device_code: 设备编号
+wm_camera_info.device_supplier: 设备厂商
+wm_camera_info.device_origin: 设备来源
+wm_camera_info.address: 摄像头地址
+wm_camera_info.lon: 经度
+wm_camera_info.lat: 纬度
+wm_camera_info.monitor_subject: 监控对象
+wm_camera_info.remark: 备注
+wm_camera_info.create_by: 创建人
+wm_camera_info.create_time: 创建时间
+wm_camera_info.update_by: 更新人
+wm_camera_info.update_time: 更新时间
+wm_camera_info.del_flag: 删除标记：0 未删除、1 已删除

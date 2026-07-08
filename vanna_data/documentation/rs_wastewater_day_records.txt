@@ -1,0 +1,70 @@
+# Table: public.rs_wastewater_day_records — 污染源监测日记录表
+
+# Column documentation:
+rs_wastewater_day_records.id: 主键ID
+rs_wastewater_day_records.timestamp: 统计日期（当日00:00:00）
+rs_wastewater_day_records.type: 类型：PS-排水口，PQ-排气口
+rs_wastewater_day_records.pollutant_id: 排污口/排气口ID（关联
+ rs_pollutant_info.id）
+rs_wastewater_day_records.status: 当日综合状态：nobeyond-正常，below-偏低
+ ，beyond-超标
+rs_wastewater_day_records.record_type: 记录类型：0-正常统计，1-补录
+rs_wastewater_day_records.ll: 日流量（各小时流量的平均值）
+rs_wastewater_day_records.ll_count: 日流量有效数据计数（参与平均的小时数）
+rs_wastewater_day_records.pfl: 日排流量（各小时排流量的累加值）
+rs_wastewater_day_records.pfl_count: 日排流量有效数据计数（参与累加的小时数）
+rs_wastewater_day_records.m1_value: 【PS】化学需氧量(COD)日平均值 / 【PQ】烟尘日
+ 平均值
+rs_wastewater_day_records.m1_count: m1 当日有效数据计数
+rs_wastewater_day_records.m2_value: 【PS】总氮(TN)日平均值 / 【PQ】二氧化硫日平均
+ 值
+rs_wastewater_day_records.m2_count: m2 当日有效数据计数
+rs_wastewater_day_records.m3_value: 【PS】pH日平均值 / 【PQ】氮氧化物日平均值
+rs_wastewater_day_records.m3_count: m3 当日有效数据计数
+rs_wastewater_day_records.m4_value: 【PS】氨氮日平均值 / 【PQ】一氧化氮日平均值
+rs_wastewater_day_records.m4_count: m4 当日有效数据计数
+rs_wastewater_day_records.m5_value: 【PS】水温日平均值 / 【PQ】二氧化氮日平均值
+rs_wastewater_day_records.m5_count: m5 当日有效数据计数
+rs_wastewater_day_records.m6_value: 【PS】总磷日平均值 / 【PQ】一氧化碳日平均值
+rs_wastewater_day_records.m6_count: m6 当日有效数据计数
+rs_wastewater_day_records.m7_value: 【PS】悬浮物日平均值 / 【PQ】氯化氢日平均值
+rs_wastewater_day_records.m7_count: m7 当日有效数据计数
+rs_wastewater_day_records.m8_value: 【PS】余氯日平均值 / 【PQ】非甲烷总烃日平均值
+rs_wastewater_day_records.m8_count: m8 当日有效数据计数
+rs_wastewater_day_records.m9_value: 【PS】六价铬日平均值 / 【PQ】苯日平均值
+rs_wastewater_day_records.m9_count: m9 当日有效数据计数
+rs_wastewater_day_records.m10_value: 【PS】石油类日平均值 / 【PQ】甲苯日平均值
+rs_wastewater_day_records.m10_count: m10 当日有效数据计数
+rs_wastewater_day_records.m11_value: 【PS】氟化物日平均值 / 【PQ】二甲苯日平均值
+rs_wastewater_day_records.m11_count: m11 当日有效数据计数
+rs_wastewater_day_records.m12_value: 【PS】总铬日平均值 / 【PQ】碳氢化合物日平均
+ 值
+rs_wastewater_day_records.m12_count: m12 当日有效数据计数
+rs_wastewater_day_records.m13_value: 【PS】氰化物日平均值 / 【PQ】甲烷日平均值
+rs_wastewater_day_records.m13_count: m13 当日有效数据计数
+rs_wastewater_day_records.m14_value: 【PS】总锰日平均值 / 【PQ】氟化氢日平均值
+rs_wastewater_day_records.m14_count: m14 当日有效数据计数
+rs_wastewater_day_records.m15_value: 【PS】总银日平均值 / 【PQ】二氧化碳日平均值
+rs_wastewater_day_records.m15_count: m15 当日有效数据计数
+rs_wastewater_day_records.m16_value: 【PS】总铜日平均值 / 【PQ】1,3-二甲基苯日平
+ 均值
+rs_wastewater_day_records.m16_count: m16 当日有效数据计数
+rs_wastewater_day_records.m17_value: 【PS】总镍日平均值 / 【PQ】乙烯基苯(苯乙烯)
+ 日平均值
+rs_wastewater_day_records.m17_count: m17 当日有效数据计数
+rs_wastewater_day_records.m18_value: 【PS】总镉日平均值 / 【PQ】乙苯日平均值
+rs_wastewater_day_records.m18_count: m18 当日有效数据计数
+rs_wastewater_day_records.m19_value: 【PS】总砷日平均值 / 【PQ】1,2-二甲基苯日平
+ 均值
+rs_wastewater_day_records.m19_count: m19 当日有效数据计数
+rs_wastewater_day_records.m20_value: 【PS】总铅日平均值 / 【PQ】氨(NH3)日平均值
+rs_wastewater_day_records.m20_count: m20 当日有效数据计数
+rs_wastewater_day_records.m21_value: 【PS】浊度日平均值（仅排水口）
+rs_wastewater_day_records.m21_count: m21 当日有效数据计数（仅排水口）
+rs_wastewater_day_records.m22_value: 【PS】总锌日平均值（仅排水口）
+rs_wastewater_day_records.m22_count: m22 当日有效数据计数（仅排水口）
+rs_wastewater_day_records.create_by: 创建人ID
+rs_wastewater_day_records.create_time: 创建时间
+rs_wastewater_day_records.update_by: 更新人ID
+rs_wastewater_day_records.update_time: 更新时间
+rs_wastewater_day_records.del_flag: 删除标记：0-正常，1-删除

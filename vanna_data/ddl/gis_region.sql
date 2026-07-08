@@ -1,0 +1,3 @@
+-- Table: public.gis_region
+-- Comment: 区县数据表
+-- DDL not available for gis_region

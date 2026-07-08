@@ -1,0 +1,17 @@
+# Table: public.ad_dict — 数据字典
+
+# Column documentation:
+ad_dict.row_id: ROW_ID
+ad_dict.list_type: 列表类型
+ad_dict.list_type_desc: 列表描述
+ad_dict.item_code: 列表项代码
+ad_dict.item_name: 列表项名称
+ad_dict.taxis_no: 排序码
+ad_dict.origin_flag: 数据来源的标志：[]或[I]-(Input)系统录入;[O]-(Out)外部接口导入;[S]-(System)系统保留。本标志不能挪为它用。
+ad_dict.origin_app: 数据来源应用的代码
+ad_dict.modification_num: 记录修改次数
+ad_dict.create_time: 创建时间
+ad_dict.update_time: 修改时间
+ad_dict.del_flag: 删除标志：0-正常，1-已删除
+ad_dict.create_by: 创建人
+ad_dict.update_by: 修改人

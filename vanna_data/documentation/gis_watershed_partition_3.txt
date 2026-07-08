@@ -1,0 +1,8 @@
+# Table: public.gis_watershed_partition_3 — 三级流域分区表
+
+# Column documentation:
+gis_watershed_partition_3.id: 主键ID
+gis_watershed_partition_3.geom: 空间几何数据
+gis_watershed_partition_3.basin: 流域
+gis_watershed_partition_3.name: 名称
+gis_watershed_partition_3.area: 面积：平方米

@@ -1,0 +1,3 @@
+-- Table: public.rs_sewage_info_v2
+-- Comment: 污水处理厂档案管理及监测
+-- DDL not available for rs_sewage_info_v2

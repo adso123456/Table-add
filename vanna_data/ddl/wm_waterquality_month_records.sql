@@ -1,0 +1,3 @@
+-- Table: public.wm_waterquality_month_records
+-- Comment: 水质监测月记录表
+-- DDL not available for wm_waterquality_month_records

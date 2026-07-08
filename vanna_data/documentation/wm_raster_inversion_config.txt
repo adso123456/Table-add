@@ -1,0 +1,9 @@
+# Table: public.wm_raster_inversion_config — 遥感反演配置表
+
+# Column documentation:
+wm_raster_inversion_config.id: 主键ID
+wm_raster_inversion_config.type_code: 反演类型编码
+wm_raster_inversion_config.name: 名称
+wm_raster_inversion_config.create_time: 创建时间
+wm_raster_inversion_config.update_time: 修改时间
+wm_raster_inversion_config.del_flag: 删除标志：0-正常，1-已删除

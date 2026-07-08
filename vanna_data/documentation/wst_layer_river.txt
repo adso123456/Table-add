@@ -1,0 +1,14 @@
+# Table: public.wst_layer_river — 溯源图层河流表
+
+# Column documentation:
+wst_layer_river.id: 主键ID
+wst_layer_river.river_code: 河流编码
+wst_layer_river.river_name: 河流名称
+wst_layer_river.next_down: 下游河流ID
+wst_layer_river.river_class: 河流类别
+wst_layer_river.length_km: 河流长度（公里）
+wst_layer_river.from_z: 起点高程
+wst_layer_river.to_z: 终点高程
+wst_layer_river.geom: 空间几何数据
+wst_layer_river.created_at: 创建时间
+wst_layer_river.updated_at: 更新时间

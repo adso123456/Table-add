@@ -1,0 +1,3 @@
+-- Table: public.layer_industrial_lsf
+-- Comment: 工业园区-园区临时闸阀
+-- DDL not available for layer_industrial_lsf

@@ -1,0 +1,3 @@
+-- Table: public.wm_camera_info
+-- Comment: 摄像头基本信息表
+-- DDL not available for wm_camera_info

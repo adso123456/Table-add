@@ -1,0 +1,3 @@
+-- Table: public.wm_image_info
+-- Comment: 档案图片信息表：用于保存各种站点、断面、污染源的图片信息
+-- DDL not available for wm_image_info

@@ -1,0 +1,17 @@
+# Table: public.wm_water_intake — 水源地-取水口
+
+# Column documentation:
+wm_water_intake.id: 主键ID
+wm_water_intake.geom: 空间几何数据
+wm_water_intake.region_code: 行政区编码
+wm_water_intake.region_name: 行政区名称
+wm_water_intake.name: 名称
+wm_water_intake.city: 城市
+wm_water_intake.county: 区县
+wm_water_intake.water_type: 水源类型
+wm_water_intake.used_mark: 使用状态
+wm_water_intake.township: 乡镇
+wm_water_intake.remark: 备注
+wm_water_intake.level: 级别：乡镇、区县
+wm_water_intake.code: 水源编码
+wm_water_intake.static_flag: 统计标识：是、否

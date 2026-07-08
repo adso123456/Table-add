@@ -1,0 +1,3 @@
+-- Table: public.wm_waterquality_day_records
+-- Comment: 水质监测日记录表
+-- DDL not available for wm_waterquality_day_records

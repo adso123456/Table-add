@@ -1,0 +1,3 @@
+-- Table: public.dc_survey_info
+-- Comment: 巡回调查-调查后的核查信息
+-- DDL not available for dc_survey_info

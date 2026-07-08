@@ -1,0 +1,17 @@
+# Table: public.gis_region — 区县数据表
+
+# Column documentation:
+gis_region.id: 主键id
+gis_region.region_code: 行政区划编码
+gis_region.region_name: 行政区划名称
+gis_region.control_unit_id: 管控单元ID
+gis_region.region_level: 区划级别
+gis_region.parent_code: 父级区划编码
+gis_region.code: 编码
+gis_region.address: 地址
+gis_region.remark: 备注
+gis_region.create_by: 创建人
+gis_region.create_time: 创建时间
+gis_region.update_by: 更新人
+gis_region.update_time: 更新时间
+gis_region.del_flag: 删除标记：0 未删除、1 已删除

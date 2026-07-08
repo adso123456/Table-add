@@ -1,0 +1,3 @@
+-- Table: public.rs_enterprise_info_wade
+-- Comment: 污染源自动监管涉水企业：宜昌水环境
+-- DDL not available for rs_enterprise_info_wade

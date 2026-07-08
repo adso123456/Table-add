@@ -1,0 +1,3 @@
+-- Table: public.layer_outlet_sewage
+-- Comment: 工业园区-污水排放口
+-- DDL not available for layer_outlet_sewage

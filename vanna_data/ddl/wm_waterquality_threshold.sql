@@ -1,0 +1,3 @@
+-- Table: public.wm_waterquality_threshold
+-- Comment: 站点水质指标阈值
+-- DDL not available for wm_waterquality_threshold

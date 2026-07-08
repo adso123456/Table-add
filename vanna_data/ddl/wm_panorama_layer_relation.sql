@@ -1,0 +1,3 @@
+-- Table: public.wm_panorama_layer_relation
+-- Comment: 全景图层关联关系表
+-- DDL not available for wm_panorama_layer_relation

@@ -1,0 +1,28 @@
+# Table: public.rs_warn_records — 污染预警消息通知
+
+# Column documentation:
+rs_warn_records.id: 主键id
+rs_warn_records.station_id: 站点id，warn_type为0时
+rs_warn_records.pollutant_id: 污染源id，warn_type为3时
+rs_warn_records.key_point_id: 关键点id, warn_type为6时
+rs_warn_records.warn_indicator: 预警指标
+rs_warn_records.warn_type: 预警类型：0 水质预警、1 水文预警、2 气象预警、3 污染源预警、4 网络异常、5 仪器异常
+rs_warn_records.warn_value: 预警值
+rs_warn_records.standard_value: 标准值
+rs_warn_records.unit: 单位
+rs_warn_records.water_quality_level: 水质监测指标等级
+rs_warn_records.warn_level: 告警等级：0 一般、1 严重、2 重度
+rs_warn_records.warn_content: 预警内容
+rs_warn_records.warn_time: 预警时间
+rs_warn_records.publish_status: 是否发布：0 未发布、1 已发布
+rs_warn_records.publish_time: 发布时间
+rs_warn_records.check_status: 是否审核：0 未审核、1 已审核
+rs_warn_records.check_time: 审核时间
+rs_warn_records.manual_auto: 0 手动处理、1 自动处理
+rs_warn_records.release_status: 是否解除：0 未解除、1 已解除
+rs_warn_records.release_time: 解除时间
+rs_warn_records.create_by: 创建人
+rs_warn_records.create_time: 创建时间
+rs_warn_records.update_by: 更新人
+rs_warn_records.update_time: 更新时间
+rs_warn_records.del_flag: 删除标记：0 未删除、1 已删除

@@ -1,0 +1,3 @@
+-- Table: public.layer_industrial_yjsgc
+-- Comment: 工业园区-应急事故池
+-- DDL not available for layer_industrial_yjsgc

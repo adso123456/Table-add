@@ -1,0 +1,24 @@
+# Table: public.rs_pollutant_info — 企业污染源排口信息表：宜昌污染源在线平台
+
+# Column documentation:
+rs_pollutant_info.id: 主键
+rs_pollutant_info.xh: 序号：用于查询数据=driveId
+rs_pollutant_info.jcdbh: 监测点编号
+rs_pollutant_info.jcdmc: 监测点名称
+rs_pollutant_info.wrybh: 污染源编号
+rs_pollutant_info.pwkwz: 排放口位置
+rs_pollutant_info.jgjb: 监管级别：ZD-重点、YB-一般
+rs_pollutant_info.sfjsk: 是否进水口（0：否；1：是）
+rs_pollutant_info.sfzs: 是否烧结等无需折算（0：否；1：是）
+rs_pollutant_info.zsxs: 折算系数
+rs_pollutant_info.jd: 经度
+rs_pollutant_info.wd: 纬度
+rs_pollutant_info.geom: 图形
+rs_pollutant_info.create_by: 创建人
+rs_pollutant_info.create_time: 创建时间
+rs_pollutant_info.update_by: 更新人
+rs_pollutant_info.update_time: 更新时间
+rs_pollutant_info.del_flag: 删除标记: 0-未删除、1-已删除
+rs_pollutant_info.record_type: 记录类型：0-自动、1-手动
+rs_pollutant_info.wrlx: 污染类型：FS-废水、FQ-废气
+rs_pollutant_info.outlet_id: 污染源id

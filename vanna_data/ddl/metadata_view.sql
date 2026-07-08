@@ -1,0 +1,3 @@
+-- Table: public.metadata_view
+-- Comment: 元数据-视图
+-- DDL not available for metadata_view

@@ -1,0 +1,3 @@
+-- Table: public.wm_water_intake
+-- Comment: 水源地-取水口
+-- DDL not available for wm_water_intake

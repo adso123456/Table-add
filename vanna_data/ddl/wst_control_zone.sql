@@ -1,0 +1,3 @@
+-- Table: public.wst_control_zone
+-- Comment: 水安全溯源模块-三级分区表，用于管理国控断面控制单元、自动站分区、工业园区/分水岭分区
+-- DDL not available for wst_control_zone

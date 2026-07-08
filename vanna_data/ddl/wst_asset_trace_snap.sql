@@ -1,0 +1,3 @@
+-- Table: public.wst_asset_trace_snap
+-- Comment: 水安全溯源模块-资产拓扑挂接表，用于维护业务资产与溯源拓扑节点之间的挂接关系，是资产进入 pgRouting 网络计算的桥梁
+-- DDL not available for wst_asset_trace_snap

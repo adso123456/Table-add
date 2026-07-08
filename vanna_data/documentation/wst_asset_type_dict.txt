@@ -1,0 +1,25 @@
+# Table: public.wst_asset_type_dict — 水安全溯源模块-资产类型字典表，用于统一管理资产类型、图层、图标、几何类型和前端展示规则
+
+# Column documentation:
+wst_asset_type_dict.id: 主键ID
+wst_asset_type_dict.asset_type: 资产类型编码，例如 national_section、auto_station、outfall、water_enterprise、chemical_park、camera
+wst_asset_type_dict.asset_type_name: 资产类型名称，例如国控断面、自动站、排污口、涉水企业、化工园区、摄像头
+wst_asset_type_dict.parent_type: 上级资产类型编码，用于资产类型分组
+wst_asset_type_dict.category: 资产分类，例如 monitoring=监测类，pollution=污染源类，supervision=监管类，emergency=应急类，network=网络类
+wst_asset_type_dict.geometry_type: 默认几何类型：Point、LineString、Polygon、Geometry
+wst_asset_type_dict.icon_name: 前端图标名称
+wst_asset_type_dict.layer_name: 前端图层名称
+wst_asset_type_dict.default_visible: 地图上是否默认显示
+wst_asset_type_dict.sort_no: 排序号
+wst_asset_type_dict.status: 状态：active=启用，disabled=停用
+wst_asset_type_dict.metadata_json: 扩展属性JSON
+wst_asset_type_dict.remark: 备注
+wst_asset_type_dict.created_by: 创建人
+wst_asset_type_dict.created_at: 创建时间
+wst_asset_type_dict.updated_by: 更新人
+wst_asset_type_dict.updated_at: 更新时间
+wst_asset_type_dict.del_flag: 逻辑删除标记：0=未删除，1=已删除
+wst_asset_type_dict.asset_group: 资产分组编码
+wst_asset_type_dict.asset_group_name: 资产分组名称
+wst_asset_type_dict.group_sort: 分组排序号
+wst_asset_type_dict.group_description: 分组描述

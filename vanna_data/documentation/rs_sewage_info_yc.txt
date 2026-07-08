@@ -1,0 +1,20 @@
+# Table: public.rs_sewage_info_yc — 污水处理厂信息表：宜昌水环境
+
+# Column documentation:
+rs_sewage_info_yc.id: 主键id
+rs_sewage_info_yc.name: 企业名称
+rs_sewage_info_yc.monitor_name: 检测点名称
+rs_sewage_info_yc.region_code: 行政区编码
+rs_sewage_info_yc.region_name: 行政区名称
+rs_sewage_info_yc.emission_type: 排放类型：0-废水
+rs_sewage_info_yc.supervision_level: 监管级别：0-一般、1-重点
+rs_sewage_info_yc.outlet_location: 排污口位置
+rs_sewage_info_yc.lon: 经度
+rs_sewage_info_yc.lat: 纬度
+rs_sewage_info_yc.create_by: 创建人
+rs_sewage_info_yc.create_time: 创建时间
+rs_sewage_info_yc.update_by: 更新人
+rs_sewage_info_yc.update_time: 更新时间
+rs_sewage_info_yc.del_flag: 删除标记
+rs_sewage_info_yc.town_flag: 是否城镇污水处理厂
+rs_sewage_info_yc.industrial_flag: 是否工业污水处理厂

@@ -1,0 +1,3 @@
+-- Table: public.rs_enterprise_info_lsg
+-- Comment: 湖北省磷石膏尾矿库企业信息表：宜昌水环境
+-- DDL not available for rs_enterprise_info_lsg

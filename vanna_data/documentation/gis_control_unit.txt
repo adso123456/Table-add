@@ -1,0 +1,15 @@
+# Table: public.gis_control_unit — 水环境管控单元表
+
+# Column documentation:
+gis_control_unit.id: 主键
+gis_control_unit.geom: 几何信息
+gis_control_unit.control_unit_name: 控制单元名称
+gis_control_unit.area: 面积（km2）
+gis_control_unit.control_unit_code: 控制单元编码
+gis_control_unit.basin: 所属流域
+gis_control_unit.remark: 备注
+gis_control_unit.create_time: 创建时间
+gis_control_unit.update_time: 更新时间
+gis_control_unit.del_flag: 删除标志：0-正常、1-删除
+gis_control_unit.create_by: 创建人
+gis_control_unit.update_by: 修改人

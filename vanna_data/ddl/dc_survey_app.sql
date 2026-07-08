@@ -1,0 +1,3 @@
+-- Table: public.dc_survey_app
+-- Comment: APP安装包版本管理表
+-- DDL not available for dc_survey_app

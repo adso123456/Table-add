@@ -1,0 +1,3 @@
+-- Table: public.wm_directory
+-- Comment: 目录树实体
+-- DDL not available for wm_directory

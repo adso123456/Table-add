@@ -1,0 +1,43 @@
+# Table: public.wm_hydrological_info — 水位站基本信息表
+
+# Column documentation:
+wm_hydrological_info.id: 监测站点的唯一id
+wm_hydrological_info.station_code: 水位站编码
+wm_hydrological_info.station_name: 监测站点名称
+wm_hydrological_info.short_name: 简称
+wm_hydrological_info.region_code: 行政区划代码
+wm_hydrological_info.iot_connect_type: 通信协议类型：0 tcp、1 http、2 mqtt
+wm_hydrological_info.belong_to_city: 归属地市
+wm_hydrological_info.water_body_id: 所属水体id
+wm_hydrological_info.station_type: 站类型(岸基站1|浮船站2)
+wm_hydrological_info.build_state: 建站状态(待建0,已建1)
+wm_hydrological_info.water_type: 水体类型：0 河流、1 湖泊
+wm_hydrological_info.section_id: 断面id
+wm_hydrological_info.river_in: 一维模型来流入汇口
+wm_hydrological_info.pollutant_id: 污染源id
+wm_hydrological_info.in_outlet: 污染源类型为污水处理厂时：0 进水口、1 出水口
+wm_hydrological_info.river_out: 一维模型出水口
+wm_hydrological_info.efdc_in: efdc模型来流入汇口
+wm_hydrological_info.efdc_out: efdc模型出水口
+wm_hydrological_info.efdc_i: 站点所在二维网格I值
+wm_hydrological_info.efdc_j: 站点所在二维网格J值
+wm_hydrological_info.head_water: headwater序号
+wm_hydrological_info.lake_in: 是否为入湖港道：0 否、1 是
+wm_hydrological_info.hydrological_table_name: 水位监测记录表名
+wm_hydrological_info.hydrological_indicator_codes: 水位监测指标编号集合，逗号连接
+wm_hydrological_info.geom: 空间几何数据
+wm_hydrological_info.frequency: 测量频率
+wm_hydrological_info.equipments: 自动站的设备清单
+wm_hydrological_info.build_time: 建设时间
+wm_hydrological_info.responsible_person: 站点责任人
+wm_hydrological_info.contact_number: 责任人联系电话
+wm_hydrological_info.last_maintenance_time: 最近维护时间
+wm_hydrological_info.img_url: 照片地址
+wm_hydrological_info.img_name: 照片名称
+wm_hydrological_info.img_format: 照片格式：img、png等
+wm_hydrological_info.remark: 备注信息
+wm_hydrological_info.create_by: 创建人
+wm_hydrological_info.create_time: 创建时间
+wm_hydrological_info.update_by: 更新人
+wm_hydrological_info.update_time: 更新时间
+wm_hydrological_info.del_flag: 删除标记：0 未删除、1 已删除

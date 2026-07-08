@@ -1,0 +1,3 @@
+-- Table: public.ad_dict
+-- Comment: 数据字典
+-- DDL not available for ad_dict

@@ -1,0 +1,21 @@
+# Table: public.wst_trace_topology_issue — 溯源拓扑问题记录表
+
+# Column documentation:
+wst_trace_topology_issue.id: 主键ID
+wst_trace_topology_issue.issue_type: 问题类型
+wst_trace_topology_issue.issue_name: 问题名称
+wst_trace_topology_issue.issue_level: 问题级别
+wst_trace_topology_issue.object_type: 关联对象类型
+wst_trace_topology_issue.object_id: 关联对象ID
+wst_trace_topology_issue.object_name: 关联对象名称
+wst_trace_topology_issue.object_code: 监控对象编码
+wst_trace_topology_issue.status: 状态
+wst_trace_topology_issue.geom: 空间几何数据
+wst_trace_topology_issue.issue_desc: 问题详细描述
+wst_trace_topology_issue.metadata_json: 元数据JSON
+wst_trace_topology_issue.remark: 备注
+wst_trace_topology_issue.created_by: 创建人
+wst_trace_topology_issue.created_at: 创建时间
+wst_trace_topology_issue.updated_by: 更新人
+wst_trace_topology_issue.updated_at: 更新时间
+wst_trace_topology_issue.del_flag: 删除标志：0-正常，1-已删除

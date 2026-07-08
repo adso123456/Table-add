@@ -1,0 +1,3 @@
+-- Table: public.wm_water_source_zone_v2
+-- Comment: 饮用水水源地管理及监测-保护区
+-- DDL not available for wm_water_source_zone_v2

@@ -1,0 +1,3 @@
+-- Table: public.day_quality_records
+-- Comment: 日质控数据
+-- DDL not available for day_quality_records

@@ -1,0 +1,3 @@
+-- Table: public.wt_warnparm_config
+-- Comment: 监测预警参数配置表
+-- DDL not available for wt_warnparm_config

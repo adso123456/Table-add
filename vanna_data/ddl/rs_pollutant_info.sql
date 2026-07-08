@@ -1,0 +1,3 @@
+-- Table: public.rs_pollutant_info
+-- Comment: 企业污染源排口信息表：宜昌污染源在线平台
+-- DDL not available for rs_pollutant_info

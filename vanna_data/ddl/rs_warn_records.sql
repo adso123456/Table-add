@@ -1,0 +1,3 @@
+-- Table: public.rs_warn_records
+-- Comment: 污染预警消息通知
+-- DDL not available for rs_warn_records

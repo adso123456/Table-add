@@ -1,0 +1,3 @@
+-- Table: public.layer_industrial_yjf
+-- Comment: 工业园区-园区永久闸阀
+-- DDL not available for layer_industrial_yjf

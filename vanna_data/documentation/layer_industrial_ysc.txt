@@ -1,0 +1,9 @@
+# Table: public.layer_industrial_ysc — 工业园区-雨水池
+
+# Column documentation:
+layer_industrial_ysc.id: 主键ID
+layer_industrial_ysc.geom: 空间几何数据
+layer_industrial_ysc.x: X坐标
+layer_industrial_ysc.y: Y坐标
+layer_industrial_ysc.name: 名称
+layer_industrial_ysc.code: 编码

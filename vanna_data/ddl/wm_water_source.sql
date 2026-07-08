@@ -1,0 +1,3 @@
+-- Table: public.wm_water_source
+-- Comment: 水源地信息：通过code码关联
+-- DDL not available for wm_water_source

@@ -1,0 +1,3 @@
+-- Table: public.rs_outlet_trace_v2
+-- Comment: 排污口溯源
+-- DDL not available for rs_outlet_trace_v2

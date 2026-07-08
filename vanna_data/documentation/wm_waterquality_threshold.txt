@@ -1,0 +1,41 @@
+# Table: public.wm_waterquality_threshold — 站点水质指标阈值
+
+# Column documentation:
+wm_waterquality_threshold.id: id
+wm_waterquality_threshold.station_id: 监测站id
+wm_waterquality_threshold.m1_value: 水温阈值(℃)
+wm_waterquality_threshold.m2_value: pH阈值(无量纲)
+wm_waterquality_threshold.m3_value: 溶解氧阈值(mg/L)
+wm_waterquality_threshold.m4_value: 浊度阈值(NTU)
+wm_waterquality_threshold.m5_value: 电导率阈值(μS/cm)
+wm_waterquality_threshold.m6_value: 氨氮阈值(mg/L)
+wm_waterquality_threshold.m7_value: 高锰酸盐指数阈值(mg/L)
+wm_waterquality_threshold.m8_value: 总磷阈值(mg/L)
+wm_waterquality_threshold.m9_value: 总氮阈值(mg/L)
+wm_waterquality_threshold.m10_value: 叶绿素a阈值(ug/L)
+wm_waterquality_threshold.m11_value: 藻密度阈值(cell/mL)
+wm_waterquality_threshold.m12_value: 化学需氧量阈值(mg/L)
+wm_waterquality_threshold.m13_value: 五日生化需氧量阈值(mg/L)
+wm_waterquality_threshold.m14_value: 铜阈值(mg/L)
+wm_waterquality_threshold.m15_value: 硒阈值(mg/L)
+wm_waterquality_threshold.m16_value: 锌阈值(mg/L)
+wm_waterquality_threshold.m17_value: 氟化物阈值(mg/L)
+wm_waterquality_threshold.m18_value: 砷阈值(mg/L)
+wm_waterquality_threshold.m19_value: 汞阈值(mg/L)
+wm_waterquality_threshold.m20_value: 镉阈值(mg/L)
+wm_waterquality_threshold.m21_value: 铬阈值(mg/L)
+wm_waterquality_threshold.m22_value: 铅阈值(mg/L)
+wm_waterquality_threshold.m23_value: 氰化物阈值(mg/L)
+wm_waterquality_threshold.m24_value: 挥发酚阈值(mg/L)
+wm_waterquality_threshold.m25_value: 石油类阈值(mg/L)
+wm_waterquality_threshold.m26_value: 阴离子表面活性剂阈值(mg/L)
+wm_waterquality_threshold.m27_value: 硫化物阈值(mg/L)
+wm_waterquality_threshold.m28_value: 水中油阈值(mg/L)
+wm_waterquality_threshold.m29_value: 硝酸盐阈值(mg/L)
+wm_waterquality_threshold.m30_value: 生物毒性阈值(%)
+wm_waterquality_threshold.m31_value: 大肠杆菌阈值(cell/L)
+wm_waterquality_threshold.create_by: 创建人
+wm_waterquality_threshold.create_time: 创建时间
+wm_waterquality_threshold.update_by: 更新人
+wm_waterquality_threshold.update_time: 更新时间
+wm_waterquality_threshold.del_flag: 删除标记：0 未删除、1 已删除

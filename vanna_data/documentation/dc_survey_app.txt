@@ -1,0 +1,14 @@
+# Table: public.dc_survey_app — APP安装包版本管理表
+
+# Column documentation:
+dc_survey_app.id: 主键ID
+dc_survey_app.version_code: APP版本号：V1.0.0、1.0.0、100
+dc_survey_app.version_name: APP版本名称: 如果有多个APP保证每一类名称一致
+dc_survey_app.update_type: 更新类型：1-强制更新，2-可选更新
+dc_survey_app.download_url: 安装包下载地址
+dc_survey_app.file_size: 安装包文件大小（字节）
+dc_survey_app.file_md5: 安装包MD5值，用于校验文件完整性
+dc_survey_app.update_log: 更新日志
+dc_survey_app.platform_type: 平台类型：1-Android，2-iOS
+dc_survey_app.create_by: 创建人
+dc_survey_app.create_time: 创建时间

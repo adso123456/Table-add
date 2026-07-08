@@ -1,0 +1,17 @@
+# Table: public.gis_region_population — 行政区人口统计表
+
+# Column documentation:
+gis_region_population.id: 主键ID
+gis_region_population.region_id: 区域ID
+gis_region_population.city_population: 城镇人口
+gis_region_population.city_area: 城镇面积
+gis_region_population.city_quantity: 城镇数量
+gis_region_population.rural_population: 农村人口
+gis_region_population.rural_area: 农村面积
+gis_region_population.rural_quantity: 农村数量
+gis_region_population.year: 年份
+gis_region_population.create_by: 创建人
+gis_region_population.create_time: 创建时间
+gis_region_population.update_by: 修改人
+gis_region_population.update_time: 修改时间
+gis_region_population.del_flag: 删除标志：0-正常，1-已删除

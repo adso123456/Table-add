@@ -1,0 +1,3 @@
+-- Table: public.wm_raster_inversion_config
+-- Comment: 遥感反演配置表
+-- DDL not available for wm_raster_inversion_config

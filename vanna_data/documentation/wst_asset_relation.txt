@@ -1,0 +1,14 @@
+# Table: public.wst_asset_relation — 资产关系实例表，存储资产与资产之间的一度业务关系，不代表水流路径
+
+# Column documentation:
+wst_asset_relation.id: 主键ID
+wst_asset_relation.source_asset_id: 源资产ID，对应 wst_asset.id
+wst_asset_relation.target_asset_id: 目标资产ID，对应 wst_asset.id
+wst_asset_relation.relation_type: 关系大类编码，对应 wst_relation_type_dict.type_code
+wst_asset_relation.relation_subtype: 关系子类编码，对应 wst_relation_subtype_dict.relation_subtype
+wst_asset_relation.source_type: 关系来源，可选 manual、import、spatial、system
+wst_asset_relation.confidence: 置信度
+wst_asset_relation.status: 状态，可选 confirmed、candidate、disabled
+wst_asset_relation.metadata_json: 扩展信息，例如备注、导入来源、原始字段等
+wst_asset_relation.created_at: 创建时间
+wst_asset_relation.updated_at: 更新时间

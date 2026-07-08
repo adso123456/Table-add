@@ -1,0 +1,9 @@
+# Table: public.dc_survey_task_instance — 任务实例：记录轨迹、点位的添加
+
+# Column documentation:
+dc_survey_task_instance.id: 主键
+dc_survey_task_instance.task_id: 任务ID
+dc_survey_task_instance.start_time: 执行开始时间
+dc_survey_task_instance.end_time: 执行结束时间
+dc_survey_task_instance.duration: 执行时长（秒）
+dc_survey_task_instance.create_time: 创建时间

@@ -1,0 +1,7 @@
+# Table: public.layer_industrial_yjf — 工业园区-园区永久闸阀
+
+# Column documentation:
+layer_industrial_yjf.id: 主键ID
+layer_industrial_yjf.geom: 空间几何数据
+layer_industrial_yjf.name: 名称
+layer_industrial_yjf.code: 编码

@@ -1,0 +1,21 @@
+# Table: public.wm_raster_inversion — 遥感反演结果表（合并版）
+
+# Column documentation:
+wm_raster_inversion.id: 主键ID
+wm_raster_inversion.record_id: 遥感反演结果记录ID
+wm_raster_inversion.indicator_code: 遥感监测分析项编码
+wm_raster_inversion.indicator_name: 指标项名称
+wm_raster_inversion.inversion_type: 反演类型：water_environment-水环境，algalbloom-水生态，landuse-土地利用
+wm_raster_inversion.file_path: 反演文件路径
+wm_raster_inversion.l1_area: I类/浮叶挺水植被/背景面积
+wm_raster_inversion.l2_area: II类/沉水植被/耕地面积
+wm_raster_inversion.l3_area: III类/水华/园地面积
+wm_raster_inversion.l4_area: IV类/水体/林地面积
+wm_raster_inversion.l5_area: V类/水体面积
+wm_raster_inversion.l6_area: 劣V类/建设用地面积
+wm_raster_inversion.unit: 面积单位
+wm_raster_inversion.service_url: 服务地址
+wm_raster_inversion.data_time: 数据日期
+wm_raster_inversion.create_time: 创建时间
+wm_raster_inversion.update_time: 更新时间
+wm_raster_inversion.del_flag: 删除标志

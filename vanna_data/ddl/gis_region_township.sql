@@ -1,0 +1,3 @@
+-- Table: public.gis_region_township
+-- Comment: 行政区划-乡镇
+-- DDL not available for gis_region_township

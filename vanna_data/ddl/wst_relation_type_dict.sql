@@ -1,0 +1,3 @@
+-- Table: public.wst_relation_type_dict
+-- Comment: 关系大类字典表，用于维护资产关系的大类编码
+-- DDL not available for wst_relation_type_dict

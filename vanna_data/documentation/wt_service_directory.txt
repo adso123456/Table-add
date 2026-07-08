@@ -1,0 +1,28 @@
+# Table: public.wt_service_directory — 主键id
+
+# Column documentation:
+wt_service_directory.id: 主键id
+wt_service_directory.node_type: 节点类型：0 目录、1 服务
+wt_service_directory.code: code 唯一
+wt_service_directory.pid: 父id
+wt_service_directory.id_path: id路径，逗号连接
+wt_service_directory.name: 服务名称
+wt_service_directory.rest_url: 接口服务地址
+wt_service_directory.service_type: 服务类型：0 WMS、1 WMTS、2 REST接口 、3 公司出图服务 HGTWMS 4 arcgis服务、5 geoserver服务
+wt_service_directory.x_min: x最小值
+wt_service_directory.x_max: x最大值
+wt_service_directory.y_min: y最小值
+wt_service_directory.y_max: y最大值
+wt_service_directory.srs: 坐标系，WKID表示
+wt_service_directory.scale: 在一定比例尺下才显示
+wt_service_directory.method: 接口服务请求方式：0 GET、1 POST
+wt_service_directory.geometry_type: 几何类型：1 点、2 线、3 面、4 三维模型、5 影像
+wt_service_directory.weidu: 维度：0 二维、1 三维
+wt_service_directory.sort: 排序号
+wt_service_directory.check_type: 是否选中：0 未选中、1 已选中
+wt_service_directory.remark: 备注
+wt_service_directory.create_by: 创建人
+wt_service_directory.create_time: 创建时间
+wt_service_directory.update_by: 更新人
+wt_service_directory.update_time: 更新时间
+wt_service_directory.del_flag: 删除标记：0 未删除、1 已删除

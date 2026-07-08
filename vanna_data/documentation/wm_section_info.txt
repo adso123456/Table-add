@@ -1,0 +1,29 @@
+# Table: public.wm_section_info — 断面基本信息表
+
+# Column documentation:
+wm_section_info.id: 断面id
+wm_section_info.water_body_id: 水体id
+wm_section_info.control_unit_id: 控制单元id
+wm_section_info.region_id: 所属区域id
+wm_section_info.section_code: 断面编码
+wm_section_info.section_name: 断面名称
+wm_section_info.trans_regional: 跨界类型
+wm_section_info.geom: 几何信息
+wm_section_info.section_nature: 断面属性
+wm_section_info.section_level: 断面级别：0-国控、1-省控、2-市控
+wm_section_info.manage_type: 管理类型
+wm_section_info.manage_level: 管理级别
+wm_section_info.is_examine: 考核断面：0 否、1 是
+wm_section_info.examine_level: 考核级别
+wm_section_info.examine_city: 考核城市
+wm_section_info.tributary_trunk: 支流/干流：0 干流、1 支流
+wm_section_info.upstream_section_id: 上游断面id
+wm_section_info.grid_code: 网格号
+wm_section_info.grid_i: 网格I值
+wm_section_info.grid_j: 网格J值
+wm_section_info.remark: 备注
+wm_section_info.create_by: 创建人
+wm_section_info.create_time: 创建时间
+wm_section_info.update_by: 更新人
+wm_section_info.update_time: 更新时间
+wm_section_info.del_flag: 删除标记：0 未删除、1 已删除

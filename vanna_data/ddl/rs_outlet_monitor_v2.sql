@@ -1,0 +1,3 @@
+-- Table: public.rs_outlet_monitor_v2
+-- Comment: 排污口监测
+-- DDL not available for rs_outlet_monitor_v2

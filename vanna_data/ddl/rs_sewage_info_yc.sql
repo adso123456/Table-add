@@ -1,0 +1,3 @@
+-- Table: public.rs_sewage_info_yc
+-- Comment: 污水处理厂信息表：宜昌水环境
+-- DDL not available for rs_sewage_info_yc

@@ -1,0 +1,7 @@
+# Table: public.layer_boundary_enterprise — 工业园区-企业边界
+
+# Column documentation:
+layer_boundary_enterprise.id: 主键ID
+layer_boundary_enterprise.name: 名称
+layer_boundary_enterprise.code: 编码
+layer_boundary_enterprise.geom: 空间几何数据

@@ -1,0 +1,3 @@
+-- Table: public.wst_asset_relation
+-- Comment: 资产关系实例表，存储资产与资产之间的一度业务关系，不代表水流路径
+-- DDL not available for wst_asset_relation

@@ -1,0 +1,3 @@
+-- Table: public.rs_wastewater_day_records
+-- Comment: 污染源监测日记录表
+-- DDL not available for rs_wastewater_day_records

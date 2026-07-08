@@ -1,0 +1,11 @@
+# Table: public.min_value_setting — 最低检出限
+
+# Column documentation:
+min_value_setting.id: 主键id
+min_value_setting.indicator_code: 监测指标编号
+min_value_setting.value: 最低检出限（mg/L）
+min_value_setting.create_by: 创建人
+min_value_setting.create_time: 创建时间
+min_value_setting.update_by: 更新人
+min_value_setting.update_time: 更新时间
+min_value_setting.del_flag: 删除标记：0 未删除、1 已删除

@@ -1,0 +1,3 @@
+-- Table: public.gis_naturereserve
+-- Comment: 自然保护区表
+-- DDL not available for gis_naturereserve

@@ -1,0 +1,3 @@
+-- Table: public.wh_meteorological_hour_records
+-- Comment: 气象数据小时记录表
+-- DDL not available for wh_meteorological_hour_records

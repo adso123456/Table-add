@@ -1,0 +1,3 @@
+-- Table: public.layer_entity_relation
+-- Comment: 图层-要素关联关系表
+-- DDL not available for layer_entity_relation

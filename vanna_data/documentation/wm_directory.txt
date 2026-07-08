@@ -1,0 +1,13 @@
+# Table: public.wm_directory — 目录树实体
+
+# Column documentation:
+wm_directory.id: 主键ID
+wm_directory.name: 目录名称
+wm_directory.parent_id: 父目录ID，根目录为null
+wm_directory.path: 完整路径
+wm_directory.description: 目录描述
+wm_directory.sort: 排序值
+wm_directory.type: 目录类型（如：panorama/other）
+wm_directory.create_time: 创建时间
+wm_directory.update_time: 更新时间
+wm_directory.is_deleted: 是否删除

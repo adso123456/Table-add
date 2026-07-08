@@ -1,0 +1,28 @@
+# Table: public.day_quality_records — 日质控数据
+
+# Column documentation:
+day_quality_records.id: 主键id
+day_quality_records.station_id: 站点id
+day_quality_records.type: 类型：0 零点核查数据、1 跨度核查数据
+day_quality_records.span_value5: 氨氮仪器跨度值
+day_quality_records.check_value5: 氨氮零点/跨度核查数据
+day_quality_records.standard_value5: 氨氮标准样浓度
+day_quality_records.monitor_time5: 氨氮监测时间
+day_quality_records.span_value6: 高锰酸盐指数仪器跨度值
+day_quality_records.check_value6: 高锰酸盐指数零点/跨度核查数据
+day_quality_records.standard_value6: 高锰酸盐指数标准样浓度
+day_quality_records.monitor_time6: 高锰酸盐指数监测时间
+day_quality_records.span_value7: 总磷仪器跨度值
+day_quality_records.check_value7: 总磷零点/跨度核查数据
+day_quality_records.standard_value7: 总磷标准样浓度
+day_quality_records.monitor_time7: 总磷监测时间
+day_quality_records.span_value8: 总氮仪器跨度值
+day_quality_records.check_value8: 总氮零点/跨度核查数据
+day_quality_records.standard_value8: 总氮标准样浓度
+day_quality_records.monitor_time8: 总氮监测时间
+day_quality_records.monitor_time: 最新时间
+day_quality_records.create_by: 创建人
+day_quality_records.create_time: 创建时间
+day_quality_records.update_by: 更新人
+day_quality_records.update_time: 更新时间
+day_quality_records.del_flag: 删除标记：0 未删除、1 已删除

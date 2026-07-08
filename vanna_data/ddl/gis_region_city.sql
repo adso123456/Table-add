@@ -1,0 +1,3 @@
+-- Table: public.gis_region_city
+-- Comment: 城市行政区划表
+-- DDL not available for gis_region_city

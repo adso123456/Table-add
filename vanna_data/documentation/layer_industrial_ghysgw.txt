@@ -1,0 +1,7 @@
+# Table: public.layer_industrial_ghysgw — 工业园区-规划雨水管网
+
+# Column documentation:
+layer_industrial_ghysgw.id: 主键ID
+layer_industrial_ghysgw.geom: 空间几何数据
+layer_industrial_ghysgw.name: 名称
+layer_industrial_ghysgw.code: 编码

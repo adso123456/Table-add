@@ -1,0 +1,30 @@
+# Table: public.rs_pollutant_enterprise — 污染源企业信息表：宜昌污染源在线平台企业信息
+
+# Column documentation:
+rs_pollutant_enterprise.id: 主键
+rs_pollutant_enterprise.wrybh: 污染源编号
+rs_pollutant_enterprise.wrymc: 污染源名称
+rs_pollutant_enterprise.tyshxydm: 统一社会信用代码
+rs_pollutant_enterprise.zzjgdm: 组织机构代码
+rs_pollutant_enterprise.pwxkzbh: 排污许可证编号
+rs_pollutant_enterprise.frmc: 法人名称
+rs_pollutant_enterprise.lxdh: 联系电话
+rs_pollutant_enterprise.zcdz: 注册地址
+rs_pollutant_enterprise.jycsdz: 经营场所地址
+rs_pollutant_enterprise.jd: 经度
+rs_pollutant_enterprise.wd: 纬度
+rs_pollutant_enterprise.hblxr: 环保联系人
+rs_pollutant_enterprise.hbrlxdh: 环保联系人电话
+rs_pollutant_enterprise.ssqx: 所属区县
+rs_pollutant_enterprise.hymc: 行业名称
+rs_pollutant_enterprise.zdlxmc: 重点污染源类型名称
+rs_pollutant_enterprise.jgjb: 监管级别（代码集：ZXJC_WRYJGJB）：ZDWRY、YBWRY
+rs_pollutant_enterprise.ywgs: 运维公司
+rs_pollutant_enterprise.geom: 图形
+rs_pollutant_enterprise.create_by: 创建人
+rs_pollutant_enterprise.create_time: 创建时间
+rs_pollutant_enterprise.update_by: 更新人
+rs_pollutant_enterprise.update_time: 更新时间
+rs_pollutant_enterprise.del_flag: 删除标记: 0-未删除、1-已删除
+rs_pollutant_enterprise.record_type: 记录类型：0-自动、1-手动
+rs_pollutant_enterprise.ssqxmc: 区县名称

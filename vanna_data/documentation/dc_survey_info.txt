@@ -1,0 +1,26 @@
+# Table: public.dc_survey_info — 巡回调查-调查后的核查信息
+
+# Column documentation:
+dc_survey_info.id: 主键ID
+dc_survey_info.watershed_partition_id: 流域分区ID
+dc_survey_info.title: 标题：对应调研的名称
+dc_survey_info.upload_time: 上传时间：每次上传都记录时间  20251128
+dc_survey_info.name: 名称
+dc_survey_info.type: 类型（工业、规上畜禽、规下畜禽、水产养殖、排污口、污水处理厂、厕污垃、河道情况、其他）
+dc_survey_info.lon: 经度
+dc_survey_info.lat: 纬度
+dc_survey_info.description: 现场核查情况信息（是否有污水产生、污水流向）
+dc_survey_info.image_path: 图片地址：图片在minIO存储
+dc_survey_info.monitor_info: 监测信息（是否监测，结果如何）
+dc_survey_info.monitor_level: 管控级别：一级（常年有水，肯定对水体有影响），二级（下雨时肯定对水体影响），三级（可能有影响），四级（无影响）
+dc_survey_info.remark: 备注
+dc_survey_info.create_by: 创建人
+dc_survey_info.create_time: 创建时间
+dc_survey_info.update_by: 更新人
+dc_survey_info.update_time: 更新时间
+dc_survey_info.del_flag: 删除标记：0 未删除、1 已删除
+dc_survey_info.survey_type: 调查类型：0-excel调查信息、1-word小结
+dc_survey_info.image_path_2: 图片2
+dc_survey_info.image_path_3: 图片3
+dc_survey_info.task_id: APP巡查：任务id
+dc_survey_info.task_instance_id: APP巡查：巡查任务实例id

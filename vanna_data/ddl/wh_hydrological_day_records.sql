@@ -1,0 +1,3 @@
+-- Table: public.wh_hydrological_day_records
+-- Comment: 水文监测日记录表
+-- DDL not available for wh_hydrological_day_records

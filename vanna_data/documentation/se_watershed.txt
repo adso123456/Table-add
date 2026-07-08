@@ -1,0 +1,17 @@
+# Table: public.se_watershed — 流域产值信息：年统计值
+
+# Column documentation:
+se_watershed.id: 主键ID
+se_watershed.region_code: 所属区域Code
+se_watershed.total_population: 总人口
+se_watershed.total_product_value: 地区生产总值
+se_watershed.total_river_area: 水面面积：k㎡
+se_watershed.total_watershed_area: 流域面积：k㎡
+se_watershed.water_depth_avg: 年平均水深：m
+se_watershed.runoff_value: 径流量：亿m³
+se_watershed.statistic_year: 统计年份
+se_watershed.update_by: 创建人
+se_watershed.update_time: 创建时间
+se_watershed.del_flag: 删除标记：0 未删除、1 已删除
+se_watershed.name: 流域名称
+se_watershed.mark: 备注

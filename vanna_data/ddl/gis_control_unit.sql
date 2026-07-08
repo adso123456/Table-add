@@ -1,0 +1,3 @@
+-- Table: public.gis_control_unit
+-- Comment: 水环境管控单元表
+-- DDL not available for gis_control_unit

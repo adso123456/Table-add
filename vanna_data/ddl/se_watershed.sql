@@ -1,0 +1,3 @@
+-- Table: public.se_watershed
+-- Comment: 流域产值信息：年统计值
+-- DDL not available for se_watershed

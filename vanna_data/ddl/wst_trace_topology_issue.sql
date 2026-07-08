@@ -1,0 +1,3 @@
+-- Table: public.wst_trace_topology_issue
+-- Comment: 溯源拓扑问题记录表
+-- DDL not available for wst_trace_topology_issue

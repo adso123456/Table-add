@@ -1,0 +1,21 @@
+# Table: public.gis_ecologicalregion — 生态保护红线区域表
+
+# Column documentation:
+gis_ecologicalregion.id: 主键ID
+gis_ecologicalregion.ecological_region_name: 生态红线区域名称
+gis_ecologicalregion.ecological_region_code: 生态红线区域编码
+gis_ecologicalregion.address: 地址
+gis_ecologicalregion.geom: 空间几何数据
+gis_ecologicalregion.population: 人口数量
+gis_ecologicalregion.type: 类型
+gis_ecologicalregion.service_target: 生态服务目标
+gis_ecologicalregion.ecosystem_vegetation: 生态系统植被概况
+gis_ecologicalregion.human_activities: 人类活动影响描述
+gis_ecologicalregion.environment_problems: 生态环境问题描述
+gis_ecologicalregion.control_measures: 管控措施描述
+gis_ecologicalregion.remark: 备注
+gis_ecologicalregion.create_by: 创建人
+gis_ecologicalregion.create_time: 创建时间
+gis_ecologicalregion.update_by: 修改人
+gis_ecologicalregion.update_time: 修改时间
+gis_ecologicalregion.del_flag: 删除标志：0-正常，1-已删除

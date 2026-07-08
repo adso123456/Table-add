@@ -1,0 +1,3 @@
+-- Table: public.wh_meteorological_records_1
+-- Comment: 气象数据表
+-- DDL not available for wh_meteorological_records_1

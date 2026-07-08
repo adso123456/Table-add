@@ -1,0 +1,42 @@
+# Table: public.wm_uav_info — 大疆无人机基础信息
+
+# Column documentation:
+wm_uav_info.id: 主键ID
+wm_uav_info.code: 编码
+wm_uav_info.name: 名称
+wm_uav_info.gateway_sn: 网关SN编码
+wm_uav_info.gateway_callsign: 网关名称
+wm_uav_info.gateway_device_model: 型号，json格式
+wm_uav_info.gateway_device_online_status: 网关在线状态
+wm_uav_info.gateway_mode_code: 网关型号编码
+wm_uav_info.gateway_camera_list: 网关摄像头列表
+wm_uav_info.drone_sn: 无人机SN编码
+wm_uav_info.drone_callsign: 无人机名称
+wm_uav_info.drone_device_model: 无人机型号
+wm_uav_info.drone_device_online_status: 无人机在线状态
+wm_uav_info.drone_mode_code: 型号编码
+wm_uav_info.drone_camera_list: 无人机摄像头列表
+wm_uav_info.gateway_lon: 网关经度
+wm_uav_info.gateway_lat: 网关纬度
+wm_uav_info.activation_time: 机场激活时间(unix 时间戳)
+wm_uav_info.acc_time: 机场累计运行时长
+wm_uav_info.humidity: 舱内湿度
+wm_uav_info.job_number: 机场累计作业次数
+wm_uav_info.storage_total: 存储容量 单位：KB
+wm_uav_info.storage_used: 已使用容量 单位：KB
+wm_uav_info.brand: 品牌：大疆/纵横昆仑
+wm_uav_info.weight: 整机重量
+wm_uav_info.power: 功率
+wm_uav_info.temperature: 工作温度
+wm_uav_info.protect_level: 保护等级
+wm_uav_info.max_height: 最大高度
+wm_uav_info.max_radius: 最大工作半径
+wm_uav_info.charging_time: 充电时间
+wm_uav_info.cycle_num: 电池循环次数
+wm_uav_info.duration_time: 备用电池续航时间
+wm_uav_info.remark: 备注信息
+wm_uav_info.create_by: 创建人
+wm_uav_info.create_time: 创建时间
+wm_uav_info.update_by: 更新人
+wm_uav_info.update_time: 更新时间
+wm_uav_info.del_flag: 删除标记：0 未删除、1 已删除

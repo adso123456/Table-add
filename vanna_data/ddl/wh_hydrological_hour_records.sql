@@ -1,0 +1,3 @@
+-- Table: public.wh_hydrological_hour_records
+-- Comment: 水文监测小时记录表
+-- DDL not available for wh_hydrological_hour_records

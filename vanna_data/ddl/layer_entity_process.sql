@@ -1,0 +1,3 @@
+-- Table: public.layer_entity_process
+-- Comment: 溯源关系查询流程：使用到的图层信息
+-- DDL not available for layer_entity_process

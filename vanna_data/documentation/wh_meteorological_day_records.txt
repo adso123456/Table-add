@@ -1,0 +1,45 @@
+# Table: public.wh_meteorological_day_records — 气象数据日记录表
+
+# Column documentation:
+wh_meteorological_day_records.id: id
+wh_meteorological_day_records.station_id: 所属站点id
+wh_meteorological_day_records.m1_value: 风速（单位m/s）
+wh_meteorological_day_records.m1_count: 记录数1
+wh_meteorological_day_records.m2_value: 风向
+wh_meteorological_day_records.m2_count: 记录数2
+wh_meteorological_day_records.m3_value: 气压（单位hPa）
+wh_meteorological_day_records.m3_count: 记录数3
+wh_meteorological_day_records.m4_value: 气温（单位℃）
+wh_meteorological_day_records.m4_count: 记录数4
+wh_meteorological_day_records.m5_value: 相对湿度（单位RH）
+wh_meteorological_day_records.m5_count: 记录数5
+wh_meteorological_day_records.m6_value: 雨量（单位mm/m2）
+wh_meteorological_day_records.m6_count: 记录数6
+wh_meteorological_day_records.m7_value: 蒸发量（单位mm/m2）
+wh_meteorological_day_records.m7_count: 记录数7
+wh_meteorological_day_records.m8_value: 小时降雨量（mm）
+wh_meteorological_day_records.m8_count: 记录数8
+wh_meteorological_day_records.m9_value: 24小时降雨量（mm）
+wh_meteorological_day_records.m9_count: 记录数9
+wh_meteorological_day_records.m10_value: 累计降雨量（mm）
+wh_meteorological_day_records.m10_count: 记录数10
+wh_meteorological_day_records.m11_value: m11_value
+wh_meteorological_day_records.m11_count: 记录数11
+wh_meteorological_day_records.m12_value: m12_value
+wh_meteorological_day_records.m12_count: 记录数12
+wh_meteorological_day_records.m13_value: m13_value
+wh_meteorological_day_records.m13_count: 记录数13
+wh_meteorological_day_records.m14_value: m14_value
+wh_meteorological_day_records.m14_count: 记录数14
+wh_meteorological_day_records.m15_value: m15_value
+wh_meteorological_day_records.m15_count: 记录数15
+wh_meteorological_day_records.rain_fall: 8-20时降水量（mm）
+wh_meteorological_day_records.high_temp: 日最高气温（℃）
+wh_meteorological_day_records.low_temp: 日最低气温（℃）
+wh_meteorological_day_records.record_type: 记录类型：0 自动、1 手工
+wh_meteorological_day_records.monitor_time: 监测时间
+wh_meteorological_day_records.create_by: 创建人
+wh_meteorological_day_records.create_time: 创建时间
+wh_meteorological_day_records.update_by: 更新人
+wh_meteorological_day_records.update_time: 更新时间
+wh_meteorological_day_records.del_flag: 删除标记：0 未删除、1 已删除

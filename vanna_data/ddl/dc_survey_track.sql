@@ -1,0 +1,3 @@
+-- Table: public.dc_survey_track
+-- Comment: 巡查轨迹记录表
+-- DDL not available for dc_survey_track

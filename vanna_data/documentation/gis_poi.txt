@@ -1,0 +1,20 @@
+# Table: public.gis_poi — 主键id
+
+# Column documentation:
+gis_poi.id: 主键id
+gis_poi.code: poi标识码
+gis_poi.name: 名称
+gis_poi.address: 地址
+gis_poi.category: 分类
+gis_poi.region_code: 行政区编码
+gis_poi.region_province: 行政区省
+gis_poi.region_city: 行政区城市
+gis_poi.lon: 经度
+gis_poi.lat: 纬度
+gis_poi.telephone: 电话
+gis_poi.remark: 备注
+gis_poi.create_time: 创建时间
+gis_poi.update_time: 修改时间
+gis_poi.del_flag: 删除标志：0-正常，1-已删除
+gis_poi.create_by: 创建人
+gis_poi.update_by: 修改人

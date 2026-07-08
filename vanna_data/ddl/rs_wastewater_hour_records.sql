@@ -1,0 +1,3 @@
+-- Table: public.rs_wastewater_hour_records
+-- Comment: 污染源-小时监测数据表
+-- DDL not available for rs_wastewater_hour_records

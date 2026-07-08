@@ -1,0 +1,17 @@
+# Table: public.rs_outlet_remediation_v2 — 排污口整治
+
+# Column documentation:
+rs_outlet_remediation_v2.id: 主键ID
+rs_outlet_remediation_v2.outlet_id: 关联排污口ID
+rs_outlet_remediation_v2.is_remediated: 是否完成整治
+rs_outlet_remediation_v2.remediation_type: 整治类型
+rs_outlet_remediation_v2.remediation_video: 整治视频
+rs_outlet_remediation_v2.supporting_docs: 证明材料
+rs_outlet_remediation_v2.is_standardized: 是否完成规范化建设
+rs_outlet_remediation_v2.standardization_content: 规范化建设内容
+rs_outlet_remediation_v2.create_by: 创建人
+rs_outlet_remediation_v2.create_time: 创建时间
+rs_outlet_remediation_v2.update_by: 修改人
+rs_outlet_remediation_v2.update_time: 修改时间
+rs_outlet_remediation_v2.del_flag: 删除标志：0-正常，1-已删除
+rs_outlet_remediation_v2.outlet_name: 排污口名称

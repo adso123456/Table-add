@@ -1,0 +1,3 @@
+-- Table: public.rs_outlet_remediation_v2
+-- Comment: 排污口整治
+-- DDL not available for rs_outlet_remediation_v2

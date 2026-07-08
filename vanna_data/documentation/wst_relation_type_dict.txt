@@ -1,0 +1,11 @@
+# Table: public.wst_relation_type_dict — 关系大类字典表，用于维护资产关系的大类编码
+
+# Column documentation:
+wst_relation_type_dict.id: 主键ID
+wst_relation_type_dict.type_code: 关系大类编码，例如 ownership、discharge、monitoring
+wst_relation_type_dict.type_name: 关系大类名称
+wst_relation_type_dict.description: 关系大类说明
+wst_relation_type_dict.sort_order: 排序号
+wst_relation_type_dict.status: 状态，active 表示启用
+wst_relation_type_dict.created_at: 创建时间
+wst_relation_type_dict.updated_at: 更新时间

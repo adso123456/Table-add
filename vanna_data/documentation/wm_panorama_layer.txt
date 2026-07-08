@@ -1,0 +1,14 @@
+# Table: public.wm_panorama_layer — 全景图层信息表
+
+# Column documentation:
+wm_panorama_layer.id: 自增主键
+wm_panorama_layer.point_name: 点位名称
+wm_panorama_layer.topic: 所属专题
+wm_panorama_layer.directory_id: 目录ID
+wm_panorama_layer.longitude: 经度
+wm_panorama_layer.latitude: 纬度
+wm_panorama_layer.icon: 图标地址
+wm_panorama_layer.coverage_radius: 覆盖半径(km)
+wm_panorama_layer.create_time: 创建时间
+wm_panorama_layer.update_time: 更新时间
+wm_panorama_layer.is_deleted: 是否删除（true:已删除，false:未删除）

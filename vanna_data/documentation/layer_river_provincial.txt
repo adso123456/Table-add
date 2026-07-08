@@ -1,0 +1,20 @@
+# Table: public.layer_river_provincial — 省级河流空间表
+
+# Column documentation:
+layer_river_provincial.geom: 空间几何数据
+layer_river_provincial.cc: 行政区划编码
+layer_river_provincial.gb: 国标编码
+layer_river_provincial.bas: 流域编码
+layer_river_provincial.type: 类型
+layer_river_provincial.ec: 生态分区编码
+layer_river_provincial.grade: 等级/级别
+layer_river_provincial.length: 长度
+layer_river_provincial.period: 时期/阶段
+layer_river_provincial.shrc: 所属河湖编码
+layer_river_provincial.sdtf: 水系特征码
+layer_river_provincial.width: 宽度
+layer_river_provincial.featid: 要素唯一标识
+layer_river_provincial.areacode: 行政区划代码
+layer_river_provincial.name: 名称
+layer_river_provincial.changetype: 变更类型
+layer_river_provincial.id: 主键ID

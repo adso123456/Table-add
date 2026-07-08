@@ -1,0 +1,11 @@
+# Table: public.layer_entity_relation — 图层-要素关联关系表
+
+# Column documentation:
+layer_entity_relation.id: 主键
+layer_entity_relation.entity_code_1: 要素编码1
+layer_entity_relation.layer_name_1: 图层名称1
+layer_entity_relation.relation: 关系名称
+layer_entity_relation.entity_code_2: 要素编码2
+layer_entity_relation.layer_name_2: 图层名称2
+layer_entity_relation.create_date: 创建时间
+layer_entity_relation.delete_mark: 删除标志：0-正常、1-删除

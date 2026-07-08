@@ -1,0 +1,7 @@
+# Table: public.layer_industrial_xzysgw — 工业园区-现状雨水管网
+
+# Column documentation:
+layer_industrial_xzysgw.id: 主键ID
+layer_industrial_xzysgw.geom: 空间几何数据
+layer_industrial_xzysgw.name: 名称
+layer_industrial_xzysgw.code: 编码

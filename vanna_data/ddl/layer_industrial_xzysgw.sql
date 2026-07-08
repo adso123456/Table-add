@@ -1,0 +1,3 @@
+-- Table: public.layer_industrial_xzysgw
+-- Comment: 工业园区-现状雨水管网
+-- DDL not available for layer_industrial_xzysgw

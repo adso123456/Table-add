@@ -1,0 +1,3 @@
+-- Table: public.dc_survey_task_instance
+-- Comment: 任务实例：记录轨迹、点位的添加
+-- DDL not available for dc_survey_task_instance

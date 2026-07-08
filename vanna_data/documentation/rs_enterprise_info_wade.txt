@@ -1,0 +1,19 @@
+# Table: public.rs_enterprise_info_wade — 污染源自动监管涉水企业：宜昌水环境
+
+# Column documentation:
+rs_enterprise_info_wade.id: 主键id
+rs_enterprise_info_wade.name: 污染源名称
+rs_enterprise_info_wade.address: 污染源地址
+rs_enterprise_info_wade.region_code: 行政区编码
+rs_enterprise_info_wade.region_name: 行政区名称
+rs_enterprise_info_wade.liaison: 环保联系人
+rs_enterprise_info_wade.liaison_tel: 环保联系人电话
+rs_enterprise_info_wade.supervision_level: 监管级别：0-一般、1-重点
+rs_enterprise_info_wade.industry_type: 行业类型
+rs_enterprise_info_wade.lon: 经度
+rs_enterprise_info_wade.lat: 纬度
+rs_enterprise_info_wade.create_by: 创建人
+rs_enterprise_info_wade.create_time: 创建时间
+rs_enterprise_info_wade.update_by: 更新人
+rs_enterprise_info_wade.update_time: 更新时间
+rs_enterprise_info_wade.del_flag: 删除标记

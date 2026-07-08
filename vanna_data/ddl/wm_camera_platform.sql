@@ -1,0 +1,3 @@
+-- Table: public.wm_camera_platform
+-- Comment: 视频平台设备信息表
+-- DDL not available for wm_camera_platform

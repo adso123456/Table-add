@@ -1,0 +1,7 @@
+# Table: public.gis_region_city — 城市行政区划表
+
+# Column documentation:
+gis_region_city.id: 主键ID
+gis_region_city.geom: 空间几何数据
+gis_region_city.region_name: 行政区划名称
+gis_region_city.region_code: 行政区划编码

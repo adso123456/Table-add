@@ -1,0 +1,9 @@
+# Table: public.layer_industrial_yjsgc — 工业园区-应急事故池
+
+# Column documentation:
+layer_industrial_yjsgc.id: 主键ID
+layer_industrial_yjsgc.geom: 空间几何数据
+layer_industrial_yjsgc.x: X坐标
+layer_industrial_yjsgc.y: Y坐标
+layer_industrial_yjsgc.name: 名称
+layer_industrial_yjsgc.code: 编码

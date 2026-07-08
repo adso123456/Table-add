@@ -1,0 +1,12 @@
+# Table: public.metadata_view — 元数据-视图
+
+# Column documentation:
+metadata_view.code: 编码
+metadata_view.parent_id: 父级ID
+metadata_view.name: 关键字或文件名(不含后缀)
+metadata_view.aliasname: 别名
+metadata_view.type: 类型
+metadata_view.LayerName: 图层名称
+metadata_view.LayerType: 图层类型
+metadata_view.create_date: 创建时间
+metadata_view.table_name: 表名
