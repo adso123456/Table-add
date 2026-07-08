@@ -1,0 +1,83 @@
+schema,table,column,type
+public,_stg_yichang_river_counts,layer_inserted,integer
+public,_stg_yichang_river_counts,layer_updated,integer
+public,_stg_yichang_river_counts,asset_inserted,integer
+public,_stg_yichang_river_counts,asset_updated,integer
+public,_stg_yichang_river_counts,skipped,integer
+public,_stg_yichang_river_import,RclassDISP,"numeric(18,0)"
+public,_stg_yichang_river_import,OSMratio,"numeric(23,15)"
+public,_stg_yichang_river_import,GRITratio,"numeric(23,15)"
+public,_stg_yichang_river_import,Hydroratio,"numeric(23,15)"
+public,_stg_yichang_river_import,OrignCNT,character varying(80)
+public,_stg_yichang_river_import,FLIPPED,"numeric(18,0)"
+public,_stg_yichang_river_std,metadata_json,jsonb
+public,day_quality_setting,span_value,double precision
+public,day_quality_setting,zero_standard_value,double precision
+public,day_quality_setting,span_standard_value,double precision
+public,gis_ecologicalregion,area,double precision
+public,gis_naturereserve,total_area,double precision
+public,gis_naturereserve,core_area,double precision
+public,gis_naturereserve,buffer_area,double precision
+public,gis_watershed_partition_4,2021,character varying(50)
+public,gis_watershed_partition_4,2025,character varying(50)
+public,gis_watershed_partition_4,2035,character varying(50)
+public,layer_reservoir_provincial,elemstime,character varying(8)
+public,layer_reservoir_provincial,elemetime,character varying(8)
+public,layer_reservoir_provincial,ecrm,integer
+public,layer_reservoir_provincial,wrid,character varying(16)
+public,layer_reservoir_provincial,wrgr,integer
+public,layer_reservoir_provincial,changeatt,character varying(64)
+public,layer_reservoir_provincial_label,elemstime,character varying(8)
+public,layer_reservoir_provincial_label,elemetime,character varying(8)
+public,layer_reservoir_provincial_label,ecrm,integer
+public,layer_reservoir_provincial_label,wrid,character varying(16)
+public,layer_reservoir_provincial_label,wrgr,integer
+public,layer_reservoir_provincial_label,changeatt,character varying(64)
+public,layer_reservoir_provincial_合并,elemstime,character varying(8)
+public,layer_reservoir_provincial_合并,elemetime,character varying(8)
+public,layer_reservoir_provincial_合并,ecrm,integer
+public,layer_reservoir_provincial_合并,wrid,character varying(16)
+public,layer_reservoir_provincial_合并,wrgr,integer
+public,layer_reservoir_provincial_合并,changeatt,character varying(64)
+public,layer_river_provincial,elemstime,character varying(8)
+public,layer_river_provincial,elemetime,character varying(8)
+public,layer_river_provincial,ecrm,integer
+public,layer_river_provincial,wrid,character varying(16)
+public,layer_river_provincial,wrgr,integer
+public,layer_river_provincial,changeatt,character varying(64)
+public,layer_river_provincial_bak0617,elemstime,character varying(8)
+public,layer_river_provincial_bak0617,elemetime,character varying(8)
+public,layer_river_provincial_bak0617,ecrm,integer
+public,layer_river_provincial_bak0617,wrid,character varying(16)
+public,layer_river_provincial_bak0617,wrgr,integer
+public,layer_river_provincial_bak0617,changeatt,character varying(64)
+public,rs_outlet,quick_detect_desc,character varying(255)
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+public,stg_sjtysj_cbwrwxtzlxxxt_p_ashore_apply_df,shlj_text,character varying(500)
+public,stg_sjtysj_cbwrwxtzlxxxt_p_ashore_apply_df,fy_time,character varying(500)
+public,stg_sjtysj_cbwrwxtzlxxxt_p_ashore_apply_df,hyws_time,character varying(500)
+public,stg_sjtysj_cbwrwxtzlxxxt_p_ashore_apply_df,shws_time,character varying(500)
+public,stg_sjtysj_cbwrwxtzlxxxt_p_ashore_apply_df,from_port_province,character varying(500)
+public,stg_sjtysj_cbwrwxtzlxxxt_p_ashore_apply_df,from_port_city,character varying(500)
+public,stg_sjtysj_cbwrwxtzlxxxt_p_ashore_apply_df,to_port_province,character varying(500)
+public,stg_sjtysj_cbwrwxtzlxxxt_p_ashore_apply_df,to_port_city,character varying(500)
+public,stg_sjtysj_cbwrwxtzlxxxt_p_handover_trans_detail_df,trans_no,character varying(500)
+public,stg_sjtysj_cbwrwxtzlxxxt_p_handover_trans_detail_df,js_apply_no,character varying(500)
+public,stg_sjtysj_cbwrwxtzlxxxt_p_handover_trans_detail_df,js_detail_id,bigint
+public,stg_ycsjtysj_sxhyzssj_base_ship_df,mmsi,character varying(500)
+public,wm_raster_inversion_config,boundaries_json,text
+public,wm_raster_inversion_config,labels_json,text
+public,wm_raster_inversion_config,colors_json,text
+public,wm_waterbody_info,country,character varying(255)
+public,wm_waterquality_day_records,record_type,character(1)
+public,wst_layer_river,metadata_json,jsonb

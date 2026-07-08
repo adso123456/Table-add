@@ -1,0 +1,6 @@
+schema,table
+public,_stg_yichang_river_counts
+public,_stg_yichang_river_import
+public,_stg_yichang_river_std
+public,rs_industrial_info_yc_bak0305
+public,spatial_ref_sys
