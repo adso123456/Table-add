@@ -1,0 +1,22 @@
+schema_name,table_name,column_name,data_type,current_comment,candidate_comment,confidence,grade,evidence,source_rule,sample_hint,risk_reason
+public,_stg_yichang_river_counts,layer_inserted,integer,,图层插入计数,low,C_hold,表域: staging; 来源: domain_staging_counts,domain_staging_counts,,临时统计表，注释基于字段名推断，业务方确认后补齐
+public,_stg_yichang_river_counts,layer_updated,integer,,图层更新计数,low,C_hold,表域: staging; 来源: domain_staging_counts,domain_staging_counts,,临时统计表，注释基于字段名推断，业务方确认后补齐
+public,_stg_yichang_river_counts,asset_inserted,integer,,资产插入计数,low,C_hold,表域: staging; 来源: domain_staging_counts,domain_staging_counts,,临时统计表，注释基于字段名推断，业务方确认后补齐
+public,_stg_yichang_river_counts,asset_updated,integer,,资产更新计数,low,C_hold,表域: staging; 来源: domain_staging_counts,domain_staging_counts,,临时统计表，注释基于字段名推断，业务方确认后补齐
+public,_stg_yichang_river_counts,skipped,integer,,跳过计数,low,C_hold,表域: staging; 来源: domain_staging_counts,domain_staging_counts,,临时统计表，注释基于字段名推断，业务方确认后补齐
+public,day_quality_setting,zero_standard_value,double precision,,零标准值,low,C_hold,表域: quality_setting; 来源: domain_quality_setting,domain_quality_setting,,基于字段名推断，需水质评价业务方确认
+public,day_quality_setting,span_standard_value,double precision,,标准幅值,low,C_hold,表域: quality_setting; 来源: domain_quality_setting,domain_quality_setting,,基于字段名推断，需水质评价业务方确认
+public,gis_watershed_partition_4,2021,character varying(50),,2021年数据,low,C_hold,表域: gis; 来源: digit_column_name,digit_column_name,,年份命名字段，需业务方确认具体含义
+public,gis_watershed_partition_4,2025,character varying(50),,2025年数据,low,C_hold,表域: gis; 来源: digit_column_name,digit_column_name,,年份命名字段，需业务方确认具体含义
+public,gis_watershed_partition_4,2035,character varying(50),,2035年数据,low,C_hold,表域: gis; 来源: digit_column_name,digit_column_name,,年份命名字段，需业务方确认具体含义
+public,stg_sjtysj_cbwrwxtzlxxxt_p_ashore_apply_df,shlj_text,character varying(500),,生活垃圾处理文本描述,low,C_hold,表域: staging; 来源: staging_unknown,staging_unknown,,临时表数据，基于字段名推断，建议人工确认
+public,stg_sjtysj_cbwrwxtzlxxxt_p_ashore_apply_df,fy_time,character varying(500),,反应时间,low,C_hold,表域: staging; 来源: staging_unknown,staging_unknown,,临时表数据，基于字段名推断，建议人工确认
+public,stg_sjtysj_cbwrwxtzlxxxt_p_ashore_apply_df,hyws_time,character varying(500),,行业卫生审批时间,low,C_hold,表域: staging; 来源: staging_unknown,staging_unknown,,临时表数据，基于字段名推断，建议人工确认
+public,stg_sjtysj_cbwrwxtzlxxxt_p_ashore_apply_df,shws_time,character varying(500),,社会卫生审批时间,low,C_hold,表域: staging; 来源: staging_unknown,staging_unknown,,临时表数据，基于字段名推断，建议人工确认
+public,stg_sjtysj_cbwrwxtzlxxxt_p_ashore_apply_df,from_port_province,character varying(500),,起始港口省份,low,C_hold,表域: staging; 来源: staging_unknown,staging_unknown,,临时表数据，基于字段名推断，建议人工确认
+public,stg_sjtysj_cbwrwxtzlxxxt_p_ashore_apply_df,from_port_city,character varying(500),,起始港口城市,low,C_hold,表域: staging; 来源: staging_unknown,staging_unknown,,临时表数据，基于字段名推断，建议人工确认
+public,stg_sjtysj_cbwrwxtzlxxxt_p_ashore_apply_df,to_port_province,character varying(500),,目的港口省份,low,C_hold,表域: staging; 来源: staging_unknown,staging_unknown,,临时表数据，基于字段名推断，建议人工确认
+public,stg_sjtysj_cbwrwxtzlxxxt_p_ashore_apply_df,to_port_city,character varying(500),,目的港口城市,low,C_hold,表域: staging; 来源: staging_unknown,staging_unknown,,临时表数据，基于字段名推断，建议人工确认
+public,stg_sjtysj_cbwrwxtzlxxxt_p_handover_trans_detail_df,trans_no,character varying(500),,运输编号,low,C_hold,表域: staging; 来源: staging_unknown,staging_unknown,,临时表数据，基于字段名推断，建议人工确认
+public,stg_sjtysj_cbwrwxtzlxxxt_p_handover_trans_detail_df,js_apply_no,character varying(500),,接收申请编号,low,C_hold,表域: staging; 来源: staging_unknown,staging_unknown,,临时表数据，基于字段名推断，建议人工确认
+public,stg_sjtysj_cbwrwxtzlxxxt_p_handover_trans_detail_df,js_detail_id,bigint,,接收明细ID,low,C_hold,表域: staging; 来源: staging_unknown,staging_unknown,,临时表数据，基于字段名推断，建议人工确认

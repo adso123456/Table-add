@@ -1,0 +1,19 @@
+schema_name,table_name,current_table_comment,candidate_table_comment,confidence,grade,evidence,source_rule,risk_reason
+public,_stg_yichang_river_counts,,宜昌河流导入计数临时表,low,C_hold,表域: staging,表域: staging; 表名规则推断,信息不足或为系统/临时表，建议人工判断
+public,_stg_yichang_river_import,,宜昌河流导入临时表,low,C_hold,表域: staging,表域: staging; 表名规则推断,信息不足或为系统/临时表，建议人工判断
+public,_stg_yichang_river_std,,宜昌河流标准化临时表,low,C_hold,表域: staging,表域: staging; 表名规则推断,信息不足或为系统/临时表，建议人工判断
+public,gis_control_unit,,水环境管控单元表,high,A_auto_safe,表域: gis,表域: gis; 表名规则推断,
+public,gis_ecologicalregion,,生态保护红线区域表,high,A_auto_safe,表域: gis,表域: gis; 表名规则推断,
+public,gis_headwaters,,水源地表,high,A_auto_safe,表域: gis,表域: gis; 表名规则推断,
+public,gis_naturereserve,,自然保护区表,high,A_auto_safe,表域: gis,表域: gis; 表名规则推断,
+public,gis_region_city,,城市行政区划表,high,A_auto_safe,表域: gis,表域: gis; 表名规则推断,
+public,gis_region_population,,行政区人口统计表,high,A_auto_safe,表域: gis,表域: gis; 表名规则推断,
+public,gis_watershed_partition_3,,三级流域分区表,high,A_auto_safe,表域: gis,表域: gis; 表名规则推断,
+public,gis_watershed_partition_4,,四级流域分区表,high,A_auto_safe,表域: gis,表域: gis; 表名规则推断,
+public,layer_river_provincial,,省级河流空间表,high,A_auto_safe,表域: layer,表域: layer; 表名规则推断,
+public,rs_industrial_info_yc_bak0305,,宜昌工业源遥感信息表（备份）,low,C_hold,表域: remote_sensing,表域: remote_sensing; 表名规则推断,信息不足或为系统/临时表，建议人工判断
+public,spatial_ref_sys,,空间参考系定义表（PostGIS 系统表）,low,C_hold,表域: postgis_system,表域: postgis_system; 表名规则推断,信息不足或为系统/临时表，建议人工判断
+public,wm_raster_info,,遥感影像栅格信息表,high,A_auto_safe,表域: water_monitor,表域: water_monitor; 表名规则推断,
+public,wm_raster_inversion_config,,遥感反演配置表,high,A_auto_safe,表域: water_monitor,表域: water_monitor; 表名规则推断,
+public,wst_layer_river,,溯源图层河流表,high,A_auto_safe,表域: water_trace,表域: water_trace; 表名规则推断,
+public,wst_trace_topology_issue,,溯源拓扑问题记录表,high,A_auto_safe,表域: water_trace,表域: water_trace; 表名规则推断,
