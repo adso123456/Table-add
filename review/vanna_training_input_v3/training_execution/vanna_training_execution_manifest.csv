@@ -1,0 +1,6 @@
+output_type,path,item_count,description
+ddl,vanna_data/ddl/,115,每个训练表的 DDL CREATE 语句
+documentation,vanna_data/documentation/,115,每个训练表的字段文档
+manifest,vanna_data/training_manifest.json,1,训练元数据清单 JSON
+agent_index,agent_data/column_metadata_index.json,2572,Agent 用的字段元数据索引
+backup_manifest,E:\3\code\metadata_audit\review\vanna_training_input_v3\training_execution\vanna_training_backup_manifest.csv,2,备份清单
